@@ -11,9 +11,9 @@ on:
 
 jobs:
   build:
-
-    runs-on: self-hosted
-
+    runs-on: 
+      group: Ubuntu-Runner
+      labels: label-1
     strategy:
       matrix:
         node-version: [14.x, 16.x, 18.x]
@@ -26,6 +26,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm test
+    - name: running npm CI
+      run: npm ci
+    - name: Build with Next.js
+      run: npm run build --if-present
+    - name: Build with Next.js
+      run: ${{ steps.detect-package-manager.outputs.runner }} npm test
