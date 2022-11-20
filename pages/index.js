@@ -1,7 +1,12 @@
+import Head from 'next/head'
+import Image from 'next/image'
+import styles from '../styles/Home.module.css'
+
 import React from "react";
 
-import Navbar from "../components/bcomponents/navbar.jsx";
-import Footer from "../components/bcomponents/footer.jsx";
+import Navbar from "./components/bcomponents/navbar.jsx";
+import Footer from "./components/bcomponents/footer.jsx";
+
 
 export default function Landing() {
   return (
