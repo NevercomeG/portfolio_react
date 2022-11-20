@@ -54,7 +54,7 @@ const Popover = ({ color }) => {
                 {color} popover title
               </div>
               <div className="text-white p-3">
-                And here's some amazing content. It's very engaging. Right?
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
               </div>
             </div>
           </div>
