@@ -145,6 +145,8 @@ export default function Landing() {
                     alt="..."
                     src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
                     className="w-full align-middle rounded-t-lg"
+                    width={'1024'}
+                    height={'800'}
                   />
                   <blockquote className="relative p-8 mb-4">
                     <svg
@@ -206,6 +208,8 @@ export default function Landing() {
                   alt="..."
                   className="max-w-full rounded-lg shadow-lg"
                   src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                  width={'300'}
+                  height={'300'}
                 />
               </div>
               <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
