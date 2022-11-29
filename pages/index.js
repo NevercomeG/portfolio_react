@@ -61,7 +61,7 @@ export default function Landing() {
           </div>
         </div>
         <Skills />
-        <Formation />
+
 
         <section className="pb-20 bg-gray-300">
           <div className="container mx-auto px-4">
@@ -231,6 +231,7 @@ export default function Landing() {
                 </p>
               </div>
             </div>
+            <Formation />
             <div className="flex flex-wrap">
               <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
                 <div className="px-6">

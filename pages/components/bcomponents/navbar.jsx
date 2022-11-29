@@ -18,7 +18,7 @@ export default function Navbar(props) {
               (props.transparent ? "text-white" : "text-gray-800") +
               " text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
             }
-            href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
+            href="https://nevercome.live"
           >
             NevercomeG
           </a>
@@ -66,6 +66,8 @@ export default function Navbar(props) {
             </li>
           </ul>
           <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
+
+
             <li className="flex items-center">
               <a
                 className={
@@ -81,10 +83,74 @@ export default function Navbar(props) {
                     (props.transparent
                       ? "lg:text-gray-300 text-gray-500"
                       : "text-gray-500") +
-                    " fab fa-instagram text-lg leading-lg "
+                    "text-lg leading-lg "
                   }
                 />
-                <span className="lg:hidden inline-block ml-2">Instagram</span>
+                <span className="inline-block ml-2">Skills</span>
+              </a>
+            </li>
+
+            <li className="flex items-center">
+              <a
+                className={
+                  (props.transparent
+                    ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
+                    : "text-gray-800 hover:text-gray-600") +
+                  " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                }
+                href="#pablo"
+              >
+                <i
+                  className={
+                    (props.transparent
+                      ? "lg:text-gray-300 text-gray-500"
+                      : "text-gray-500") +
+                    "text-lg leading-lg "
+                  }
+                />
+                <span className=" inline-block ml-2">About Me</span>
+              </a>
+            </li>
+            <li className="flex items-center">
+              <a
+                className={
+                  (props.transparent
+                    ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
+                    : "text-gray-800 hover:text-gray-600") +
+                  " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                }
+                href="#pablo"
+              >
+                <i
+                  className={
+                    (props.transparent
+                      ? "lg:text-gray-300 text-gray-500"
+                      : "text-gray-500") +
+                    "text-lg leading-lg "
+                  }
+                />
+                <span className=" inline-block ml-2">Something</span>
+              </a>
+            </li>
+            <li className="flex items-center">
+              <a
+                className={
+                  (props.transparent
+                    ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
+                    : "text-gray-800 hover:text-gray-600") +
+                  " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                }
+                href="#pablo"
+              >
+                <i
+                  className={
+                    (props.transparent
+                      ? "lg:text-gray-300 text-gray-500"
+                      : "text-gray-500") +
+                    "text-lg leading-lg "
+                  }
+                />
+                <span className=" inline-block ml-2">Something</span>
               </a>
             </li>
 
@@ -110,6 +176,27 @@ export default function Navbar(props) {
               </a>
             </li>
 
+            <li className="flex items-center">
+              <a
+                className={
+                  (props.transparent
+                    ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
+                    : "text-gray-800 hover:text-gray-600") +
+                  " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                }
+                href="#pablo"
+              >
+                <i
+                  className={
+                    (props.transparent
+                      ? "lg:text-gray-300 text-gray-500"
+                      : "text-gray-500") +
+                    " fab fa-instagram text-lg leading-lg "
+                  }
+                />
+                <span className="lg:hidden inline-block ml-2">Instagram</span>
+              </a>
+            </li>
             <li className="flex items-center">
               <a
                 className={
