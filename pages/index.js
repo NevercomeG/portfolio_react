@@ -1,11 +1,12 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Image from 'next/image';
+
 
 import React from "react";
 
 import Navbar from "./components/bcomponents/navbar.jsx";
 import Footer from "./components/bcomponents/footer.jsx";
+import Login from "./components/bcomponents/login.jsx";
+import Form from "./components/scomponents/form.jsx";
 
 
 export default function Landing() {
@@ -15,28 +16,33 @@ export default function Landing() {
       <main>
         <div className="relative pt-16 pb-32 flex content-center items-center justify-center"
             style={{
-              minHeight: "75vh"
+              minHeight: "100vh"
             }}>
           <div className="absolute top-0 w-full h-full bg-center bg-cover"
               style={{
-                backgroundImage: "url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80')"
+                backgroundImage: "url('https://wallpaperaccess.com/full/116208.jpg')"
               }}>
-            <span id="blackOverlay" className="w-full h-full absolute opacity-75 bg-black"></span>
+            <span id="blackOverlay" className="w-full h-full absolute opacity-25 bg-black"></span>
           </div>
           <div className="container relative mx-auto">
               <div className="items-center flex flex-wrap">
                 <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                   <div className="pr-12">
                     <h1 className="text-white font-semibold text-5xl">
-                      Your story starts with us.
+                      NevercomeG Porfolio
                     </h1>
                     <p className="mt-4 text-lg text-gray-300">
-                      This is a simple example of a Landing Page you can build
-                      using Tailwind Starter Kit. It features multiple CSS
-                      components based on the Tailwindcss design system.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Delectus officia facere ratione, autem maiores repudiandae! 
+                    Non molestiae asperiores esse porro, 
+                    impedit dolorem rem quo tempore facilis et ex, consectetur cupiditate.
                     </p>
                   </div>
                 </div>
+
+{/*   
+                      <Image class="avatar__pic" src="https://cdn3.iconfinder.com/data/icons/office-275/400/Programmer-2-512.png" width={100} height={100} alt="..."/> */}
+
 
               </div>
           </div>
@@ -195,7 +201,7 @@ export default function Landing() {
               y="0"
             >
               <polygon
-                className="text-white fill-current"
+                className="text-black fill-current"
                 points="2560 0 2560 100 0 100"
               ></polygon>
             </svg>
@@ -291,7 +297,7 @@ export default function Landing() {
                 <div className="px-6">
                 <Image
                     alt="..."
-                    // src={require("assets/img/team-1-800x800.jpg").default}
+                    //src={require("assets/img/team-1-800x800.jpg").default}
                     className="shadow-lg rounded-full max-w-full mx-auto"
                     style={{ maxWidth: "120px" }}
                   />
@@ -515,77 +521,7 @@ export default function Landing() {
             </div>
           </div>
         </section>
-        <section className="relative block py-24 lg:pt-0 bg-gray-900">
-          <div className="container mx-auto px-4">
-            <div className="flex flex-wrap justify-center lg:-mt-64 -mt-48">
-              <div className="w-full lg:w-6/12 px-4">
-                <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300">
-                  <div className="flex-auto p-5 lg:p-10">
-                    <h4 className="text-2xl font-semibold">
-                      Want to work with us?
-                    </h4>
-                    <p className="leading-relaxed mt-1 mb-4 text-gray-600">
-                      Complete this form and we will get back to you in 24 hours.
-                    </p>
-                    <div className="relative w-full mb-3 mt-8">
-                      <label
-                        className="block uppercase text-gray-700 text-xs font-bold mb-2"
-                        htmlFor="full-name"
-                      >
-                        Full Name
-                      </label>
-                      <input
-                        type="text"
-                        className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
-                        placeholder="Full Name"
-                        style={{ transition: "all .15s ease" }}
-                      />
-                    </div>
-
-                    <div className="relative w-full mb-3">
-                      <label
-                        className="block uppercase text-gray-700 text-xs font-bold mb-2"
-                        htmlFor="email"
-                      >
-                        Email
-                      </label>
-                      <input
-                        type="email"
-                        className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
-                        placeholder="Email"
-                        style={{ transition: "all .15s ease" }}
-                      />
-                    </div>
-
-                    <div className="relative w-full mb-3">
-                      <label
-                        className="block uppercase text-gray-700 text-xs font-bold mb-2"
-                        htmlFor="message"
-                      >
-                        Message
-                      </label>
-                      <textarea
-                        rows="4"
-                        cols="80"
-                        className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
-                        placeholder="Type a message..."
-                      />
-                    </div>
-                    <div className="text-center mt-6">
-                      <button
-                        className="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                        style={{ transition: "all .15s ease" }}
-                      >
-                        Send Message
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Form/>
       </main>
       <Footer />
     </>

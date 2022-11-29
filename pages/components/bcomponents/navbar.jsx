@@ -20,7 +20,7 @@ export default function Navbar(props) {
             }
             href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
           >
-            Tailwind Starter Kit
+            NevercomeG
           </a>
           <button
             className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
@@ -61,7 +61,7 @@ export default function Navbar(props) {
                     " far fa-file-alt text-lg leading-lg mr-2"
                   }
                 />{" "}
-                Docs
+                Cv
               </a>
             </li>
           </ul>
@@ -81,10 +81,10 @@ export default function Navbar(props) {
                     (props.transparent
                       ? "lg:text-gray-300 text-gray-500"
                       : "text-gray-500") +
-                    " fab fa-facebook text-lg leading-lg "
+                    " fab fa-instagram text-lg leading-lg "
                   }
                 />
-                <span className="lg:hidden inline-block ml-2">Share</span>
+                <span className="lg:hidden inline-block ml-2">Instagram</span>
               </a>
             </li>
 
@@ -103,10 +103,10 @@ export default function Navbar(props) {
                     (props.transparent
                       ? "lg:text-gray-300 text-gray-500"
                       : "text-gray-500") +
-                    " fab fa-twitter text-lg leading-lg "
+                    " fab fa-linkedin text-lg leading-lg "
                   }
                 />
-                <span className="lg:hidden inline-block ml-2">Tweet</span>
+                <span className="lg:hidden inline-block ml-2">Linkedin</span>
               </a>
             </li>
 
@@ -128,23 +128,8 @@ export default function Navbar(props) {
                     " fab fa-github text-lg leading-lg "
                   }
                 />
-                <span className="lg:hidden inline-block ml-2">Star</span>
+                <span className="lg:hidden inline-block ml-2">Github</span>
               </a>
-            </li>
-
-            <li className="flex items-center">
-              <button
-                className={
-                  (props.transparent
-                    ? "bg-white text-gray-800 active:bg-gray-100"
-                    : "bg-pink-500 text-white active:bg-pink-600") +
-                  " text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
-                }
-                type="button"
-                style={{ transition: "all .15s ease" }}
-              >
-                <i className="fas fa-arrow-alt-circle-down"></i> Download
-              </button>
             </li>
           </ul>
         </div>

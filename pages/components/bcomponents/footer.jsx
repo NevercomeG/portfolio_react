@@ -29,29 +29,29 @@ export default function Footer() {
              Lorem ipsum dolor sit.
             </h4>
             <h5 className="text-lg mt-0 mb-2 text-gray-700">
-              Find us on any of these platforms, we respond 1-2 business days.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, recusandae tempore!
             </h5>
-            <div className="mt-6">
+            <div className="mt-6 space-x-1">
               <button
-                className="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                className="bg-white text-blue-400 p-3 text-center inline-flex items-center justify-center w-10 h-10 mb-5 shadow-lg rounded-full"
                 type="button"
               >
                 <i className="flex fab fa-twitter"></i>
               </button>
               <button
-                className="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                className="bg-white text-blue-500 p-3 text-center inline-flex items-center justify-center w-10 h-10 mb-5 shadow-lg rounded-full "
                 type="button"
               >
                 <i className="flex fab fa-facebook-square"></i>
               </button>
               <button
-                className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                className="bg-white text-orange-400 p-3 text-center inline-flex items-center justify-center w-10 h-10 mb-5 shadow-lg rounded-full "
                 type="button"
               >
-                <i className="flex fab fa-dribbble"></i>
+                <i className="flex fab fa-instagram"></i>
               </button>
               <button
-                className="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                className="bg-white text-black p-3 text-center inline-flex items-center justify-center w-10 h-10 mb-5 shadow-lg rounded-full"
                 type="button"
               >
                 <i className="flex fab fa-github"></i>
@@ -67,7 +67,7 @@ export default function Footer() {
                 <ul className="list-unstyled">
                   <li>
                     <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://www.creative-tim.com/presentation">About Us
+                        href="https://www.creative-tim.com/presentation">About Me
                     </a>
                   </li>
                   <li>
@@ -82,7 +82,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://www.creative-tim.com/bootstrap-themes/free">Free Products
+                        href="https://www.creative-tim.com/bootstrap-themes/free">Merchandising
                     </a>
                   </li>
 
@@ -95,22 +95,7 @@ export default function Footer() {
                 <ul className="list-unstyled">
                   <li>
                     <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md">MIT License
-                  </a>
-                  </li>
-                  <li>
-                    <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://creative-tim.com/terms">Terms & Conditions
-                    </a>
-                  </li>
-                  <li>
-                    <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://creative-tim.com/privacy">Privacy Policy
-                    </a>
-                  </li>
-                  <li>
-                    <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://creative-tim.com/contact-us">Contact Us
+                        href="https://creative-tim.com/contact-us">Contact Me
                     </a>
                   </li>
                 </ul>
@@ -123,12 +108,12 @@ export default function Footer() {
         <div className="flex flex-wrap items-center md:justify-between justify-center">
           <div className="w-full md:w-4/12 px-4 mx-auto text-center">
             <div className="text-sm text-gray-600 font-semibold py-1">
-              Copyright © {new Date().getFullYear()}{" "}Tailwind Starter Kit by{" "}
+              Copyright © {new Date().getFullYear()}{" "}NevercomeG{" "}
               <a
                 href="https://www.creative-tim.com"
                 className="text-gray-600 hover:text-gray-900"
               >
-                Creative Tim
+                Creative LS
               </a>.
             </div>
           </div>

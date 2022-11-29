@@ -28,3 +28,9 @@ a {
     background: black;
   }
 }
+
+.avatar__pic {
+    width: 9rem;
+    padding-top: 100px;
+    vertical-align: middle;
+}
