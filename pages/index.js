@@ -1,5 +1,6 @@
 import Image from 'next/image';
 
+import Head from 'next/head.js';
 
 import React from "react";
 
@@ -7,6 +8,7 @@ import Navbar from "./components/bcomponents/navbar.jsx";
 import Footer from "./components/bcomponents/footer.jsx";
 import Skills from './components/bcomponents/skills.jsx';
 import Formation from './components/bcomponents/formation.jsx';
+import Proyects from './components/bcomponents/proyects.jsx';
 
 
 import Form from "./components/scomponents/form.jsx";
@@ -17,30 +19,34 @@ import Rightpanel from "./components/scomponents/rightpanel.jsx";
 export default function Landing() {
   return (
     <>
+      <Head>
+        <title>Home</title>
+        {/* <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Rubik_Distressed"></link> */}
+      </Head>
       <Navbar transparent />
       <main>
         <div className="relative pt-16 pb-32 flex content-center items-center justify-center"
             style={{
               minHeight: "100vh"
             }}>
-          <div className="absolute top-0 w-full h-full bg-center bg-cover"
+          <div id='hero' className=" absolute top-0 w-full h-full bg-center bg-cover"
               style={{
-                backgroundImage: "url('https://wallpaperaccess.com/full/116208.jpg')"
+                backgroundImage: "url('https://weblium.com/blog/wp-content/uploads/2019/09/photo-1533135091724-62cc5402aa20.jpeg')"
               }}>
             <span id="blackOverlay" className="w-full h-full absolute opacity-25 bg-black"></span>
           </div>
           <div className="container relative mx-auto">
               <div className="items-center flex flex-wrap">
                 <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-                    <h1 className="text-white font-semibold text-5xl">
-                      NevercomeG Porfolio
+                    <h1 id='logotext' className="text-white font-bold text-5xl shadow-lg">
+                      NEVERCOMEG PORTFOLIO
                     </h1>
                     <p className="mt-4 text-lg text-gray-300">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Delectus officia facere ratione, autem maiores repudiandae! 
-                    Non molestiae asperiores esse porro, 
-                    impedit dolorem rem quo tempore facilis et ex, consectetur cupiditate.
+                      I'm a Full Stack Developer, I love to create new things and learn new technologies.
+                      
                     </p>
+
                 </div>
               </div>
           </div>
@@ -217,7 +223,7 @@ export default function Landing() {
         </section>
 
 
-        <section className="pt-20 pb-48">
+        <section className="pt-20 pb-48 bg-slate-900">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center text-center mb-24">
               <div className="w-full lg:w-6/12 px-4">
@@ -231,165 +237,14 @@ export default function Landing() {
                 </p>
               </div>
             </div>
-            <Formation />
-            <div className="flex flex-wrap">
-              <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                <div className="px-6">
-                <Image
-                    alt="..."
-                    //src={require("assets/img/team-1-800x800.jpg").default}
-                    className="shadow-lg rounded-full max-w-full mx-auto"
-                    style={{ maxWidth: "120px" }}
-                  />
-                  <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">
-                      Ryan Tompson
-                    </h5>
-                    <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                      Web Developer
-                    </p>
-                    <div className="mt-6">
-                      <button
-                        className="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-twitter"></i>
-                      </button>
-                      <button
-                        className="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-facebook-f"></i>
-                      </button>
-                      <button
-                        className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-dribbble"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                <div className="px-6">
-                <Image
-                    alt="..."
-                    // src={require("assets/img/team-2-800x800.jpg").default}
-                    className="shadow-lg rounded-full max-w-full mx-auto"
-                    style={{ maxWidth: "120px" }}
-                  />
-                  <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">
-                      Romina Hadid
-                    </h5>
-                    <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                      Marketing Specialist
-                    </p>
-                    <div className="mt-6">
-                      <button
-                        className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-google"></i>
-                      </button>
-                      <button
-                        className="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-facebook-f"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                <div className="px-6">
-                <Image
-                    alt="..."
-                    // src={require("assets/img/team-3-800x800.jpg").default}
-                    className="shadow-lg rounded-full max-w-full mx-auto"
-                    style={{ maxWidth: "120px" }}
-                  />
-                  <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">
-                      Alexa Smith
-                    </h5>
-                    <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                      UI/UX Designer
-                    </p>
-                    <div className="mt-6">
-                      <button
-                        className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-google"></i>
-                      </button>
-                      <button
-                        className="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-twitter"></i>
-                      </button>
-                      <button
-                        className="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-instagram"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                <div className="px-6">
-                <Image
-                    alt="..."
-                    // src={require("assets/img/team-4-470x470.png").default}
-                    className="shadow-lg rounded-full max-w-full mx-auto"
-                    style={{ maxWidth: "120px" }}
-                  />
-                  <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">
-                      Jenna Kardi
-                    </h5>
-                    <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                      Founder and CEO
-                    </p>
-                    <div className="mt-6">
-                      <button
-                        className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-dribbble"></i>
-                      </button>
-                      <button
-                        className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-google"></i>
-                      </button>
-                      <button
-                        className="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-twitter"></i>
-                      </button>
-                      <button
-                        className="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-instagram"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 
-        <section className="pb-20 relative block bg-gray-900">
+        <Formation />
+
+        <Proyects />
+
+        <section className="pt-20 pb-20 relative block bg-gray-900">
           <div
             className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
             style={{ height: "80px" }}
@@ -447,9 +302,9 @@ export default function Landing() {
             </div>
           </div>
         </section>
-
+{/* 
           <Leftpanel />
-          <Rightpanel />
+          <Rightpanel /> */}
 
         <Form/>
       </main>

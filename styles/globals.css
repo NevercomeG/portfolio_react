@@ -29,6 +29,10 @@ a {
   }
 }
 
+#logotext {
+
+}
+
 .avatar__pic {
     width: 9rem;
     padding-top: 100px;
@@ -178,12 +182,11 @@ background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, F
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 10rem 0;
+  padding: 5rem 0;
 }
 
 .services h1 {
-  background-color: #ff8177;
-  background-image: linear-gradient(to right, #ff0844 0%, #f7673c 100%);
+  background-color: #ffffff;
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -195,14 +198,23 @@ background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, F
 
 .services__wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
   grid-template-rows: 1fr;
 }
 
+@media screen and (min-width: 900px) {
+  .services__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+
 .services__card {
   margin: 10px;
-  height: 250px;
-  width: 250px;
+  height: 150px;
+  width: 150px;
   border-radius: 4px;
   display: grid;
   flex-direction: column;
@@ -267,8 +279,8 @@ background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, F
 
 
 #services img{
-  height: 150px;
-  width: 150px;
+  height: 100px;
+  width: 100px;
 }
 
 
@@ -310,12 +322,11 @@ background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, F
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 10rem 0;
+  padding: 5rem 0;
 }
 
 .formation h1 {
-  background-color: #ff8177;
-  background-image: linear-gradient(to right, #ff0844 0%, #f7673c 100%);
+  background-color: #fff;
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -422,4 +433,14 @@ background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, F
   .formation__wrapper {
     grid-template-columns: 1fr;
   }
+}
+
+#hero:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent 10%, #131313 90%);
 }
