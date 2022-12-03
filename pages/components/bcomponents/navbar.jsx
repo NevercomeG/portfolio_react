@@ -7,7 +7,7 @@ export default function Navbar(props) {
       className={
         (props.transparent
           ? "top-0 absolute z-50 w-full"
-          : "relative shadow-lg bg-white shadow-lg") +
+          : "relative shadow-lg bg-white") +
         " flex flex-wrap items-center justify-between px-2 py-3 "
       }
     >
@@ -42,29 +42,7 @@ export default function Navbar(props) {
           }
           id="example-navbar-warning"
         >
-          <ul className="flex flex-col lg:flex-row list-none mr-auto">
-            <li className="flex items-center">
-              <a
-                className={
-                  (props.transparent
-                    ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
-                    : "text-gray-800 hover:text-gray-600") +
-                  " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                }
-                href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/landing"
-              >
-                <i
-                  className={
-                    (props.transparent
-                      ? "lg:text-gray-300 text-gray-500"
-                      : "text-gray-500") +
-                    " far fa-file-alt text-lg leading-lg mr-2"
-                  }
-                />{" "}
-                Cv
-              </a>
-            </li>
-          </ul>
+
           <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
 
 
@@ -86,7 +64,7 @@ export default function Navbar(props) {
                     "text-lg leading-lg "
                   }
                 />
-                <span className="inline-block ml-2">Skills</span>
+                <span className="inline-block ml-2">Home</span>
               </a>
             </li>
 
@@ -108,7 +86,7 @@ export default function Navbar(props) {
                     "text-lg leading-lg "
                   }
                 />
-                <span className=" inline-block ml-2">About Me</span>
+                <span className=" inline-block ml-2">Skills</span>
               </a>
             </li>
             <li className="flex items-center">
@@ -129,7 +107,7 @@ export default function Navbar(props) {
                     "text-lg leading-lg "
                   }
                 />
-                <span className=" inline-block ml-2">Something</span>
+                <span className=" inline-block ml-2">About</span>
               </a>
             </li>
             <li className="flex items-center">
@@ -150,7 +128,70 @@ export default function Navbar(props) {
                     "text-lg leading-lg "
                   }
                 />
-                <span className=" inline-block ml-2">Something</span>
+                <span className=" inline-block ml-2">Experience</span>
+              </a>
+            </li>
+            <li className="flex items-center">
+              <a
+                className={
+                  (props.transparent
+                    ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
+                    : "text-gray-800 hover:text-gray-600") +
+                  " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                }
+                href="#pablo"
+              >
+                <i
+                  className={
+                    (props.transparent
+                      ? "lg:text-gray-300 text-gray-500"
+                      : "text-gray-500") +
+                    "text-lg leading-lg "
+                  }
+                />
+                <span className=" inline-block ml-2">Projects</span>
+              </a>
+            </li>
+            <li className="flex items-center">
+              <a
+                className={
+                  (props.transparent
+                    ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
+                    : "text-gray-800 hover:text-gray-600") +
+                  " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                }
+                href="#pablo"
+              >
+                <i
+                  className={
+                    (props.transparent
+                      ? "lg:text-gray-300 text-gray-500"
+                      : "text-gray-500") +
+                    "text-lg leading-lg "
+                  }
+                />
+                <span className=" inline-block ml-2">Technologies</span>
+              </a>
+            </li>
+            <li className="flex items-center">
+              <a
+                className={
+                  (props.transparent
+                    ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
+                    : "text-gray-800 hover:text-gray-600") +
+                  " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                }
+                href="#pablo"
+              >
+                <i
+                  className={
+                    (props.transparent
+                      ? "lg:text-gray-300 text-gray-500"
+                      : "text-gray-500") +
+                    "text-lg leading-lg "
+                  }
+                />
+                <span className=" inline-block ml-2">Contact</span>
               </a>
             </li>
 

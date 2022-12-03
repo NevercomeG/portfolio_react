@@ -12,37 +12,45 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap">
           <div className="w-full lg:w-6/12 px-4">
-            <h4 className="text-3xl font-semibold">
-             Lorem ipsum dolor sit.
+            <h4 className="text-3xl font-semibold mb-4">
+            Thank you for considering me for your web development project. 
             </h4>
             <h5 className="text-lg mt-0 mb-2 text-gray-700">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, recusandae tempore!
+            I look forward to the opportunity to work with you and bring your website vision to life..
             </h5>
             <div className="mt-6 space-x-1">
+              <a href="https://twitter.com/NevercomeG" target="_blank" rel="noreferrer" className="text-gray-800 hover:text-gray-600 text-lg">
               <button
                 className="bg-white text-blue-400 p-3 text-center inline-flex items-center justify-center w-10 h-10 mb-5 shadow-lg rounded-full"
                 type="button"
               >
                 <i className="flex fab fa-twitter"></i>
               </button>
+              </a>
+              <a href="#" target="_blank" rel="noreferrer" className="text-gray-800 hover:text-gray-600 text-lg">
               <button
                 className="bg-white text-blue-500 p-3 text-center inline-flex items-center justify-center w-10 h-10 mb-5 shadow-lg rounded-full "
                 type="button"
               >
                 <i className="flex fab fa-facebook-square"></i>
               </button>
+              </a>
+              <a href="#" target="_blank" rel="noreferrer" className="text-gray-800 hover:text-gray-600 text-lg">
               <button
                 className="bg-white text-orange-400 p-3 text-center inline-flex items-center justify-center w-10 h-10 mb-5 shadow-lg rounded-full "
                 type="button"
               >
                 <i className="flex fab fa-instagram"></i>
               </button>
+              </a>
+              <a href="https://github.com/NevercomeG" target="_blank" rel="noreferrer" className="text-gray-800 hover:text-gray-600 text-lg">
               <button
                 className="bg-white text-black p-3 text-center inline-flex items-center justify-center w-10 h-10 mb-5 shadow-lg rounded-full"
                 type="button"
               >
                 <i className="flex fab fa-github"></i>
               </button>
+              </a>
             </div>
           </div>
           <div className="w-full lg:w-6/12 px-4">
@@ -54,7 +62,22 @@ export default function Footer() {
                 <ul className="list-unstyled">
                   <li>
                     <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://www.creative-tim.com/presentation">About Me
+                        href="https://www.creative-tim.com/presentation">Home
+                    </a>
+                  </li>
+                  <li>
+                    <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                        href="https://www.creative-tim.com/presentation">About
+                    </a>
+                  </li>
+                  <li>
+                    <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                        href="https://www.creative-tim.com/presentation">Skills
+                    </a>
+                  </li>
+                  <li>
+                    <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                        href="https://www.creative-tim.com/presentation">Experience
                     </a>
                   </li>
                   <li>
@@ -62,17 +85,6 @@ export default function Footer() {
                         href="https://blog.creative-tim.com">Blog
                     </a>
                   </li>
-                  <li>
-                    <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://www.github.com/creativetimofficial">Github
-                    </a>
-                  </li>
-                  <li>
-                    <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://www.creative-tim.com/bootstrap-themes/free">Merchandising
-                    </a>
-                  </li>
-
                 </ul>
               </div>
               <div className="w-full lg:w-4/12 px-4">
@@ -85,8 +97,17 @@ export default function Footer() {
                         href="https://creative-tim.com/contact-us">Contact Me
                     </a>
                   </li>
+                  <li>
+                    <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                        href="https://www.creative-tim.com/bootstrap-themes/free">Resume
+                    </a>
+                  </li>
+                  <li>
+                    <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                        href="https://www.github.com/creativetimofficial">Github
+                    </a>
+                  </li>
                 </ul>
-
               </div>
             </div>
           </div>

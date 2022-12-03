@@ -10,23 +10,21 @@ import Skills from './components/bcomponents/skills.jsx';
 import Formation from './components/bcomponents/formation.jsx';
 import Proyects from './components/bcomponents/proyects.jsx';
 
-
 import Form from "./components/scomponents/form.jsx";
-import Leftpanel from "./components/scomponents/leftpanel.jsx";
-import Rightpanel from "./components/scomponents/rightpanel.jsx";
+// import Leftpanel from "./components/scomponents/leftpanel.jsx";
+// import Rightpanel from "./components/scomponents/rightpanel.jsx";
+
 
 
 export default function Landing() {
   return (
     <>
       <Head>
-        <title>Home</title>
-        {/* <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Rubik_Distressed"></link> */}
+        <title>NevercomeG Portfolio</title>
       </Head>
       <Navbar transparent />
       <main>
-        <div className="relative pt-16 pb-32 flex content-center items-center justify-center"
+      <div className="relative pt-16 pb-32 flex content-center items-center justify-center"
             style={{
               minHeight: "100vh"
             }}>
@@ -43,7 +41,7 @@ export default function Landing() {
                       NEVERCOMEG PORTFOLIO
                     </h1>
                     <p className="mt-4 text-lg text-gray-300">
-                      I'm a Full Stack Developer, I love to create new things and learn new technologies.
+                      Im a Full Stack Developer, I love to create new things and learn new technologies.
                       
                     </p>
 
@@ -69,6 +67,7 @@ export default function Landing() {
         <Skills />
 
 
+
         <section className="pb-20 bg-gray-300">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap">
@@ -81,33 +80,25 @@ export default function Landing() {
                 <div className="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
                   <i className="fas fa-user-friends text-xl"></i>
                 </div>
-                <h3 className="text-3xl mb-2 font-semibold leading-normal">
-                  Working with us is a pleasure
+                <h3 className="text-4xl mb-2 font-semibold leading-normal">
+                Welcome to my portfolio! 
                 </h3>
-                <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
-                  Dont let your uses guess by attaching tooltips and popoves
-                  to any element. Just make sure you enable them first via
-                  JavaScript.
+                <p className="text-xl font-light leading-relaxed mt-4 mb-4 text-gray-700">
+                My name is Luis Javier and I am a Fullstack web developer with a passion for building modern and user-friendly websites. 
+                I have a strong background in Frontend and Backend development, and I am always looking for new challenges and opportunities to grow as a developer. 
                 </p>
-                <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
-                  The kit comes with three pre-built pages to help you get
-                  started faster. You can change the text and images and
-                  yotarted faster. Ygood to go. Just make sure you enable them first via
-                  JavaScript.
+                <p className="text-xl font-light leading-relaxed mt-0 mb-8 text-gray-700">
+                Whether youre looking to revamp your existing website or build a new one from scratch, I have the skills and expertise to bring your vision to life. 
+                From custom design and responsive layouts to intuitive navigation and engaging user experiences, I can help you create a website that is both visually appealing and technically sound.
                 </p>
-                <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
-                  className="font-bold text-gray-800 mt-8"
-                >
-                  Check Tailwind Starter Kit!
-                </a>
+ 
               </div>
 
               <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
-                <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-600">
+                <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-900">
                   <Image
                     alt="..."
-                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
+                    src="/assets/img/3.png"
                     className="w-full align-middle rounded-t-lg"
                     width={'1024'}
                     height={'800'}
@@ -125,16 +116,18 @@ export default function Landing() {
                     >
                       <polygon
                         points="-30,95 583,95 583,65"
-                        className="text-pink-600 fill-current"
+                        className="text-gray-900 fill-current"
                       ></polygon>
                     </svg>
                     <h4 className="text-xl font-bold text-white">
                       Top Notch Services
                     </h4>
                     <p className="text-md font-light mt-2 text-white">
-                      The Arctic Ocean freezes every winter and much of the
-                      sea-ice then thaws every summer, and that process will
-                      continue whatever happens.
+                    I am proficient in a variety of coding languages, including HTML, CSS, JavaScript, and Python, 
+                    and have experience working with popular frameworks such as <span className='underline '>React</span> and <span className='underline '>NextJS</span>. 
+                    </p>
+                    <p className="text-md font-light mt-6 text-white">
+                    I also have a strong understanding of responsive design, ensuring that websites are optimized for different devices and screen sizes.
                     </p>
                   </blockquote>
                 </div>
@@ -158,35 +151,34 @@ export default function Landing() {
               <Image
                   alt="..."
                   className="max-w-full rounded-lg shadow-lg"
-                  src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
-                  width={'300'}
-                  height={'300'}
+                  src="/assets/img/4.gif"
+                  width={'800'}
+                  height={'800'}
                 />
               </div>
               <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
                 <div className="md:pr-12">
-                  <div className="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
-                    <i className="fas fa-rocket text-xl"></i>
+                  <div className=" p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full text-black bg-white">
+                    <i className="fas fa-rocket text-3xl"></i>
                   </div>
                   <h3 className="text-3xl font-semibold">
-                    A growing company
+                  As a fullstack web developer
                   </h3>
                   <p className="mt-4 text-lg leading-relaxed text-gray-600">
-                    The extension comes with three pre-built pages to help you
-                    get started faster. You can change the text and images and
-                    ple text to build on the card title and make upood to go.
+                  I have a passion for building complex and dynamic web applications that deliver a seamless user experience. With over 7 years of experience in the field, 
+                  I have gained a strong understanding of front-end and back-end technologies, as well as the latest industry trends.
                   </p>
                   <ul className="list-none mt-6">
                     <li className="py-2">
                       <div className="flex items-center">
                         <div>
-                          <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                          <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-black bg-white mr-3">
                             <i className="fas fa-fingerprint"></i>
                           </span>
                         </div>
                         <div>
                           <h4 className="text-gray-600">
-                            Carefully crafted components
+                          Web development best practices
                           </h4>
                         </div>
                       </div>
@@ -194,24 +186,24 @@ export default function Landing() {
                     <li className="py-2">
                       <div className="flex items-center">
                         <div>
-                          <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                          <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-black bg-white mr-3">
                             <i className="fab fa-html5"></i>
                           </span>
                         </div>
                         <div>
-                          <h4 className="text-gray-600">Amazing page examples</h4>
+                          <h4 className="text-gray-600">Experience with modern web development frameworks</h4>
                         </div>
                       </div>
                     </li>
                     <li className="py-2">
                       <div className="flex items-center">
                         <div>
-                          <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                          <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-black bg-white mr-3">
                             <i className="far fa-paper-plane"></i>
                           </span>
                         </div>
                         <div>
-                          <h4 className="text-gray-600">Dynamic components</h4>
+                          <h4 className="text-gray-600">Strong problem-solving skills and ability to work independently or as part of a team</h4>
                         </div>
                       </div>
                     </li>
@@ -221,29 +213,8 @@ export default function Landing() {
             </div>
           </div>
         </section>
-
-
-        <section className="pt-20 pb-48 bg-slate-900">
-          <div className="container mx-auto px-4">
-            <div className="flex flex-wrap justify-center text-center mb-24">
-              <div className="w-full lg:w-6/12 px-4">
-                <h2 className="text-4xl font-semibold">
-                  Here are our heroes
-                </h2>
-                <p className="text-lg leading-relaxed m-4 text-gray-600">
-                  According to the National Oceanic and Atmospheric
-                  Administration, Ted, Scambos, NSIDClead scentist, puts the
-                  potentially record maximum.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
         <Formation />
-
         <Proyects />
-
         <section className="pt-20 pb-20 relative block bg-gray-900">
           <div
             className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
@@ -255,11 +226,10 @@ export default function Landing() {
             <div className="flex flex-wrap text-center justify-center">
               <div className="w-full lg:w-6/12 px-4">
                 <h2 className="text-4xl font-semibold text-white">
-                  Build something
+                  Why you should work with me
                 </h2>
                 <p className="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
-                  Put the potentially record low maximum sea ice extent tihs year down to low ice.
-                  According to the National Oceanic and Atmospheric Administration, Ted, Scambos.
+                Provide potential clients and employers with a more comprehensive overview of the developers experience and capabilities.
                 </p>
               </div>
             </div>
@@ -269,34 +239,32 @@ export default function Landing() {
                   <i className="fas fa-medal text-xl"></i>
                 </div>
                 <h6 className="text-xl mt-5 font-semibold text-white">
-                  Excelent Services
+                Hiring me as a full-stack developer
                 </h6>
                 <p className="mt-2 mb-4 text-gray-500">
-                  Some quick example text to build on the card title and make up
-                  ple text to build on the card title and make up.
+                Allows you to benefit from my expertise in both front-end and back-end technologies, ensuring that your web development projects are completed with a holistic and comprehensive approach.
                 </p>
               </div>
               <div className="w-full lg:w-3/12 px-4 text-center">
                 <div className="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
-                  <i className="fas fa-poll text-xl"></i>
+                <i className="fas fa-lightbulb text-xl"></i>
                 </div>
                 <h5 className="text-xl mt-5 font-semibold text-white">
-                  Grow your market
+                My experience
                 </h5>
                 <p className="mt-2 mb-4 text-gray-500">
-                  Some quick example text to build on the card title and make up
-                  ple text to build on the card title and make upt.
+                Working on a range of web development projects allows me to bring a wealth of knowledge and expertise to your project, helping to ensure that it is delivered on time and within budget.
                 </p>
               </div>
               <div className="w-full lg:w-3/12 px-4 text-center">
                 <div className="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
-                  <i className="fas fa-lightbulb text-xl"></i>
+                <i className="fas fa-poll text-xl"></i>      
                 </div>
                 <h5 className="text-xl mt-5 font-semibold text-white">
-                  Launch time
+                As a proactive problem-solver
                 </h5>
                 <p className="mt-2 mb-4 text-gray-500">
-                ple text to build on the card title and make up
+                I enjoy collaborating with teams to find creative solutions to technical challenges, helping to ensure that your web development project runs smoothly and efficiently.
                 </p>
               </div>
             </div>
