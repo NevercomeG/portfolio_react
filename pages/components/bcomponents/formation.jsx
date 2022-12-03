@@ -30,7 +30,7 @@ export default function formation() {
             <Image
                   alt="..."
                   className="max-w-full "
-                  src="/assets/img/microsoft-Logo.png"
+                  src="/assets/img/Microsoft-Logo.png"
                   width={'800'}
                   height={'800'}
                 />
@@ -39,7 +39,7 @@ export default function formation() {
             <Image
                   alt="..."
                   className="max-w-full"
-                  src="/assets/img/Platzi.png"
+                  src="/assets/img/platzi.png"
                   width={'800'}
                   height={'800'}
                 />
