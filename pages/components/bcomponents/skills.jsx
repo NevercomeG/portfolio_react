@@ -24,25 +24,23 @@ export default function skills() {
         <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" width={30}  height={30} alt=""/>
 
       </div>
-      <div className="services__card">
-        <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain-wordmark.svg" width={30}  height={30} alt="" />
 
-      </div>
       <div className="services__card">
         <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" width={30}  height={30} alt="" />
       </div>
 
-      <div className="services__card">
-        <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" width={30}  height={30}  alt=""/>
-      </div>
 
-      <div className="services__card">
-        <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain-wordmark.svg" width={30}  height={30} alt=""/>
-      </div>
 
       <div className="services__card">
         <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" width={30}  height={30} alt=""/>
       </div>
+
+
+      
+      <div className="services__card">
+        <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg" width={30}  height={30} alt=""/>
+      </div>
+
 
       <div className="services__card">
         <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width={30}  height={30} alt=""/>
@@ -59,10 +57,11 @@ export default function skills() {
       <div className="services__card">
         <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" width={30}  height={30} alt=""/>
       </div>
-
       <div className="services__card">
-        <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg" width={30}  height={30} alt=""/>
+        <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain-wordmark.svg" width={30}  height={30} alt="" />
+
       </div>
+
 
       <div className="services__card">
         <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" width={30}  height={30} alt=""/>
@@ -100,6 +99,13 @@ export default function skills() {
       <div className="services__card">
         <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" width={30}  height={30} alt=""/>
       </div>
+      <div className="services__card">
+        <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain-wordmark.svg" width={30}  height={30} alt=""/>
+      </div>
+      <div className="services__card">
+        <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" width={30}  height={30}  alt=""/>
+      </div>
+
     </div>
   </div>
 </section>

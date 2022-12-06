@@ -1,5 +1,5 @@
 import Image from 'next/image';
-
+import Script from "next/script";
 import Head from 'next/head.js';
 
 import React from "react";
@@ -8,9 +8,10 @@ import Navbar from "./components/bcomponents/navbar.jsx";
 import Footer from "./components/bcomponents/footer.jsx";
 import Skills from './components/bcomponents/skills.jsx';
 import Formation from './components/bcomponents/formation.jsx';
-import Proyects from './components/bcomponents/proyects.jsx';
+import Proyects2 from './components/bcomponents/proyects.jsx';
 
 import Form from "./components/scomponents/form.jsx";
+import data from "./components/data/data.js";
 // import Leftpanel from "./components/scomponents/leftpanel.jsx";
 // import Rightpanel from "./components/scomponents/rightpanel.jsx";
 
@@ -21,6 +22,7 @@ export default function Landing() {
     <>
       <Head>
         <title>NevercomeG Portfolio</title>
+        <Script src="./components/scripts/proyects.js" crossOrigin="anonymous"></Script>
       </Head>
       <Navbar transparent />
       <main>
@@ -37,7 +39,7 @@ export default function Landing() {
           <div className="container relative mx-auto">
               <div className="items-center flex flex-wrap">
                 <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-                    <h1 id='logotext' className="text-white font-bold text-5xl shadow-lg">
+                    <h1 id='logotext' className="text-white font-bold text-4xl shadow-lg">
                       NEVERCOMEG PORTFOLIO
                     </h1>
                     <p className="mt-4 text-lg text-gray-300">
@@ -214,7 +216,9 @@ export default function Landing() {
           </div>
         </section>
         <Formation />
-        <Proyects />
+
+        <Proyects2 />
+
         <section className="pt-20 pb-20 relative block bg-gray-900">
           <div
             className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
