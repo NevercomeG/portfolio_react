@@ -11,7 +11,7 @@ import Formation from './components/bcomponents/formation.jsx';
 import Proyects2 from './components/bcomponents/proyects.jsx';
 
 import Form from "./components/scomponents/form.jsx";
-import data from "./components/data/data.js";
+
 // import Leftpanel from "./components/scomponents/leftpanel.jsx";
 // import Rightpanel from "./components/scomponents/rightpanel.jsx";
 
