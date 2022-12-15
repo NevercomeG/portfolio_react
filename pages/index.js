@@ -4,16 +4,16 @@ import Head from "next/head.js";
 
 import React from "react";
 
-import Navbar from "./components/bcomponents/navbar.jsx";
-import Footer from "./components/bcomponents/footer.jsx";
-import Skills from "./components/bcomponents/skills.jsx";
-import Formation from "./components/bcomponents/formation.jsx";
-import Proyects2 from "./components/bcomponents/proyects.jsx";
+import Navbar from "../components/bcomponents/navbar.jsx";
+import Footer from "../components/bcomponents/footer.jsx";
+import Skills from "../components/bcomponents/skills.jsx";
+import Formation from "../components/bcomponents/formation.jsx";
+import Proyects2 from "../components/bcomponents/proyects.jsx";
 
-import Form from "./components/scomponents/form.jsx";
+import Form from "../components/scomponents/form.jsx";
 
-// import Leftpanel from "./components/scomponents/leftpanel.jsx";
-// import Rightpanel from "./components/scomponents/rightpanel.jsx";
+// import Leftpanel from "../components/scomponents/leftpanel.jsx";
+// import Rightpanel from "../components/scomponents/rightpanel.jsx";
 
 export default function Landing() {
   return (
@@ -305,9 +305,6 @@ export default function Landing() {
             </div>
           </div>
         </section>
-        {/* 
-          <Leftpanel />
-          <Rightpanel /> */}
 
         <Form />
       </main>
