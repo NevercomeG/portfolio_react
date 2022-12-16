@@ -23,20 +23,9 @@ if (!(argEnv in RUN_ENV_MAP)) {
 module.exports = {
   apps: [
     {
-      name: "portfolio_react",
-      exec_mode: "cluster",
-      instances: "max", // Or a number of instances
-      script: "node_modules/next/dist/bin/next",
-      args: "start",
-      env_production: {
-        APP_ENV: "local",
-      },
-      env_development: {
-        APP_ENV: "dev",
-      },
-      env_development: {
-        APP_ENV: "prod",
-      },
+      name: "bakes",
+      script: "next",
+      args: "-p 3001",
     },
   ],
 };
