@@ -23,7 +23,7 @@ if (!(argEnv in RUN_ENV_MAP)) {
 module.exports = {
   apps: [
     {
-      name: "bakes",
+      name: "portfolio",
       script: "next",
       args: "-p 3001",
     },
