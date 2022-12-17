@@ -1,31 +1,17 @@
-const argEnvIndex = process.argv.indexOf("--env");
-let argEnv = (argEnvIndex !== -1 && process.argv[argEnvIndex + 1]) || "";
-
-const RUN_ENV_MAP = {
-  local: {
-    instances: 2,
-    max_memory_restart: "250M",
-  },
-  dev: {
-    instances: 2,
-    max_memory_restart: "250M",
-  },
-  prod: {
-    instances: 4,
-    max_memory_restart: "1000M",
-  },
-};
-
-if (!(argEnv in RUN_ENV_MAP)) {
-  argEnv = "prod";
-}
-
 module.exports = {
   apps: [
     {
-      name: "portfolio",
-      script: "yarn",
-      args: "-p 3000",
+      name: "nextjs-app",
+      script: "./server.js",
+      watch: true,
+      env: {
+        NODE_ENV: "development",
+        PORT: 3000,
+      },
+      env_production: {
+        NODE_ENV: "production",
+        PORT: 3000,
+      },
     },
   ],
 };
