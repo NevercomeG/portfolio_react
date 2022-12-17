@@ -2,7 +2,7 @@ module.exports = {
   apps: [
     {
       name: "nextjs-app",
-      script: "./server.js",
+      script: "yarn",
       watch: true,
       env: {
         NODE_ENV: "development",
