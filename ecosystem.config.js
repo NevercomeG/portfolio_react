@@ -24,7 +24,7 @@ module.exports = {
   apps: [
     {
       name: "portfolio",
-      script: "next",
+      script: "yarn",
       args: "-p 3001",
     },
   ],
