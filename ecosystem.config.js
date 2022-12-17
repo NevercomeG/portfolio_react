@@ -25,7 +25,7 @@ module.exports = {
     {
       name: "portfolio",
       script: "yarn",
-      args: "-p 3001",
+      args: "-p 3000",
     },
   ],
 };
