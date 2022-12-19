@@ -604,7 +604,7 @@ a {
 .box::after {
   content: '';
   position: absolute;
-  background-image: url(https://forums.tumult.com/uploads/db2156/a3988831c30b28d68f57599fbd4898e7b9f3fe0d);
+  background-image: url(https://i.pinimg.com/originals/80/79/f3/8079f35bd622625b4db763edfce6d026.gif);
   background-size: 200%;
   top: 0px;
   left: 0px;
@@ -628,4 +628,10 @@ a {
 
 .box:hover::before {
   bottom: 100%;
+}
+
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
 }
