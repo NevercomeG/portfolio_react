@@ -9,7 +9,7 @@ export default function Navbar(props) {
         (props.transparent
           ? "top-0 absolute z-50 w-full"
           : "relative shadow-lg bg-white") +
-        " flex flex-wrap items-center justify-between px-2 py-3 bg-black-50 "
+        " flex flex-wrap items-center justify-between px-2 py-3 backdrop-brightness-50  backdrop-blur"
       }
     >
       <div className="container px-4 mx-auto flex flex-wrap items-center justify-between ">
