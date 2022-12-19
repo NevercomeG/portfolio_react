@@ -579,11 +579,8 @@ a {
 .box {
   display: inline-block;
   background-image: url(https://i.pinimg.com/originals/80/79/f3/8079f35bd622625b4db763edfce6d026.gif);
-  background-size: 25%;
-  background-position: 50% 75%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
+  background-size: 100%;
+  background-position: center;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -628,10 +625,4 @@ a {
 
 .box:hover::before {
   bottom: 100%;
-}
-
-.fixed-navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
 }
