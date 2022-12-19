@@ -571,3 +571,54 @@ a {
 .bg-black-50 {
   background-color: #9b9b9b28;
 }
+
+.box {
+  display: inline-block;
+  background-image: url(https://forums.tumult.com/uploads/db2156/a3988831c30b28d68f57599fbd4898e7b9f3fe0d);
+  background-size: 400%;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  position: relative;
+  word-wrap: break-word;
+  cursor: pointer;
+  transition: 0.1s color;
+
+}
+
+.box:hover {
+  color: #333;
+}
+
+
+
+.box::after {
+  content: '';
+  position: absolute;
+  background-image: url(https://forums.tumult.com/uploads/db2156/a3988831c30b28d68f57599fbd4898e7b9f3fe0d);
+  background-size: 500%;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -2;
+}
+
+.box::before {
+  content: '';
+  background: #333;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 5px;
+  transition: 0s bottom, 0.2S left;
+}
+
+.box:hover::before {
+  bottom: 100%;
+}
