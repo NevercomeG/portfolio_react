@@ -9,10 +9,10 @@ export default function Navbar(props) {
         (props.transparent
           ? "top-0 absolute z-50 w-full"
           : "relative shadow-lg bg-white") +
-        " flex flex-wrap items-center justify-between px-2 py-3 "
+        " flex flex-wrap items-center justify-between px-2 py-3 bg-black-50 "
       }
     >
-      <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
+      <div className="container px-4 mx-auto flex flex-wrap items-center justify-between ">
         <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
           <a
             className={
@@ -21,7 +21,7 @@ export default function Navbar(props) {
             }
           >
             <Link href="/page2" passHref>
-              NevercomeG
+              NevercomeX
             </Link>
           </a>
           <button
@@ -238,7 +238,7 @@ export default function Navbar(props) {
                     : "text-gray-800 hover:text-gray-600") +
                   " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                 }
-                href="#"
+                href="https://github.com/NevercomeX"
               >
                 <i
                   className={

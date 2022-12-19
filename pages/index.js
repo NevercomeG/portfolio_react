@@ -19,7 +19,7 @@ export default function Landing() {
   return (
     <>
       <Head>
-        <title>NevercomeG Portfolio</title>
+        <title>NevercomeX 💻 </title>
         <Script
           src="./components/scripts/proyects.js"
           crossOrigin="anonymous"
@@ -49,16 +49,27 @@ export default function Landing() {
           <div className="container relative mx-auto">
             <div className="items-center flex flex-wrap">
               <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-                <h1
-                  id="logotext"
-                  className="text-white font-bold text-4xl shadow-lg"
-                >
-                  NEVERCOMEG PORTFOLIO
-                </h1>
-                <p className="mt-4 text-lg text-gray-300">
-                  Im a Full Stack Developer, I love to create new things and
-                  learn new technologies.
-                </p>
+                <div className="flex flex-col  text-center items-center">
+                  <Image
+                    alt="..."
+                    className="shadow-2xl rounded-full bg-black-50"
+                    src="/assets/img/logo.png"
+                    width={"450"}
+                    height={"450"}
+                  />
+
+                  <div className="">
+                    <h1
+                      id="logotext"
+                      className="text-white font-bold text-6xl "
+                    >
+                      NEVERCOMEX
+                    </h1>
+                    <p className="mt-4 text-lg text-gray-300">
+                      Full Stack Developer, always learning new technologies. 💻
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

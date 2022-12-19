@@ -23,6 +23,7 @@ a {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;
@@ -74,17 +75,16 @@ a {
 
 .main__content h2 {
   font-size: 4rem;
-  background: #ff8177; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #9114ff,
-    #da22ff
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #8f0eff,
-    #da22ff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #ff8177;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,
+      #9114ff,
+      #da22ff);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,
+      #8f0eff,
+      #da22ff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -163,17 +163,16 @@ a {
 }
 
 #card-2 {
-  background: #bdc3c7; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #2c3e50,
-    #bdc3c7
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #2c3e50,
-    #bdc3c7
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #bdc3c7;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,
+      #2c3e50,
+      #bdc3c7);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,
+      #2c3e50,
+      #bdc3c7);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* Services Section */
@@ -308,7 +307,7 @@ a {
 
 /* formation Section */
 .formation {
-  background-image: url(/img/3\\(1\).jpg);
+  background-image: url("/img/3\\(1\).jpg");
   height: 1000px;
   background-position: center;
   background-repeat: no-repeat;
@@ -510,6 +509,7 @@ a {
   background-color: rgb(255, 255, 255);
   z-index: 9999;
 }
+
 .spinner {
   position: absolute;
   left: 50%;
@@ -532,31 +532,42 @@ a {
   from {
     -webkit-transform: rotate(0deg);
   }
+
   to {
     -webkit-transform: rotate(359deg);
   }
 }
+
 @-moz-keyframes rotation {
   from {
     -moz-transform: rotate(0deg);
   }
+
   to {
     -moz-transform: rotate(359deg);
   }
 }
+
 @-o-keyframes rotation {
   from {
     -o-transform: rotate(0deg);
   }
+
   to {
     -o-transform: rotate(359deg);
   }
 }
+
 @keyframes rotation {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(359deg);
   }
+}
+
+.bg-black-50 {
+  background-color: #9b9b9b28;
 }
