@@ -52,7 +52,7 @@ export default function Landing() {
                 <div className="flex flex-col  text-center items-center">
                   <Image
                     alt="..."
-                    className="shadow-2xl rounded-full bg-black-50"
+                    className="shadow-2xl border-solid border-green-800 rounded-full bg-black-50 backdrop-brightness-50 backdrop-blur-sm"
                     src="/assets/img/logo.png"
                     width={"450"}
                     height={"450"}
