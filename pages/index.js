@@ -61,9 +61,10 @@ export default function Landing() {
                   <div className="">
                     <h1
                       id="logotext"
-                      className="text-white font-bold text-6xl box "
+                      className="text-white font-bold text-6xl  "
                     >
-                      NEVERCOMEX
+                      NEVERCOME
+                      <span className="box">X</span>
                     </h1>
                     <p className="mt-4 text-lg text-gray-300 ">
                       Full Stack Developer, always learning new technologies. 💻

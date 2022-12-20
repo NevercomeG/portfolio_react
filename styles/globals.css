@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 html,
 body {
   padding: 0;
@@ -11,7 +9,6 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   scroll-behavior: smooth;
-
 }
 
 a {
@@ -81,13 +78,9 @@ a {
   font-size: 4rem;
   background: #ff8177;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right,
-      #9114ff,
-      #da22ff);
+  background: -webkit-linear-gradient(to right, #9114ff, #da22ff);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right,
-      #8f0eff,
-      #da22ff);
+  background: linear-gradient(to right, #8f0eff, #da22ff);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
@@ -169,13 +162,9 @@ a {
 #card-2 {
   background: #bdc3c7;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right,
-      #2c3e50,
-      #bdc3c7);
+  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right,
-      #2c3e50,
-      #bdc3c7);
+  background: linear-gradient(to right, #2c3e50, #bdc3c7);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -579,50 +568,27 @@ a {
 .box {
   display: inline-block;
   background-image: url(https://i.pinimg.com/originals/80/79/f3/8079f35bd622625b4db763edfce6d026.gif);
+  background-size: 300%;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  position: relative;
+  word-wrap: break-word;
+  cursor: pointer;
+  transition: 0.1s color;
+}
+
+.box_1 {
+  display: inline-block;
+  background-image: url(https://i.pinimg.com/originals/80/79/f3/8079f35bd622625b4db763edfce6d026.gif);
   background-size: 100%;
   background-position: center;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-
   position: relative;
   word-wrap: break-word;
   cursor: pointer;
   transition: 0.1s color;
-
-}
-
-.box:hover {
-  color: #333;
-}
-
-
-
-.box::after {
-  content: '';
-  position: absolute;
-  background-image: url(https://i.pinimg.com/originals/80/79/f3/8079f35bd622625b4db763edfce6d026.gif);
-  background-size: 200%;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  z-index: -2;
-}
-
-.box::before {
-  content: '';
-  background: #333;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 5px;
-  transition: 0s bottom, 0.2S left;
-}
-
-.box:hover::before {
-  bottom: 100%;
 }

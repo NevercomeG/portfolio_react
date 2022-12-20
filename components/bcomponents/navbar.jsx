@@ -21,7 +21,7 @@ export default function Navbar(props) {
             }
           >
             <Link href="/page2" passHref>
-              NevercomeX
+              Nevercome<span className="box_1">X</span>
             </Link>
           </a>
           <button

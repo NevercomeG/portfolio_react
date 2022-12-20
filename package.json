@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "PORT=3005 next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cypress": "cypress open",
+    "cypress:headless": "cypress run",
+    "e2e": "start-server-and-test start http://localhost:3000 cypress",
+    "e2e:headless": "start-server-and-test start http://localhost:3000 cypress:headless"
   },
   "dependencies": {
     "eslint": "8.28.0",
@@ -21,6 +25,7 @@
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
     "autoprefixer": "^10.4.13",
+    "cypress": "^12.1.0",
     "postcss": "^8.4.19",
     "postcss-nesting": "^10.2.0",
     "sass": "^1.56.1",
