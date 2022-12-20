@@ -2,7 +2,7 @@ module.exports = {
   apps: [
     {
       name: "portfolio",
-      script: "pnpm",
+      script: "yarn",
       args: "start",
       watch: true,
       env: {
