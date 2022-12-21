@@ -582,7 +582,7 @@ a {
 .box_1 {
   display: inline-block;
   background-image: url(https://i.pinimg.com/originals/80/79/f3/8079f35bd622625b4db763edfce6d026.gif);
-  background-size: 100%;
+  background-size: 500%;
   background-position: center;
   background-clip: text;
   -webkit-background-clip: text;

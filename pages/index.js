@@ -54,8 +54,8 @@ export default function Landing() {
                     alt="..."
                     className="shadow-2xl border-solid border-green-800 rounded-full bg-black-50 backdrop-brightness-50 backdrop-blur-sm"
                     src="/assets/img/logo.png"
-                    width={"450"}
-                    height={"450"}
+                    width={"400"}
+                    height={"400"}
                   />
 
                   <div className="">
