@@ -9,7 +9,6 @@ module.exports = {
         NODE_ENV: "development",
         PORT: 3005,
       },
-      "post-deploy": "pm2 reload all",
     },
   ],
 };
