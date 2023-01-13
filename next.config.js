@@ -8,12 +8,6 @@ const nextConfig = {
 const path = require("path");
 
 module.exports = {
-  sassOptions: {
-    includePaths: [path.join(__dirname, "styles")],
-  },
-};
-
-module.exports = {
   images: {
     domains: [
       "images.unsplash.com",
@@ -25,5 +19,17 @@ module.exports = {
       "i.picsum.photos",
       "assets-global.website-files.com",
     ],
+  },
+  async redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/home",
+        permanent: true,
+      },
+    ];
+  },
+  sassOptions: {
+    includePaths: [path.join(__dirname, "styles")],
   },
 };
