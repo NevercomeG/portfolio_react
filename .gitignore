@@ -42,3 +42,5 @@ package-lock.json
 cypress
 
 cypress.config.ts
+
+yarn.lock
