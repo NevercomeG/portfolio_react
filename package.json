@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "PORT=3005 next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "stop-pm2": "pm2 delete portfolio"
   },
   "homepage": "/home",
   "dependencies": {

@@ -19,6 +19,8 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
+      - name: Stop PM2
+        run: yarn stop-pm2
       - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
@@ -30,4 +32,5 @@ jobs:
       - name: Reloading pm2
         run: |
           echo "Reloading pm2"
-      - run: pm2 reload all
+      - name: Start PM2
+        run: pm2 start ecosystem.config.js
