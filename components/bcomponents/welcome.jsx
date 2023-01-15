@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Welcome = () => {
   return (
-    <section className="pb-20 bg-gray-300">
+    <section className="pb-20 bg-gray-300 ">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap"></div>
 

@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function skills() {
   return (
     <section>
-      <div className="services" id="services">
+      <div className="services " id="services">
         <h1 className="text-white font-bold text-5xl shadow-lg">MY SKILLS</h1>
         <div className="services__wrapper">
           <div className="services__card">

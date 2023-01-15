@@ -11,8 +11,9 @@ import Description from "../components/bcomponents/description";
 import Welcome from "../components/bcomponents/welcome";
 import Form from "../components/scomponents/form";
 
-// import Leftpanel from "../components/scomponents/leftpanel.jsx";
-// import Rightpanel from "../components/scomponents/rightpanel.jsx";
+import Frontend from "../components/scomponents/frontend";
+import Backend from "../components/scomponents/backend";
+import Devops from "../components/scomponents/devops";
 
 export default function Landing() {
   return (
@@ -23,13 +24,19 @@ export default function Landing() {
       <Navbar transparent />
       <main>
         <Header />
+        <section className="bg-[#131313]">
+          <h1 className="text-5xl font-mono text-center py-5">WHAT I DO?</h1>
+          <Frontend />
+          <Backend />
+          <Devops />
+        </section>
         <Welcome />
         <Proyects />
-        <Skills />
+        {/* <Skills /> */}
         <Formation />
         <Description />
-        <Why />
-        <Form />
+        {/* <Why /> */}
+        {/* <Form /> */}
       </main>
       <Footer />
     </>

@@ -27,21 +27,27 @@ const Header = () => {
           <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
             <div className="flex flex-col  text-center items-center">
               <Image
-                alt="..."
+                alt=""
                 className="shadow-2xl border-solid border-green-800 rounded-full bg-black-50 backdrop-brightness-50 backdrop-blur-sm"
-                src="/assets/img/logo.png"
+                src=""
                 width={"400"}
                 height={"400"}
               />
 
               <div className="">
                 <h1 id="logotext" className="text-white font-bold text-6xl  ">
-                  NEVERCOME
-                  <span className="box">X</span>
+                  LUIS CUEVA
+                  <span className="box">S</span>
                 </h1>
-                <p className="mt-4 text-lg text-gray-300 ">
-                  Full Stack Developer, always learning new technologies. 💻
-                </p>
+                <div className="pt-2">
+                  <p className=" text-xl text-gray-300 text-bold ">
+                    Full Stack Developer && DevOps
+                  </p>
+                  <p className=" text-md text-gray-300 ">
+                    always learning new technologies.
+                  </p>
+                  <p>💻</p>
+                </div>
               </div>
             </div>
           </div>

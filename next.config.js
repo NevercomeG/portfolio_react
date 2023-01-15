@@ -3,9 +3,10 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   output: "standalone",
+  compiler: {
+    styledComponents: true,
+  },
 };
-
-const path = require("path");
 
 module.exports = {
   images: {
@@ -25,11 +26,8 @@ module.exports = {
       {
         source: "/",
         destination: "/home",
-        permanent: true,
+        permanent: false,
       },
     ];
-  },
-  sassOptions: {
-    includePaths: [path.join(__dirname, "styles")],
   },
 };
