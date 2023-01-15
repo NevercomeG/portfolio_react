@@ -26,7 +26,7 @@ module.exports = {
       {
         source: "/",
         destination: "/home",
-        permanent: false,
+        permanent: true,
       },
     ];
   },
