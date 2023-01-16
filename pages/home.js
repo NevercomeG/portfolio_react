@@ -16,30 +16,30 @@ import Backend from "../components/scomponents/backend";
 import Devops from "../components/scomponents/devops";
 
 export default function Landing() {
-  return (
-    <>
-      <Head>
-        <title>NevercomeX 💻 </title>
-      </Head>
-      <Navbar transparent />
-      <main className="font-mono">
-        <Header />
-        <section className="bg-[#131313]">
-          <h1 className="text-5xl text-center py-5">WHAT I DO?</h1>
-          <Frontend />
-          <Backend />
-          <Devops />
+	return (
+		<>
+			<Head>
+				<title>NevercomeX 💻 </title>
+			</Head>
+			<Navbar transparent />
+			<main className="font-mono">
+				<Header />
+				<section className="bg-[#131313]">
+					<h1 className="text-5xl text-center py-5">WHAT I DO?</h1>
+					<Frontend />
+					<Backend />
+					<Devops />
 
-          {/* <Welcome /> */}
-          <Projects />
-          {/* <Skills /> */}
-          <Formation />
-          {/* <Description /> */}
-          {/* <Why /> */}
-          {/* <Form /> */}
-        </section>
-      </main>
-      <Footer />
-    </>
-  );
+					{/* <Welcome /> */}
+					<Projects />
+					{/* <Skills /> */}
+					<Formation />
+					{/* <Description /> */}
+					{/* <Why /> */}
+					{/* <Form /> */}
+				</section>
+			</main>
+			<Footer />
+		</>
+	);
 }

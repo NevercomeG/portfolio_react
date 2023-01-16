@@ -5,13 +5,13 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 //
 
 export default function formation() {
-  return (
-    <div className="bg-center bg-cover lg:flex lg:flex-col items-center justify-center p-5 -space-y-6 ">
-      <div className="text-center">
-        <h1 className="text-white font-bold text-5xl shadow-lg">Projects</h1>
-        <h2 className="py-4">working in progress</h2>
-      </div>
-      {/* <div className=" lg:flex lg:flex-col justify-between py-20 hidden  ">
+	return (
+		<div className="bg-center bg-cover lg:flex lg:flex-col items-center justify-center p-5 -space-y-6 ">
+			<div className="text-center">
+				<h1 className="text-white font-bold text-5xl shadow-lg">Projects</h1>
+				<h2 className="py-4">working in progress</h2>
+			</div>
+			{/* <div className=" lg:flex lg:flex-col justify-between py-20 hidden  ">
         <div className="lg:m-10 lg:h-[15rem] lg:w-[50rem] h-[10rem] w-[45rem] rounded-lg lg:flex lg:flex-row-reverse flex flex-col   items-center text-white bg-[#414141] border-[#313131] shadow-sm shadow-slate-200 ">
           <div className=" h-[15rem] w-[50rem]  flex flex-row">
             <Image
@@ -143,6 +143,6 @@ export default function formation() {
           </div>
         </div>
       </div> */}
-    </div>
-  );
+		</div>
+	);
 }
