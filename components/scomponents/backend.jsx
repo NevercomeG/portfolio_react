@@ -5,7 +5,7 @@ export default function Backend() {
     <section className="relative block  ">
       <div className="grid lg:grid-flow-col items-center justify-center ">
         <div className="lg:pr-28 m-4">
-          <h1 className="text-[50px] font-bold text-white ">
+          <h1 className="text-[50px] font-bold text-white font-mono ">
             Back-End Development
           </h1>
           <div className="py-6 space-y-6  ">
@@ -44,7 +44,7 @@ export default function Backend() {
               </div>
             </div>
           </div>
-          <ul className=" space-y-3 ">
+          <ul className=" space-y-3 font-mono ">
             <li>➖ Node.js, Express, Django, etc.</li>
             <li>➖ MongoDB & MySQL.</li>
             <li>➖ REST API, GraphQL, etc.</li>

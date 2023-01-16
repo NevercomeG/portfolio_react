@@ -14,7 +14,7 @@ export default function Frontend() {
           />
         </div>
         <div className="lg:pl-32 m-4 ">
-          <h1 className="text-[50px] font-bold text-white ">
+          <h1 className="text-[50px] font-bold text-white font-mono ">
             Front-end Development
           </h1>
           <div className="py-6 space-y-6">
@@ -51,7 +51,7 @@ export default function Frontend() {
                   alt=""
                 />
               </div>
-              <div className="py-2 lg:py-0 grid grid-flow-col space-x-2">
+              <div className="py-2 lg:py-0 grid grid-flow-col space-x-5">
                 <div className="h-[75px] w-[75px] rounded-lg grid flex-col items-center justify-center bg-white text-white">
                   <Image
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
@@ -80,7 +80,7 @@ export default function Frontend() {
               </div>
             </div>
 
-            <ul className=" space-y-3 ">
+            <ul className=" space-y-3 font-mono ">
               <li>➖ HTML, CSS, JavaScript, TypeScript, etc.</li>
               <li>➖ Tailwind CSS, Bootstrap, Material UI, etc.</li>
               <li>➖ React, Next.js.</li>

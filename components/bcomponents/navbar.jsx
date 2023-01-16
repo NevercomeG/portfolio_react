@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
 export default function Navbar(props) {
-  const [navbarOpen, setNavbarOpen] = React.useState(false);
+  const [navbarOpen, setNavbarOpen] = useState(false);
+
   return (
     <nav
       className={
         (props.transparent
-          ? "top-0 absolute z-50 w-full"
+          ? "top-0 fixed  z-50 w-full"
           : "relative shadow-lg bg-white") +
         " flex flex-wrap items-center justify-between px-2 py-3 backdrop-brightness-50  backdrop-blur"
       }

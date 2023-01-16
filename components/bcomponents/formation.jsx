@@ -1,9 +1,10 @@
 import React from "react";
+
 import Image from "next/image";
 
 export default function formation() {
   return (
-    <section className="bg-slate-900">
+    <section className="">
       <div className="formation" id="formation">
         <h1 className="text-white font-bold text-5xl shadow-lg">Formation </h1>
         <div className="formation__wrapper">

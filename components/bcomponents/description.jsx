@@ -28,7 +28,7 @@ const description = () => {
               <h3 className="text-3xl font-semibold">
                 As a fullstack web developer
               </h3>
-              <p className="mt-4 text-lg leading-relaxed text-gray-600">
+              <p className="mt-4 text-lg leading-relaxed text-white">
                 I have a passion for building complex and dynamic web
                 applications that deliver a seamless user experience. With over
                 7 years of experience in the field, I have gained a strong
@@ -44,7 +44,7 @@ const description = () => {
                       </span>
                     </div>
                     <div>
-                      <h4 className="text-gray-600">
+                      <h4 className="text-white">
                         Web development best practices
                       </h4>
                     </div>
@@ -58,7 +58,7 @@ const description = () => {
                       </span>
                     </div>
                     <div>
-                      <h4 className="text-gray-600">
+                      <h4 className="text-white">
                         Experience with modern web development frameworks
                       </h4>
                     </div>
@@ -72,7 +72,7 @@ const description = () => {
                       </span>
                     </div>
                     <div>
-                      <h4 className="text-gray-600">
+                      <h4 className="text-white">
                         Strong problem-solving skills and ability to work
                         independently or as part of a team
                       </h4>

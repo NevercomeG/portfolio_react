@@ -4,12 +4,14 @@ import Image from "next/image";
 export default function Devops() {
   return (
     <section className="relative block py-10  ">
-      <div className="grid lg:grid-flow-col items-center justify-center ">
+      <div className="flex lg:grid lg:grid-flow-col flex-col-reverse  items-center justify-center ">
         <div className="">
           <Image src="/assets/img/vercel.svg" width={500} height={500} alt="" />
         </div>
-        <div className="lg:pl-72 m-4">
-          <h1 className="text-[50px] font-bold text-white ">DevOps</h1>
+        <div className="lg:pl-64 m-4">
+          <h1 className="text-[50px] font-bold text-white font-mono ">
+            DevOps
+          </h1>
           <div className="py-6 space-y-6">
             <div className="grid grid-cols-4 lg:flex lg:flex-row lg:space-x-2 space-">
               <div className="h-[75px] w-[75px] rounded-lg grid flex-col items-center justify-center bg-white text-white">
@@ -56,7 +58,7 @@ export default function Devops() {
               </div>
             </div>
 
-            <ul className=" space-y-3 ">
+            <ul className=" space-y-3 font-mono ">
               <li>➖ AWS, GCP, Azure, Digital Ocean, Heroku, Vercel, etc.</li>
               <li>➖ Docker, Kubernetes, Nginx, etc.</li>
               <li>➖ Github. </li>

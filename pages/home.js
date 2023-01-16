@@ -4,7 +4,7 @@ import Navbar from "../components/bcomponents/navbar";
 import Footer from "../components/bcomponents/footer";
 import Skills from "../components/bcomponents/skills";
 import Formation from "../components/bcomponents/formation";
-import Proyects from "../components/bcomponents/proyects";
+import Projects from "../components/bcomponents/projects";
 import Header from "../components/bcomponents/header";
 import Why from "../components/bcomponents/why";
 import Description from "../components/bcomponents/description";
@@ -22,21 +22,22 @@ export default function Landing() {
         <title>NevercomeX 💻 </title>
       </Head>
       <Navbar transparent />
-      <main>
+      <main className="font-mono">
         <Header />
         <section className="bg-[#131313]">
-          <h1 className="text-5xl font-mono text-center py-5">WHAT I DO?</h1>
+          <h1 className="text-5xl text-center py-5">WHAT I DO?</h1>
           <Frontend />
           <Backend />
           <Devops />
+
+          {/* <Welcome /> */}
+          <Projects />
+          {/* <Skills /> */}
+          <Formation />
+          {/* <Description /> */}
+          {/* <Why /> */}
+          {/* <Form /> */}
         </section>
-        <Welcome />
-        <Proyects />
-        {/* <Skills /> */}
-        <Formation />
-        <Description />
-        {/* <Why /> */}
-        {/* <Form /> */}
       </main>
       <Footer />
     </>
