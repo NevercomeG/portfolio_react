@@ -8,7 +8,7 @@ export default function Devops() {
 				<div className="">
 					<Image src="/assets/img/vercel.svg" width={500} height={500} alt="" />
 				</div>
-				<div className="lg:pl-64 m-4">
+				<div className="lg:pl-44 m-4">
 					<h1 className="text-[50px] font-bold text-white font-mono ">
 						DevOps
 					</h1>
