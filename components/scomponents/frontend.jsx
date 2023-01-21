@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Frontend() {
 	return (
-		<section className="relative block py-10  ">
+		<section className="relative block py-10 oculto ">
 			<div className="grid lg:grid-flow-col items-center justify-center ">
 				<div className="">
 					<Image

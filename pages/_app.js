@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import "../styles/carousel.css";
+import "../styles/custom.css";
 import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
 
 import { config } from "@fortawesome/fontawesome-svg-core";

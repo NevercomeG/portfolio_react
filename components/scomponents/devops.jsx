@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Devops() {
 	return (
-		<section className="relative block py-10  ">
+		<section className="relative block py-10 oculto  ">
 			<div className="flex lg:grid lg:grid-flow-col flex-col-reverse  items-center justify-center ">
 				<div className="">
 					<Image src="/assets/img/vercel.svg" width={500} height={500} alt="" />
