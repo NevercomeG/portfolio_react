@@ -42,7 +42,7 @@ export default function Landing() {
 			<Navbar transparent />
 			<main className="font-mono">
 				<Header />
-				<Observer />
+
 				<section className="bg-[#131313]">
 					<h1 className="text-5xl text-center py-5">WHAT I DO?</h1>
 					<Frontend />
