@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Devops() {
 	return (
-		<section className="relative block py-10 oculto  ">
+		<section className="relative block py-10   ">
 			<div className="flex lg:grid lg:grid-flow-col flex-col-reverse  items-center justify-center ">
 				<div className="">
 					<Image src="/assets/img/vercel.svg" width={500} height={500} alt="" />
@@ -13,15 +13,8 @@ export default function Devops() {
 						DevOps
 					</h1>
 					<div className="py-6 space-y-6">
-						<div className="grid grid-cols-4 lg:flex lg:flex-row lg:space-x-2 space-">
-							<div className="h-[75px] w-[75px] rounded-lg grid flex-col items-center justify-center bg-white text-white">
-								<Image
-									src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg"
-									width={50}
-									height={50}
-									alt=""
-								/>
-							</div>
+						<div className=" flex flex-row space-x-2">
+
 							<div className="h-[75px] w-[75px] rounded-lg grid flex-col items-center justify-center bg-white text-white">
 								<Image
 									src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/digitalocean/digitalocean-original.svg"
@@ -46,7 +39,7 @@ export default function Devops() {
 									alt=""
 								/>
 							</div>
-							<div className="py-2 lg:py-0">
+
 								<div className="h-[75px] w-[75px] rounded-lg grid flex-col items-center justify-center bg-white text-white ">
 									<Image
 										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original-wordmark.svg"
@@ -54,7 +47,7 @@ export default function Devops() {
 										height={50}
 										alt="googlecloud"
 									/>
-								</div>
+	
 							</div>
 						</div>
 

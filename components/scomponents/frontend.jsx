@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function Frontend() {
 	return (
-		<section className="relative block py-10 oculto ">
-			<div className="grid lg:grid-flow-col items-center justify-center ">
+		<section className="relative block md:p-24  ">
+			<div className="grid lg:grid-flow-col  items-center justify-center ">
 				<div className="">
 					<Image
 						src="/assets/img/frontend.svg"
@@ -17,8 +17,8 @@ export default function Frontend() {
 					<h1 className="text-[50px] font-bold text-white font-mono ">
 						Front-end Development
 					</h1>
-					<div className="py-6 space-y-6">
-						<div className="grid grid-cols-4 lg:flex lg:flex-row lg:space-x-2">
+					<div className="py-4 space-y-2">
+						<div className=" flex flex-row space-x-2">
 							<div className="h-[75px] w-[75px] rounded-lg grid flex-col items-center justify-center bg-white text-white ">
 								<Image
 									src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
@@ -51,7 +51,9 @@ export default function Frontend() {
 									alt=""
 								/>
 							</div>
-							<div className="py-2 lg:py-0 grid grid-flow-col space-x-5">
+							</div>
+							<div className="pb-6 flex flex-row space-x-2">
+							<div className=" lg:py-0 grid grid-flow-col space-x-2">
 								<div className="h-[75px] w-[75px] rounded-lg grid flex-col items-center justify-center bg-white text-white">
 									<Image
 										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"

@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 export default function Backend() {
 	return (
-		<section className="relative block oculto ">
+		<section className=" ">
 			<div className="grid lg:grid-flow-col items-center justify-center ">
 				<div className="lg:pr-28 m-4">
 					<h1 className="text-[50px] font-bold text-white font-mono ">

@@ -18,45 +18,8 @@ export default function Footer() {
 							website vision to life..
 						</h5>
 						<div className="mt-6 space-x-1">
-							<a
-								href="https://twitter.com/NevercomeX"
-								target="_blank"
-								rel="noreferrer"
-								className="text-gray-800 hover:text-gray-600 text-lg"
-							>
-								<button
-									className="bg-white text-blue-400 p-3 text-center inline-flex items-center justify-center w-10 h-10 mb-5 shadow-lg rounded-full"
-									type="button"
-								>
-									<i className="flex fab fa-twitter"></i>
-								</button>
-							</a>
-							<a
-								href="#"
-								target="_blank"
-								rel="noreferrer"
-								className="text-gray-800 hover:text-gray-600 text-lg"
-							>
-								<button
-									className="bg-white text-blue-500 p-3 text-center inline-flex items-center justify-center w-10 h-10 mb-5 shadow-lg rounded-full "
-									type="button"
-								>
-									<i className="flex fab fa-facebook-square"></i>
-								</button>
-							</a>
-							<a
-								href="#"
-								target="_blank"
-								rel="noreferrer"
-								className="text-gray-800 hover:text-gray-600 text-lg"
-							>
-								<button
-									className="bg-white text-orange-400 p-3 text-center inline-flex items-center justify-center w-10 h-10 mb-5 shadow-lg rounded-full "
-									type="button"
-								>
-									<i className="flex fab fa-instagram"></i>
-								</button>
-							</a>
+
+
 							<a
 								href="https://github.com/NevercomeX"
 								target="_blank"
@@ -82,7 +45,7 @@ export default function Footer() {
 									<li>
 										<a
 											className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-											href="https://www.creative-tim.com/presentation"
+											href=""
 										>
 											Home
 										</a>
@@ -90,7 +53,7 @@ export default function Footer() {
 									<li>
 										<a
 											className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-											href="https://www.creative-tim.com/presentation"
+											href=""
 										>
 											About
 										</a>
@@ -98,7 +61,7 @@ export default function Footer() {
 									<li>
 										<a
 											className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-											href="https://www.creative-tim.com/presentation"
+											href=""
 										>
 											Skills
 										</a>
@@ -106,7 +69,7 @@ export default function Footer() {
 									<li>
 										<a
 											className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-											href="https://www.creative-tim.com/presentation"
+											href=""
 										>
 											Experience
 										</a>
@@ -114,7 +77,7 @@ export default function Footer() {
 									<li>
 										<a
 											className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-											href="https://blog.creative-tim.com"
+											href=""
 										>
 											Blog
 										</a>
@@ -129,7 +92,7 @@ export default function Footer() {
 									<li>
 										<a
 											className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-											href="https://creative-tim.com/contact-us"
+											href=""
 										>
 											Contact Me
 										</a>
@@ -137,7 +100,7 @@ export default function Footer() {
 									<li>
 										<a
 											className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-											href="https://www.creative-tim.com/bootstrap-themes/free"
+											href=""
 										>
 											Resume
 										</a>
@@ -145,8 +108,7 @@ export default function Footer() {
 									<li>
 										<a
 											className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-											href="https://www.github.com/creativetimofficial"
-										>
+											href=""										>
 											Github
 										</a>
 									</li>
