@@ -1,5 +1,6 @@
 import React from 'react';
 
+import PopupWidget from '@/components/bcomponents/popupWidget';
 import Layout from '@/components/layout/Layout';
 import Seo from '@/components/Seo';
 
@@ -8,12 +9,11 @@ import Header from '../components/bcomponents/header';
 import Projects from '../components/bcomponents/projects';
 import Backend from '../components/scomponents/backend';
 import Devops from '../components/scomponents/devops';
-// import Form from '../components/scomponents/form';
 import Frontend from '../components/scomponents/frontend';
-
 export default function Landing() {
   return (
     <>
+      <PopupWidget />
       <Layout>
         <Seo />
         <main className='font-mono'>
@@ -25,7 +25,6 @@ export default function Landing() {
             <Devops />
             <Projects />
             <Formation />
-            {/* <Form /> */}
           </section>
         </main>
       </Layout>

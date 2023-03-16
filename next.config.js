@@ -35,6 +35,7 @@ const nextConfig = {
       's3-us-west-2.amazonaws.com',
       'i.picsum.photos',
       'weblium.com',
+      'img.icons8.com',
       'assets-global.website-files.com',
     ],
   },
