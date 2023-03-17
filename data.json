@@ -1,0 +1,63 @@
+{
+  "name": "Luis Cuevas",
+  "avatar": "/assets/img/8bitpix.png",
+  "maincard": [
+    {
+      "title": "Portfolio",
+      "href": "/home",
+      "image": "/assets/img/logo.png",
+      "message": "Vence tu timidez | Mejora tus relaciones | Aprende a ser un lider"
+    }
+  ],
+  "links": [
+    {
+      "title": "Web desings",
+      "href": "/consultas",
+      "image": "",
+      "message": "Habilidades Sociales | Inteligencia Emocional | Relaciones de Pareja | Psicoterapia"
+    }
+  ],
+  "socials": [
+    {
+      "title": "Github",
+      "href": "https://www.youtube.com/@EscuelaRedPill",
+      "image": "https://img.icons8.com/material-outlined/96/000000/github.png"
+    },
+    {
+      "title": "Linkedin",
+      "href": "https://www.linkedin.com/in/luis-solano-a20683208/",
+      "image": "https://img.icons8.com/office/96/null/linkedin.png"
+    }
+  ],
+  "Navbar": [
+    {
+      "title": "Home",
+      "href": "/home"
+    },
+    {
+      "title": "Consultas",
+      "href": "/consultas"
+    },
+    {
+      "title": "Consulting",
+      "href": "/consulting"
+    },
+    {
+      "title": "Articulos",
+      "href": "/articulos"
+    },
+    {
+      "title": "Contacto",
+      "href": "/contacto"
+    },
+    {
+      "title": "About",
+      "href": "/about"
+    }
+  ],
+  "footer2": [
+    {
+      "message": ""
+    }
+  ]
+}

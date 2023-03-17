@@ -16,7 +16,8 @@ export default function PopupWidgetTop() {
   const userName = useWatch({ control, name: 'name', defaultValue: 'Someone' });
 
   const onSubmit = async (data: any, e: any) => {
-    await fetch('http://localhost:8200/emailss', {
+    const api = process.env.NEXT_PUBLIC_URL ?? '';
+    await fetch(api, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -29,12 +30,12 @@ export default function PopupWidgetTop() {
 
         if (response.status) {
           setIsSuccess(true);
-          // setMessage(response.message);
+          setMessage(' ');
           e.target.reset();
           reset();
         } else {
           setIsSuccess(false);
-          // setMessage(response.message);
+          setMessage(' ');
         }
       })
       .catch((error) => {
@@ -108,7 +109,7 @@ export default function PopupWidgetTop() {
               leave='transition duration-200 transform ease'
               leaveTo='opacity-0 translate-y-5'
             >
-              <Disclosure.Panel className=' left-0 flex  max-h-full min-h-[200px] w-full flex-col overflow-hidden rounded-md  border-black bg-white shadow-2xl  sm:h-[600px] sm:max-h-[calc(100vh-120px)] sm:w-[350px]'>
+              <Disclosure.Panel className='  left-0 flex  max-h-full min-h-[200px] w-3/4 flex-col overflow-hidden rounded-md  border-black bg-white shadow-2xl  sm:h-[600px] sm:max-h-[calc(100vh-120px)] sm:w-[350px]'>
                 <div className='flex h-32 flex-col items-center justify-center bg-[#121212] p-5'>
                   <h3 className='text-lg text-white'>Want to contact me?</h3>
                   <p className='text-white opacity-50'>
@@ -188,33 +189,6 @@ export default function PopupWidgetTop() {
                       </div>
                       <div className='mb-4'>
                         <label
-                          htmlFor='full_name'
-                          className='mb-2 block text-sm text-gray-600 dark:text-gray-400'
-                        >
-                          Country
-                        </label>
-                        <input
-                          type='text'
-                          id='full_name'
-                          placeholder='Country'
-                          {...register('country', {
-                            required: 'Full name is required',
-                            maxLength: 80,
-                          })}
-                          className={`w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-black placeholder-gray-300 focus:outline-none focus:ring   ${
-                            errors.name
-                              ? 'border-red-600 ring-red-100 focus:border-red-600'
-                              : 'border-gray-300 ring-indigo-100 focus:border-indigo-600'
-                          }`}
-                        />
-                        {errors.name && (
-                          <div className='invalid-feedback mt-1 text-sm text-red-400'>
-                            {/* <p>{errors.name.message}</p> */}
-                          </div>
-                        )}
-                      </div>
-                      <div className='mb-4'>
-                        <label
                           htmlFor='message'
                           className='mb-2 block text-sm text-gray-600 dark:text-gray-400'
                         >
@@ -222,7 +196,7 @@ export default function PopupWidgetTop() {
                         </label>
                         <textarea
                           id='message'
-                          {...register('lastName', {
+                          {...register('message', {
                             required: 'Enter your Message',
                           })}
                           placeholder='Your Message'
