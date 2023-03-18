@@ -1,15 +1,15 @@
 import React from 'react';
 
-import PopupWidget from '@/components/bcomponents/popupWidget';
-import Layout from '@/components/layout/Layout';
-import Seo from '@/components/Seo';
+import Layout from '@/components/global/layout/Layout';
+import Seo from '@/components/global/Seo';
+import PopupWidget from '@/components/portfolio/popupWidget';
 
-import Formation from '../components/bcomponents/formation';
-import Header from '../components/bcomponents/header';
-import Projects from '../components/bcomponents/projects';
-import Backend from '../components/scomponents/backend';
-import Devops from '../components/scomponents/devops';
-import Frontend from '../components/scomponents/frontend';
+import Backend from '../components/portfolio/backend';
+import Devops from '../components/portfolio/devops';
+import Formation from '../components/portfolio/formation';
+import Frontend from '../components/portfolio/frontend';
+import Header from '../components/portfolio/header';
+import Projects from '../components/portfolio/projects';
 export default function Landing() {
   return (
     <>

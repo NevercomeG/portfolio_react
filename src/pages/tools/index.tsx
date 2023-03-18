@@ -1,10 +1,10 @@
 import * as React from 'react';
 
-import Layout from '@/components/layout/Layout';
-import ArrowLink from '@/components/links/ArrowLink';
-import ButtonLink from '@/components/links/ButtonLink';
-import UnderlineLink from '@/components/links/UnderlineLink';
-import UnstyledLink from '@/components/links/UnstyledLink';
+import Layout from '@/components/global/layout/Layout';
+import ArrowLink from '@/components/global/links/ArrowLink';
+import ButtonLink from '@/components/global/links/ButtonLink';
+import UnderlineLink from '@/components/global/links/UnderlineLink';
+import UnstyledLink from '@/components/global/links/UnstyledLink';
 import Seo from '@/components/Seo';
 
 /**

@@ -16,6 +16,11 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
+      "@components/*": ["components/*"],
+      "@pages/*": ["pages/*"],
+      "@styles/*": ["styles/*"],
+      "@hooks/*": ["hooks/*"],
+      "@layouts/*": ["layout/*"],
       "~/*": ["./public/*"]
     },
     "incremental": true
