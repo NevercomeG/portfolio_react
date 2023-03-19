@@ -5,7 +5,7 @@ import ArrowLink from '@/components/global/links/ArrowLink';
 import ButtonLink from '@/components/global/links/ButtonLink';
 import UnderlineLink from '@/components/global/links/UnderlineLink';
 import UnstyledLink from '@/components/global/links/UnstyledLink';
-import Seo from '@/components/Seo';
+import Seo from '@/components/global/Seo';
 
 /**
  * SVGR Support

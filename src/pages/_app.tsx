@@ -1,6 +1,5 @@
 import { config } from '@fortawesome/fontawesome-svg-core';
 import { AppProps } from 'next/app';
-import { SessionProvider } from 'next-auth/react';
 
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import '../../node_modules/@fortawesome/fontawesome-free/css/all.css';
@@ -16,11 +15,7 @@ import '@/styles/globals.css';
  */
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
-  return (
-    <SessionProvider session={pageProps.session}>
-      <Component {...pageProps} />
-    </SessionProvider>
-  );
+  return <Component {...pageProps} />;
 };
 
 export default MyApp;

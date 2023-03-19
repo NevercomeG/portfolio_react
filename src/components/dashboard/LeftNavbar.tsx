@@ -20,6 +20,8 @@ const LeftNavbar = ({ menu }: { menu: Menus[] }) => {
         <Image
           src='https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80'
           alt='User'
+          width={100}
+          height={100}
           className='mx-auto mb-6 mt-11 h-14 rounded-l-2xl rounded-r-2xl'
         />
         <p className='mr-14 mt-4 text-lg font-bold text-white '>John Doe</p>
