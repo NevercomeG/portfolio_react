@@ -4,6 +4,8 @@ import Router from 'next/router';
 import React, { useState } from 'react';
 import { useForm, useWatch } from 'react-hook-form';
 
+import Button from '@/components/global/buttons/Button';
+
 const Login: NextPage = () => {
   const {
     register,
@@ -29,16 +31,18 @@ const Login: NextPage = () => {
       body: JSON.stringify(data, null, 2),
     })
       .then(async (response) => {
-        console.log(response.status);
         if (response.status === 200) {
           const json = await response.json();
           const token = json.accessToken;
-          Router.push('/dashboard');
+
           sessionStorage.setItem('token', token);
           setIsSuccess(true);
           setMessage(' ');
           e.target.reset();
           reset();
+          setTimeout(() => {
+            Router.push('/dashboard');
+          }, 5000);
         } else {
           setIsSuccess(false);
           setMessage(' ');
@@ -65,7 +69,7 @@ const Login: NextPage = () => {
               height={150}
             />
           </div>
-          <div className='mt-6 rounded-lg p-4 md:w-8/12 lg:ml-6 lg:w-[20%]'>
+          <div className='mt-6 rounded-lg p-4 md:w-8/12 lg:w-[20%]'>
             {!isSubmitSuccessful && (
               <form onSubmit={handleSubmit(onSubmit)} noValidate>
                 <input
@@ -156,7 +160,7 @@ const Login: NextPage = () => {
                     </a>
                   </div>
                 </div>
-                <button
+                <Button
                   type='submit'
                   className='bg-primary inline-block w-full rounded px-7 pt-3 pb-2.5 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]'
                   data-te-ripple-init
@@ -184,9 +188,9 @@ const Login: NextPage = () => {
                       ></path>
                     </svg>
                   ) : (
-                    'Send Message'
+                    'Log In'
                   )}
-                </button>
+                </Button>
 
                 <div className='my-4 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-neutral-300 after:mt-0.5 after:flex-1 after:border-t after:border-neutral-300'>
                   <p className='mx-4 mb-0 text-center font-semibold dark:text-neutral-200'>
@@ -204,11 +208,12 @@ const Login: NextPage = () => {
                 >
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
-                    className='mr-2 h-3.5 w-3.5'
-                    fill='currentColor'
-                    viewBox='0 0 24 24'
+                    x='0px'
+                    y='0px'
+                    viewBox='0 0 35 35'
+                    className='mr-2 h-5 w-5'
                   >
-                    <path d='M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z' />
+                    <path d='M 15.003906 3 C 8.3749062 3 3 8.373 3 15 C 3 21.627 8.3749062 27 15.003906 27 C 25.013906 27 27.269078 17.707 26.330078 13 L 25 13 L 22.732422 13 L 15 13 L 15 17 L 22.738281 17 C 21.848702 20.448251 18.725955 23 15 23 C 10.582 23 7 19.418 7 15 C 7 10.582 10.582 7 15 7 C 17.009 7 18.839141 7.74575 20.244141 8.96875 L 23.085938 6.1289062 C 20.951937 4.1849063 18.116906 3 15.003906 3 z'></path>
                   </svg>
                   Continue with Google
                 </a>
@@ -242,16 +247,14 @@ const Login: NextPage = () => {
                       strokeWidth='3'
                     />
                   </svg>
-                  <h3 className='py-5 text-xl text-green-500'>
-                    Message sent successfully
-                  </h3>
+                  <h3 className='py-5 text-xl text-green-500'>Login you in</h3>
                   <p className='text-gray-700 md:px-3'>{Message}</p>
-                  <button
+                  {/* <button
                     className='mt-6 text-indigo-600 focus:outline-none'
                     onClick={() => reset()}
                   >
                     Go back
-                  </button>
+                  </button> */}
                 </div>
               </>
             )}
