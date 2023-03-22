@@ -36,16 +36,14 @@ const Header = () => {
                   height='200'
                 />
 
-                <div className='lg:text-left   '>
-                  <h1 className='font-mono text-6xl font-semibold text-white '>
-                    LUIS
-                  </h1>{' '}
-                  <h1 className='font-mono text-6xl font-semibold text-white '>
+                <div className='text-white lg:text-left   '>
+                  <h1 className='font-mono text-6xl font-semibold '>LUIS</h1>{' '}
+                  <h1 className='font-mono text-6xl font-semibold  '>
                     CUEVA
                     <span className='box'>S</span>
                   </h1>
-                  <div className='pt-2'>
-                    <p className=' text-bold font-mono text-xl  text-gray-300 '>
+                  <div className='pt-2 text-gray-300'>
+                    <p className=' text-bold font-mono text-xl   '>
                       <Typewriter
                         options={{
                           strings: [
@@ -62,10 +60,9 @@ const Header = () => {
                         }}
                       />
                     </p>
-                    <p className='text-md font-mono text-gray-300 '>
+                    <p className='text-md font-mono  '>
                       Always learning new technologies. 💻
                     </p>
-                    <p></p>
                   </div>
                 </div>
               </div>

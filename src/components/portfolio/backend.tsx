@@ -5,7 +5,7 @@ export default function Backend() {
     <section className=' '>
       <div className='grid items-center justify-center lg:grid-flow-col '>
         <div className='m-4 lg:pr-28'>
-          <h1 className='font-mono text-[50px] font-bold text-white '>
+          <h1 className='font-mono text-[50px] font-bold leading-none text-white '>
             Back-End Development
           </h1>
           <div className='space-y-6 py-6  '>
@@ -44,7 +44,7 @@ export default function Backend() {
               </div>
             </div>
           </div>
-          <ul className=' space-y-3 font-mono '>
+          <ul className=' space-y-3 font-mono text-white'>
             <li>➖ Node.js, Express, Django, etc.</li>
             <li>➖ MongoDB & MySQL.</li>
             <li>➖ REST API, GraphQL, etc.</li>

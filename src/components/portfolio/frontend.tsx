@@ -14,7 +14,7 @@ export default function Frontend() {
           />
         </div>
         <div className='m-4 lg:pl-32 '>
-          <h1 className='font-mono text-[50px] font-bold text-white '>
+          <h1 className='space-y-2 font-mono text-[50px] font-bold leading-none text-white '>
             Front-end Development
           </h1>
           <div className='space-y-2 py-4'>
@@ -82,7 +82,7 @@ export default function Frontend() {
               </div>
             </div>
 
-            <ul className=' space-y-3 font-mono '>
+            <ul className=' space-y-3 font-mono text-white'>
               <li>➖ HTML, CSS, JavaScript, TypeScript, etc.</li>
               <li>➖ Tailwind CSS, Bootstrap, Material UI, etc.</li>
               <li>➖ React, Next.js.</li>

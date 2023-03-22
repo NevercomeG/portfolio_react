@@ -49,7 +49,7 @@ export default function Devops() {
               </div>
             </div>
 
-            <ul className=' space-y-3 font-mono '>
+            <ul className=' space-y-3 font-mono text-white '>
               <li>➖ AWS, GCP, Azure, Digital Ocean, Heroku, Vercel, etc.</li>
               <li>➖ Docker, Kubernetes, Nginx, etc.</li>
               <li>➖ Github. </li>
