@@ -6,9 +6,29 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
+      screens: {
+        xs: '575px',
+        // => @media (min-width: 320px) { ... }
+
+        sm: '576px',
+        // => @media (min-width: 640px) { ... }
+
+        md: '898px',
+        // => @media (min-width: 768px) { ... }
+
+        lg: '1200px',
+        // => @media (min-width: 1024px) { ... }
+
+        xl: '1359px',
+        // => @media (min-width: 1280px) { ... }
+
+        xxl: '1536px',
+        // => @media (min-width: 1536px) { ... }
+      },
       fontFamily: {
         primary: ['Inter', ...fontFamily.sans],
       },
+
       colors: {
         primary: {
           // Customize it on globals.css :root
@@ -25,6 +45,7 @@ module.exports = {
         },
         dark: '#222222',
       },
+
       keyframes: {
         flicker: {
           '0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100%': {

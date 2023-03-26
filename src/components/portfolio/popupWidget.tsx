@@ -103,7 +103,7 @@ export default function PopupWidgetTop() {
               </Transition>
             </Disclosure.Button>
             <Transition
-              className='fixed  bottom-[100px] top-0 right-0 left-0  z-50 sm:top-auto sm:right-5 sm:left-auto'
+              className='fixed  bottom-[80px] top-4 right-0 left-4  z-50 sm:top-auto sm:right-5 sm:left-auto'
               enter='transition duration-200 transform ease'
               enterFrom='opacity-0 translate-y-5'
               leave='transition duration-200 transform ease'
