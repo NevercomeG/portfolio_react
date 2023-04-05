@@ -33,14 +33,14 @@ export default function Social({
       <Link
         passHref={true}
         href={href}
-        target='_blank'
-        rel='noopener noreferrer'
-        className='flex w-full items-center  justify-between text-center'
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex w-full items-center  justify-between text-center"
       >
-        <li className=' relative flex h-12 flex-grow-0  items-center p-0 '>
+        <li className=" relative flex h-12 grow-0  items-center p-0 ">
           {image && (
             <Image
-              className='inline-block w-[42px] min-w-[42px] rounded-md'
+              className="inline-block w-[42px] min-w-[42px] rounded-md"
               alt={title}
               src={image}
               width={100}
@@ -48,7 +48,7 @@ export default function Social({
             />
           )}
         </li>
-        <div className='flex w-full flex-grow-[1] flex-col items-center justify-center '>
+        <div className="flex w-full grow-[1] flex-col items-center justify-center ">
           <h1
             className={` font-bold   ${
               title === 'Tiktok' ? 'text-black' : 'text-white'
@@ -57,10 +57,10 @@ export default function Social({
             {title}
           </h1>
         </div>
-        <div className=' relative flex h-12 flex-grow-0  items-center p-0 '>
+        <div className=" relative flex h-12 grow-0  items-center p-0 ">
           {image && (
             <Image
-              className='inline-block w-[42px] min-w-[42px] rounded-md'
+              className="inline-block w-[42px] min-w-[42px] rounded-md"
               alt={title}
               src={image}
               width={100}

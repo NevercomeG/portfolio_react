@@ -1,10 +1,8 @@
 import * as React from 'react';
 
+import type { UnstyledLinkProps } from '@/components/global/links/UnstyledLink';
+import UnstyledLink from '@/components/global/links/UnstyledLink';
 import clsxm from '@/lib/clsxm';
-
-import UnstyledLink, {
-  UnstyledLinkProps,
-} from '@/components/global/links/UnstyledLink';
 
 const PrimaryLinkVariant = ['primary', 'basic'] as const;
 type PrimaryLinkProps = {
@@ -21,7 +19,7 @@ const PrimaryLink = React.forwardRef<HTMLAnchorElement, PrimaryLinkProps>(
           'inline-flex items-center',
           'focus:outline-none focus-visible:rounded focus-visible:ring focus-visible:ring-primary-500 focus-visible:ring-offset-2',
           'font-medium',
-          //#region  //*=========== Variant ===========
+          // #region  //*=========== Variant ===========
           variant === 'primary' && [
             'text-primary-500 hover:text-primary-600 active:text-primary-700',
             'disabled:text-primary-200',
@@ -30,7 +28,7 @@ const PrimaryLink = React.forwardRef<HTMLAnchorElement, PrimaryLinkProps>(
             'text-black hover:text-gray-600 active:text-gray-800',
             'disabled:text-gray-300',
           ],
-          //#endregion  //*======== Variant ===========
+          // #endregion  //*======== Variant ===========
           className
         )}
       >

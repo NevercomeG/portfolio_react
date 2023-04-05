@@ -16,7 +16,7 @@ export const authHeader = (): I_AuthHeader => {
   const token = getTokenFromCookies();
   return {
     headers: {
-      Authorization: 'Bearer ' + token,
+      Authorization: `Bearer ${token}`,
     },
   };
 };

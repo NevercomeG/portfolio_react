@@ -3,10 +3,10 @@ import React from 'react';
 
 export default function formation() {
   return (
-    <div className='items-center justify-center -space-y-6 bg-cover bg-center p-5 lg:flex lg:flex-col '>
-      <div className='text-center'>
-        <h1 className='text-5xl font-bold text-white shadow-lg'>Projects</h1>
-        <h2 className='py-4 text-sm font-medium'>working in progress</h2>
+    <div className="items-center justify-center -space-y-6 bg-cover bg-center p-5 lg:flex lg:flex-col ">
+      <div className="text-center">
+        <h1 className="text-5xl font-bold text-white shadow-lg">Projects</h1>
+        <h2 className="py-4 text-sm font-medium">working in progress</h2>
       </div>
       {/* <div className=" lg:flex lg:flex-col justify-between py-20 hidden  ">
         <div className="lg:m-10 lg:h-[15rem] lg:w-[50rem] h-[10rem] w-[45rem] rounded-lg lg:flex lg:flex-row-reverse flex flex-col   items-center text-white bg-[#414141] border-[#313131] shadow-sm shadow-slate-200 ">

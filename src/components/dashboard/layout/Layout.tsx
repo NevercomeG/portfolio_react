@@ -16,13 +16,13 @@ interface Menus {
 }
 const Container = ({ children }: { children: React.ReactNode }) => (
   <main
-    className='relative min-h-screen w-full items-center  justify-between bg-gradient-to-b from-[#f5ccb1] to-[#d0cee2] '
+    className="relative min-h-screen w-full items-center  justify-between bg-gradient-to-b from-[#f5ccb1] to-[#d0cee2] "
     style={{
       background:
         'linear-gradient(to bottom,#f5ccb1 0%,#f5ccb1 50%, #d0cee2 50%, #d0cee2 100%) ',
     }}
   >
-    <Waves className='absolute h-full w-full pb-24' />
+    <Waves className="absolute h-full w-full pb-24" />
     {children}
   </main>
 );
@@ -36,11 +36,11 @@ const Layout = ({
   title: string;
   menu: Menus[];
 }) => (
-  <div className='flex h-screen '>
+  <div className="flex h-screen ">
     <Head>
       <title>{title}</title>
-      <meta charSet='utf-8' />
-      <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+      <meta charSet="utf-8" />
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
     <Container>
       <LeftNavbar menu={menu} />

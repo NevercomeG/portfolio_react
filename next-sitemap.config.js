@@ -1,13 +1,5 @@
-/**
- * @type {import('next-sitemap').IConfig}
- * @see https://github.com/iamvishnusankar/next-sitemap#readme
- */
+/** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  // !STARTERCONF Change the siteUrl
-  /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
-  siteUrl: 'https://nevercomex.com',
+  siteUrl: 'https://example.com', // FIXME: Change to the production URL
   generateRobotsTxt: true,
-  robotsTxtOptions: {
-    policies: [{ userAgent: '*', allow: '/' }],
-  },
 };

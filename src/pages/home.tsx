@@ -10,16 +10,17 @@ import Formation from '../components/portfolio/formation';
 import Frontend from '../components/portfolio/frontend';
 import Header from '../components/portfolio/header';
 import Projects from '../components/portfolio/projects';
+
 export default function Landing() {
   return (
     <>
       <PopupWidget />
       <Layout>
         <Seo />
-        <main className='font-mono'>
+        <main className="font-mono">
           <Header />
-          <section className='bg-[#131313] '>
-            <h1 className='py-5 text-center text-5xl'>WHAT I DO?</h1>
+          <section className="bg-[#131313] ">
+            <h1 className="py-5 text-center text-5xl">WHAT I DO?</h1>
             <Frontend />
             <Backend />
             <Devops />

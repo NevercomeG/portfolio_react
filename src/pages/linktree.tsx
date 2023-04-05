@@ -11,8 +11,8 @@ import Seo from '@/components/Seo';
 // import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 <script
   async
-  custom-element='amp-iframe'
-  src='https://cdn.ampproject.org/v0/amp-iframe-0.1.js'
+  custom-element="amp-iframe"
+  src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"
 ></script>;
 
 export default function Linktree({
@@ -28,26 +28,26 @@ export default function Linktree({
 }) {
   return (
     <>
-      <Seo templateTitle='Linktree' />
-      <body className='box-border block h-full w-full '>
+      <Seo templateTitle="Linktree" />
+      <body className="box-border block h-full w-full ">
         <div
           className={`${className} mx-auto flex h-full w-full flex-col items-center justify-center px-4 pt-12 text-center  `}
         >
-          <figure className='   m-0 flex w-full justify-center py-0 px-[10px] text-center align-middle '>
+          <figure className="   m-0 flex w-full justify-center px-[10px] py-0 text-center align-middle ">
             <Image
-              className='box-content h-[150px] w-[150px] rounded-[150px] object-cover   '
+              className="box-content h-[150px] w-[150px] rounded-[150px] object-cover   "
               src={data.avatar}
-              alt=''
+              alt=""
               width={150}
               height={150}
             />
           </figure>
 
-          <h1 className='mt-2  text-3xl font-bold text-white'>{data.name}</h1>
-          <h1 className='text- mb-2 text-sm font-thin italic text-white'>
+          <h1 className="mt-2  text-3xl font-bold text-white">{data.name}</h1>
+          <h1 className="text- mb-2 text-sm font-thin italic text-white">
             "Todo lo que quieres esta al otro lado del miedo".
           </h1>
-          <div className=' text-bold mb-4 font-mono  text-xl text-white shadow-lg shadow-gray-400'>
+          <div className=" text-bold mb-4 font-mono  text-xl text-white shadow-lg shadow-gray-400">
             <Typewriter
               options={{
                 strings: [
@@ -87,7 +87,7 @@ export default function Linktree({
             className={` mb-6  flex max-h-[0] w-full  max-w-[100px] items-center rounded-sm bg-gray-100 p-1 text-lg `}
           ></div>
 
-          <Nevercomex classNames='py-8' divhidden={false} />
+          <Nevercomex classNames="py-8" divhidden={false} />
         </div>
       </body>
     </>

@@ -1,43 +1,11 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+/* eslint-disable import/no-extraneous-dependencies */
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+});
+
+module.exports = withBundleAnalyzer({
   eslint: {
-    dirs: ['src'],
-  },
-
-  reactStrictMode: true,
-  swcMinify: true,
-
-  webpack(config) {
-    config.module.rules.push({
-      test: /\.svg$/i,
-      issuer: /\.[jt]sx?$/,
-      use: [
-        {
-          loader: '@svgr/webpack',
-          options: {
-            typescript: true,
-            icon: true,
-          },
-        },
-      ],
-    });
-
-    return config;
-  },
-
-  images: {
-    domains: [
-      'images.unsplash.com',
-      'images.pexels.com',
-      'cdn.jsdelivr.net',
-      'www.itl.cat',
-      'picsum.photos',
-      's3-us-west-2.amazonaws.com',
-      'i.picsum.photos',
-      'weblium.com',
-      'img.icons8.com',
-      'assets-global.website-files.com',
-    ],
+    dirs: ['.'],
   },
   async redirects() {
     return [
@@ -48,5 +16,11 @@ const nextConfig = {
       },
     ];
   },
-};
-module.exports = nextConfig;
+  poweredByHeader: false,
+  trailingSlash: true,
+  basePath: '',
+  // The starter code load resources from `public` folder with `router.basePath` in React components.
+  // So, the source code is "basePath-ready".
+  // You can remove `basePath` if you don't need it.
+  reactStrictMode: true,
+});

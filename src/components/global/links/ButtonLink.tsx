@@ -1,11 +1,9 @@
 import * as React from 'react';
-import { IconType } from 'react-icons';
+import type { IconType } from 'react-icons';
 
+import type { UnstyledLinkProps } from '@/components/global/links/UnstyledLink';
+import UnstyledLink from '@/components/global/links/UnstyledLink';
 import clsxm from '@/lib/clsxm';
-
-import UnstyledLink, {
-  UnstyledLinkProps,
-} from '@/components/global/links/UnstyledLink';
 
 const ButtonLinkVariant = [
   'primary',
@@ -51,13 +49,13 @@ const ButtonLink = React.forwardRef<HTMLAnchorElement, ButtonLinkProps>(
           'focus:outline-none focus-visible:ring focus-visible:ring-primary-500',
           'shadow-sm',
           'transition-colors duration-75',
-          //#region  //*=========== Size ===========
+          // #region  //*=========== Size ===========
           [
             size === 'base' && ['px-3 py-1.5', 'text-sm md:text-base'],
             size === 'sm' && ['px-2 py-1', 'text-xs md:text-sm'],
           ],
-          //#endregion  //*======== Size ===========
-          //#region  //*=========== Variants ===========
+          // #endregion  //*======== Size ===========
+          // #region  //*=========== Variants ===========
           [
             variant === 'primary' && [
               'bg-primary-500 text-white',
@@ -92,7 +90,7 @@ const ButtonLink = React.forwardRef<HTMLAnchorElement, ButtonLinkProps>(
               'hover:bg-gray-800 active:bg-gray-700 disabled:bg-gray-700',
             ],
           ],
-          //#endregion  //*======== Variants ===========
+          // #endregion  //*======== Variants ===========
           'disabled:cursor-not-allowed',
           className
         )}

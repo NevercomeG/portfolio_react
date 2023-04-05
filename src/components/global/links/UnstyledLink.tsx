@@ -1,4 +1,5 @@
-import Link, { LinkProps } from 'next/link';
+import type { LinkProps } from 'next/link';
+import Link from 'next/link';
 import * as React from 'react';
 
 import clsxm from '@/lib/clsxm';
@@ -35,8 +36,8 @@ const UnstyledLink = React.forwardRef<HTMLAnchorElement, UnstyledLinkProps>(
     return (
       <a
         ref={ref}
-        target='_blank'
-        rel='noopener noreferrer'
+        target="_blank"
+        rel="noopener noreferrer"
         href={href}
         {...rest}
         className={clsxm('cursor-newtab', className)}
