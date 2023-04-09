@@ -1,12 +1,13 @@
-import data from 'data.json';
 import Image from 'next/image';
 import Typewriter from 'typewriter-effect';
 
 import Nevercomex from '@/components/global/nevercomex/copyright';
+import Seo from '@/components/global/Seo';
 import LinkCard from '@/components/Linktree/LinkCard';
 import Maincard from '@/components/Linktree/Maincard';
 import Social from '@/components/Linktree/Social';
-import Seo from '@/components/Seo';
+
+import data from '@/models/data.json';
 
 // import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 <script

@@ -1,4 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable @typescript-eslint/no-var-requires*/
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 });
@@ -15,6 +16,9 @@ module.exports = withBundleAnalyzer({
         permanent: true,
       },
     ];
+  },
+  images:{
+    domains: ['images.unsplash.com','img.icons8.com']
   },
   poweredByHeader: false,
   trailingSlash: true,

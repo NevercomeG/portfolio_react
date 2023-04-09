@@ -1,9 +1,10 @@
 import * as React from 'react';
 import type { IconType } from 'react-icons';
 
+import clsxm from '@/lib/clsxm';
+
 import type { UnstyledLinkProps } from '@/components/global/links/UnstyledLink';
 import UnstyledLink from '@/components/global/links/UnstyledLink';
-import clsxm from '@/lib/clsxm';
 
 const ButtonLinkVariant = [
   'primary',

@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "id": "project1",
+      "title": "Project 1",
+      "description": "Description of Project 1",
+      "imageUrl": "/assets/img/demo1.png",
+      "details": "Details of Project 1",
+      "languages": ["language1", "language2"]
+    },
+    {
+      "id": "project2",
+      "title": "Project 2",
+      "description": "Description of Project 2",
+      "imageUrl": "/assets/img/demo1.png",
+      "details": "Details of Project 2",
+      "languages": ["language2", "language3"]
+    },
+    {
+      "id": "project3",
+      "title": "Project 3",
+      "description": "Description of Project 3",
+      "imageUrl": "/assets/img/demo1.png",
+      "details": "Details of Project 3",
+      "languages": ["language1", "language3"]
+    }
+  ]
+}

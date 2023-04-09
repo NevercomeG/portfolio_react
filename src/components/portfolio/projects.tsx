@@ -1,7 +1,9 @@
-import React from 'react';
+import projectsData from "@/models/projects.json";
 
-import Projectcards from './cards/projectcards';
-//
+import ProjectGrid from "./cards/projectGrid";
+import { Project } from "./cards/types";
+
+const projects: Project[] = projectsData.projects;
 
 export default function formation() {
   return (
@@ -9,10 +11,9 @@ export default function formation() {
       <div className="text-center">
         <h1 className="text-5xl font-bold text-white shadow-lg">Projects</h1>
       </div>
-      <div className='grid grid-flow-row pt-24 grid-cols-1 justify-center items-center px-12 md:grid-cols-2 gap-4 lg:grid-cols-3 '>
-<Projectcards/>
 
-</div>
+      <ProjectGrid projects={projects} />
+
     </section>
   );
 }

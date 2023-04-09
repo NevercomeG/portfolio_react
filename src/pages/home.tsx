@@ -2,14 +2,13 @@ import React from 'react';
 
 import Layout from '@/components/global/layout/Layout';
 import Seo from '@/components/global/Seo';
+import Backend from '@/components/portfolio/backend';
+import Devops from '@/components/portfolio/devops';
+import Formation from '@/components/portfolio/formation';
+import Frontend from '@/components/portfolio/frontend';
+import Header from '@/components/portfolio/header';
 import PopupWidget from '@/components/portfolio/popupWidget';
-
-import Backend from '../components/portfolio/backend';
-import Devops from '../components/portfolio/devops';
-import Formation from '../components/portfolio/formation';
-import Frontend from '../components/portfolio/frontend';
-import Header from '../components/portfolio/header';
-import Projects from '../components/portfolio/projects';
+import Projects from '@/components/portfolio/projects';
 
 export default function Landing() {
   return (

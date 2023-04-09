@@ -8,11 +8,13 @@ export default function Navbar() {
     <nav className=" fixed top-0  z-30 flex w-full flex-wrap items-center justify-between px-2 py-3 backdrop-blur  backdrop-brightness-50">
       <div className="container mx-auto flex flex-wrap items-center justify-between px-4 ">
         <div className="relative flex w-full justify-between lg:static lg:block lg:w-auto lg:justify-start">
+        <Link legacyBehavior href="/page2" passHref>
           <a className="mr-4 inline-block  whitespace-nowrap py-2 text-xl font-bold uppercase leading-relaxed text-white">
-            <Link href="/page2" passHref>
+
               LUIS CUEVA<span className="box_1 ">S</span>
-            </Link>
+           
           </a>
+          </Link>
           <button
             className="block cursor-pointer rounded border border-solid border-transparent bg-transparent px-3 py-1 text-xl leading-none outline-none focus:outline-none lg:hidden"
             type="button"
