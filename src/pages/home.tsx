@@ -24,8 +24,9 @@ export default function Landing() {
             <Backend />
             <Devops />
             <Projects />
+            </section>
             <Formation />
-          </section>
+
         </main>
       </Layout>
     </>
