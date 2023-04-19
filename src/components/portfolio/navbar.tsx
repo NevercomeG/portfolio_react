@@ -1,10 +1,10 @@
-import Link from 'next/link'
-import React, {useEffect,useState} from 'react'
-import {AiOutlineGithub} from "react-icons/ai"
-import {BiChevronLeft,BiChevronRight} from "react-icons/bi"
-import {HiMail} from "react-icons/hi"
-import {IoLogoTwitter} from "react-icons/io"
-import {RxHamburgerMenu} from "react-icons/rx"
+import Image from 'next/image';
+import Link from 'next/link';
+import React, { useEffect, useState } from 'react';
+import { AiOutlineGithub } from 'react-icons/ai';
+import { BiChevronLeft, BiChevronRight } from 'react-icons/bi';
+import { IoLogoLinkedin } from 'react-icons/io';
+import { RxHamburgerMenu } from 'react-icons/rx';
 
 const Header = () => {
   const [servicesHovered, setServicesHovered] = useState(false);
@@ -13,10 +13,10 @@ const Header = () => {
   const [contactsHovered, setContactsHovered] = useState(false);
   const [twitter, settwitter] = useState(false);
   const [github, setgithub] = useState(false);
-  const [below1050, setbelow1050] = useState(false)
-  const [below950, setbelow950] = useState(false)
-  const [below850, setbelow850] = useState(false)
-  const [isMobile, setMobile] = useState(false)
+  const [below1050, setbelow1050] = useState(false);
+  const [below950, setbelow950] = useState(false);
+  const [below850, setbelow850] = useState(false);
+  const [isMobile, setMobile] = useState(false);
 
   const handleMouseEnter = () => {
     setServicesHovered(true);
@@ -61,12 +61,11 @@ const Header = () => {
     setgithub(false);
   };
 
-
   useEffect(() => {
     function handleResize() {
       setbelow1050(window.innerWidth < 1050);
-      setbelow950(window.innerWidth<950)
-      setbelow850(window.innerWidth<850)
+      setbelow950(window.innerWidth < 950);
+      setbelow850(window.innerWidth < 850);
     }
 
     window.addEventListener('resize', handleResize);
@@ -79,51 +78,190 @@ const Header = () => {
 
   return (
     <section className='font-Inter'>
-      <div className={`flex relative items-center justify-between h-20 text-white ${below1050 ? "w-full p-2" : "m-auto w-11/12"} ${isMobile ? "bg-darkgray w-full" : ""}`}>
-        <div className={`name cursor-pointer p-0 m-0 ${below850 ? "text-2xl" : "text-3xl"}`}>
-          <span className='font-Dm_Sans font-medium hover:text-green ease-in duration-200'>LUIS </span>
+      <div
+        className={`relative flex h-20 items-center justify-between text-white ${
+          below1050 ? 'w-full p-2' : 'm-auto w-11/12'
+        } ${isMobile ? 'w-full bg-darkgray' : ''}`}
+      >
+        <div
+          className={`name m-0 cursor-pointer p-0 font-semibold ${
+            below850 ? 'text-2xl' : 'text-3xl'
+          }`}
+        >
+          <span className='font-Dm_Sans text-green  duration-200 ease-in'>
+            LUIS{' '}
+          </span>
           <span>CUEVAS</span>
         </div>
 
-      <div className={`middle-nav ease-in duration-300 font-Roboto_mono ${isMobile ? "mt-44 absolute right-0 top-[-100px] bg-darkgray w-full z-40" : (below850 ? "mt-[-500px] " : "")}`} onClick={() => setMobile(false)}>
-          <ul className={`${below850 ? " block text-center space-y-6" :"flex space-x-6 items-center"}`}>
-          <Link href="#services" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="flex items-center">
-            <BiChevronLeft className={`inline ${servicesHovered ? 'opacity-100 ease-in duration-300 text-green text-2xl' : 'opacity-0 ease-in duration-300'}`} />
-            <span className='opacity-90 hover:text-green ease-in duration-200 hover:font-medium'>Services</span>
-            <BiChevronRight className={`inline ${servicesHovered ? 'opacity-100 ease-in duration-300 text-green text-2xl' : 'opacity-0 ease-in duration-300'}`} />
-          </Link>
-            <Link href="#works" onMouseEnter={handleMouseEnter1} onMouseLeave={handleMouseLeave1} className="flex items-center">
-            <BiChevronLeft className={`inline ${worksHovered ? 'opacity-100 ease-in duration-300 text-green text-2xl' : 'opacity-0 ease-in duration-300'}`} />
-            <span className='opacity-90 hover:text-green ease-in duration-200 hover:font-medium'>Works</span>
-            <BiChevronRight className={`inline ${worksHovered ? 'opacity-100 ease-in duration-300 text-green text-2xl' : 'opacity-0 ease-in duration-300'}`} />
+        <div
+          className={`middle-nav font-Roboto_mono duration-300 ease-in ${
+            isMobile
+              ? 'absolute right-0 top-[-100px] z-40 mt-44 w-full bg-darkgray'
+              : below850
+              ? 'mt-[-500px] '
+              : ''
+          }`}
+          onClick={() => setMobile(false)}
+        >
+          <ul
+            className={`${
+              below850
+                ? ' block space-y-6 text-center'
+                : 'flex items-center space-x-6'
+            }`}
+          >
+            <Link
+              href='#services'
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              className='flex items-center'
+            >
+              <BiChevronLeft
+                className={`inline ${
+                  servicesHovered
+                    ? 'text-2xl text-green opacity-100 duration-300 ease-in'
+                    : 'opacity-0 duration-300 ease-in'
+                }`}
+              />
+              <span className='opacity-90 duration-200 ease-in hover:font-medium hover:text-green'>
+                Services
+              </span>
+              <BiChevronRight
+                className={`inline ${
+                  servicesHovered
+                    ? 'text-2xl text-green opacity-100 duration-300 ease-in'
+                    : 'opacity-0 duration-300 ease-in'
+                }`}
+              />
             </Link>
-            <Link href="#testimonials" onMouseEnter={handleMouseEnter2} onMouseLeave={handleMouseLeave2} className="flex items-center">
-            <BiChevronLeft className={`inline ${notesHovered ? 'opacity-100 ease-in duration-300 text-green text-2xl' : 'opacity-0 ease-in duration-300'}`} />
-            <span className='opacity-90 hover:text-green ease-in duration-200 hover:font-medium'>Testimonials</span>
-            <BiChevronRight className={`inline ${notesHovered ? 'opacity-100 ease-in duration-300 text-green text-2xl' : 'opacity-0 ease-in duration-300'}`} />
+            <Link
+              href='#works'
+              onMouseEnter={handleMouseEnter1}
+              onMouseLeave={handleMouseLeave1}
+              className='flex items-center'
+            >
+              <BiChevronLeft
+                className={`inline ${
+                  worksHovered
+                    ? 'text-2xl text-green opacity-100 duration-300 ease-in'
+                    : 'opacity-0 duration-300 ease-in'
+                }`}
+              />
+              <span className='opacity-90 duration-200 ease-in hover:font-medium hover:text-green'>
+                Works
+              </span>
+              <BiChevronRight
+                className={`inline ${
+                  worksHovered
+                    ? 'text-2xl text-green opacity-100 duration-300 ease-in'
+                    : 'opacity-0 duration-300 ease-in'
+                }`}
+              />
             </Link>
-            <Link href="#contact" onMouseEnter={handleMouseEnter3} onMouseLeave={handleMouseLeave3} className="flex items-center">
-            <BiChevronLeft className={`inline ${contactsHovered ? 'opacity-100 ease-in duration-300 text-green text-2xl' : 'opacity-0 ease-in duration-300'}`} />
-            <span className='opacity-90 hover:text-green ease-in duration-200 hover:font-medium'>Contacts</span>
-            <BiChevronRight className={`inline ${contactsHovered ? 'opacity-100 ease-in duration-300 text-green text-2xl' : 'opacity-0 ease-in duration-300'}`} />
+            <Link
+              href='#testimonials'
+              onMouseEnter={handleMouseEnter2}
+              onMouseLeave={handleMouseLeave2}
+              className='flex items-center'
+            >
+              <BiChevronLeft
+                className={`inline ${
+                  notesHovered
+                    ? 'text-2xl text-green opacity-100 duration-300 ease-in'
+                    : 'opacity-0 duration-300 ease-in'
+                }`}
+              />
+              <span className='opacity-90 duration-200 ease-in hover:font-medium hover:text-green'>
+                Testimonials
+              </span>
+              <BiChevronRight
+                className={`inline ${
+                  notesHovered
+                    ? 'text-2xl text-green opacity-100 duration-300 ease-in'
+                    : 'opacity-0 duration-300 ease-in'
+                }`}
+              />
+            </Link>
+            <Link
+              href='#contact'
+              onMouseEnter={handleMouseEnter3}
+              onMouseLeave={handleMouseLeave3}
+              className='flex items-center'
+            >
+              <BiChevronLeft
+                className={`inline ${
+                  contactsHovered
+                    ? 'text-2xl text-green opacity-100 duration-300 ease-in'
+                    : 'opacity-0 duration-300 ease-in'
+                }`}
+              />
+              <span className='opacity-90 duration-200 ease-in hover:font-medium hover:text-green'>
+                Contacts
+              </span>
+              <BiChevronRight
+                className={`inline ${
+                  contactsHovered
+                    ? 'text-2xl text-green opacity-100 duration-300 ease-in'
+                    : 'opacity-0 duration-300 ease-in'
+                }`}
+              />
             </Link>
           </ul>
         </div>
-        <div className={`end-nav flex space-x-10 items-center  ${below950 ? "space-x-5" : ""}`}>
-            <div className="twitter flex space-x-2 items-center cursor-pointer" onMouseEnter={handleMouseEnter4} onMouseLeave={handleMouseLeave4}>
-              <IoLogoTwitter className={`text-2xl ${twitter ? "text-green" : ""}`}/> <span className={` opacity-60 hover:opacity-100 ${below950 ? "hidden" : ""}`}>Twitter</span>
-            </div>
-            <div className="github flex space-x-2 items-center cursor-pointer" onMouseEnter={handleMouseEnter5} onMouseLeave={handleMouseLeave5}>
-              <AiOutlineGithub className={`text-2xl ${github ? "text-green" : ""}`}/> <span className={`opacity-60 hover:opacity-100 ${below950 ? "hidden" : ""}`}>Github</span>
-            </div>
-            <div className='relative flex h-[40px] items-center cursor-pointer justify-center before:absolute before:h-[30px] before:w-[30px] before:rounded-50 before:bg-light_gray'>
-            <HiMail className="text-2xl text-green z-10"/>
-            </div>
-            <RxHamburgerMenu className={`${below850 ? "block text-2xl" : "hidden"}`} onClick={() => setMobile(!isMobile)}/>
+        <div
+          className={`end-nav flex items-center space-x-10  ${
+            below950 ? 'space-x-5' : ''
+          }`}
+        >
+          <div
+            className='twitter flex cursor-pointer items-center space-x-2'
+            onMouseEnter={handleMouseEnter4}
+            onMouseLeave={handleMouseLeave4}
+          >
+            <IoLogoLinkedin
+              className={`text-2xl ${twitter ? 'text-green' : ''}`}
+            />{' '}
+            <span
+              className={` opacity-60 hover:opacity-100 ${
+                below950 ? 'hidden' : ''
+              }`}
+            >
+              Linkedin
+            </span>
+          </div>
+          <div
+            className='github flex cursor-pointer items-center space-x-2'
+            onMouseEnter={handleMouseEnter5}
+            onMouseLeave={handleMouseLeave5}
+          >
+            <AiOutlineGithub
+              className={`text-2xl ${github ? 'text-green' : ''}`}
+            />{' '}
+            <span
+              className={`opacity-60 hover:opacity-100 ${
+                below950 ? 'hidden' : ''
+              }`}
+            >
+              Github
+            </span>
+          </div>
+          <div className='relative flex h-[40px] cursor-pointer items-center justify-center rounded-50 before:absolute'>
+            <Image
+              src='/nevercomex/favicon-32x32.png'
+              alt='Nevercomex logo'
+              width={32}
+              height={32}
+            />
+          </div>
+          <RxHamburgerMenu
+            className={`${below850 ? 'block text-2xl' : 'hidden'}`}
+            onClick={() => setMobile(!isMobile)}
+          />
         </div>
       </div>
-      </section>
-  )
-}
+    </section>
+  );
+};
 
-export default Header
+export default Header;

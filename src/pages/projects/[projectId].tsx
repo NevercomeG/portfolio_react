@@ -1,11 +1,11 @@
-import { GetStaticPaths, GetStaticProps } from "next";
-import Image from "next/image";
+import { GetStaticPaths, GetStaticProps } from 'next';
+import Image from 'next/image';
 
-import Layout from "@/components/global/layout/Layout";
+import Layout from '@/components/global/layout/Layout';
 
-import projectsData from "@/models/projects.json";
+import projectsData from '@/models/projects.json';
 
-import { Project } from "./types/types";
+import { Project } from './types/types';
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = projectsData.projects.map((project: Project) => ({
@@ -18,7 +18,9 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const projectId = params?.projectId;
-  const project = projectsData.projects.find((p: Project) => p.id.toString() === projectId);
+  const project = projectsData.projects.find(
+    (p: Project) => p.id.toString() === projectId
+  );
   return { props: { project } };
 };
 
@@ -37,7 +39,7 @@ const ProjectDetailPage = ({ project }: Props) => {
           width={600}
           height={400}
         />
-        <p>{project.details}</p>
+        <p>{project.description}</p>
       </div>
     </Layout>
   );

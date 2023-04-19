@@ -1,28 +1,75 @@
 {
   "projects": [
     {
-      "id": "project1",
-      "title": "Project 1",
-      "description": "Description of Project 1",
+      "id": "206fa7e4-de2f-11ed-b5ea-0242ac120002",
+      "title": "Airbnb Clone",
       "imageUrl": "/assets/img/demo1.png",
-      "details": "Details of Project 1",
-      "languages": ["language1", "language2"]
+      "description": "Airbnb clone built with Next.js, Typescript, Tailwind, and TRPC.",
+      "languages": [
+        "Typescript",
+        "React",
+        "Next",
+        "TRPC",
+        "React",
+        "Next",
+        "TRPC"
+      ]
     },
     {
-      "id": "project2",
-      "title": "Project 2",
-      "description": "Description of Project 2",
-      "imageUrl": "/assets/img/demo1.png",
-      "details": "Details of Project 2",
-      "languages": ["language2", "language3"]
+      "id": "244e0dd8-de2f-11ed-b5ea-0242ac120002",
+      "title": "twitter clone",
+      "imageUrl": "/43.webp",
+      "description": "Airbnb clone built with Next.js, Typescript, Tailwind, and TRPC.",
+      "languages": ["Typescript", "React", "Next", "TRPC"]
     },
     {
-      "id": "project3",
-      "title": "Project 3",
-      "description": "Description of Project 3",
-      "imageUrl": "/assets/img/demo1.png",
-      "details": "Details of Project 3",
-      "languages": ["language1", "language3"]
+      "id": "26fd3ae0-de2f-11ed-b5ea-0242acs120002",
+      "title": "Chat app",
+      "imageUrl": "/27.webp",
+      "description": "Airbnb clone built with Next.js, Typescript, Tailwind, and TRPC.",
+      "languages": ["Typescript", "React", "Next", "TRPC"]
+    },
+    {
+      "id": "26fd3ae0-de2f-11ed-b5ea-g0242ac120002",
+      "title": "Chat app",
+      "imageUrl": "/3.png",
+      "description": "Airbnb clone built with Next.js, Typescript, Tailwind, and TRPC.",
+      "languages": ["Typescript", "React", "Next", "TRPC"]
+    },
+    {
+      "id": "26fd3ae0-de2f-11ed-b5dea-0242ac120002",
+      "title": "Chat app",
+      "imageUrl": "/4.png",
+      "description": "Airbnb clone built with Next.js, Typescript, Tailwind, and TRPC.",
+      "languages": ["Typescript", "React", "Next", "TRPC"]
+    },
+    {
+      "id": "26fd3ae0-de2f-11ed-b5ea-02s42ac120002",
+      "title": "Chat app",
+      "imageUrl": "/23.webp",
+      "description": "Airbnb clone built with Next.js, Typescript, Tailwind, and TRPC.",
+      "languages": ["Typescript", "React", "Next", "TRPC"]
+    },
+    {
+      "id": "26fd3ae0-de2f-11ed-b5ea-02sd42ac120002",
+      "title": "Chat app",
+      "imageUrl": "/35.webp",
+      "description": "Airbnb clone built with Next.js, Typescript, Tailwind, and TRPC.",
+      "languages": ["Typescript", "React", "Next", "TRPC"]
+    },
+    {
+      "id": "26fd3ae0-de2f-11ed-b5ea-0g242ac120002",
+      "title": "Chat app",
+      "imageUrl": "/38.webp",
+      "description": "Airbnb clone built with Next.js, Typescript, Tailwind, and TRPC.",
+      "languages": ["Typescript", "React", "Next", "TRPC"]
+    },
+    {
+      "id": "26fd3ae0-de2f-11ed-b5ea-d0242ac120002",
+      "title": "Chat app",
+      "imageUrl": "/25.webp",
+      "description": "Airbnb clone built with Next.js, Typescript, Tailwind, and TRPC.",
+      "languages": ["Typescript", "React", "Next", "TRPC"]
     }
   ]
 }

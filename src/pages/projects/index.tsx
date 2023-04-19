@@ -1,8 +1,8 @@
-import { GetStaticProps } from "next";
+import { GetStaticProps } from 'next';
 
-import ProjectGrid from "@/components/portfolio/cards/projectGrid";
+import ProjectGrid from '@/components/portfolio/cards/projectGrid';
 
-import { Project } from "./types/types";
+import { Project } from './types/types';
 
 type Props = {
   projects: Project[];
@@ -10,7 +10,7 @@ type Props = {
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
   // Read the JSON data from the file system
-  const data = await import("@/models/projects.json");
+  const data = await import('@/models/projects.json');
   const projects: Project[] = data.projects;
 
   return {

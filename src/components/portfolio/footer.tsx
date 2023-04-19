@@ -1,8 +1,8 @@
 import React from "react";
-import { IoLogoTwitter } from "react-icons/io";
 import { AiOutlineGithub } from "react-icons/ai";
-import { GrCodepen } from "react-icons/gr";
-import { BsYoutube } from "react-icons/bs";
+import {IoLogoLinkedin} from "react-icons/io"
+
+import Nevercomex from "../global/nevercomex/copyright";
 
 const Footer = () => {
   return (
@@ -12,13 +12,12 @@ const Footer = () => {
           <h1 className="text-2xl">Hire Me</h1>
         </div>
         <div className="icons flex space-x-10 text-3xl mb-8">
-          <IoLogoTwitter className="cursor-pointer m-2 hover:text-green  ease-in duration-300" />
+        <IoLogoLinkedin href="" className="cursor-pointer m-2 hover:text-green  ease-in duration-300"  />
           <AiOutlineGithub className="cursor-pointer m-2 hover:text-green  ease-in duration-300" />
-          <GrCodepen className="cursor-pointer m-2 hover:text-green  ease-in duration-300" />
-          <BsYoutube className="cursor-pointer m-2 hover:text-green  ease-in duration-300" />
+
         </div>
-        <p className="tracking-wider text-center">
-          All Rights are reserved | &#169; perfectCode 2023 | Made by Sattu
+        <p className="tracking-wider text-center flex flex-col gap-2">
+          All Rights are reserved  <Nevercomex/>
         </p>
       </div>
     </section>

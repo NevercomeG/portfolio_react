@@ -17,8 +17,8 @@ module.exports = withBundleAnalyzer({
       },
     ];
   },
-  images:{
-    domains: ['images.unsplash.com','img.icons8.com']
+  images: {
+    domains: ['images.unsplash.com', 'img.icons8.com', 'rickandmortyapi.com'],
   },
   poweredByHeader: false,
   trailingSlash: true,

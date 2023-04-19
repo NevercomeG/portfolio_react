@@ -16,17 +16,18 @@ export default function Landing() {
       <PopupWidget />
       <Layout>
         <Seo />
-        <main className="font-mono">
+        <main className='font-mono'>
           <Header />
-          <section className="bg-[#131313] ">
-            <h1 className="py-5 text-center text-5xl">WHAT I DO?</h1>
+          <section className='bg-[#131313] '>
+            <h1 className='pt-16  text-center text-5xl'>
+              MY <span className='text-green'>STACK</span>
+            </h1>
             <Frontend />
             <Backend />
             <Devops />
             <Projects />
-            </section>
-            <Formation />
-
+          </section>
+          <Formation />
         </main>
       </Layout>
     </>
