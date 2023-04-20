@@ -16,7 +16,7 @@ export default function Frontend() {
   }, []);
 
   return (
-    <section className='relative block md:p-24  '>
+    <section className=' relative block md:pt-20  '>
       <div className='grid items-center  justify-center lg:grid-flow-col '>
         <div className=''>
           <Image

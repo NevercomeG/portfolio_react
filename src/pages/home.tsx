@@ -18,7 +18,7 @@ export default function Landing() {
         <Seo />
         <main className='font-mono'>
           <Header />
-          <section className='bg-[#131313] '>
+          <section id='stack' className='bg-[#131313] '>
             <h1 className='pt-16  text-center text-5xl'>
               MY <span className='text-green'>STACK</span>
             </h1>

@@ -77,7 +77,7 @@ const Header = () => {
   }, []);
 
   return (
-    <section className='font-Inter'>
+    <section className='fixed left-0 top-0 z-50 flex w-full font-Inter backdrop-blur backdrop-brightness-50 '>
       <div
         className={`relative flex h-20 items-center justify-between text-white ${
           below1050 ? 'w-full p-2' : 'm-auto w-11/12'
@@ -112,7 +112,7 @@ const Header = () => {
             }`}
           >
             <Link
-              href='#services'
+              href='#stack'
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
               className='flex items-center'
@@ -125,7 +125,7 @@ const Header = () => {
                 }`}
               />
               <span className='opacity-90 duration-200 ease-in hover:font-medium hover:text-green'>
-                Services
+                My Stack
               </span>
               <BiChevronRight
                 className={`inline ${

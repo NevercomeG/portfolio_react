@@ -1,7 +1,15 @@
 import Image from 'next/image';
-import React, { useEffect, useState } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 
-const Client = ({ index, onClick, testimonial }) => {
+import { Ttestimonials } from '@/components/portfolio/cards/types';
+
+interface Clientprops {
+  index: number;
+  onClick: (index: number) => void;
+  testimonial: Ttestimonials;
+}
+
+const Client: FC<Clientprops> = ({ index, onClick, testimonial }) => {
   const [selectedClient, setSelectedClient] = useState(false);
   const { name, position, idname } = testimonial;
   const [below1000, setlower1000] = useState(false);
@@ -27,7 +35,7 @@ const Client = ({ index, onClick, testimonial }) => {
   }, []);
   return (
     <div
-      className={`mt-10 flex items-center justify-between  py-2 pr-10 font-Dm_Sans transition duration-500 ease-in-out ${
+      className={`mt-10 flex w-10/12 items-center justify-evenly rounded-md border p-3 font-Dm_Sans  shadow-5xl transition duration-500 ease-in-out ${
         below850 ? 'w-full rounded-xl p-3 shadow-5xl' : 'w-2/6'
       } ${below630 ? 'w-10/12 rounded-xl p-3 shadow-5xl' : ''}`}
       onClick={handleClientClick}

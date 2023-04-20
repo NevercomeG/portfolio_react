@@ -39,7 +39,7 @@ const Hero = () => {
           <div className='text-elements  relative inline-flex flex-col text-white'>
             <div className={`w-4/5 ${below1300 ? 'ml-0' : 'ml-2'}`}>
               <div>
-                <p className='work inline-block rounded-xl bg-green p-1'>
+                <div className='work inline-block rounded-xl bg-green p-1'>
                   <Typewriter
                     options={{
                       strings: [
@@ -55,26 +55,29 @@ const Hero = () => {
                       delay: 75,
                     }}
                   />
-                </p>
+                </div>
               </div>
               <div
                 className={`head leading-12  ${
                   below1200 ? 'mb-8 mt-4 text-4xl' : 'mb-12 mt-12 text-5xl'
                 }`}
               >
-                <p>Talk is Cheap</p>
-                <p>Show me the Code</p>
+                <p>Innovative software</p>
+                <p>Development</p>
               </div>
               <div className='desc mb-10 text-base opacity-60'>
-                <p>I design and code beautifully simple things</p>
-                <p>and I love what I do.</p>
+                <p>Expertise in software development to keep</p>
+                <p> you ahead of the curve.</p>
               </div>
-              <h3
-                className={`text-3xl uppercase text-green underline underline-offset-4  ${
-                  below1200 ? 'mb-10' : 'mb-20'
-                }`}
-              >
-                Let&apos;s Chat:
+
+              <h3 className={`text-3xl   ${below1200 ? 'mb-10' : 'mb-20'}`}>
+                Let&apos;s Chat:{' '}
+                <a href=''>
+                  <span className='uppercase text-green  underline underline-offset-4'>
+                    {' '}
+                    Whatsapp
+                  </span>
+                </a>
               </h3>
             </div>
             <div className='experience flex space-x-8 pb-7 uppercase'>

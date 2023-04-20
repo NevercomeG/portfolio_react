@@ -1,8 +1,7 @@
 import { GetStaticProps } from 'next';
 
 import ProjectGrid from '@/components/portfolio/cards/projectGrid';
-
-import { Project } from './types/types';
+import { Project } from '@/components/portfolio/cards/types';
 
 type Props = {
   projects: Project[];

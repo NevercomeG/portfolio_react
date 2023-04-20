@@ -1,11 +1,29 @@
 export type Project = {
-  id: string | number;
+  id: string;
   title: string;
-  description: string;
   imageUrl: string;
-  languages: string[];
+  description: string;
+  Technology: {
+    Stack: string[];
+    Icons: string[];
+  };
+  links: {
+    url: string;
+    github: string;
+    youtube: string;
+  };
+  featured: boolean;
+  date: string;
+  category: string;
 };
 
 export type Props = {
   projects: Project[];
+};
+
+export type Ttestimonials = {
+  name: string;
+  position: string;
+  idname: string;
+  desc: string;
 };

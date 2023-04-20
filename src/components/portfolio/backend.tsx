@@ -17,7 +17,7 @@ export default function Backend() {
   }, []);
 
   return (
-    <section className=' '>
+    <section className='relative block md:pt-20   '>
       <div className='grid items-center justify-center lg:grid-flow-col '>
         <div className='m-4 lg:pr-28'>
           <h1 className={` mb-2 ${below850 ? 'text-3.5xl' : 'text-4xl'}`}>

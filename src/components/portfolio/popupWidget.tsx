@@ -52,7 +52,7 @@ export default function PopupWidgetTop() {
       <Disclosure>
         {({ open }) => (
           <>
-            <Disclosure.Button className='ease fixed bottom-8 right-5 z-40 flex h-12 w-12 items-center justify-center rounded-full bg-slate-600 shadow-lg transition duration-300 hover:bg-slate-800 focus:bg-slate-800 focus:outline-none'>
+            <Disclosure.Button className='ease fixed bottom-8 right-5 z-40 flex h-12 w-12 items-center justify-center rounded-full bg-gray2 shadow-lg transition duration-300 hover:bg-slate-800 focus:bg-slate-800 focus:outline-none'>
               <span className='sr-only'>Open Contact form Widget</span>
               <Transition
                 show={!open}

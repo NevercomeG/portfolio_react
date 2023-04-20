@@ -16,7 +16,7 @@ export default function Devops() {
     };
   }, []);
   return (
-    <section className='relative block py-10   '>
+    <section className='relative block md:pt-20    '>
       <div className='flex flex-col-reverse items-center justify-center  lg:grid lg:grid-flow-col '>
         <div className=''>
           <Image src='/assets/img/vercel.svg' width={500} height={500} alt='' />

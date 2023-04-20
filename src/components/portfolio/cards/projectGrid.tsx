@@ -1,16 +1,18 @@
+import { Icon } from '@iconify/react';
 import { Pagination } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 
 import { Project, Props } from '@/components/portfolio/cards/types';
 
+import projectsData from '@/models/projects.json';
+
 import { theme } from './theme';
 
-const ProjectGrid: React.FC<Props> = ({ projects }) => {
-  const router = useRouter();
+const ProjectGrid: React.FC<Props> = () => {
+  const projects: Project[] = projectsData.projects;
   const [page, setPage] = useState(1);
   const [displayedProjects, setDisplayedProjects] = useState<Project[]>([]);
   const projectsPerPage = 3;
@@ -21,9 +23,11 @@ const ProjectGrid: React.FC<Props> = ({ projects }) => {
     );
   }, [page, projects]);
 
-  function handlePaginationChange(e, value) {
+  function handlePaginationChange(
+    event: React.ChangeEvent<unknown>,
+    value: number
+  ) {
     setPage(value);
-    router.push(`home/?page=${value}`, undefined, { shallow: true });
   }
 
   return (
@@ -55,12 +59,23 @@ const ProjectGrid: React.FC<Props> = ({ projects }) => {
                       </dd>
                     </div>
                   </dl>
-
                   <div className='mt-6 flex items-center gap-8 text-xs md:text-sm'>
                     <div className='sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2'>
-                      <div className='language-list mt-1.5 flex gap-2 sm:mt-0'>
-                        {project.languages.map((language, index) => (
-                          <p key={index}>{language}</p>
+                      <div className='flex flex-row items-center justify-center gap-2'>
+                        {project.Technology.Stack.map((language, index) => (
+                          <>
+                            <Icon
+                              key={`icon-${index}`}
+                              color='white'
+                              className=' h-4 w-4 '
+                              icon={`${project.Technology.Icons[index]}`}
+                            />
+                            <p key={`stack-${index}`}>
+                              {language}
+                              {index < project.Technology.Stack.length - 1 &&
+                                ' |'}
+                            </p>
+                          </>
                         ))}
                       </div>
                     </div>

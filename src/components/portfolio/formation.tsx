@@ -1,30 +1,31 @@
-import React, { useEffect, useState } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 import { BsQuote } from 'react-icons/bs';
 
+import { Ttestimonials } from './cards/types';
 import Client from '../../utils/client';
 
-const testimonials = [
-  {
-    name: 'Logan Paul',
-    position: 'Senior Manager',
-    idname: 'LoganP',
-    desc: " I was struggling with my website's frontend development until I stumbled upon this website. The team's expertise and knowledge of frontend technologies helped me create an outstanding website that exceeded my expectations. Their attention to detail and ability to communicate complex concepts in simple terms were impressive",
-  },
-  {
-    name: 'Alisa J',
-    position: 'Front-End Dev',
-    idname: 'Alisa J',
-    desc: "Professional, responsive, and able to keep up with ever-changing demand and tight deadlines: That's how I would describe Jeramy and his team at The Lorem Ipsum Company. When it comes to content marketing, you'll definitely get the 5-star treatment from the Lorem Ipsum Company!",
-  },
-  {
-    name: 'Salman',
-    position: 'Marketing Assistence',
-    idname: 'Sal',
-    desc: 'I was skeptical of SEO and content marketing at first, but the Lorem Ipsum Company not only proved itself financially speaking, but the response I have received from customers is incredible. The work is top-notch and I consistently outrank all my competitors on Google.',
-  },
-];
+interface TestimonalsProps {
+  testimonials: Ttestimonials[];
+}
 
-const Testimonials = () => {
+const testimonials: TestimonalsProps = {
+  testimonials: [
+    {
+      name: 'Logan Paul',
+      position: 'Senior Manager',
+      idname: 'LoganP',
+      desc: " I was struggling with my website's frontend development until I stumbled upon this website. The team's expertise and knowledge of frontend technologies helped me create an outstanding website that exceeded my expectations. Their attention to detail and ability to communicate complex concepts in simple terms were impressive",
+    },
+    {
+      name: 'Logan Paul',
+      position: 'Senior Manager',
+      idname: 'LoganP',
+      desc: " I was struggling with my website's frontend development until I stumbled upon this website. The team's expertise and knowledge of frontend technologies helped me create an outstanding website that exceeded my expectations. Their attention to detail and ability to communicate complex concepts in simple terms were impressive",
+    },
+  ],
+};
+
+const Testimonials: FC<TestimonalsProps> = () => {
   const [selectedClient, setSelectedClient] = useState(0);
   const [below1225, setlower1225] = useState(false);
   const [below850, setlower850] = useState(false);
@@ -68,13 +69,19 @@ const Testimonials = () => {
           <p className='mb-5 text-sm italic opacity-75'>
             Here is our clients thought
           </p>
-          <p className='mb-5'>{testimonials[selectedClient].name}</p>
+          <p className='mb-5'>
+            {testimonials.testimonials[selectedClient]?.name || ''}
+          </p>
+
           <BsQuote
             className={`absolute right-10 top-6 rotate-180 text-6xl opacity-60 ${
               below630 ? 'hidden' : ''
             }`}
           />
-          <p className='opacity-80'>{testimonials[selectedClient].desc}</p>
+          <p className='opacity-80'>
+            {testimonials.testimonials[selectedClient]?.desc || ''}
+          </p>
+
           <BsQuote
             className={` absolute left-5 rotate-180 -scale-x-100  transform text-6xl opacity-60 ${
               below1225 ? 'top-56' : 'top-48 '
@@ -83,20 +90,22 @@ const Testimonials = () => {
         </div>
       </div>
       <div
-        className={`clients text-white ${
+        className={`clients items-center gap-6 text-white ${
           below850
             ? 'grid grid-cols-1 gap-6'
-            : 'flex items-center justify-between'
+            : 'flex items-center justify-center'
         } ${below630 ? 'grid grid-cols-0 gap-6' : ''}`}
       >
-        {testimonials.map((testimonial, index) => (
-          <Client
-            key={testimonial.idname}
-            index={index}
-            testimonial={testimonial}
-            onClick={handleClientClick}
-          />
-        ))}
+        {testimonials.testimonials.map(
+          (testimonial: Ttestimonials, index: number) => (
+            <Client
+              key={testimonial.idname}
+              index={index}
+              testimonial={testimonial}
+              onClick={handleClientClick}
+            />
+          )
+        )}
       </div>
     </section>
   );

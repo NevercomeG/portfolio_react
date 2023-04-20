@@ -2,10 +2,9 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 import Image from 'next/image';
 
 import Layout from '@/components/global/layout/Layout';
+import { Project } from '@/components/portfolio/cards/types';
 
 import projectsData from '@/models/projects.json';
-
-import { Project } from './types/types';
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = projectsData.projects.map((project: Project) => ({

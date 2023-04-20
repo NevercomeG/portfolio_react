@@ -1,24 +1,26 @@
-import React from "react";
-import { AiOutlineGithub } from "react-icons/ai";
-import {IoLogoLinkedin} from "react-icons/io"
+import React from 'react';
+import { AiOutlineGithub } from 'react-icons/ai';
+import { IoLogoLinkedin } from 'react-icons/io';
 
-import Nevercomex from "../global/nevercomex/copyright";
+import Nevercomex from '../global/nevercomex/copyright';
 
 const Footer = () => {
   return (
-    <section id="contact" className="bg-gray3 font-Dm_Sans">
-      <div className="text-white flex flex-col items-center  py-16">
-        <div className="w-36 h-12 border flex items-center justify-center my-8 hover:border-green cursor-pointer">
-          <h1 className="text-2xl">Hire Me</h1>
+    <section id='contact' className='bg-gray3 font-Dm_Sans'>
+      <div className='flex flex-col items-center py-16  text-white'>
+        <div className='my-8 flex h-12 w-36 cursor-pointer items-center justify-center border hover:border-green'>
+          <h1 className='text-2xl'>Hire Me</h1>
         </div>
-        <div className="icons flex space-x-10 text-3xl mb-8">
-        <IoLogoLinkedin href="" className="cursor-pointer m-2 hover:text-green  ease-in duration-300"  />
-          <AiOutlineGithub className="cursor-pointer m-2 hover:text-green  ease-in duration-300" />
-
+        <div className='icons mb-8 flex space-x-10 text-3xl'>
+          <IoLogoLinkedin
+            href=''
+            className='m-2 cursor-pointer duration-300  ease-in hover:text-green'
+          />
+          <AiOutlineGithub className='m-2 cursor-pointer duration-300  ease-in hover:text-green' />
         </div>
-        <p className="tracking-wider text-center flex flex-col gap-2">
-          All Rights are reserved  <Nevercomex/>
-        </p>
+        <div className='flex flex-col gap-2 text-center tracking-wider'>
+          All Rights are reserved <Nevercomex />
+        </div>
       </div>
     </section>
   );
