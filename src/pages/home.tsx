@@ -2,14 +2,12 @@ import React from 'react';
 
 import Layout from '@/components/global/layout/Layout';
 import Seo from '@/components/global/Seo';
+import Backend from '@/components/portfolio/backend';
+import Devops from '@/components/portfolio/devops';
+import Frontend from '@/components/portfolio/frontend';
+import Header from '@/components/portfolio/header';
 import PopupWidget from '@/components/portfolio/popupWidget';
-
-import Backend from '../components/portfolio/backend';
-import Devops from '../components/portfolio/devops';
-import Formation from '../components/portfolio/formation';
-import Frontend from '../components/portfolio/frontend';
-import Header from '../components/portfolio/header';
-import Projects from '../components/portfolio/projects';
+import Projects from '@/components/portfolio/projects';
 
 export default function Landing() {
   return (
@@ -17,16 +15,18 @@ export default function Landing() {
       <PopupWidget />
       <Layout>
         <Seo />
-        <main className="font-mono">
+        <main id='top' className='font-mono'>
           <Header />
-          <section className="bg-[#131313] ">
-            <h1 className="py-5 text-center text-5xl">WHAT I DO?</h1>
+          <section id='stack' className='bg-[#131313] '>
+            <h1 className='pt-16  text-center text-5xl'>
+              MY <span className='text-green'>STACK</span>
+            </h1>
             <Frontend />
             <Backend />
             <Devops />
             <Projects />
-            <Formation />
           </section>
+          {/* <Formation /> */}
         </main>
       </Layout>
     </>

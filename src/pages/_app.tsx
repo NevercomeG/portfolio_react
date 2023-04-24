@@ -1,10 +1,13 @@
+import { config } from '@fortawesome/fontawesome-svg-core';
+import type { AppProps } from 'next/app';
+import { QueryClient, QueryClientProvider } from 'react-query';
+
+const queryClient = new QueryClient();
+
 import '@fortawesome/fontawesome-svg-core/styles.css';
 // !STARTERCONF This is for demo purposes, remove @/styles/colors.css import immediately
 // import '@/styles/colors.css';
 import '@/styles/globals.css';
-
-import { config } from '@fortawesome/fontawesome-svg-core';
-import type { AppProps } from 'next/app';
 
 config.autoAddCss = false;
 
@@ -14,7 +17,12 @@ config.autoAddCss = false;
  */
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
-  return <Component {...pageProps} />;
+  return (
+    <QueryClientProvider client={queryClient}>
+      <Component {...pageProps} />
+      {/* <ReactQueryDevtools initialIsOpen={false}></ReactQueryDevtools> */}
+    </QueryClientProvider>
+  );
 };
 
 export default MyApp;

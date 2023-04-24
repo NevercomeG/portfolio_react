@@ -1,90 +1,199 @@
 import Image from 'next/image';
-import React from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import Typewriter from 'typewriter-effect';
 
-const Header = () => {
-  return (
-    <>
-      <div
-        className="relative flex content-center items-center justify-center pb-32 pt-16"
-        style={{
-          minHeight: '100vh',
-        }}
-      >
-        <div
-          id="hero"
-          className=" absolute top-0 h-full w-full bg-cover bg-center"
-          style={{
-            backgroundImage:
-              "url('https://weblium.com/blog/wp-content/uploads/2019/09/photo-1533135091724-62cc5402aa20.jpeg')",
-          }}
-        >
-          <span
-            id="blackOverlay"
-            className="absolute h-full w-full bg-black opacity-25"
-          ></span>
-        </div>
-        <div className="container relative mx-auto">
-          <div className="flex flex-wrap items-center">
-            <div className="mx-auto w-full px-4 text-center lg:w-6/12">
-              <div className="flex flex-col items-center text-center lg:flex lg:flex-row lg:space-x-10">
-                <Image
-                  src="/assets/img/8bitpix.png"
-                  className="bg-black-50 rounded-full border-solid border-green-800 shadow-2xl backdrop-blur-sm backdrop-brightness-50"
-                  alt=""
-                  width="200"
-                  height="200"
-                />
+// import heroImage from "../public/1.png";
 
-                <div className="text-white lg:text-left   ">
-                  <h1 className="font-mono text-6xl font-semibold ">LUIS</h1>{' '}
-                  <h1 className="font-mono text-6xl font-semibold  ">
-                    CUEVA
-                    <span className="box">S</span>
-                  </h1>
-                  <div className="pt-2 text-gray-300">
-                    <p className=" text-bold font-mono text-xl   ">
-                      <Typewriter
-                        options={{
-                          strings: [
-                            'Full Stack Developer',
-                            'DevOps Engineer',
-                            'Cloud Engineer',
-                            'Software Engineer',
-                            'Web Developer',
-                            'Chemical Engineer',
-                          ],
-                          autoStart: true,
-                          loop: true,
-                          delay: 75,
-                        }}
-                      />
-                    </p>
-                    <p className="text-md font-mono  ">
-                      Always learning new technologies. 💻
-                    </p>
+const Hero = () => {
+  const [below1300, setbelow1300] = useState(false);
+  const [below1250, setbelow1250] = useState(false);
+  const [below1200, setbelow1200] = useState(false);
+  const [below1000, setbelow1000] = useState(false);
+  // const [below600, setbelow600] = useState(false);
+
+  useEffect(() => {
+    function handleResize() {
+      setbelow1300(window.innerWidth < 1300);
+      setbelow1250(window.innerWidth < 1250);
+      setbelow1200(window.innerWidth < 1200);
+      setbelow1000(window.innerWidth < 1000);
+      // setbelow600(window.innerWidth < 600);
+    }
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+  return (
+    <Fragment>
+      {!below1000 ? (
+        <section
+          id='header'
+          className={` grid h-[75svh]   ${
+            below1250 ? 'grid-cols-1' : 'grid-cols-2'
+          } w-8/12 grid-cols-2 ${
+            below1200 ? 'w-11/12' : 'w-10/12'
+          } m-auto my-36 font-Roboto_mono`}
+        >
+          <div className='text-elements  relative inline-flex flex-col text-white'>
+            <div className={`w-4/5 ${below1300 ? 'ml-0' : 'ml-2'}`}>
+              <div>
+                <div className='work inline-block rounded-xl bg-green p-1'>
+                  <Typewriter
+                    options={{
+                      strings: [
+                        'Full Stack Developer',
+                        'DevOps Engineer',
+                        'Cloud Engineer',
+                        'Software Engineer',
+                        'Web Developer',
+                        'Chemical Engineer',
+                      ],
+                      autoStart: true,
+                      loop: true,
+                      delay: 75,
+                    }}
+                  />
+                </div>
+              </div>
+              <div
+                className={`head leading-12  ${
+                  below1200 ? 'mb-8 mt-4 text-4xl' : 'mb-12 mt-12 text-5xl'
+                }`}
+              >
+                <p>Innovative software</p>
+                <p>Development</p>
+              </div>
+              <div className='desc mb-10 text-base opacity-60'>
+                <p>Expertise in software development to keep</p>
+                <p> you ahead of the curve.</p>
+              </div>
+
+              <h3 className={`text-3xl   ${below1200 ? 'mb-10' : 'mb-20'}`}>
+                Let&apos;s Chat:{' '}
+                <a href=''>
+                  <span className='uppercase text-green  underline underline-offset-4'>
+                    {' '}
+                    Whatsapp
+                  </span>
+                </a>
+              </h3>
+            </div>
+            <div className='experience flex space-x-8 pb-7 uppercase'>
+              <div className='year flex items-center'>
+                <p className={` mr-4 ${below1200 ? 'text-4xl' : 'text-5xl'}`}>
+                  2
+                </p>
+                <div
+                  className={`opacity-75 ${
+                    below1200 ? 'text-sm' : 'text-base'
+                  }`}
+                >
+                  Years <p>of Experience</p>{' '}
+                </div>
+              </div>
+              <div className='projects flex items-center justify-between'>
+                <p className={` mr-4 ${below1200 ? 'text-4xl' : 'text-5xl'}`}>
+                  32
+                </p>
+                <div
+                  className={`opacity-75 ${
+                    below1200 ? 'text-sm' : 'text-base'
+                  }`}
+                >
+                  Project completed <p> </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='  inline-flex flex-col  items-center justify-center'>
+            <div className='  '>
+              <div className=''>
+                <div className=''>
+                  <div className='flex flex-row items-center text-center  lg:space-x-10'>
+                    <Image
+                      src='/assets/img/8bitpix.png'
+                      className='bg-black-50 rounded-full border-solid border-green shadow-2xl backdrop-blur-sm backdrop-brightness-75'
+                      alt=''
+                      width='200'
+                      height='200'
+                    />
+                    <div className=' flex  '>
+                      <h1 className='font-mono text-5xl leading-none    '>
+                        LUIS
+                        <span className='text-green'> CUEVAS</span>
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className='pointer-events-none absolute inset-x-0 bottom-0 top-auto w-full overflow-hidden'
+              style={{ height: '70px' }}
+            ></div>
+          </div>
+        </section>
+      ) : (
+        <section
+          className={` m-auto flex h-screen flex-col-reverse items-center justify-center font-Roboto_mono`}
+        >
+          <div className=' '>
+            <div className=''>
+              <div className='mx-auto w-full  text-center '>
+                <div className='flex flex-col items-center text-center '>
+                  <Image
+                    src='/assets/img/8bitpix.png'
+                    className='bg-black-50 border-green-800 rounded-full border-solid shadow-2xl backdrop-blur-sm backdrop-brightness-50'
+                    alt=''
+                    width='200'
+                    height='200'
+                  />
+                  <div className='pt-10 text-white lg:text-left  '>
+                    <h1 className='font-mono text-6xl font-semibold leading-12 '>
+                      LUIS
+                    </h1>{' '}
+                    <h1 className='font-mono text-6xl font-semibold leading-12  '>
+                      CUEVA
+                      <span className='box'>S</span>
+                    </h1>
+                    <div className='text-gray-300 pt-2'>
+                      <p className='work inline-block rounded-xl bg-green p-1'>
+                        <Typewriter
+                          options={{
+                            strings: [
+                              'Full Stack Developer',
+                              'DevOps Engineer',
+                              'Cloud Engineer',
+                              'Software Engineer',
+                              'Web Developer',
+                              'Chemical Engineer',
+                            ],
+                            autoStart: true,
+                            loop: true,
+                            delay: 75,
+                          }}
+                        />
+                      </p>
+                      <p className='text-md font-mono  '>
+                        Always learning new technologies. 💻
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div
-          className="pointer-events-none absolute inset-x-0 bottom-0 top-auto w-full overflow-hidden"
-          style={{ height: '70px' }}
-        >
-          <svg
-            className="absolute bottom-0 overflow-hidden"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="none"
-            version="1.1"
-            viewBox="0 0 2560 100"
-            x="0"
-            y="0"
-          ></svg>
-        </div>
-      </div>
-    </>
+        </section>
+      )}
+      {/* <span
+            id="blackOverlay"
+            className="absolute h-full w-full bg-black opacity-50"
+          ></span>  */}
+    </Fragment>
   );
 };
-export default Header;
+
+export default Hero;

@@ -1,0 +1,16 @@
+{
+  "testimonials": [
+    {
+      "name": "Logan Paul",
+      "position": "Senior Manager",
+      "idname": "LoganP",
+      "desc": " I was struggling with my website's frontend development until I stumbled upon this website. The team's expertise and knowledge of frontend technologies helped me create an outstanding website that exceeded my expectations. Their attention to detail and ability to communicate complex concepts in simple terms were impressive"
+    },
+    {
+      "name": "Logan Paul",
+      "position": "Senior Manager",
+      "idname": "LoganP",
+      "desc": " I was struggling with my website's frontend development until I stumbled upon this website. The team's expertise and knowledge of frontend technologies helped me create an outstanding website that exceeded my expectations. Their attention to detail and ability to communicate complex concepts in simple terms were impressive"
+    }
+  ]
+}

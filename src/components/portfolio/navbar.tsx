@@ -1,64 +1,260 @@
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { AiOutlineGithub } from 'react-icons/ai';
+import { BiChevronLeft, BiChevronRight } from 'react-icons/bi';
+import { IoLogoLinkedin } from 'react-icons/io';
+import { RxHamburgerMenu } from 'react-icons/rx';
 
-export default function Navbar() {
-  const [navbarOpen, setNavbarOpen] = useState(false);
+const Header = () => {
+  const [servicesHovered, setServicesHovered] = useState(false);
+  const [worksHovered, setWorksHovered] = useState(false);
+  // const [notesHovered, setNotesHovered] = useState(false);
+  const [contactsHovered, setContactsHovered] = useState(false);
+  const [twitter, settwitter] = useState(false);
+  const [github, setgithub] = useState(false);
+  const [below1050, setbelow1050] = useState(false);
+  const [below950, setbelow950] = useState(false);
+  const [below850, setbelow850] = useState(false);
+  const [isMobile, setMobile] = useState(false);
+
+  const handleMouseEnter = () => {
+    setServicesHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setServicesHovered(false);
+  };
+  const handleMouseEnter1 = () => {
+    setWorksHovered(true);
+  };
+
+  const handleMouseLeave1 = () => {
+    setWorksHovered(false);
+  };
+  // const handleMouseEnter2 = () => {
+  //   setNotesHovered(true);
+  // };
+
+  // const handleMouseLeave2 = () => {
+  //   setNotesHovered(false);
+  // };
+  const handleMouseEnter3 = () => {
+    setContactsHovered(true);
+  };
+
+  const handleMouseLeave3 = () => {
+    setContactsHovered(false);
+  };
+  const handleMouseEnter4 = () => {
+    settwitter(true);
+  };
+
+  const handleMouseLeave4 = () => {
+    settwitter(false);
+  };
+  const handleMouseEnter5 = () => {
+    setgithub(true);
+  };
+
+  const handleMouseLeave5 = () => {
+    setgithub(false);
+  };
+
+  useEffect(() => {
+    function handleResize() {
+      setbelow1050(window.innerWidth < 1050);
+      setbelow950(window.innerWidth < 950);
+      setbelow850(window.innerWidth < 850);
+    }
+
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup function to remove the event listener when component unmounts
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
-    <nav className=" fixed top-0  z-30 flex w-full flex-wrap items-center justify-between px-2 py-3 backdrop-blur  backdrop-brightness-50">
-      <div className="container mx-auto flex flex-wrap items-center justify-between px-4 ">
-        <div className="relative flex w-full justify-between lg:static lg:block lg:w-auto lg:justify-start">
-          <a className="mr-4 inline-block  whitespace-nowrap py-2 text-xl font-bold uppercase leading-relaxed text-white">
-            <Link href="/page2" passHref>
-              LUIS CUEVA<span className="box_1 ">S</span>
-            </Link>
-          </a>
-          <button
-            className="block cursor-pointer rounded border border-solid border-transparent bg-transparent px-3 py-1 text-xl leading-none outline-none focus:outline-none lg:hidden"
-            type="button"
-            onClick={() => setNavbarOpen(!navbarOpen)}
+    <section className='fixed left-0 top-0 z-50 flex w-full font-Inter backdrop-blur backdrop-brightness-50 '>
+      <div
+        className={`relative flex h-20 items-center justify-between text-white ${
+          below1050 ? 'w-full p-2' : 'm-auto w-11/12'
+        } ${isMobile ? 'w-full bg-darkgray' : ''}`}
+      >
+        <Link href='/home'>
+          <div
+            className={`name m-0 cursor-pointer p-0 font-semibold ${
+              below850 ? 'text-2xl' : 'text-3xl'
+            }`}
           >
-            <i className="fas  fa-bars text-white"></i>
-          </button>
-        </div>
+            <span className='font-Dm_Sans text-green  duration-200 ease-in'>
+              LUIS{' '}
+            </span>
+            <span>CUEVAS</span>
+          </div>
+        </Link>
         <div
-          className={`grow items-center bg-white lg:flex lg:bg-transparent lg:shadow-none${
-            navbarOpen ? ' block rounded shadow-lg' : ' hidden'
+          className={`middle-nav font-Roboto_mono duration-300 ease-in ${
+            isMobile
+              ? 'absolute right-0 top-[-100px] z-40 mt-44 w-full bg-darkgray'
+              : below850
+              ? 'mt-[-500px] '
+              : ''
           }`}
-          id="example-navbar-warning"
+          onClick={() => setMobile(false)}
         >
-          <ul className="flex list-none flex-col lg:ml-auto lg:flex-row">
-            <li className="flex items-center">
-              <a
-                className="flex items-center px-3 py-4 text-xs font-bold uppercase text-gray-800 hover:text-gray-600 lg:py-2"
-                href="https://www.linkedin.com/in/luis-solano-a20683208/"
-              >
-                <i className="fab fa-linkedin leading-lg text-xl text-white " />
-                <span className="ml-2 inline-block lg:hidden">Linkedin</span>
-              </a>
-            </li>
-
-            <li className="flex items-center">
-              <a
-                className="flex items-center px-3 py-4 text-xs font-bold uppercase text-gray-800 hover:text-gray-600 lg:py-2"
-                href="#"
-              >
-                <i className="fab fa-instagram leading-lg text-xl text-white" />
-                <span className="ml-2 inline-block lg:hidden">Instagram</span>
-              </a>
-            </li>
-            <li className="flex items-center">
-              <a
-                className="flex items-center px-3 py-4 text-xs font-bold uppercase text-gray-800 hover:text-gray-600 lg:py-2"
-                href="https://github.com/NevercomeX"
-              >
-                <i className="fab fa-github leading-lg text-xl text-white " />
-                <span className="ml-2 inline-block lg:hidden">Github</span>
-              </a>
-            </li>
+          <ul
+            className={`${
+              below850
+                ? ' block space-y-6 text-center'
+                : 'flex items-center space-x-6'
+            }`}
+          >
+            <Link
+              href='#stack'
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              className='flex items-center'
+            >
+              <BiChevronLeft
+                className={`inline ${
+                  servicesHovered
+                    ? 'text-2xl text-green opacity-100 duration-300 ease-in'
+                    : 'opacity-0 duration-300 ease-in'
+                }`}
+              />
+              <span className='opacity-90 duration-200 ease-in hover:font-medium hover:text-green'>
+                My Stack
+              </span>
+              <BiChevronRight
+                className={`inline ${
+                  servicesHovered
+                    ? 'text-2xl text-green opacity-100 duration-300 ease-in'
+                    : 'opacity-0 duration-300 ease-in'
+                }`}
+              />
+            </Link>
+            <Link
+              href='#projects'
+              onMouseEnter={handleMouseEnter1}
+              onMouseLeave={handleMouseLeave1}
+              className='flex items-center'
+            >
+              <BiChevronLeft
+                className={`inline ${
+                  worksHovered
+                    ? 'text-2xl text-green opacity-100 duration-300 ease-in'
+                    : 'opacity-0 duration-300 ease-in'
+                }`}
+              />
+              <span className='opacity-90 duration-200 ease-in hover:font-medium hover:text-green'>
+                Projects
+              </span>
+              <BiChevronRight
+                className={`inline ${
+                  worksHovered
+                    ? 'text-2xl text-green opacity-100 duration-300 ease-in'
+                    : 'opacity-0 duration-300 ease-in'
+                }`}
+              />
+            </Link>
+            {/* <Link
+              href='#testimonials'
+              onMouseEnter={handleMouseEnter2}
+              onMouseLeave={handleMouseLeave2}
+              className='flex items-center'
+            >
+              <BiChevronLeft
+                className={`inline ${
+                  notesHovered
+                    ? 'text-2xl text-green opacity-100 duration-300 ease-in'
+                    : 'opacity-0 duration-300 ease-in'
+                }`}
+              />
+              <span className='opacity-90 duration-200 ease-in hover:font-medium hover:text-green'>
+                Testimonials
+              </span>
+              <BiChevronRight
+                className={`inline ${
+                  notesHovered
+                    ? 'text-2xl text-green opacity-100 duration-300 ease-in'
+                    : 'opacity-0 duration-300 ease-in'
+                }`}
+              />
+            </Link> */}
+            <Link
+              href='#contact'
+              onMouseEnter={handleMouseEnter3}
+              onMouseLeave={handleMouseLeave3}
+              className='flex items-center'
+            >
+              <BiChevronLeft
+                className={`inline ${
+                  contactsHovered
+                    ? 'text-2xl text-green opacity-100 duration-300 ease-in'
+                    : 'opacity-0 duration-300 ease-in'
+                }`}
+              />
+              <span className='opacity-90 duration-200 ease-in hover:font-medium hover:text-green'>
+                Contacts
+              </span>
+              <BiChevronRight
+                className={`inline ${
+                  contactsHovered
+                    ? 'text-2xl text-green opacity-100 duration-300 ease-in'
+                    : 'opacity-0 duration-300 ease-in'
+                }`}
+              />
+            </Link>
           </ul>
         </div>
+        <div
+          className={`end-nav flex items-center space-x-10  ${
+            below950 ? 'space-x-5' : ''
+          }`}
+        >
+          <div
+            className='twitter flex cursor-pointer items-center space-x-2'
+            onMouseEnter={handleMouseEnter4}
+            onMouseLeave={handleMouseLeave4}
+          >
+            <IoLogoLinkedin
+              className={`text-2xl ${twitter ? 'text-green' : ''}`}
+            />{' '}
+            <span
+              className={` opacity-60 hover:opacity-100 ${
+                below950 ? 'hidden' : ''
+              }`}
+            >
+              Linkedin
+            </span>
+          </div>
+          <div
+            className='github flex cursor-pointer items-center space-x-2'
+            onMouseEnter={handleMouseEnter5}
+            onMouseLeave={handleMouseLeave5}
+          >
+            <AiOutlineGithub
+              className={`text-2xl ${github ? 'text-green' : ''}`}
+            />{' '}
+            <span
+              className={`opacity-60 hover:opacity-100 ${
+                below950 ? 'hidden' : ''
+              }`}
+            >
+              Github
+            </span>
+          </div>
+
+          <RxHamburgerMenu
+            className={`${below850 ? 'block text-2xl' : 'hidden'}`}
+            onClick={() => setMobile(!isMobile)}
+          />
+        </div>
       </div>
-    </nav>
+    </section>
   );
-}
+};
+
+export default Header;
