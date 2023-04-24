@@ -76,7 +76,7 @@ const Header = () => {
   }, []);
 
   return (
-    <section className='fixed left-0 top-0 z-50 flex w-full font-Inter backdrop-blur backdrop-brightness-50 '>
+    <section className='font-Inter fixed left-0 top-0 z-50 flex w-full backdrop-blur backdrop-brightness-50 '>
       <div
         className={`relative flex h-20 items-center justify-between text-white ${
           below1050 ? 'w-full p-2' : 'm-auto w-11/12'
@@ -214,39 +214,42 @@ const Header = () => {
             below950 ? 'space-x-5' : ''
           }`}
         >
-          <div
-            className='twitter flex cursor-pointer items-center space-x-2'
-            onMouseEnter={handleMouseEnter4}
-            onMouseLeave={handleMouseLeave4}
-          >
-            <IoLogoLinkedin
-              className={`text-2xl ${twitter ? 'text-green' : ''}`}
-            />{' '}
-            <span
-              className={` opacity-60 hover:opacity-100 ${
-                below950 ? 'hidden' : ''
-              }`}
+          <a href='https://www.linkedin.com/in/luis-solano-a20683208/'>
+            <div
+              className='twitter flex cursor-pointer items-center space-x-2'
+              onMouseEnter={handleMouseEnter4}
+              onMouseLeave={handleMouseLeave4}
             >
-              Linkedin
-            </span>
-          </div>
-          <div
-            className='github flex cursor-pointer items-center space-x-2'
-            onMouseEnter={handleMouseEnter5}
-            onMouseLeave={handleMouseLeave5}
-          >
-            <AiOutlineGithub
-              className={`text-2xl ${github ? 'text-green' : ''}`}
-            />{' '}
-            <span
-              className={`opacity-60 hover:opacity-100 ${
-                below950 ? 'hidden' : ''
-              }`}
+              <IoLogoLinkedin
+                className={`text-2xl ${twitter ? 'text-green' : ''}`}
+              />{' '}
+              <span
+                className={` opacity-60 hover:opacity-100 ${
+                  below950 ? 'hidden' : ''
+                }`}
+              >
+                Linkedin
+              </span>
+            </div>
+          </a>
+          <a href='https://github.com/NevercomeX'>
+            <div
+              className='github flex cursor-pointer items-center space-x-2'
+              onMouseEnter={handleMouseEnter5}
+              onMouseLeave={handleMouseLeave5}
             >
-              Github
-            </span>
-          </div>
-
+              <AiOutlineGithub
+                className={`text-2xl ${github ? 'text-green' : ''}`}
+              />{' '}
+              <span
+                className={`opacity-60 hover:opacity-100 ${
+                  below950 ? 'hidden' : ''
+                }`}
+              >
+                Github
+              </span>
+            </div>
+          </a>
           <RxHamburgerMenu
             className={`${below850 ? 'block text-2xl' : 'hidden'}`}
             onClick={() => setMobile(!isMobile)}
