@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import { AiOutlineGithub } from 'react-icons/ai';
@@ -9,7 +8,7 @@ import { RxHamburgerMenu } from 'react-icons/rx';
 const Header = () => {
   const [servicesHovered, setServicesHovered] = useState(false);
   const [worksHovered, setWorksHovered] = useState(false);
-  const [notesHovered, setNotesHovered] = useState(false);
+  // const [notesHovered, setNotesHovered] = useState(false);
   const [contactsHovered, setContactsHovered] = useState(false);
   const [twitter, settwitter] = useState(false);
   const [github, setgithub] = useState(false);
@@ -32,13 +31,13 @@ const Header = () => {
   const handleMouseLeave1 = () => {
     setWorksHovered(false);
   };
-  const handleMouseEnter2 = () => {
-    setNotesHovered(true);
-  };
+  // const handleMouseEnter2 = () => {
+  //   setNotesHovered(true);
+  // };
 
-  const handleMouseLeave2 = () => {
-    setNotesHovered(false);
-  };
+  // const handleMouseLeave2 = () => {
+  //   setNotesHovered(false);
+  // };
   const handleMouseEnter3 = () => {
     setContactsHovered(true);
   };
@@ -83,17 +82,18 @@ const Header = () => {
           below1050 ? 'w-full p-2' : 'm-auto w-11/12'
         } ${isMobile ? 'w-full bg-darkgray' : ''}`}
       >
-        <div
-          className={`name m-0 cursor-pointer p-0 font-semibold ${
-            below850 ? 'text-2xl' : 'text-3xl'
-          }`}
-        >
-          <span className='font-Dm_Sans text-green  duration-200 ease-in'>
-            LUIS{' '}
-          </span>
-          <span>CUEVAS</span>
-        </div>
-
+        <Link href='/home'>
+          <div
+            className={`name m-0 cursor-pointer p-0 font-semibold ${
+              below850 ? 'text-2xl' : 'text-3xl'
+            }`}
+          >
+            <span className='font-Dm_Sans text-green  duration-200 ease-in'>
+              LUIS{' '}
+            </span>
+            <span>CUEVAS</span>
+          </div>
+        </Link>
         <div
           className={`middle-nav font-Roboto_mono duration-300 ease-in ${
             isMobile
@@ -136,7 +136,7 @@ const Header = () => {
               />
             </Link>
             <Link
-              href='#works'
+              href='#projects'
               onMouseEnter={handleMouseEnter1}
               onMouseLeave={handleMouseLeave1}
               className='flex items-center'
@@ -149,7 +149,7 @@ const Header = () => {
                 }`}
               />
               <span className='opacity-90 duration-200 ease-in hover:font-medium hover:text-green'>
-                Works
+                Projects
               </span>
               <BiChevronRight
                 className={`inline ${
@@ -159,7 +159,7 @@ const Header = () => {
                 }`}
               />
             </Link>
-            <Link
+            {/* <Link
               href='#testimonials'
               onMouseEnter={handleMouseEnter2}
               onMouseLeave={handleMouseLeave2}
@@ -182,7 +182,7 @@ const Header = () => {
                     : 'opacity-0 duration-300 ease-in'
                 }`}
               />
-            </Link>
+            </Link> */}
             <Link
               href='#contact'
               onMouseEnter={handleMouseEnter3}
@@ -246,14 +246,7 @@ const Header = () => {
               Github
             </span>
           </div>
-          <div className='relative flex h-[40px] cursor-pointer items-center justify-center rounded-50 before:absolute'>
-            <Image
-              src='/nevercomex/favicon-32x32.png'
-              alt='Nevercomex logo'
-              width={32}
-              height={32}
-            />
-          </div>
+
           <RxHamburgerMenu
             className={`${below850 ? 'block text-2xl' : 'hidden'}`}
             onClick={() => setMobile(!isMobile)}

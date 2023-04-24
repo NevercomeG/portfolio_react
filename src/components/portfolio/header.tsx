@@ -9,7 +9,7 @@ const Hero = () => {
   const [below1250, setbelow1250] = useState(false);
   const [below1200, setbelow1200] = useState(false);
   const [below1000, setbelow1000] = useState(false);
-  const [below600, setbelow600] = useState(false);
+  // const [below600, setbelow600] = useState(false);
 
   useEffect(() => {
     function handleResize() {
@@ -17,7 +17,7 @@ const Hero = () => {
       setbelow1250(window.innerWidth < 1250);
       setbelow1200(window.innerWidth < 1200);
       setbelow1000(window.innerWidth < 1000);
-      setbelow600(window.innerWidth < 600);
+      // setbelow600(window.innerWidth < 600);
     }
 
     window.addEventListener('resize', handleResize);
@@ -30,7 +30,8 @@ const Hero = () => {
     <Fragment>
       {!below1000 ? (
         <section
-          className={` grid h-screen   ${
+          id='header'
+          className={` grid h-[75svh]   ${
             below1250 ? 'grid-cols-1' : 'grid-cols-2'
           } w-8/12 grid-cols-2 ${
             below1200 ? 'w-11/12' : 'w-10/12'
@@ -107,20 +108,20 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className=' relative flex items-center justify-center pb-96'>
-            <div className='container relative mx-auto'>
-              <div className='flex flex-wrap items-center'>
-                <div className='mx-auto w-full text-center '>
+          <div className='  inline-flex flex-col  items-center justify-center'>
+            <div className='  '>
+              <div className=''>
+                <div className=''>
                   <div className='flex flex-row items-center text-center  lg:space-x-10'>
                     <Image
                       src='/assets/img/8bitpix.png'
-                      className='bg-black-50 border-green-800 rounded-full border-solid shadow-2xl backdrop-blur-sm backdrop-brightness-50'
+                      className='bg-black-50 rounded-full border-solid border-green shadow-2xl backdrop-blur-sm backdrop-brightness-75'
                       alt=''
                       width='200'
                       height='200'
                     />
                     <div className=' flex  '>
-                      <h1 className='font-mono text-5xl    '>
+                      <h1 className='font-mono text-5xl leading-none    '>
                         LUIS
                         <span className='text-green'> CUEVAS</span>
                       </h1>
@@ -137,10 +138,10 @@ const Hero = () => {
         </section>
       ) : (
         <section
-          className={` m-auto flex h-screen w-11/12 flex-col-reverse items-center justify-center pb-16 font-Roboto_mono`}
+          className={` m-auto flex h-screen flex-col-reverse items-center justify-center font-Roboto_mono`}
         >
-          <div className='container relative mx-auto '>
-            <div className='flex flex-wrap items-center'>
+          <div className=' '>
+            <div className=''>
               <div className='mx-auto w-full  text-center '>
                 <div className='flex flex-col items-center text-center '>
                   <Image

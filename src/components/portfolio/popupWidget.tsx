@@ -1,6 +1,14 @@
 import { Disclosure, Transition } from '@headlessui/react';
 import React, { useState } from 'react';
-import { useForm, useWatch } from 'react-hook-form';
+import { SubmitHandler, useForm, useWatch } from 'react-hook-form';
+
+type FormData = {
+  subject: string;
+  from_name: string;
+  name: string;
+  email: string;
+  message: string;
+};
 
 export default function PopupWidgetTop() {
   const {
@@ -9,14 +17,14 @@ export default function PopupWidgetTop() {
     reset,
     control,
     formState: { errors, isSubmitSuccessful, isSubmitting },
-  } = useForm({
+  } = useForm<FormData>({
     mode: 'onTouched',
   });
   const [isSuccess, setIsSuccess] = useState(false);
   const [Message, setMessage] = useState('');
   const userName = useWatch({ control, name: 'name', defaultValue: 'Someone' });
 
-  const onSubmit = async (data: any, e: any) => {
+  const onSubmit: SubmitHandler<FormData> = async (data, e) => {
     const api = process.env.NEXT_PUBLIC_URL ?? '';
     await fetch(api, {
       method: 'POST',
@@ -32,7 +40,9 @@ export default function PopupWidgetTop() {
         if (response.status) {
           setIsSuccess(true);
           setMessage(' ');
-          e.target.reset();
+          if (e) {
+            e.target.reset();
+          }
           reset();
         } else {
           setIsSuccess(false);
@@ -104,13 +114,13 @@ export default function PopupWidgetTop() {
               </Transition>
             </Disclosure.Button>
             <Transition
-              className='fixed  bottom-[80px] left-4 right-0 top-4  z-50 sm:left-auto sm:right-5 sm:top-auto'
+              className='fixed bottom-[80px] left-4 right-0 top-24 z-50  sm:left-auto sm:right-5 sm:top-auto '
               enter='transition duration-200 transform ease'
               enterFrom='opacity-0 translate-y-5'
               leave='transition duration-200 transform ease'
               leaveTo='opacity-0 translate-y-5'
             >
-              <Disclosure.Panel className='  left-0 flex  max-h-full min-h-[200px] w-3/4 flex-col overflow-hidden rounded-md  border-black bg-white shadow-2xl  sm:h-[600px] sm:max-h-[calc(100vh-120px)] sm:w-[350px]'>
+              <Disclosure.Panel className='left-0 flex max-h-full min-h-[200px] w-3/4 flex-col overflow-hidden rounded-md  border-black bg-white shadow-2xl  sm:h-[600px] sm:max-h-[calc(100vh-120px)] sm:w-[350px]'>
                 <div className='flex h-32 flex-col items-center justify-center bg-[#121212] p-5'>
                   <h3 className='text-lg text-white'>Want to contact me?</h3>
                   <p className='text-white opacity-50'>
@@ -133,7 +143,7 @@ export default function PopupWidgetTop() {
                       <div className='mb-4'>
                         <label
                           htmlFor='full_name'
-                          className='text-gray-600 dark:text-gray-400 mb-2 block text-sm'
+                          className='mb-2 block text-sm text-gray2'
                         >
                           Full Name
                         </label>
@@ -161,7 +171,7 @@ export default function PopupWidgetTop() {
                       <div className='mb-4'>
                         <label
                           htmlFor='email'
-                          className='text-gray-600 dark:text-gray-400 mb-2 block text-sm'
+                          className='mb-2 block text-sm text-gray2'
                         >
                           Email Address
                         </label>
@@ -191,7 +201,7 @@ export default function PopupWidgetTop() {
                       <div className='mb-4'>
                         <label
                           htmlFor='message'
-                          className='text-gray-600 dark:text-gray-400 mb-2 block text-sm'
+                          className=' mb-2 block text-sm text-gray2'
                         >
                           Your Message
                         </label>

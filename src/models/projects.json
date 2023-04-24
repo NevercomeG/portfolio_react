@@ -4,12 +4,12 @@
       "id": "206fa7e4-de2f-11ed-b5ea-0242ac120002",
       "title": "E-commerce Site",
       "imageUrl": "/projects/01.webp",
-      "description": "An e-commerce site built with React, Redux, and Firebase.",
+      "description": "lorem ipsum dolor sit amet consectetur adipisicing elit. ",
       "Technology": {
-        "Stack": ["React", "Redux", "Firebase"],
+        "Stack": ["Next.js", "Typescript", "Firebase"],
         "Icons": [
-          "simple-icons:react",
-          "simple-icons:redux",
+          "teenyicons:nextjs-outline",
+          "simple-icons:typescript",
           "simple-icons:firebase"
         ]
       },

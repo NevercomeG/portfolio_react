@@ -27,6 +27,8 @@ const ProjectGrid: React.FC<Props> = () => {
     event: React.ChangeEvent<unknown>,
     value: number
   ) {
+    event.preventDefault();
+    // console.log('Event target:', event.target);
     setPage(value);
   }
 
