@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { Fragment, useEffect, useState } from 'react';
 import Typewriter from 'typewriter-effect';
 
@@ -35,7 +36,7 @@ const Hero = () => {
             below1250 ? 'grid-cols-1' : 'grid-cols-2'
           } w-8/12 grid-cols-2 ${
             below1200 ? 'w-11/12' : 'w-10/12'
-          } m-auto my-36 font-Roboto_mono`}
+          } font-Roboto_mono m-auto my-36`}
         >
           <div className='text-elements  relative inline-flex flex-col text-white'>
             <div className={`w-4/5 ${below1300 ? 'ml-0' : 'ml-2'}`}>
@@ -73,12 +74,12 @@ const Hero = () => {
 
               <h3 className={`text-3xl   ${below1200 ? 'mb-10' : 'mb-20'}`}>
                 Let&apos;s Chat:{' '}
-                <a href=''>
+                <Link href='/home'>
                   <span className='uppercase text-green  underline underline-offset-4'>
                     {' '}
                     Whatsapp
                   </span>
-                </a>
+                </Link>
               </h3>
             </div>
             <div className='experience flex space-x-8 pb-7 uppercase'>
@@ -138,7 +139,7 @@ const Hero = () => {
         </section>
       ) : (
         <section
-          className={` m-auto flex h-screen flex-col-reverse items-center justify-center font-Roboto_mono`}
+          className={` font-Roboto_mono m-auto flex h-screen flex-col-reverse items-center justify-center`}
         >
           <div className=' '>
             <div className=''>

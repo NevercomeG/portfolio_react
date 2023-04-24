@@ -20,6 +20,7 @@ cypress/videos
 public/robots.txt
 public/sitemap.xml
 public/sitemap-*.xml
+public/sitemap-0.xml
 
 # cache
 .swc/
@@ -47,3 +48,7 @@ local
 
 # vercel
 .vercel
+
+#sitemap
+sitemap.xml
+public/sitemap-0.xml
