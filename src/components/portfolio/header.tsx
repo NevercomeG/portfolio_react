@@ -41,16 +41,15 @@ const Hero = () => {
               <p>Expertise in software development to keep</p>
               <p> you ahead of the curve.</p>
             </div>
-
-            <h3 className='mb-20 text-3xl md:mb-10'>
-              Let&apos;s Chat:{' '}
-              <Link href='/home'>
+            <Link href='/home'>
+              <h3 className='mb-20 text-3xl md:mb-10'>
+                Let&apos;s Chat:{' '}
                 <span className='uppercase text-green  underline underline-offset-4'>
                   {' '}
                   Whatsapp
                 </span>
-              </Link>
-            </h3>
+              </h3>
+            </Link>
           </div>
           <div className='experience flex space-x-8 pb-7 uppercase'>
             <div className='year flex items-center'>
@@ -83,7 +82,7 @@ const Hero = () => {
               </h1>
             </div>
             <div className='text-gray-300 pt-2 lg:hidden'>
-              <p className='work inline-block rounded-xl bg-green p-1'>
+              <div className='work inline-block rounded-xl bg-green p-1'>
                 <Typewriter
                   options={{
                     strings: [
@@ -99,7 +98,7 @@ const Hero = () => {
                     delay: 75,
                   }}
                 />
-              </p>
+              </div>
               <p className='text-md font-mono  '>
                 Always learning new technologies. 💻
               </p>
