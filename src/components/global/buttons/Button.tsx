@@ -41,7 +41,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <button
         ref={ref}
-        type="button"
+        type='button'
         disabled={disabled}
         className={clsxm(
           'inline-flex items-center rounded font-medium',
@@ -78,14 +78,14 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
                 'hover:bg-gray-900 active:bg-gray-800 disabled:bg-gray-800',
             ],
             variant === 'light' && [
-              'bg-white text-gray-700',
-              'border border-gray-300',
+              'text-gray-700 bg-white',
+              'border-gray-300 border',
               'hover:bg-gray-100 hover:text-dark',
-              'active:bg-white/80 disabled:bg-gray-200',
+              'disabled:bg-gray-200 active:bg-white/80',
             ],
             variant === 'dark' && [
               'bg-gray-900 text-white',
-              'border border-gray-600',
+              'border-gray-600 border',
               'hover:bg-gray-800 active:bg-gray-700 disabled:bg-gray-700',
             ],
           ],
@@ -108,7 +108,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
               }
             )}
           >
-            <ImSpinner2 className="animate-spin" />
+            <ImSpinner2 className='animate-spin' />
           </div>
         )}
         {LeftIcon && (

@@ -18,13 +18,13 @@ export default function Landing() {
         <main id='top' className='font-mono'>
           <Header />
           <section id='stack' className='bg-[#131313] '>
+            <Projects />
             <h1 className='pt-16  text-center text-5xl'>
               MY <span className='text-green'>STACK</span>
             </h1>
             <Frontend />
             <Backend />
             <Devops />
-            <Projects />
           </section>
           {/* <Formation /> */}
         </main>

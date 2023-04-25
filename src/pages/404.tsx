@@ -2,7 +2,6 @@ import * as React from 'react';
 import { RiAlarmWarningFill } from 'react-icons/ri';
 
 import Layout from '@/components/global/layout/Layout';
-import ArrowLink from '@/components/global/links/ArrowLink';
 import Seo from '@/components/global/Seo';
 
 export default function NotFoundPage() {
@@ -18,9 +17,7 @@ export default function NotFoundPage() {
               className='drop-shadow-glow text-red-500 animate-flicker'
             />
             <h1 className='mt-8 text-4xl md:text-6xl'>Page Not Found</h1>
-            <ArrowLink className='mt-4 md:text-lg' href='/'>
-              Back to Home
-            </ArrowLink>
+            Back to Home
           </div>
         </section>
       </main>

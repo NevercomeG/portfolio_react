@@ -1,20 +1,8 @@
 import { Icon } from '@iconify/react';
 import Image from 'next/image';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 export default function Devops() {
-  const [below850, setlower850] = useState(false);
-
-  useEffect(() => {
-    function handleResize() {
-      setlower850(window.innerWidth < 850);
-    }
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
   return (
     <section className='relative block md:pt-20    '>
       <div className='flex flex-col-reverse items-center justify-center  lg:grid lg:grid-flow-col '>
@@ -22,13 +10,7 @@ export default function Devops() {
           <Image src='/assets/img/vercel.svg' width={500} height={500} alt='' />
         </div>
         <div className='m-4 lg:pl-44'>
-          <h1
-            className={` mb-2 text-green ${
-              below850 ? 'text-3.5xl' : 'text-4xl'
-            }`}
-          >
-            &gt; DevOps
-          </h1>
+          <h1 className=' mb-2 text-3.5xl lg:text-4xl'>&gt; DevOps</h1>
           <div className='space-y-2 py-6'>
             <div className=' flex flex-row space-x-2'>
               <div className='grid h-[75px] w-[75px] flex-col items-center justify-center rounded-lg bg-white text-white'>

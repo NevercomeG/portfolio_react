@@ -1,20 +1,7 @@
 import Image from 'next/image';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 export default function Frontend() {
-  const [below850, setlower850] = useState(false);
-
-  useEffect(() => {
-    function handleResize() {
-      setlower850(window.innerWidth < 850);
-    }
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
   return (
     <section className=' relative block md:pt-20  '>
       <div className='grid items-center  justify-center lg:grid-flow-col '>
@@ -27,7 +14,7 @@ export default function Frontend() {
           />
         </div>
         <div className='m-4 lg:pl-32 '>
-          <h1 className={` mb-2 ${below850 ? 'text-3.5xl' : 'text-4xl'}`}>
+          <h1 className=' mb-2 text-3.5xl lg:text-4xl'>
             Front-end <span className='text-green'>Development</span>
           </h1>
           <div className='space-y-2 py-4'>

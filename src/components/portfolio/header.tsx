@@ -1,199 +1,116 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { Fragment, useEffect, useState } from 'react';
+import React from 'react';
 import Typewriter from 'typewriter-effect';
 
 // import heroImage from "../public/1.png";
 
 const Hero = () => {
-  const [below1300, setbelow1300] = useState(false);
-  const [below1250, setbelow1250] = useState(false);
-  const [below1200, setbelow1200] = useState(false);
-  const [below1000, setbelow1000] = useState(false);
-  // const [below600, setbelow600] = useState(false);
-
-  useEffect(() => {
-    function handleResize() {
-      setbelow1300(window.innerWidth < 1300);
-      setbelow1250(window.innerWidth < 1250);
-      setbelow1200(window.innerWidth < 1200);
-      setbelow1000(window.innerWidth < 1000);
-      // setbelow600(window.innerWidth < 600);
-    }
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
   return (
-    <Fragment>
-      {!below1000 ? (
-        <section
-          id='header'
-          className={` grid h-[75svh]   ${
-            below1250 ? 'grid-cols-1' : 'grid-cols-2'
-          } w-8/12 grid-cols-2 ${
-            below1200 ? 'w-11/12' : 'w-10/12'
-          } font-Roboto_mono m-auto my-36`}
-        >
-          <div className='text-elements  relative inline-flex flex-col text-white'>
-            <div className={`w-4/5 ${below1300 ? 'ml-0' : 'ml-2'}`}>
-              <div>
-                <div className='work inline-block rounded-xl bg-green p-1'>
-                  <Typewriter
-                    options={{
-                      strings: [
-                        'Full Stack Developer',
-                        'DevOps Engineer',
-                        'Cloud Engineer',
-                        'Software Engineer',
-                        'Web Developer',
-                        'Chemical Engineer',
-                      ],
-                      autoStart: true,
-                      loop: true,
-                      delay: 75,
-                    }}
-                  />
-                </div>
+    <>
+      <section
+        id='header'
+        className='font-Roboto_mono m-auto my-36 grid h-[75vh] w-8/12 md:w-11/12  lg:w-10/12 lg:grid-cols-2'
+      >
+        <div className='text-elements  relative hidden flex-col  text-white lg:inline-flex'>
+          <div className='w-4/5 md:ml-2'>
+            <div>
+              <div className='work inline-block rounded-xl bg-green p-1'>
+                <Typewriter
+                  options={{
+                    strings: [
+                      'Full Stack Developer',
+                      'DevOps Engineer',
+                      'Cloud Engineer',
+                      'Software Engineer',
+                      'Web Developer',
+                      'Chemical Engineer',
+                    ],
+                    autoStart: true,
+                    loop: true,
+                    delay: 75,
+                  }}
+                />
               </div>
-              <div
-                className={`head leading-12  ${
-                  below1200 ? 'mb-8 mt-4 text-4xl' : 'mb-12 mt-12 text-5xl'
-                }`}
-              >
-                <p>Innovative software</p>
-                <p>Development</p>
-              </div>
-              <div className='desc mb-10 text-base opacity-60'>
-                <p>Expertise in software development to keep</p>
-                <p> you ahead of the curve.</p>
-              </div>
-
-              <h3 className={`text-3xl   ${below1200 ? 'mb-10' : 'mb-20'}`}>
+            </div>
+            <div className='head mb-12 leading-12 sm:mb-8 sm:mt-4 md:mt-12 md:text-4xl lg:text-5xl'>
+              <p>Innovative software</p>
+              <p>Development</p>
+            </div>
+            <div className='desc mb-10 text-base opacity-60'>
+              <p>Expertise in software development to keep</p>
+              <p> you ahead of the curve.</p>
+            </div>
+            <Link href='/home'>
+              <h3 className='mb-20 text-3xl md:mb-10'>
                 Let&apos;s Chat:{' '}
-                <Link href='/home'>
-                  <span className='uppercase text-green  underline underline-offset-4'>
-                    {' '}
-                    Whatsapp
-                  </span>
-                </Link>
+                <span className='uppercase text-green  underline underline-offset-4'>
+                  {' '}
+                  Whatsapp
+                </span>
               </h3>
-            </div>
-            <div className='experience flex space-x-8 pb-7 uppercase'>
-              <div className='year flex items-center'>
-                <p className={` mr-4 ${below1200 ? 'text-4xl' : 'text-5xl'}`}>
-                  2
-                </p>
-                <div
-                  className={`opacity-75 ${
-                    below1200 ? 'text-sm' : 'text-base'
-                  }`}
-                >
-                  Years <p>of Experience</p>{' '}
-                </div>
+            </Link>
+          </div>
+          <div className='experience flex space-x-8 pb-7 uppercase'>
+            <div className='year flex items-center'>
+              <p className='mr-4 text-5xl lg:text-4xl'>2</p>
+              <div className='opacity-75 sm:text-sm md:text-base'>
+                Years <p>of Experience</p>{' '}
               </div>
-              <div className='projects flex items-center justify-between'>
-                <p className={` mr-4 ${below1200 ? 'text-4xl' : 'text-5xl'}`}>
-                  32
-                </p>
-                <div
-                  className={`opacity-75 ${
-                    below1200 ? 'text-sm' : 'text-base'
-                  }`}
-                >
-                  Project completed <p> </p>
-                </div>
+            </div>
+            <div className='projects flex items-center justify-between'>
+              <p className='mr-4 text-5xl lg:text-4xl'>32</p>
+              <div className='opacity-75 sm:text-sm md:text-base'>
+                Project completed <p> </p>
               </div>
             </div>
           </div>
-          <div className='  inline-flex flex-col  items-center justify-center'>
-            <div className='  '>
-              <div className=''>
-                <div className=''>
-                  <div className='flex flex-row items-center text-center  lg:space-x-10'>
-                    <Image
-                      src='/assets/img/8bitpix.png'
-                      className='bg-black-50 rounded-full border-solid border-green shadow-2xl backdrop-blur-sm backdrop-brightness-75'
-                      alt=''
-                      width='200'
-                      height='200'
-                    />
-                    <div className=' flex  '>
-                      <h1 className='font-mono text-5xl leading-none    '>
-                        LUIS
-                        <span className='text-green'> CUEVAS</span>
-                      </h1>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        </div>
+        <div className='inline-flex items-center justify-center'>
+          <div className='flex flex-col items-center text-center lg:flex-row  lg:space-x-10'>
+            <Image
+              src='/assets/img/8bitpix.png'
+              className='bg-black-50 rounded-full border-solid border-green shadow-2xl backdrop-blur-sm backdrop-brightness-75'
+              alt=''
+              width='200'
+              height='200'
+            />
+            <div className=' flex  '>
+              <h1 className='font-mono text-5xl leading-none    '>
+                LUIS
+                <span className='text-green'> CUEVAS</span>
+              </h1>
             </div>
-            <div
-              className='pointer-events-none absolute inset-x-0 bottom-0 top-auto w-full overflow-hidden'
-              style={{ height: '70px' }}
-            ></div>
-          </div>
-        </section>
-      ) : (
-        <section
-          className={` font-Roboto_mono m-auto flex h-screen flex-col-reverse items-center justify-center`}
-        >
-          <div className=' '>
-            <div className=''>
-              <div className='mx-auto w-full  text-center '>
-                <div className='flex flex-col items-center text-center '>
-                  <Image
-                    src='/assets/img/8bitpix.png'
-                    className='bg-black-50 border-green-800 rounded-full border-solid shadow-2xl backdrop-blur-sm backdrop-brightness-50'
-                    alt=''
-                    width='200'
-                    height='200'
-                  />
-                  <div className='pt-10 text-white lg:text-left  '>
-                    <h1 className='font-mono text-6xl font-semibold leading-12 '>
-                      LUIS
-                    </h1>{' '}
-                    <h1 className='font-mono text-6xl font-semibold leading-12  '>
-                      CUEVA
-                      <span className='box'>S</span>
-                    </h1>
-                    <div className='text-gray-300 pt-2'>
-                      <p className='work inline-block rounded-xl bg-green p-1'>
-                        <Typewriter
-                          options={{
-                            strings: [
-                              'Full Stack Developer',
-                              'DevOps Engineer',
-                              'Cloud Engineer',
-                              'Software Engineer',
-                              'Web Developer',
-                              'Chemical Engineer',
-                            ],
-                            autoStart: true,
-                            loop: true,
-                            delay: 75,
-                          }}
-                        />
-                      </p>
-                      <p className='text-md font-mono  '>
-                        Always learning new technologies. 💻
-                      </p>
-                    </div>
-                  </div>
-                </div>
+            <div className='text-gray-300 pt-2 lg:hidden'>
+              <div className='work inline-block rounded-xl bg-green p-1'>
+                <Typewriter
+                  options={{
+                    strings: [
+                      'Full Stack Developer',
+                      'DevOps Engineer',
+                      'Cloud Engineer',
+                      'Software Engineer',
+                      'Web Developer',
+                      'Chemical Engineer',
+                    ],
+                    autoStart: true,
+                    loop: true,
+                    delay: 75,
+                  }}
+                />
               </div>
+              <p className='text-md font-mono  '>
+                Always learning new technologies. 💻
+              </p>
             </div>
           </div>
-        </section>
-      )}
-      {/* <span
-            id="blackOverlay"
-            className="absolute h-full w-full bg-black opacity-50"
-          ></span>  */}
-    </Fragment>
+          <div
+            className='pointer-events-none absolute inset-x-0 bottom-0 top-auto w-full overflow-hidden'
+            style={{ height: '70px' }}
+          ></div>
+        </div>
+      </section>
+    </>
   );
 };
 
