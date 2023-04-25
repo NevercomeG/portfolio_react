@@ -10,7 +10,7 @@ const Hero = () => {
     <>
       <section
         id='header'
-        className='h-75vh font-Roboto_mono m-auto my-36 grid w-8/12 md:w-11/12  lg:w-10/12 lg:grid-cols-2'
+        className='font-Roboto_mono m-auto my-36 grid h-[75vh] w-8/12 md:w-11/12  lg:w-10/12 lg:grid-cols-2'
       >
         <div className='text-elements  relative hidden flex-col  text-white lg:inline-flex'>
           <div className='w-4/5 md:ml-2'>
