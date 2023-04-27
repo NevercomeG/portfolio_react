@@ -2,7 +2,7 @@ import { Icon } from '@iconify/react';
 import Image from 'next/image';
 import React from 'react';
 
-export default function Devops() {
+const Devops = () => {
   return (
     <section className='relative block md:pt-20    '>
       <div className='flex flex-col-reverse items-center justify-center  lg:grid lg:grid-flow-col '>
@@ -69,4 +69,6 @@ export default function Devops() {
       </div>
     </section>
   );
-}
+};
+
+export default Devops;

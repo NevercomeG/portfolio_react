@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-export default function Frontend() {
+const Frontend = () => {
   return (
     <section className=' relative block md:pt-20  '>
       <div className='grid items-center  justify-center lg:grid-flow-col '>
@@ -102,4 +102,6 @@ export default function Frontend() {
       </div>
     </section>
   );
-}
+};
+
+export default Frontend;

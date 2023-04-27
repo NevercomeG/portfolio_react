@@ -10,7 +10,7 @@ type FormData = {
   message: string;
 };
 
-export default function PopupWidgetTop() {
+const PopupWidget = () => {
   const {
     register,
     handleSubmit,
@@ -336,4 +336,6 @@ export default function PopupWidgetTop() {
       </Disclosure>
     </div>
   );
-}
+};
+
+export default PopupWidget;

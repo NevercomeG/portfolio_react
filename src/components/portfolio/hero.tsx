@@ -10,28 +10,26 @@ const Hero = () => {
     <>
       <section
         id='header'
-        className='font-Roboto_mono m-auto my-36 grid h-[75vh] w-8/12 md:w-11/12  lg:w-10/12 lg:grid-cols-2'
+        className='m-auto grid h-[100vh] w-8/12 items-center justify-center md:w-11/12 lg:w-8/12 lg:grid-cols-2'
       >
-        <div className='text-elements  relative hidden flex-col  text-white lg:inline-flex'>
+        <div className='relative hidden flex-col justify-center text-white lg:inline-flex'>
           <div className='w-4/5 md:ml-2'>
-            <div>
-              <div className='work inline-block rounded-xl bg-green p-1'>
-                <Typewriter
-                  options={{
-                    strings: [
-                      'Full Stack Developer',
-                      'DevOps Engineer',
-                      'Cloud Engineer',
-                      'Software Engineer',
-                      'Web Developer',
-                      'Chemical Engineer',
-                    ],
-                    autoStart: true,
-                    loop: true,
-                    delay: 75,
-                  }}
-                />
-              </div>
+            <div className='work inline-block rounded-xl bg-green p-1'>
+              <Typewriter
+                options={{
+                  strings: [
+                    'Full Stack Developer',
+                    'DevOps Engineer',
+                    'Cloud Engineer',
+                    'Software Engineer',
+                    'Web Developer',
+                    'Chemical Engineer',
+                  ],
+                  autoStart: true,
+                  loop: true,
+                  delay: 75,
+                }}
+              />
             </div>
             <div className='head mb-12 leading-12 sm:mb-8 sm:mt-4 md:mt-12 md:text-4xl lg:text-5xl'>
               <p>Innovative software</p>
@@ -66,8 +64,8 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className='inline-flex items-center justify-center'>
-          <div className='flex flex-col items-center text-center lg:flex-row  lg:space-x-10'>
+        <div className='items-center justify-center lg:inline-flex'>
+          <div className='flex flex-col items-center text-center lg:flex-row lg:space-x-10'>
             <Image
               src='/assets/img/8bitpix.png'
               className='bg-black-50 rounded-full border-solid border-green shadow-2xl backdrop-blur-sm backdrop-brightness-75'
@@ -75,8 +73,8 @@ const Hero = () => {
               width='200'
               height='200'
             />
-            <div className=' flex  '>
-              <h1 className='font-mono text-5xl leading-none    '>
+            <div className=' flex'>
+              <h1 className='font-mono text-5xl leading-none'>
                 LUIS
                 <span className='text-green'> CUEVAS</span>
               </h1>

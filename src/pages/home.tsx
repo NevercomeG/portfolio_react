@@ -5,7 +5,7 @@ import Seo from '@/components/global/Seo';
 import Backend from '@/components/portfolio/backend';
 import Devops from '@/components/portfolio/devops';
 import Frontend from '@/components/portfolio/frontend';
-import Header from '@/components/portfolio/header';
+import Hero from '@/components/portfolio/hero';
 import PopupWidget from '@/components/portfolio/popupWidget';
 import Projects from '@/components/portfolio/projects';
 
@@ -16,10 +16,16 @@ export default function Landing() {
       <Layout>
         <Seo />
         <main id='top' className='font-mono'>
-          <Header />
-          <section id='stack' className='bg-[#131313] '>
+          <Hero />
+          <section id='projects' className=' '>
+            <div className='text-center'>
+              <h1 className='font-Roboto_mono text-5xl text-white '>
+                Projects
+              </h1>
+              <h2>working in progress</h2>
+            </div>
             <Projects />
-            <h1 className='pt-16  text-center text-5xl'>
+            <h1 id='stack' className='pt-16  text-center text-5xl'>
               MY <span className='text-green'>STACK</span>
             </h1>
             <Frontend />

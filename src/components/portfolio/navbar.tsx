@@ -11,7 +11,7 @@ export default function NavBar() {
         <div>
           <div className='flex items-center justify-between  py-3 md:block md:py-5'>
             <Link href='/home'>
-              <div className='name m-0 cursor-pointer p-0 text-3xl font-semibold md:text-2xl'>
+              <div className='name m-0 cursor-pointer p-0 text-3xl font-semibold'>
                 <span className='font-Dm_Sans text-green  duration-200 ease-in'>
                   LUIS{' '}
                 </span>

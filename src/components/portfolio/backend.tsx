@@ -1,26 +1,12 @@
 import { Icon } from '@iconify/react';
 import Image from 'next/image';
-import React, { useEffect, useState } from 'react';
-
-export default function Backend() {
-  const [below850, setlower850] = useState(false);
-
-  useEffect(() => {
-    function handleResize() {
-      setlower850(window.innerWidth < 850);
-    }
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
+import React from 'react';
+const Backend = () => {
   return (
     <section className='relative block md:pt-20   '>
       <div className='grid items-center justify-center lg:grid-flow-col '>
         <div className='m-4 lg:pr-28'>
-          <h1 className={` mb-2 ${below850 ? 'text-3.5xl' : 'text-4xl'}`}>
+          <h1 className={` mb-2 text-3.5xl lg:text-4xl`}>
             <span className='text-green'> Back-End</span> Development
           </h1>
           <div className='space-y-2 py-6  '>
@@ -96,4 +82,6 @@ export default function Backend() {
       </div>
     </section>
   );
-}
+};
+
+export default Backend;
