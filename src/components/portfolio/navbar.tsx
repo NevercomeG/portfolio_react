@@ -15,7 +15,7 @@ export default function NavBar() {
                 <span className='font-Dm_Sans text-green  duration-200 ease-in'>
                   LUIS{' '}
                 </span>
-                <span>CUEVAS</span>
+                <span>SOLANO</span>
               </div>
             </Link>
             <div className='flex flex-row-reverse space-x-5 md:hidden'>

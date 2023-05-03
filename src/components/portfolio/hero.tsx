@@ -76,7 +76,7 @@ const Hero = () => {
             <div className=' flex'>
               <h1 className='font-mono text-5xl leading-none'>
                 LUIS
-                <span className='text-green'> CUEVAS</span>
+                <span className='text-green'> SOLANO</span>
               </h1>
             </div>
             <div className='text-gray-300 pt-2 lg:hidden'>
