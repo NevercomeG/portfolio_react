@@ -1,3 +1,5 @@
+"use client"
+
 import { GetStaticPaths, GetStaticProps } from 'next';
 import Image from 'next/image';
 

@@ -1,7 +1,9 @@
+"use client"
+
 import React from 'react';
 
 import Layout from '@/components/global/layout/Layout';
-import Seo from '@/components/global/Seo';
+// import Seo from '@/components/global/Seo';
 import Backend from '@/components/portfolio/backend';
 import Devops from '@/components/portfolio/devops';
 import Frontend from '@/components/portfolio/frontend';
@@ -14,7 +16,7 @@ export default function Landing() {
     <>
       <PopupWidget />
       <Layout>
-        <Seo />
+        {/* <Seo /> */}
         <main id='top' className='font-mono'>
           <Hero />
           <section id='projects' className=' '>

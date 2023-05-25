@@ -1,3 +1,5 @@
+"use client"
+
 import { GetStaticProps } from 'next';
 
 import ProjectGrid from '@/components/portfolio/cards/projectGrid';

@@ -1,7 +1,8 @@
+"use client"
+
 import { Icon } from '@iconify/react';
 import { Pagination } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
-import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
@@ -34,33 +35,29 @@ const ProjectGrid: React.FC<Props> = () => {
 
   return (
     <>
-      <section className='grid grid-rows-1 items-center justify-center gap-4 pt-24 md:grid-cols-2 lg:w-2/3 lg:grid-cols-3'>
+      <section className='p-4 lg:p-10 grid grid-cols sm:grid-cols-1 xs: md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5'>
         {displayedProjects.map((project) => (
           <Link key={project.id} href={`/projects/${project.id}`} passHref>
-            <div className='flex rounded-lg p-4 shadow-sm shadow-white'>
-              <div className='flex flex-col'>
-                <div className='relative h-56 w-full overflow-hidden rounded-md md:h-64 lg:h-80'>
-                  <Image
+
+                <div className='rounded overflow-hidden shadow-lg'>
+                  <img 
                     src={project.imageUrl}
                     alt={project.title}
-                    layout='fill'
-                    objectFit='cover'
-                    objectPosition='center'
-                    loading='lazy'
-                    className='rounded-md ' // Added this line
+
+                    className=' w-full' // Added this line
                   />
-                </div>
-                <div className='mt-2 p-4'>
-                  <dl>
+
+                <div className="px-6 py-4">
+                <div className="font-bold text-xl mb-2">Mountain</div>
                     <div>
-                      <dt className='pb-6 text-lg md:text-xl'>
+                      <div className='pb-6 text-lg md:text-xl'>
                         {project.title}
-                      </dt>
-                      <dd className='text-sm md:text-base'>
+                      </div>
+                      <div className='text-sm md:text-base'>
                         {project.description}
-                      </dd>
+                      </div>
                     </div>
-                  </dl>
+
                   <div className='mt-6 flex items-center gap-8 text-xs md:text-sm'>
                     <div className='sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2'>
                       <div className='flex flex-row items-center justify-center gap-2'>
@@ -84,7 +81,7 @@ const ProjectGrid: React.FC<Props> = () => {
                   </div>
                 </div>
               </div>
-            </div>
+
           </Link>
         ))}
       </section>

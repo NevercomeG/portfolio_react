@@ -3,7 +3,7 @@
     {
       "id": "206fa7e4-de2f-11ed-b5ea-0242ac120002",
       "title": "E-commerce Site",
-      "imageUrl": "/projects/01.webp",
+      "imageUrl": "/43.webp",
       "description": "lorem ipsum dolor sit amet consectetur adipisicing elit. ",
       "Technology": {
         "Stack": ["Next.js", "Typescript", "Firebase"],

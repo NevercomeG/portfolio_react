@@ -8,15 +8,6 @@ module.exports = withBundleAnalyzer({
   eslint: {
     dirs: ['.'],
   },
-  async redirects() {
-    return [
-      {
-        source: '/',
-        destination: '/home',
-        permanent: true,
-      },
-    ];
-  },
   images: {
     domains: ['images.unsplash.com', 'img.icons8.com', 'rickandmortyapi.com'],
   },
