@@ -7,7 +7,7 @@ const projects: Project[] = projectsData.projects;
 
 export default function formation() {
   return (
-    <section>
+    <section className='flex flex-row flex-1 justify-center'>
       <ProjectGrid projects={projects} />
     </section>
   );

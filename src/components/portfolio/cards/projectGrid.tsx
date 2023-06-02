@@ -1,8 +1,9 @@
-"use client"
+'use client';
 
 import { Icon } from '@iconify/react';
 import { Pagination } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
@@ -35,56 +36,61 @@ const ProjectGrid: React.FC<Props> = () => {
 
   return (
     <>
-      <section className='p-4 lg:p-10 grid grid-cols sm:grid-cols-1 xs: md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5'>
-        {displayedProjects.map((project) => (
-          <Link key={project.id} href={`/projects/${project.id}`} passHref>
+      {displayedProjects.map((project) => (
+        <Link key={project.id} href={`/projects/${project.id}`} passHref>
+          <div className='flex h-[25rem] w-[25rem] flex-col items-center  rounded-lg bg-[#fff] text-center shadow-md text-black'>
+            <div className='relative mb-4 h-[30rem] w-[25rem] rounded-lg shadow-lg  drop-shadow'>
+              <Image
+                src={project.imageUrl}
+                alt={project.title}
+                fill
+                className='rounded-t-lg '
+              />
+            </div>
 
-                <div className='rounded overflow-hidden shadow-lg'>
-                  <img 
-                    src={project.imageUrl}
-                    alt={project.title}
+            <div className='text-left px-4'>
+              <p className='text-lg md:text-xl'>{project.title}</p>
+              <p className='text-sm md:text-base'>{project.description}</p>
+            </div>
 
-                    className=' w-full' // Added this line
-                  />
+            <div className='flex flex-row justify-between gap-10 p-4 items-center space-x-5'>
+              <div className='flex flex-row items-center gap-2 '>
+                <Icon
+                  className=' h-4 w-4 text-green'
+                  icon='icon-park-outline:eyes'
+                />
+                600,000
+              </div>
+              <div className='flex flex-row items-center gap-2 '>
+                <Icon className=' h-4 w-4 text-green' icon='ri:time-line' />
+                4min
+              </div>
+            </div>
 
-                <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2">Mountain</div>
-                    <div>
-                      <div className='pb-6 text-lg md:text-xl'>
-                        {project.title}
-                      </div>
-                      <div className='text-sm md:text-base'>
-                        {project.description}
-                      </div>
-                    </div>
-
-                  <div className='mt-6 flex items-center gap-8 text-xs md:text-sm'>
-                    <div className='sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2'>
-                      <div className='flex flex-row items-center justify-center gap-2'>
-                        {project.Technology.Stack.map((language, index) => (
-                          <>
-                            <Icon
-                              key={`icon-${index}`}
-                              color='white'
-                              className=' h-4 w-4 '
-                              icon={`${project.Technology.Icons[index]}`}
-                            />
-                            <p key={`stack-${index}`}>
-                              {language}
-                              {index < project.Technology.Stack.length - 1 &&
-                                ' |'}
-                            </p>
-                          </>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
+            <div className='pb-4 flex items-center gap-8 text-xs md:text-sm'>
+              <div className='sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2'>
+                <div className='flex flex-row items-center justify-center gap-2'>
+                  {project.Technology.Stack.map((language, index) => (
+                    <>
+                      <Icon
+                        key={`icon-${index}`}
+                        color='black'
+                        className=' h-4 w-4 '
+                        icon={`${project.Technology.Icons[index]}`}
+                      />
+                      <p key={`stack-${index}`}>
+                        {language}
+                        {index < project.Technology.Stack.length - 1 && ' |'}
+                      </p>
+                    </>
+                  ))}
                 </div>
               </div>
+            </div>
+          </div>
+        </Link>
+      ))}
 
-          </Link>
-        ))}
-      </section>
       <ThemeProvider theme={theme}>
         <div className='flex items-center justify-center pt-12'>
           <Pagination
