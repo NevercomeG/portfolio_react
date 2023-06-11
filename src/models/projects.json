@@ -3,7 +3,7 @@
     {
       "id": "206fa7e4-de2f-11ed-b5ea-0242ac120002",
       "title": "E-commerce Site",
-      "imageUrl": "/43.webp",
+      "imageUrl": "/09.png",
       "description": "lorem ipsum dolor sit amet consectetur adipisicing elit. ",
       "Technology": {
         "Stack": ["Next.js", "Typescript", "Firebase"],
@@ -26,7 +26,7 @@
     {
       "id": "244e0dd8-de2f-11ed-b5ea-0242ac120002",
       "title": "Todo App",
-      "imageUrl": "/43.webp",
+      "imageUrl": "/11.jpg",
       "description": "A simple Todo App built with React, Typescript, and Chakra UI.",
       "Technology": {
         "Stack": ["React", "Typescript", "Chakra UI"],
