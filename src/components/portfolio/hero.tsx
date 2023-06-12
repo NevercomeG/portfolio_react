@@ -10,11 +10,15 @@ const Hero = () => {
     <>
       <section
         id='header'
-        className='m-auto grid h-[100vh] w-8/12 items-center justify-center md:w-11/12 lg:w-8/12 lg:grid-cols-2'
+        className='m-auto grid h-[90vh] w-8/12 items-center justify-center md:w-11/12 lg:w-8/12 lg:grid-cols-2'
       >
         <div className='relative hidden flex-col justify-center text-white lg:inline-flex'>
           <div className='w-4/5 md:ml-2'>
-            <div className='work inline-block rounded-xl bg-green p-1'>
+            <div className='leading-12 md:text-4xl lg:text-5xl font-sans font-bold'>
+              <p>Hey!</p>
+              <p>I'm Luis👋</p>
+            </div>
+            <div className='work inline-block rounded-xl bg-green p-1 sm:mb-3 sm:mt-4 md:mt-4 '>
               <Typewriter
                 options={{
                   strings: [
@@ -31,20 +35,16 @@ const Hero = () => {
                 }}
               />
             </div>
-            <div className='head mb-12 leading-12 sm:mb-8 sm:mt-4 md:mt-12 md:text-4xl lg:text-5xl'>
-              <p>Innovative software</p>
-              <p>Development</p>
-            </div>
-            <div className='desc mb-10 text-base opacity-60'>
-              <p>Expertise in software development to keep</p>
-              <p> you ahead of the curve.</p>
+            <div className='mb-4 text-base opacity-60'>
+              <p>I specialize in the React Ecosystem</p>
+              <p>as well as backend technologies like Node.js</p>
             </div>
             <Link href='/home'>
-              <h3 className='mb-20 text-3xl md:mb-10'>
-                Let&apos;s Chat:{' '}
-                <span className='uppercase text-green  underline underline-offset-4'>
+              <h3 className='mb-20 md:mb-4'>
+                My Resume:{' '}
+                <span className='uppercase text-green underline underline-offset-4'>
                   {' '}
-                  Whatsapp
+                  See more
                 </span>
               </h3>
             </Link>
@@ -57,7 +57,7 @@ const Hero = () => {
               </div>
             </div>
             <div className='projects flex items-center justify-between'>
-              <p className='mr-4 text-5xl lg:text-4xl'>32</p>
+              <p className='mr-4 text-5xl lg:text-4xl'>16</p>
               <div className='opacity-75 sm:text-sm md:text-base'>
                 Project completed <p> </p>
               </div>

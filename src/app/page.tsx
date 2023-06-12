@@ -1,4 +1,4 @@
-"use client"
+'use client';
 
 import React from 'react';
 
@@ -17,17 +17,15 @@ export default function Landing() {
       <PopupWidget />
       <Layout>
         {/* <Seo /> */}
-        <main id='top' className='font-mono'>
+        <main id='top'>
           <Hero />
-          <section id='projects' className=' '>
-            <div className='text-center'>
-              <h1 className='font-Roboto_mono text-5xl text-white '>
-                Projects
-              </h1>
+          <section id='projects'>
+            <div className='text-center pb-8'>
+              <h1 className='text-5xl text-white'>Projects</h1>
               <h2>working in progress</h2>
             </div>
             <Projects />
-            <h1 id='stack' className='pt-16  text-center text-5xl'>
+            <h1 id='stack' className='pt-32  text-center text-5xl'>
               MY <span className='text-green'>STACK</span>
             </h1>
             <Frontend />

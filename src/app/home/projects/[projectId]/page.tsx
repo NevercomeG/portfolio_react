@@ -1,5 +1,3 @@
-"use client"
-
 import { GetStaticPaths, GetStaticProps } from 'next';
 import Image from 'next/image';
 
@@ -25,20 +23,23 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   return { props: { project } };
 };
 
-type Props = {
-  project: Project;
-};
-
-const ProjectDetailPage = ({ project }: Props) => {
+const ProjectDetailPage: React.FC<Project> = ({
+  title,
+  description,
+  id,
+  imageUrl,
+  Technology,
+  category,
+}) => {
   return (
     <Layout>
       <section className='pb-24 pt-32'>
-        <h1 className='p-4 text-lg'>{project.title}</h1>
+        <h1 className='p-4 text-lg'>{title}</h1>
         <div className='grid md:grid-cols-3 md:gap-3'>
           <div className='md:col-span-2'>
             <Image
-              src={project.imageUrl}
-              alt={project.title}
+              src={imageUrl}
+              alt={title}
               width={1000}
               height={1000}
               sizes='100vw'
@@ -51,12 +52,12 @@ const ProjectDetailPage = ({ project }: Props) => {
           </div>
           <div className='bg-slate-500'>
             <ul>
-              <li className='pt-10'>Category: {project.category}</li>
-              <li className='pt-10'>Brand: {project.title}</li>
+              <li className='pt-10'>Category: {category}</li>
+              <li className='pt-10'>Brand: {title}</li>
               <li className='pt-10'>
-                {project.category} of {project.category} reviews
+                {category} of {category} reviews
               </li>
-              <li className='pt-10'>Description: {project.description}</li>
+              <li className='pt-10'>Description: {description}</li>
             </ul>
           </div>
         </div>

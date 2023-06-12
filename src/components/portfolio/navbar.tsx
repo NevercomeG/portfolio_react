@@ -1,4 +1,4 @@
-"use client"
+'use client';
 
 import Link from 'next/link';
 import { useState } from 'react';
@@ -8,7 +8,7 @@ export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className='fixed top-0 z-50 w-full shadow backdrop-blur backdrop-brightness-50'>
+    <nav className='sticky top-0 z-50 w-full shadow backdrop-blur backdrop-brightness-50'>
       <div className='mx-auto justify-between px-4 md:flex md:items-center md:px-8 lg:max-w-7xl'>
         <div>
           <div className='flex items-center justify-between  py-3 md:block md:py-5'>

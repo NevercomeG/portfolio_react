@@ -19,6 +19,7 @@ export type Project = {
 
 export type Props = {
   projects: Project[];
+  showAllProjects: boolean;
 };
 
 export type Ttestimonials = {

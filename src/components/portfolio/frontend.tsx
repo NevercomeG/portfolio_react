@@ -4,7 +4,7 @@ import React from 'react';
 const Frontend = () => {
   return (
     <section className=' relative block md:pt-20  '>
-      <div className='grid items-center  justify-center lg:grid-flow-col '>
+      <div className='grid items-center justify-center lg:grid-flow-col '>
         <div className=''>
           <Image
             src='/assets/img/frontend.svg'
