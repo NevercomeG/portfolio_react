@@ -12,7 +12,7 @@ export default function NavBar() {
       <div className='mx-auto justify-between px-4 md:flex md:items-center md:px-8 lg:max-w-7xl'>
         <div>
           <div className='flex items-center justify-between  py-3 md:block md:py-5'>
-            <Link href='/home'>
+            <Link href='/' >
               <div className='name m-0 cursor-pointer p-0 text-3xl font-semibold'>
                 <span className='font-Dm_Sans text-green  duration-200 ease-in'>
                   LUIS{' '}

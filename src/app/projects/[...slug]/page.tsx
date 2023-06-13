@@ -1,36 +1,57 @@
-import { GetStaticPaths, GetStaticProps } from 'next';
+
 import Image from 'next/image';
+import {notFound} from 'next/navigation';
 
 import Layout from '@/components/global/layout/Layout';
-import { Project } from '@/components/portfolio/cards/types';
 
-import projectsData from '@/models/projects.json';
+import { getProjectById, getProjectsData } from '@/models/projectsData';
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = projectsData.projects.map((project: Project) => ({
-    params: {
-      projectId: project.id.toString(),
-    },
-  }));
-  return { paths, fallback: false };
-};
+type Props = {
+  params: {
+    id: string;
+  };
+}
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const projectId = params?.projectId;
-  const project = projectsData.projects.find(
-    (p: Project) => p.id.toString() === projectId
-  );
-  return { props: { project } };
-};
+export async function generateStaticParams() {
+  const projects = await getProjectsData(); //deduped!
+  
+  if (!projects) return []
 
-const ProjectDetailPage: React.FC<Project> = ({
-  title,
-  description,
-  id,
-  imageUrl,
-  Technology,
-  category,
-}) => {
+  return projects.map((project) => ({
+      projectid: project.id
+  }))
+}
+
+
+export async function generateMetadata ({ params: {id} }: Props) {
+
+  const project = await getProjectById(id);
+
+
+  if (!project) {
+    return {
+      title: 'Post Not Found'
+  }
+}
+
+return {
+  title: project.title,
+}
+
+}
+
+
+ export default async function ProjectDetailPage ({ params: {id} }: Props) {
+
+  const datas = await getProjectById(id);
+
+  if (!datas) {
+    return notFound();
+  }
+
+  const { title, imageUrl, description, category } = datas;
+
+
   return (
     <Layout>
       <section className='pb-24 pt-32'>
@@ -58,7 +79,7 @@ const ProjectDetailPage: React.FC<Project> = ({
                 {category} of {category} reviews
               </li>
               <li className='pt-10'>Description: {description}</li>
-            </ul>
+            </ul> 
           </div>
         </div>
       </section>
@@ -66,4 +87,4 @@ const ProjectDetailPage: React.FC<Project> = ({
   );
 };
 
-export default ProjectDetailPage;
+

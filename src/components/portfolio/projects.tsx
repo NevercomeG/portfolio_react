@@ -1,14 +1,46 @@
-import projectsData from '@/models/projects.json';
+import { useCallback, useEffect, useState } from 'react';
+
+import { getProjectsData } from '@/models/projectsData';
 
 import ProjectGrid from './cards/projectGrid';
 import { Project } from './cards/types';
 
-const projects: Project[] = projectsData.projects;
 
-export default function formation() {
-  return (
-    <section className='flex flex-col items-center justify-center'>
-      <ProjectGrid projects={projects} showAllProjects={false} />
-    </section>
-  );
+export default function Formation() {
+  const [projects, setProjects] = useState<Project[]>([]);
+
+  const fetchData = useCallback(async () => {
+    try {
+      const projectsData = await getProjectsData();
+      setProjects(projectsData);
+    } catch (error) {
+      console.error('Error fetching projects data:', error);
+    }
+  }, []);
+
+  useEffect(() => {
+    fetchData();
+  }, [fetchData]);
+
+  return <ProjectGridWrapper />;
+  
+}
+
+function ProjectGridWrapper() {
+  const [projects, setProjects] = useState<Project[]>([]);
+
+  const fetchData = useCallback(async () => {
+    try {
+      const projectsData = await getProjectsData();
+      setProjects(projectsData);
+    } catch (error) {
+      console.error('Error fetching projects data:', error);
+    }
+  }, []);
+
+  useEffect(() => {
+    fetchData();
+  }, [fetchData]);
+
+  return (<section className='flex flex-col items-center justify-center'><ProjectGrid projects={projects} showAllProjects={false} /></section>);
 }

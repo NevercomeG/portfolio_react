@@ -1,59 +1,52 @@
+
 // ProjectGrid.tsx
 import { Pagination } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
-import { useEffect, useState } from 'react';
+import React, { useCallback,useMemo ,useState } from 'react';
 
-import { Project, Props } from '@/components/portfolio/cards/types';
+import { Project } from '@/components/portfolio/cards/types';
 
 import ProjectCard from './projectCard';
 import { theme } from './theme';
 
-const ProjectGrid: React.FC<Props> = ({ projects, showAllProjects }) => {
+
+interface Props {
+  projects: Project[];
+  showAllProjects: boolean;
+}
+
+function ProjectGrid({ projects, showAllProjects }: Props) {
   const [page, setPage] = useState(1);
-  const [displayedProjects, setDisplayedProjects] = useState<Project[]>([]);
   const projectsPerPage = showAllProjects ? projects.length : 3;
 
-  useEffect(() => {
-    setDisplayedProjects(
-      projects.slice((page - 1) * projectsPerPage, page * projectsPerPage)
-    );
-  }, [page, projects, projectsPerPage]);
+  const displayedProjects = useMemo(
+    () => projects.slice((page - 1) * projectsPerPage, page * projectsPerPage),
+    [page, projects, projectsPerPage]
+  );
 
   function handlePaginationChange(
     event: React.ChangeEvent<unknown>,
     value: number
   ) {
-    event.preventDefault();
+    event.stopPropagation();
     setPage(value);
   }
 
   return (
     <>
-      <div className='grid grid-cols-3 gap-4'>
+      <ul className='grid grid-cols-3 gap-4'>
         {displayedProjects.map((project) => (
-          <ProjectCard
-            key={project.id}
-            title={project.title}
-            imageUrl={project.imageUrl}
-            description={project.description}
-            Technology={project.Technology}
-            id={project.id}
-            links={project.links}
-            featured={project.featured}
-            date={project.date}
-            category={project.category}
-          />
+          <ProjectCard key={project.id} {...project} />
         ))}
-      </div>
+      </ul>
       {!showAllProjects && (
         <ThemeProvider theme={theme}>
           <div className='flex items-center justify-center pt-12'>
             <Pagination
               count={Math.ceil(projects.length / projectsPerPage)}
               variant='outlined'
-              color='primary'
-              className='w-3/2 items-center justify-center'
               sx={{ bgcolor: '#fff', borderRadius: 2, text: '#fff' }}
+              classes={{ root: 'pagination' }}
               page={page}
               onChange={handlePaginationChange}
             />
@@ -62,6 +55,25 @@ const ProjectGrid: React.FC<Props> = ({ projects, showAllProjects }) => {
       )}
     </>
   );
-};
+}
 
-export default ProjectGrid;
+type PaginationReturnType = {
+  page: number;
+  handlePaginationChange: (event: React.ChangeEvent<unknown>, value: number) => void;
+}
+
+function usePagination(): PaginationReturnType {
+  const [page, setPage] = useState(1);
+
+  const handlePaginationChange = useCallback(
+    (event: React.ChangeEvent<unknown>, value: number) => {
+      event.stopPropagation();
+      setPage(value);
+    },
+    []
+  );
+
+  return { page, handlePaginationChange };
+}
+
+export default React.memo(ProjectGrid);

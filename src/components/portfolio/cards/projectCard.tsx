@@ -3,18 +3,27 @@ import { Icon } from '@iconify/react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { getProjectById } from '@/models/projectsData';
+
 import { Project } from './types';
 
-const ProjectCard: React.FC<Project> = ({
-  title,
-  description,
+export default function ProjectCard ({  title,
   id,
+  description,
   imageUrl,
-  Technology,
-}) => {
+  Technology,}:Project){
+
+    const fetchProjectData = async () => {
+      const project = await getProjectById(id);
+      console.log(project);
+    }; 
+
+    fetchProjectData();
+
   return (
-    <Link href={`/home/projects/${id}`} passHref>
-      <div className='flex w-[22rem] h-[23rem] flex-col items-center rounded-md border-[1px] border-[#818181] text-center shadow-md text-white font-sans '>
+
+    <Link href={`/projects/${id}`} passHref  >
+      <li className='flex w-[22rem] h-[23rem] flex-col items-center rounded-md border-[1px] border-[#818181] text-center shadow-md text-white font-sans '>
         <figure className='relative h-[23rem] w-[22rem]  overflow-hidden rounded-lg '>
           <Image
             src={imageUrl}
@@ -55,14 +64,14 @@ const ProjectCard: React.FC<Project> = ({
           </div>
 
           <div className='text-left py-2 hover:underline'>
-            <a href='' className='text-base'>
+            <a href={`/projects/${id}/`} className='text-base'>
               See more →
             </a>
           </div>
         </div>
-      </div>
+      </li>
     </Link>
   );
 };
 
-export default ProjectCard;
+
