@@ -1,0 +1,55 @@
+understand. try this like:
+1. In your Next.js project directory, create a new file named [slug].json in the pages/api folder. This will be our custom server route that will handle requests for dynamic pages based on alias values.
+2. Inside the [slug].json file, write the following code:
+import { fetchPageById } from 'path/to/your/api';
+
+export default async function handler(req, res) {
+  const { slug } = req.query;
+  const page = await fetchPageByAlias(slug);
+  res.status(200).json(page);
+}
+This code defines a custom API endpoint that receives a slug parameter in the request query string and uses it to fetch the corresponding dynamic page data from your API using the alias value.
+3. In your dynamic page component file (e.g., [id].js), implement getStaticPaths to generate the list of dynamic paths based on your alias and id parameters together.
+export async function getStaticPaths() {
+  // Fetch the list of dynamic page data objects from your API
+  const pages = await fetchAllPages();
+
+  // Map each page object to a corresponding path object that includes both id and alias params
+  const paths = pages.map(page => ({ 
+    params: { 
+      id: page.id.toString(),
+      slug: page.alias,
+     } 
+  }));
+
+  // Return the list of path objects to generate static files for
+  return { paths, fallback: false };
+}
+This code generates a list of dynamic paths based on both the ID and alias parameters, combining them together in the path object.
+4. Implement getStaticProps to fetch the page data for the specified id parameter using your API.
+export async function getStaticProps({params}) {
+  // Fetch the dynamic page data for the specified ID from your API
+  const page = await fetchPageById(params.id);
+
+  return {
+    props: {
+      page,
+    },
+  };
+}
+5. Now you can use the useRouter hook inside your component file to redirect to the custom server route URL that includes only the alias value:
+import { useRouter } from 'next/router';
+
+function MyDynamicPage({ page }) {
+  const router = useRouter();
+  const { slug } = router.query;
+  useEffect(() => {
+    router.replace(`/api/${slug}.json`);
+  }, [slug]);
+
+  return (
+    <div>
+      {/* render the dynamic page content */}
+    </div>
+  );
+}

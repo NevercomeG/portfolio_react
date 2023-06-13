@@ -1,14 +1,12 @@
-
 // ProjectGrid.tsx
 import { Pagination } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
-import React, { useCallback,useMemo ,useState } from 'react';
+import React, { useMemo, useState } from 'react';
 
 import { Project } from '@/components/portfolio/cards/types';
 
 import ProjectCard from './projectCard';
 import { theme } from './theme';
-
 
 interface Props {
   projects: Project[];
@@ -55,25 +53,6 @@ function ProjectGrid({ projects, showAllProjects }: Props) {
       )}
     </>
   );
-}
-
-type PaginationReturnType = {
-  page: number;
-  handlePaginationChange: (event: React.ChangeEvent<unknown>, value: number) => void;
-}
-
-function usePagination(): PaginationReturnType {
-  const [page, setPage] = useState(1);
-
-  const handlePaginationChange = useCallback(
-    (event: React.ChangeEvent<unknown>, value: number) => {
-      event.stopPropagation();
-      setPage(value);
-    },
-    []
-  );
-
-  return { page, handlePaginationChange };
 }
 
 export default React.memo(ProjectGrid);

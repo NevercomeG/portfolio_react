@@ -1,6 +1,5 @@
-
 import Image from 'next/image';
-import {notFound} from 'next/navigation';
+import { notFound } from 'next/navigation';
 
 import Layout from '@/components/global/layout/Layout';
 
@@ -10,39 +9,33 @@ type Props = {
   params: {
     id: string;
   };
-}
+};
 
-export async function generateStaticParams() {
+export async function getStaticParams() {
   const projects = await getProjectsData(); //deduped!
-  
-  if (!projects) return []
+
+  if (!projects) return [];
 
   return projects.map((project) => ({
-      projectid: project.id
-  }))
+    projectid: project.id,
+  }));
 }
 
-
-export async function generateMetadata ({ params: {id} }: Props) {
-
+export async function generateMetadata({ params: { id } }: Props) {
   const project = await getProjectById(id);
-
 
   if (!project) {
     return {
-      title: 'Post Not Found'
+      title: 'Project Not Found',
+    };
   }
+
+  return {
+    title: project.title,
+  };
 }
 
-return {
-  title: project.title,
-}
-
-}
-
-
- export default async function ProjectDetailPage ({ params: {id} }: Props) {
-
+export default async function ProjectDetailPage({ params: { id } }: Props) {
   const datas = await getProjectById(id);
 
   if (!datas) {
@@ -50,7 +43,6 @@ return {
   }
 
   const { title, imageUrl, description, category } = datas;
-
 
   return (
     <Layout>
@@ -79,12 +71,42 @@ return {
                 {category} of {category} reviews
               </li>
               <li className='pt-10'>Description: {description}</li>
-            </ul> 
+            </ul>
           </div>
         </div>
       </section>
     </Layout>
   );
-};
+}
 
+export async function getStaticPaths() {
+  const projects = await getProjectsData(); // deduped!
 
+  if (!projects) return { paths: [], fallback: false };
+
+  const paths = projects.map((project) => ({
+    params: {
+      id: project.id,
+    },
+  }));
+
+  return { paths, fallback: false };
+}
+
+export async function getStaticProps({ params }) {
+  const projectId = params.projectid;
+  const project = await getProjectById(projectId);
+  console.log(params);
+
+  if (!project) {
+    return {
+      notFound: true, // Return a 404 page if the project is not found
+    };
+  }
+
+  return {
+    props: {
+      project,
+    },
+  };
+}
