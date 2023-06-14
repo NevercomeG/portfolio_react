@@ -2,8 +2,6 @@ import Link from 'next/link';
 
 import getFormattedDate from '@/lib/getFormattedDate';
 
-import { Meta } from '@/layouts/Meta';
-
 type Props = {
   post: Meta;
 };

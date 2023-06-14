@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 import { getPostsMeta } from '@/lib/posts';
 
-import ListItem from '@/app/components/ListItem';
+import ListItem from '@/components/blogs/ListItem';
 
 export const revalidate = 86400;
 

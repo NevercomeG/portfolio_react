@@ -1,11 +1,10 @@
-import { Meta } from 'layouts/Meta'
 import { compileMDX } from 'next-mdx-remote/rsc'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings/lib'
 import rehypeHighlight from 'rehype-highlight/lib'
 import rehypeSlug from 'rehype-slug'
 
-import CustomImage from '@/app/components/blogs/CustomImage'
-import Video from '@/app/components/blogs/Video'
+import CustomImage from '@/components/blogs/CustomImage'
+import Video from '@/components/blogs/Video'
 
 type Filetree = {
     "tree": [
