@@ -32,17 +32,18 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"],
-      "@/public/*": ["./public/*"],
-      "@/components/*": ["./app/components/*"],
-      "@/styles/*": ["./styles/*"],
-      "@/utils/*": ["./utils/*"],
-      "@/services/*": ["./services/*"],
-      "@/config/*": ["./config/*"],
-      "@/assets/*": ["./assets/*"],
-      "@/constants/*": ["./constants/*"],
+      "@/src/*": ["./*"],
+      "@/public/*": ["./src/public/*"],
+      "@/components/*": ["./src/components/*"],
+      "@/styles/*": ["./src/styles/*"],
+      "@/utils/*": ["./src/utils/*"],
+      "@/services/*": ["./src/services/*"],
+      "@/config/*": ["./src/config/*"],
+      "@/assets/*": ["./src/assets/*"],
+      "@/models/*": ["./src/models/*"],
+      "@/constants/*": ["./src/constants/*"],
       "@/layouts/*": ["./layouts/*"],
-      "@/lib/*": ["./lib/*"]
+      "@/lib/*": ["./src/lib/*"]
     },
     "plugins": [
       {
