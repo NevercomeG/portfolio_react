@@ -72,6 +72,8 @@ const Hero = () => {
               alt=''
               width='200'
               height='200'
+              loading='lazy'
+              priority={false}
             />
             <div className=' flex'>
               <h1 className='font-mono text-5xl leading-none'>

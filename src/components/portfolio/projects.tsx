@@ -3,7 +3,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { getProjectsData } from '@/models/projectsData';
 
 import ProjectGrid from './cards/projectGrid';
-import { Project } from './cards/types';
+import { Project } from './types';
 
 export default function Formation() {
   return <ProjectGridWrapper />;

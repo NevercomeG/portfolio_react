@@ -3,8 +3,10 @@
 import React from 'react';
 
 import Layout from '@/components/global/layout/Layout';
+import Seo from '@/components/global/Seo';
 // import Seo from '@/components/global/Seo';
 import Backend from '@/components/portfolio/backend';
+import DevtoList from '@/components/portfolio/blog/bloglist';
 import Devops from '@/components/portfolio/devops';
 import Frontend from '@/components/portfolio/frontend';
 import Hero from '@/components/portfolio/hero';
@@ -16,7 +18,7 @@ export default function Landing() {
     <>
       <PopupWidget />
       <Layout>
-        {/* <Seo /> */}
+        <Seo />
         <main id='top'>
           <Hero />
           <section id='projects'>
@@ -25,6 +27,10 @@ export default function Landing() {
               <h2>working in progress</h2>
             </div>
             <Projects />
+            <p className='pt-32 text-center pb-8 text-5xl'>
+              <span className='text-green'> Dev.to</span> Blogs
+            </p>
+            <DevtoList />
             <h1 id='stack' className='pt-32  text-center text-5xl'>
               MY <span className='text-green'>STACK</span>
             </h1>
@@ -32,7 +38,6 @@ export default function Landing() {
             <Backend />
             <Devops />
           </section>
-          {/* <Formation /> */}
         </main>
       </Layout>
     </>

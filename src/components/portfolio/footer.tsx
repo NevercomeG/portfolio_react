@@ -15,13 +15,16 @@ const Footer = () => {
           <h1 className='text-2xl'>Hire Me</h1>
         </div>
         <div className='icons mb-8 flex space-x-10 text-3xl'>
-          <a href='https://www.linkedin.com/in/luis-solano-a20683208/'>
+          <a
+            href='https://www.linkedin.com/in/luis-solano-a20683208/'
+            aria-label='Linkedin'
+          >
             <IoLogoLinkedin
               href=''
               className='m-2 cursor-pointer duration-300  ease-in hover:text-green'
             />
           </a>
-          <a href='https://github.com/NevercomeX'>
+          <a href='https://github.com/NevercomeX' aria-label='Nevercomex Page'>
             <AiOutlineGithub className='m-2 cursor-pointer duration-300  ease-in hover:text-green' />
           </a>
         </div>

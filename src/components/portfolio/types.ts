@@ -17,7 +17,24 @@ export type Project = {
   category: string;
 };
 
-export type Props = {
+export type DevToArticle = {
+  id: string;
+  name: string;
+  github_username: string;
+  title: string;
+  description: string;
+  url: string;
+  published_at: string;
+  social_image: string;
+};
+
+export type DevToArticlesProps = {
+  articles: DevToArticle[];
+  showAllArticles: boolean;
+}
+
+
+export type ProjectProps = {
   projects: Project[];
   showAllProjects: boolean;
 };

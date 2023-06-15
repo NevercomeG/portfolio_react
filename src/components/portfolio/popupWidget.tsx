@@ -266,6 +266,7 @@ const PopupWidget = () => {
                           className='text-gray-600'
                           target='_blank'
                           rel='noopener noreferrer'
+                          aria-label='NevercomeX'
                         >
                           NevercomeX
                         </a>

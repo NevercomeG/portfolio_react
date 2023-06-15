@@ -1,11 +1,6 @@
 'use client';
+
 import Layout from '@/components/global/layout/Layout';
-import ProjectGrid from '@/components/portfolio/cards/projectGrid';
-
-import projectsData from '@/models/projects.json';
-import { Project } from '@/src/src/components/portfolio/types';
-
-const projects: Project[] = projectsData.projects;
 
 export default function page() {
   return (
@@ -23,7 +18,6 @@ export default function page() {
             Showcasing My Frontend Development Projects.
           </h1>
         </div>
-        <ProjectGrid projects={projects} showAllProjects={true} />
       </section>
     </Layout>
   );

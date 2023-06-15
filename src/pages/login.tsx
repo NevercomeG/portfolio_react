@@ -167,6 +167,7 @@ const Login: NextPage = () => {
                     <a
                       href='#!'
                       className='text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600'
+                      aria-label='Forgot password?'
                     >
                       Forgot password?
                     </a>
@@ -217,6 +218,7 @@ const Login: NextPage = () => {
                   role='button'
                   data-te-ripple-init
                   data-te-ripple-color='light'
+                  aria-label='Log in with Facebook'
                 >
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -235,6 +237,7 @@ const Login: NextPage = () => {
                   className=' text-gray-100'
                   target='_blank'
                   rel='noopener noreferrer'
+                  aria-label='NevercomeX'
                 >
                   <p className='text-center text-xs' id='result'>
                     NevercomeX
