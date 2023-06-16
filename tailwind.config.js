@@ -150,5 +150,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require('@tailwindcss/forms', 'tailwind-scrollbar-hide','@tailwindcss/aspect-ratio','@tailwindcss/typography')],
+  plugins: [require('@tailwindcss/forms', 'tailwind-scrollbar-hide','@tailwindcss/aspect-ratio','@tailwindcss/typography','tailwindcss-animated')],
 };

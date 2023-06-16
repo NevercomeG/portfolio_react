@@ -17,7 +17,6 @@ const Nevercomex = ({ classNames, divhidden }: NevercomexProps) => {
           <span className=' w-8  '>
             <Image
               src='/nevercomex/android-chrome-384x384.png'
-              layout='responsive'
               alt='Powered by Vercel'
               width='32'
               height='32'

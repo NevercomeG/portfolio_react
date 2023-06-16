@@ -1,10 +1,7 @@
-'use client';
-
 import React from 'react';
 
 import Layout from '@/components/global/layout/Layout';
 import Seo from '@/components/global/Seo';
-// import Seo from '@/components/global/Seo';
 import Backend from '@/components/portfolio/backend';
 import DevtoList from '@/components/portfolio/blog/bloglist';
 import Devops from '@/components/portfolio/devops';

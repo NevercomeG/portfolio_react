@@ -3,7 +3,7 @@
     {
       "id": "566e843e-09b1-11ee-be56-0242ac120002",
       "title": "E-commerce Site",
-      "imageUrl": "/09.png",
+      "imageUrl": "/09.webp",
       "description": "lorem ipsum dolor sit amet consectetur adipisicing elit. ",
       "Technology": {
         "Stack": ["Next.js", "Typescript", "Firebase"],
@@ -26,7 +26,7 @@
     {
       "id": "5990134e-09b1-11ee-be56-0242ac120002",
       "title": "Todo App",
-      "imageUrl": "/11.jpg",
+      "imageUrl": "/11.webp",
       "description": "A simple Todo App built with React, Typescript, and Chakra UI.",
       "Technology": {
         "Stack": ["React", "Typescript", "Chakra UI"],
@@ -73,7 +73,7 @@
     {
       "id": "617019f6-09b1-11ee-be56-0242ac120002",
       "title": "Chat Application",
-      "imageUrl": "/3.png",
+      "imageUrl": "/3.webp",
       "description": "A Chat Application built with React, Node.js, and Socket.io.",
       "Technology": {
         "Stack": ["React", "Node.js", "Socket.io"],
@@ -97,7 +97,7 @@
     {
       "id": "6ec5c0ce-09b1-11ee-be56-0242ac120002",
       "title": "Recipe App",
-      "imageUrl": "/4.png",
+      "imageUrl": "/4.webp",
       "description": "A Recipe App built with React, Typescript, and Spoonacular API.",
       "Technology": {
         "Stack": ["React", "Typescript", "Spoonacular API"],

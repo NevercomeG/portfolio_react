@@ -8,14 +8,13 @@ import Typewriter from 'typewriter-effect';
 const Hero = () => {
   return (
     <>
-      <section
-        id='header'
-        className='m-auto grid h-[90vh] w-8/12 items-center justify-center md:w-11/12 lg:w-8/12 lg:grid-cols-2'
-      >
+      <section className='m-auto grid h-[90vh] w-8/12 items-center justify-center md:w-11/12 lg:w-8/12 lg:grid-cols-2 '>
         <div className='relative hidden flex-col justify-center text-white lg:inline-flex'>
           <div className='w-4/5 md:ml-2'>
             <div className='leading-12 md:text-4xl lg:text-5xl font-sans font-bold'>
-              <p>Hey!</p>
+              <p className='animate-fade-up animate-once animate-duration-1000 animate-delay-500 animate-ease-linear'>
+                Hey!
+              </p>
               <p>I'm Luis👋</p>
             </div>
             <div className='work inline-block rounded-xl bg-green p-1 sm:mb-3 sm:mt-4 md:mt-4 '>
@@ -67,7 +66,7 @@ const Hero = () => {
         <div className='items-center justify-center lg:inline-flex'>
           <div className='flex flex-col items-center text-center lg:flex-row lg:space-x-10'>
             <Image
-              src='/assets/img/8bitpix.png'
+              src='/assets/img/8bitpix.webp'
               className='bg-black-50 rounded-full border-solid border-green shadow-2xl backdrop-blur-sm backdrop-brightness-75'
               alt=''
               width='200'

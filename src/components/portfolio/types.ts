@@ -1,21 +1,31 @@
+export type Projects = {
+  projects: Project[];
+}
+
 export type Project = {
-  id: string;
-  title: string;
-  imageUrl: string;
+  id:          string;
+  title:       string;
+  imageUrl:    string;
   description: string;
-  Technology: {
-    Stack: string[];
-    Icons: string[];
-  };
-  links: {
-    url: string;
-    github: string;
-    youtube: string;
-  };
-  featured: boolean;
-  date: string;
-  category: string;
-};
+  Technology:  Technology;
+  links:       Links;
+  featured:    boolean;
+  date:        string;
+  category:    string;
+  tags?:       string[];
+  image?:      string;
+}
+
+export type Technology = {
+  Stack: string[];
+  Icons: string[];
+}
+
+export type Links = {
+  url:     string;
+  github:  string;
+  youtube: string;
+}
 
 export type DevToArticle = {
   id: string;

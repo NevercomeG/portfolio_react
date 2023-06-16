@@ -12,7 +12,7 @@ function DevtoList() {
       const data = await response.json();
       setArticles(data);
     } catch (error) {
-      console.error('Error fetching data:', error);
+      throw new Error('Failed to fetch data');
     }
   }, []);
 
@@ -22,7 +22,7 @@ function DevtoList() {
 
   return (
     <section className='flex flex-col items-center justify-center'>
-      <Bloggrid articles={articles} showAllArticles={false} />
+      <Bloggrid articles={articles} showAllArticles={true} />
     </section>
   );
 }

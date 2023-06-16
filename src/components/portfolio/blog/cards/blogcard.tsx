@@ -23,7 +23,8 @@ export default function ProjectCard({
           <Image
             src={social_image}
             alt={title}
-            fill
+            width={1920}
+            height={1080}
             loading='lazy'
             className=' rounded-md  top-0 left-0 cursor-default px-4 pt-4 '
             style={{ objectFit: 'cover' }}

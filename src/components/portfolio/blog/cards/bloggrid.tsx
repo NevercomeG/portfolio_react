@@ -34,28 +34,27 @@ function ProjectGrid({ articles, showAllArticles }: DevToArticlesProps) {
           <ProjectCard key={articles.id} {...articles} />
         ))}
       </ul>
+
+      <div className='flex pt-4 justify-start items-start '>
+        <Link href='/blogs'>
+          <button className='h-8 w-18 border-[1px] border-white p-2 flex justify-center items-center '>
+            More Blogs
+          </button>
+        </Link>
+      </div>
       {!showAllArticles && (
-        <>
-          <div className='flex pt-4 justify-start items-start '>
-            <Link href='/blogs'>
-              <button className='h-8 w-18 border-[1px] border-white p-2 flex justify-center items-center '>
-                More Blogs
-              </button>
-            </Link>
+        <ThemeProvider theme={theme}>
+          <div className='flex items-center justify-center pt-4'>
+            <Pagination
+              count={Math.ceil(projects.length / articlesPerPage)}
+              variant='outlined'
+              sx={{ bgcolor: '#fff', borderRadius: 2, text: '#fff' }}
+              classes={{ root: 'pagination' }}
+              page={page}
+              onChange={handlePaginationChange}
+            />
           </div>
-          <ThemeProvider theme={theme}>
-            <div className='flex items-center justify-center pt-12'>
-              <Pagination
-                count={Math.ceil(projects.length / articlesPerPage)}
-                variant='outlined'
-                sx={{ bgcolor: '#fff', borderRadius: 2, text: '#fff' }}
-                classes={{ root: 'pagination' }}
-                page={page}
-                onChange={handlePaginationChange}
-              />
-            </div>
-          </ThemeProvider>
-        </>
+        </ThemeProvider>
       )}
     </>
   );

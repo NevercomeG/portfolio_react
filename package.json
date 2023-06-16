@@ -29,6 +29,7 @@
     "@mui/material": "^5.13.5",
     "@types/react-helmet": "^6.1.6",
     "autoprefixer": "10.4.14",
+    "axios": "^1.4.0",
     "clsx": "^1.2.1",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.3",
@@ -116,6 +117,7 @@
     "react-icons": "^4.9.0",
     "react-infinite-scroll-component": "^6.1.0",
     "react-query": "^3.39.3",
+    "react-query-devtools": "^2.6.3",
     "react-typing-effect": "^2.0.5",
     "rimraf": "^5.0.1",
     "semantic-release": "^21.0.5",
@@ -123,6 +125,7 @@
     "tailwind-merge": "^1.13.1",
     "tailwind-scrollbar-hide": "^1.1.7",
     "tailwindcss": "^3.3.2",
+    "tailwindcss-animated": "^1.0.1",
     "typescript": "^5.0.4",
     "typewriter-effect": "^2.20.1",
     "web-vitals": "^3.3.2"
