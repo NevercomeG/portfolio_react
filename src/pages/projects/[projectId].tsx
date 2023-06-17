@@ -2,7 +2,7 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 import Image from 'next/image';
 
 import Layout from '@/components/global/layout/Layout';
-import { Project } from '@/components/portfolio/cards/types';
+import { Project } from '@/components/portfolio/types';
 
 import projectsData from '@/models/projects.json';
 

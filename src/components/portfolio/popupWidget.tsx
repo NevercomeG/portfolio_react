@@ -1,3 +1,5 @@
+'use client';
+
 import { Disclosure, Transition } from '@headlessui/react';
 import React, { useState } from 'react';
 import { SubmitHandler, useForm, useWatch } from 'react-hook-form';
@@ -264,6 +266,7 @@ const PopupWidget = () => {
                           className='text-gray-600'
                           target='_blank'
                           rel='noopener noreferrer'
+                          aria-label='NevercomeX'
                         >
                           NevercomeX
                         </a>

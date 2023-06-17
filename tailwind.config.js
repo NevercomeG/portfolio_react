@@ -2,7 +2,9 @@
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  content: [
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   important: true,
   theme: {
     extend: {
@@ -148,5 +150,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require('@tailwindcss/forms', 'tailwind-scrollbar-hide')],
+  plugins: [require('@tailwindcss/forms', 'tailwind-scrollbar-hide','@tailwindcss/aspect-ratio','@tailwindcss/typography','tailwindcss-animated')],
 };

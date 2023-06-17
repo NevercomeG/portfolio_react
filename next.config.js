@@ -8,17 +8,8 @@ module.exports = withBundleAnalyzer({
   eslint: {
     dirs: ['.'],
   },
-  async redirects() {
-    return [
-      {
-        source: '/',
-        destination: '/home',
-        permanent: true,
-      },
-    ];
-  },
   images: {
-    domains: ['images.unsplash.com', 'img.icons8.com', 'rickandmortyapi.com'],
+    domains: ['images.unsplash.com', 'img.icons8.com', 'rickandmortyapi.com',"res.cloudinary.com","dev.to","cdn.hashnode.com"],
   },
   poweredByHeader: false,
   trailingSlash: true,
@@ -27,7 +18,4 @@ module.exports = withBundleAnalyzer({
   // So, the source code is "basePath-ready".
   // You can remove `basePath` if you don't need it.
   reactStrictMode: true,
-  experimental: {
-    appDir: true,
-  },
 });

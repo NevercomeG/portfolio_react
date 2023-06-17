@@ -1,31 +1,30 @@
-import { GetStaticProps } from 'next';
+'use client';
+import Layout from '@/components/global/layout/Layout';
+import ProjectGrid from '@/components/portfolio/projects/ProjectGrid';
+import { Project } from '@/components/portfolio/types';
 
-import ProjectGrid from '@/components/portfolio/cards/projectGrid';
-import { Project } from '@/components/portfolio/cards/types';
+import projectsData from '@/models/projects.json';
 
-type Props = {
-  projects: Project[];
-};
+const projects: Project[] = projectsData.projects;
 
-export const getStaticProps: GetStaticProps<Props> = async () => {
-  // Read the JSON data from the file system
-  const data = await import('@/models/projects.json');
-  const projects: Project[] = data.projects;
-
-  return {
-    props: {
-      projects,
-    },
-  };
-};
-
-const ProjectsPage: React.FC<Props> = ({ projects }) => {
+export default function page() {
   return (
-    <div>
-      <h1>My Projects</h1>
-      <ProjectGrid projects={projects} />
-    </div>
+    <Layout>
+      <section className='flex justify-center flex-col items-center py-12 max-w-[68rem] ml-auto mr-auto w-[91%]'>
+        <div className='w-full'>
+          <h1>
+            <span className='text-4xl text-transparent bg-clip-text bg-gradient-to-r from-green to-white'>
+              My Projects
+            </span>
+          </h1>
+        </div>
+        <div className='w-full pb-4'>
+          <h1 className='text-left text-2xl text-slate-100 '>
+            Showcasing My Frontend Development Projects.
+          </h1>
+        </div>
+        <ProjectGrid projects={projects} showAllProjects={true} />
+      </section>
+    </Layout>
   );
-};
-
-export default ProjectsPage;
+}

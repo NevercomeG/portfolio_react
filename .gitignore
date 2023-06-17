@@ -17,10 +17,10 @@ cypress/videos
 /out
 
 # next-sitemap
-public/robots.txt
-public/sitemap.xml
-public/sitemap-*.xml
-public/sitemap-0.xml
+/public/robots.txt
+/public/sitemap.xml
+/public/sitemap-*.xml
+/public/sitemap-0.xml
 
 # cache
 .swc/
@@ -48,10 +48,6 @@ local
 
 # vercel
 .vercel
-
-#sitemap
-sitemap.xml
-public/sitemap-0.xml
 
 # storybook
 storybook-static
