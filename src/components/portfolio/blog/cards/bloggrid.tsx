@@ -4,7 +4,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import Link from 'next/link';
 import React, { useMemo, useState } from 'react';
 
-import projects from '@/src/src/pages/projects';
+import projects from '@/pages/projects';
 
 import ProjectCard from './blogcard';
 import { theme } from './theme';

@@ -1,6 +1,6 @@
 import { projectsData } from '@/models/projectdata';
 
-import ProjectGrid from './cards/projectGrid';
+import ProjectGrid from './ProjectGrid';
 
 export default function Formation() {
   return <ProjectGridWrapper />;
@@ -8,7 +8,7 @@ export default function Formation() {
 
 function ProjectGridWrapper() {
   return (
-    <section className='flex flex-col items-center justify-center'>
+    <section className='flex flex-col items-center justify-center '>
       <ProjectGrid projects={projectsData} showAllProjects={false} />
     </section>
   );

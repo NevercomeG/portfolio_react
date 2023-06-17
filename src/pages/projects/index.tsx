@@ -1,9 +1,9 @@
 'use client';
 import Layout from '@/components/global/layout/Layout';
-import ProjectGrid from '@/components/portfolio/cards/projectGrid';
+import ProjectGrid from '@/components/portfolio/projects/ProjectGrid';
+import { Project } from '@/components/portfolio/types';
 
 import projectsData from '@/models/projects.json';
-import { Project } from '@/src/src/components/portfolio/types';
 
 const projects: Project[] = projectsData.projects;
 

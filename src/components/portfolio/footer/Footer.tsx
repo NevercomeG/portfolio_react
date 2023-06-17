@@ -2,7 +2,7 @@ import React from 'react';
 import { AiOutlineGithub } from 'react-icons/ai';
 import { IoLogoLinkedin } from 'react-icons/io';
 
-import Nevercomex from '../global/nevercomex/copyright';
+import Nevercomex from '../../global/nevercomex/copyright';
 
 const Footer = () => {
   return (

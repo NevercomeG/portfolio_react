@@ -4,10 +4,10 @@ import { ThemeProvider } from '@mui/material/styles';
 import Link from 'next/link';
 import React, { useMemo, useState } from 'react';
 
-import { Project } from '@/src/src/components/portfolio/types';
+import { Project } from '@/components/portfolio/types';
 
-import ProjectCard from './projectCard';
-import { theme } from './theme';
+import ProjectCard from './ProjectCard';
+import { theme } from './Theme';
 
 interface Props {
   projects: Project[];
