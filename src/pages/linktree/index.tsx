@@ -1,21 +1,18 @@
+import dynamic from 'next/dynamic';
 import Image from 'next/image';
-import Typewriter from 'typewriter-effect';
 
-import Nevercomex from '@/components/global/nevercomex/copyright';
-import Seo from '@/components/global/Seo';
-import LinkCard from '@/components/Linktree/LinkCard';
-import Maincard from '@/components/Linktree/Maincard';
-import Social from '@/components/Linktree/Social';
+const Typewriter = dynamic(() => import('typewriter-effect'));
+const LinkCard = dynamic(() => import('@/components/Linktree/LinkCard'));
+const Maincard = dynamic(() => import('@/components/Linktree/Maincard'));
+const Social = dynamic(() => import('@/components/Linktree/Social'));
+const Seo = dynamic(() => import('@/components/global/Seo'));
+const Nevercomex = dynamic(
+  () => import('@/components/global/nevercomex/copyright')
+);
 
 import data from '@/models/data.json';
 
 // import { faCoffee } from "@fortawesome/free-solid-svg-icons";
-<script
-  async
-  custom-element='amp-iframe'
-  src='https://cdn.ampproject.org/v0/amp-iframe-0.1.js'
-></script>;
-
 export default function Linktree({
   className,
 }: {

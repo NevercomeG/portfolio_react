@@ -1,12 +1,12 @@
 // ProjectGrid.tsx
 import { Pagination } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
+import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import React, { useMemo, useState } from 'react';
 
-import projects from '@/pages/projects';
+const BlogCard = dynamic(() => import('./blogcard'));
 
-import ProjectCard from './blogcard';
 import { theme } from './theme';
 import { DevToArticlesProps } from '../../types';
 
@@ -38,7 +38,7 @@ function ProjectGrid({
     <>
       <ul className='grid grid-rows-1 md:grid-cols-1 lg:grid-cols-3 gap-4'>
         {displayedProjects.map((articles) => (
-          <ProjectCard key={articles.id} {...articles} />
+          <BlogCard key={articles.id} {...articles} />
         ))}
       </ul>
       {showButton && (
@@ -55,7 +55,6 @@ function ProjectGrid({
         <ThemeProvider theme={theme}>
           <div className='flex items-center justify-center pt-4'>
             <Pagination
-              count={Math.ceil(projects.length / articlesPerPage)}
               variant='outlined'
               sx={{ bgcolor: '#fff', borderRadius: 2, text: '#fff' }}
               classes={{ root: 'pagination' }}

@@ -1,7 +1,9 @@
+import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import React from 'react';
 
-import IconGrid from '@/components/portfolio/stack/IconGrid';
+const IconGrid = dynamic(() => import('@/components/portfolio/stack/IconGrid'));
+
 import { StackData } from '@/components/portfolio/stack/Types';
 
 const StackBuilder = ({ stackData }: { stackData?: StackData[] }) => {
@@ -30,9 +32,7 @@ const StackBuilder = ({ stackData }: { stackData?: StackData[] }) => {
             </div>
             <div className='flex justify-center items-center flex-col'>
               <div className='flex w-full'>
-                <h3 className='text-3.5xl lg:text-4xl'>
-                  {data?.title} <span className='text-green'></span>
-                </h3>
+                <h1 className='text-3.5xl lg:text-4xl'>{data?.title}</h1>
               </div>
               <div className='space-y-2 py-2'>
                 <IconGrid data={data?.icons} />

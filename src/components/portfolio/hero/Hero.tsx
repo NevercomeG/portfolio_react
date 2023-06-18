@@ -8,13 +8,6 @@ import Typewriter from 'typewriter-effect';
 const Hero = () => {
   return (
     <main className='relative  flex flex-col items-center justify-center flex-1 z-[1] '>
-      <Image
-        src='/background2.png'
-        className=' object-cover object-center z-[0] '
-        fill
-        alt='Background'
-        sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
-      />
       <section className='w-full'>
         <div className='h-[90vh] w-full flex md:lg:space-x-12  items-center justify-center'>
           <div className='relative hidden flex-col justify-start items-start text-white lg:inline-flex'>
@@ -76,8 +69,7 @@ const Hero = () => {
                 src='/assets/img/8bitpix.webp'
                 alt='pfp'
                 fill
-                loading='lazy'
-                priority={false}
+                priority={true}
                 sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
                 className='bg-black-50 rounded-full border-solid  shadow-2xl backdrop-blur-sm backdrop-brightness-75'
               />

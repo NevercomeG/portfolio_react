@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 import { DevToArticle } from '../../types';
 
-export default function ProjectCard({
+export default function BlogCard({
   id,
   title,
   description,

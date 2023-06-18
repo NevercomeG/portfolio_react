@@ -1,6 +1,10 @@
+import dynamic from 'next/dynamic';
 import { useCallback, useEffect, useState } from 'react';
 
-import Bloggrid from '@/components/portfolio/blog/cards/bloggrid';
+const Bloggrid = dynamic(
+  () => import('@/components/portfolio/blog/cards/bloggrid')
+);
+
 import { DevToArticle } from '@/components/portfolio/types';
 
 function DevtoList() {
