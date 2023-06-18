@@ -17,12 +17,14 @@ const StackBuilder = ({ stackData }: { stackData?: StackData[] }) => {
         const flexRowClass =
           data?.mainImagePosition === 'left' ? 'flex-row' : 'flex-row-reverse';
 
+        const resolvedFlexRowClass = flexRowClass || 'flex-row';
+
         return (
           <div
             key={data.title}
-            className={`flex justify-center items-center w-1/2 flex-col lg:${flexRowClass} lg:justify-evenly`}
+            className={`flex justify-center items-center w-2/3 flex-col lg:${resolvedFlexRowClass} lg:justify-evenly px-4`}
           >
-            <div>
+            <div className=' h-[350px] w-[350px] lg:h-[500px] lg:w-[500px] flex justify-center items-center'>
               <Image
                 src={data?.mainImage}
                 width={500}

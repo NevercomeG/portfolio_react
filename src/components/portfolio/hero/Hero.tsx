@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <main className='relative  flex flex-col items-center justify-center flex-1 z-[1] '>
       <section className='w-full'>
-        <div className='h-[90vh] w-full flex md:lg:space-x-12  items-center justify-center'>
+        <div className='h-[95vh] w-full flex md:lg:space-x-12  items-center justify-center'>
           <div className='relative hidden flex-col justify-start items-start text-white lg:inline-flex'>
             <div className='text-left'>
               <div className='leading-12 md:text-4xl lg:text-5xl font-sans font-bold'>
