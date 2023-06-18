@@ -37,6 +37,7 @@
     "million": "^2.4.5",
     "next": "13.4.5",
     "next-auth": "^4.22.1",
+    "next-cloudinary": "^4.12.0",
     "next-mdx-remote": "^4.4.1",
     "next-seo": "^6.0.0",
     "next-sitemap": "^4.1.3",

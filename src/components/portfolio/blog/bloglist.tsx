@@ -22,9 +22,33 @@ function DevtoList() {
 
   return (
     <section className='flex flex-col items-center justify-center'>
-      <Bloggrid articles={articles} showAllArticles={true} />
+      <Bloggrid
+        articles={articles}
+        showAllArticles={false}
+        hidebutton={false}
+      />
     </section>
   );
 }
 
 export default DevtoList;
+
+export function Blogdata() {
+  const [articles, setArticles] = useState<DevToArticle[]>([]);
+
+  const fetchData = useCallback(async () => {
+    try {
+      const response = await fetch('/api/getLatestpost');
+      const data = await response.json();
+      setArticles(data);
+    } catch (error) {
+      throw new Error('Failed to fetch data');
+    }
+  }, []);
+
+  useEffect(() => {
+    fetchData();
+  }, [fetchData]);
+
+  return articles;
+}

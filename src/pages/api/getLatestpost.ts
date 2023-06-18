@@ -23,7 +23,7 @@ type DevToArticle = {
 async function fetchDevToArticles(): Promise<DevToArticle[]> {
   try {
     const response = await axios.get(
-      "https://dev.to/api/articles?username=nevercomex&per_page=31"
+      "https://dev.to/api/articles?username=dbredvick&per_page=30"
     );
 
     const articles: DevToArticle[] = response.data.map((article: DevToArticle) => ({

@@ -10,9 +10,16 @@ import ProjectCard from './blogcard';
 import { theme } from './theme';
 import { DevToArticlesProps } from '../../types';
 
-function ProjectGrid({ articles, showAllArticles }: DevToArticlesProps) {
+function ProjectGrid({
+  articles,
+  showAllArticles,
+  hidebutton,
+  hidepagination,
+}: DevToArticlesProps) {
   const [page, setPage] = useState(1);
   const articlesPerPage = showAllArticles ? articles.length : 3;
+  const showButton = hidebutton ? false : true;
+  const showPagination = hidepagination ? false : true;
 
   const displayedProjects = useMemo(
     () => articles.slice((page - 1) * articlesPerPage, page * articlesPerPage),
@@ -34,15 +41,17 @@ function ProjectGrid({ articles, showAllArticles }: DevToArticlesProps) {
           <ProjectCard key={articles.id} {...articles} />
         ))}
       </ul>
+      {showButton && (
+        <div className='flex pt-4 justify-start items-start '>
+          <Link href='/blogs'>
+            <button className='h-8 w-18 border-[1px] border-white p-2 flex justify-center items-center '>
+              More Blogs
+            </button>
+          </Link>
+        </div>
+      )}
 
-      <div className='flex pt-4 justify-start items-start '>
-        <Link href='/blogs'>
-          <button className='h-8 w-18 border-[1px] border-white p-2 flex justify-center items-center '>
-            More Blogs
-          </button>
-        </Link>
-      </div>
-      {!showAllArticles && (
+      {!showPagination && (
         <ThemeProvider theme={theme}>
           <div className='flex items-center justify-center pt-4'>
             <Pagination
