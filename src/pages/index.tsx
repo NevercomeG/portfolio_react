@@ -1,12 +1,18 @@
+import dynamic from 'next/dynamic';
 import React, { memo } from 'react';
 
 import Layout from '@/components/global/layout/Layout';
-import Seo from '@/components/global/Seo';
-import DevtoList from '@/components/portfolio/blog/bloglist';
-import Hero from '@/components/portfolio/hero/Hero';
-import PopupWidget from '@/components/portfolio/popupWidget';
-import Projects from '@/components/portfolio/projects/Projects';
-import StackBuilder from '@/components/portfolio/stack/StackBuilder';
+
+const Seo = dynamic(() => import('@/components/global/Seo'));
+const DevtoList = dynamic(() => import('@/components/portfolio/blog/bloglist'));
+const Hero = dynamic(() => import('@/components/portfolio/hero/Hero'));
+const PopupWidget = dynamic(() => import('@/components/portfolio/popupWidget'));
+const Projects = dynamic(
+  () => import('@/components/portfolio/projects/Projects')
+);
+const StackBuilder = dynamic(
+  () => import('@/components/portfolio/stack/StackBuilder')
+);
 
 import { BackEndData, DevOpsData, FrontEndData } from '@/models/StackData';
 

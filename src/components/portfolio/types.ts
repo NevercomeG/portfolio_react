@@ -41,6 +41,8 @@ export type DevToArticle = {
 export type DevToArticlesProps = {
   articles: DevToArticle[];
   showAllArticles: boolean;
+  hidebutton?: boolean;
+  hidepagination?: boolean;
 }
 
 

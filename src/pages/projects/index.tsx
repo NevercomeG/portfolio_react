@@ -1,4 +1,3 @@
-'use client';
 import Layout from '@/components/global/layout/Layout';
 import ProjectGrid from '@/components/portfolio/projects/ProjectGrid';
 import { Project } from '@/components/portfolio/types';

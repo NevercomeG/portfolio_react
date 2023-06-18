@@ -8,14 +8,6 @@ import Typewriter from 'typewriter-effect';
 const Hero = () => {
   return (
     <main className='relative  flex flex-col items-center justify-center flex-1 z-[1] '>
-      <Image
-        src='/background2.png'
-        className=' object-cover object-center z-[0] '
-        fill
-        alt='Background'
-        sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
-      />
-
       <section className='w-full'>
         <div className='h-[90vh] w-full flex md:lg:space-x-12  items-center justify-center'>
           <div className='relative hidden flex-col justify-start items-start text-white lg:inline-flex'>
@@ -31,15 +23,14 @@ const Hero = () => {
                   options={{
                     strings: [
                       'Full Stack Developer',
-                      'DevOps Engineer',
-                      'Cloud Engineer',
-                      'Software Engineer',
+                      'Software Developer',
                       'Web Developer',
                       'Chemical Engineer',
                     ],
                     autoStart: true,
                     loop: true,
                     delay: 75,
+                    deleteSpeed: 15,
                   }}
                 />
               </div>
@@ -73,15 +64,14 @@ const Hero = () => {
             </div>
           </div>
           <div className='items-center justify-center flex flex-col lg:flex-row px-6'>
-            <figure className='relative h-28 w-28  '>
+            <figure className='relative h-40 w-40 '>
               <Image
                 src='/assets/img/8bitpix.webp'
-                alt=''
+                alt='pfp'
                 fill
-                loading='lazy'
-                priority={false}
+                priority={true}
                 sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
-                className='bg-black-50 rounded-full border-solid border-green shadow-2xl backdrop-blur-sm backdrop-brightness-75'
+                className='bg-black-50 rounded-full border-solid  shadow-2xl backdrop-blur-sm backdrop-brightness-75'
               />
             </figure>
             <div className=' flex pt-4 lg:px-4 px-0'>

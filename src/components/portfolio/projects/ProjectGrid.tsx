@@ -1,12 +1,16 @@
 // ProjectGrid.tsx
 import { Pagination } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
+import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import React, { useMemo, useState } from 'react';
 
+const ProjectCard = dynamic(
+  () => import('@/components/portfolio/projects/ProjectCard')
+);
+
 import { Project } from '@/components/portfolio/types';
 
-import ProjectCard from './ProjectCard';
 import { theme } from './Theme';
 
 interface Props {

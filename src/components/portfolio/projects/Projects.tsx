@@ -1,6 +1,10 @@
+import dynamic from 'next/dynamic';
+
 import { projectsData } from '@/models/projectdata';
 
-import ProjectGrid from './ProjectGrid';
+const ProjectGrid = dynamic(
+  () => import('@/components/portfolio/projects/ProjectGrid')
+);
 
 export default function Formation() {
   return <ProjectGridWrapper />;
