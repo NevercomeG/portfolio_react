@@ -74,8 +74,8 @@ const Hero = () => {
                 className='bg-black-50 rounded-full border-solid  shadow-2xl backdrop-blur-sm backdrop-brightness-75'
               />
             </figure>
-            <div className=' flex pt-4 lg:px-4 px-0'>
-              <h1 className='font-mono text-5xl leading-none'>
+            <div className='pt-4 lg:px-4 px-0'>
+              <h1 className='font-mono text-5xl text-center leading-none'>
                 LUIS
                 <span className='text-green'> SOLANO</span>
               </h1>
