@@ -38,7 +38,7 @@ const Landing = () => {
               id='stack'
               className='pt-32  text-center text-5xl text-white font-bold'
             >
-              MY <span className='text-green'>STACK</span>
+              My <span className='text-green'>Stack</span>
             </h1>
             <StackBuilder stackData={FrontEndData} />
             <StackBuilder stackData={BackEndData} />
