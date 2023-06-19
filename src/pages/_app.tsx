@@ -16,15 +16,6 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
       gtag('js', new Date());
       gtag('config', 'G-XC1JR9LET6');`}
       </Script> */}
-      {/* <Script
-        id='something'
-        strategy='lazyOnload'
-        dangerouslySetInnerHTML={{
-          __html: `
-(function(s,u,m,o,j,v){j=u.createElement(m);v=u.getElementsByTagName(m)[0];j.async=1;j.src=o;j.dataset.sumoSiteId='G-XC1JR9LET6';v.parentNode.insertBefore(j,v)})(window,document,'script','//load.sumo.com/'
-        `,
-        }}
-      ></Script> */}
 
       <Component {...pageProps} />
     </>

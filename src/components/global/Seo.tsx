@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 // !STARTERCONF Change these default meta
 const defaultMeta = {
   title: 'NevercomeX 💻',
-  siteName: 'Portfolio Luis Cuevas',
+  siteName: 'Portfolio Luis Solano',
   description:
     'Explore the diverse range of projects developed by a skilled full-stack and DevOps developer proficient in TypeScript and React. Discover cutting-edge web applications, intuitive user interfaces, and robust backend systems that showcase a passion for software engineering and problem-solving. Experience the power of TypeScript and React in action and see how they elevate the user experience to new heights.',
   /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
