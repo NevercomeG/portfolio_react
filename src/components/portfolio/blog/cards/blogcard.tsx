@@ -26,6 +26,7 @@ export default function BlogCard({
             fill
             className=' rounded-md  top-0 left-0 cursor-default px-4 pt-4 '
             style={{ objectFit: 'contain' }}
+            sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
           />
         </figure>
         <div className='flex flex-col items-start pt-2 px-4'>

@@ -8,7 +8,7 @@ export default function NavBar() {
   return (
     <>
       <nav className='sticky top-0 z-50 w-full shadow backdrop-blur backdrop-brightness-50'>
-        <section className='sticky w-full h-2 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%'></section>
+        <section className='sticky w-full h-2 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-40% to-emerald-500 to-90%'></section>
         <div className='mx-auto justify-between px-4 md:flex md:items-center md:px-8 lg:max-w-7xl'>
           <div>
             <div className='flex items-center justify-between  py-3 md:block md:py-5'>
@@ -66,25 +66,25 @@ export default function NavBar() {
               }`}
             >
               <div className='items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0'>
-                <Link href='#projects' className='flex items-center'>
+                <Link href='/projects' className='flex items-center'>
                   <BiChevronLeft className='inline opacity-0 duration-300 ease-in hover:text-green hover:opacity-100 md:text-2xl md:text-green md:opacity-100 md:duration-300 md:ease-in' />
                   <span className='opacity-90 duration-200 ease-in hover:font-medium hover:text-green'>
                     Projects
                   </span>
                   <BiChevronRight className='inline opacity-0 duration-300 ease-in hover:text-green hover:opacity-100 md:text-2xl md:text-green md:opacity-100 md:duration-300 md:ease-in' />
                 </Link>
-                <Link href='#stack' className='flex items-center'>
+                <Link href='/blogs' className='flex items-center'>
                   <BiChevronLeft className='inline opacity-0 duration-300 ease-in hover:text-green hover:opacity-100 md:text-2xl md:text-green md:opacity-100 md:duration-300 md:ease-in' />
                   <span className='opacity-90 duration-200 ease-in hover:font-medium hover:text-green'>
-                    My Stack
+                    Blogs
                   </span>
                   <BiChevronRight className='inline opacity-0 duration-300 ease-in hover:text-green hover:opacity-100 md:text-2xl md:text-green md:opacity-100 md:duration-300 md:ease-in' />
                 </Link>
 
-                <Link href='#contact' className='flex items-center'>
+                <Link href='#' className='flex items-center'>
                   <BiChevronLeft className='inline opacity-0 duration-300 ease-in hover:text-green hover:opacity-100 md:text-2xl md:text-green md:opacity-100 md:duration-300 md:ease-in' />
                   <span className='opacity-90 duration-200 ease-in hover:font-medium hover:text-green'>
-                    Contacts
+                    About
                   </span>
                   <BiChevronRight className='inline opacity-0 duration-300 ease-in hover:text-green hover:opacity-100 md:text-2xl md:text-green md:opacity-100 md:duration-300 md:ease-in' />
                 </Link>

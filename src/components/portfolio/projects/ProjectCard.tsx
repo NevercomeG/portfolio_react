@@ -8,14 +8,13 @@ import { Project } from '../types';
 
 export default function ProjectCard({
   title,
-  id,
   description,
   imageUrl,
   Technology,
 }: Project) {
   return (
     <>
-      <li className='' key={id}>
+      <li className='' key={title}>
         <Link
           href={`/projects/${title}/`}
           passHref

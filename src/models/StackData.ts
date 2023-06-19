@@ -57,7 +57,7 @@ export const FrontEndData: StackData[] =[{
   ],
   detailedSkills:  [
     '➖ HTML, CSS, JavaScript, TypeScript, etc.',
-    '➖ React, Next.js, Gatsby, etc.',
+    '➖ React, Next.js, Redux, etc.',
     '➖ Tailwind CSS, Material UI, etc.',
     '➖ Responsive Web Design.',
     ],
@@ -110,7 +110,7 @@ export const BackEndData: StackData[] =[{
   ],
   detailedSkills:  [
     '➖ Node.js, Express, Django, Prisma, Python.',
-    '➖ REST API, GraphQL, etc.',
+    '➖ REST API, TRPC, etc.',
     '➖ MongoDB, PostgreSQL, etc.',
     ],
   }

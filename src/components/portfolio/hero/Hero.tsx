@@ -1,3 +1,4 @@
+import { Icon } from '@iconify/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -9,10 +10,10 @@ const Hero = () => {
   return (
     <main className='relative  flex flex-col items-center justify-center flex-1 z-[1] '>
       <section className='w-full'>
-        <div className='h-[95vh] w-full flex md:lg:space-x-12  items-center justify-center'>
+        <div className='h-[90vh] w-full flex md:lg:space-x-12  items-center justify-center'>
           <div className='relative hidden flex-col justify-start items-start text-white lg:inline-flex'>
             <div className='text-left'>
-              <div className='leading-12 md:text-4xl lg:text-5xl font-sans font-bold'>
+              <div className='leading-[3.6rem] md:text-4xl lg:text-6xl font-sans font-bold'>
                 <p className='animate-fade-up animate-once animate-duration-1000 animate-delay-500 animate-ease-linear'>
                   Hey!
                 </p>
@@ -34,48 +35,54 @@ const Hero = () => {
                   }}
                 />
               </div>
-              <div className='mb-4 text-base opacity-60'>
+              <div className='mb-4 text-2xl opacity-60'>
                 <p>I specialize in the React Ecosystem</p>
                 <p>as well as backend technologies like Node.js</p>
               </div>
               <Link href='/home'>
-                <h3 className='mb-20 md:mb-4'>
+                <h3 className='text-2xl mb-20 md:mb-4'>
                   My Resume:{' '}
-                  <span className='uppercase text-green underline underline-offset-4'>
+                  <span className='uppercase text-green hover:underline underline-offset-4'>
                     {' '}
                     See more
                   </span>
                 </h3>
               </Link>
             </div>
-            <div className='experience flex space-x-8 uppercase'>
+            <div className='flex space-x-8  pt-2'>
               <div className='year flex items-center'>
-                <p className='mr-4 text-5xl lg:text-4xl'>2</p>
-                <div className='opacity-75 sm:text-sm md:text-base'>
-                  Years <p>of Experience</p>{' '}
-                </div>
+                <p className='mr-2 text-5xl lg:text-4xl'>
+                  {' '}
+                  <Icon icon='mdi:github' className='h-6 w-6' />
+                </p>
+                <a href='https://github.com/NevercomeX'>
+                  <p className='text-lg hover:underline'>Github</p>
+                </a>
               </div>
-              <div className='projects flex items-center justify-between'>
-                <p className='mr-4 text-5xl lg:text-4xl'>16</p>
-                <div className='opacity-75 sm:text-sm md:text-base'>
-                  Project completed <p> </p>
-                </div>
+              <div className='year flex items-center'>
+                <p className='mr-2 text-5xl lg:text-4xl'>
+                  {' '}
+                  <Icon icon='mdi:twitter' className='h-6 w-6' />
+                </p>{' '}
+                <a href=''>
+                  <p className='text-lg hover:underline'>Twitter</p>
+                </a>
               </div>
             </div>
           </div>
           <div className='items-center justify-center flex flex-col lg:flex-row px-6'>
             <figure className='relative h-40 w-40 '>
               <Image
-                src='/assets/img/8bitpix.webp'
+                src='/assets/img/pfp.webp'
                 alt='pfp'
                 fill
                 priority={true}
                 sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
-                className='bg-black-50 rounded-full border-solid  shadow-2xl backdrop-blur-sm backdrop-brightness-75'
+                className='bg-black-50 rounded-full border-solid shadow-slate-500 shadow-2xl backdrop-blur-sm backdrop-brightness-75'
               />
             </figure>
-            <div className='pt-4 lg:px-4 px-0'>
-              <h1 className='font-mono text-5xl text-center leading-none'>
+            <div className='pt-4 lg:pt-0 lg:px-4 px-0'>
+              <h1 className=' text-5xl text-center font-bold '>
                 LUIS
                 <span className='text-green'> SOLANO</span>
               </h1>
