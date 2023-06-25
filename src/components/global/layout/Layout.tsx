@@ -8,9 +8,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <Navbar />
-
-      {children}
-
+      <div className='max-w-6xl w-[91%] mr-auto ml-auto'>{children}</div>
       <Footer />
     </>
   );

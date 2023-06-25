@@ -13,7 +13,11 @@ export default function Formation() {
 function ProjectGridWrapper() {
   return (
     <section className='flex flex-col items-center justify-center '>
-      <ProjectGrid projects={projectsData} showAllProjects={false} />
+      <ProjectGrid
+        projects={projectsData}
+        showAllProjects={false}
+        hidepagination={true}
+      />
     </section>
   );
 }

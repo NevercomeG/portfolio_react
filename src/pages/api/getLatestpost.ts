@@ -20,6 +20,17 @@ type DevToArticle = {
   social_image: string;
 };
 
+export const getServerSideProps = async () => {
+  const res = await fetch('https://dev.to/api/articles?username=dbredvick&per_page=30')
+  const data = await res.json()
+  return {
+    props: {
+      data
+    }
+  }
+}
+
+
 async function fetchDevToArticles(): Promise<DevToArticle[]> {
   try {
     const response = await axios.get(

@@ -6,6 +6,7 @@ import React from 'react';
 
 import Seo from '@/components/global/Seo';
 import Layout from '@/components/portfolio/projectmdx/Layout';
+import BlockQuote from '@/components/portfolio/projectmdx/mdx/blockquote';
 import H1 from '@/components/portfolio/projectmdx/mdx/H1';
 import H2 from '@/components/portfolio/projectmdx/mdx/H2';
 import HeroImage from '@/components/portfolio/projectmdx/mdx/HeroImage';
@@ -27,6 +28,7 @@ export default function PostPage({
             h2: H2,
             p: P,
             HeroImage,
+            blockquote: BlockQuote,
           }}
         />
       </Layout>

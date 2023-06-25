@@ -16,11 +16,20 @@ import { theme } from './Theme';
 interface Props {
   projects: Project[];
   showAllProjects: boolean;
+  hidebutton?: boolean;
+  hidepagination?: boolean;
 }
 
-function ProjectGrid({ projects, showAllProjects }: Props) {
+function ProjectGrid({
+  projects,
+  showAllProjects,
+  hidebutton,
+  hidepagination,
+}: Props) {
   const [page, setPage] = useState(1);
   const projectsPerPage = showAllProjects ? projects.length : 3;
+  const showButton = hidebutton ? false : true;
+  const showPagination = hidepagination ? false : true;
 
   const displayedProjects = useMemo(
     () => projects.slice((page - 1) * projectsPerPage, page * projectsPerPage),
@@ -42,29 +51,28 @@ function ProjectGrid({ projects, showAllProjects }: Props) {
           <ProjectCard key={project.id} {...project} />
         ))}
       </ul>
-
-      {!showAllProjects && (
-        <>
-          <div className='flex pt-4 justify-start items-start '>
-            <Link href='/projects'>
-              <button className='h-8 w-18 border-[1px] border-white p-2 flex justify-center items-center '>
-                More Projects
-              </button>
-            </Link>
+      {showButton && (
+        <div className='flex pt-4 justify-start items-start '>
+          <Link href='/projects'>
+            <button className='h-8 w-18 border-[1px] border-white p-2 flex justify-center items-center '>
+              More Projects
+            </button>
+          </Link>
+        </div>
+      )}
+      {showPagination && (
+        <ThemeProvider theme={theme}>
+          <div className='flex items-center justify-center pt-4'>
+            <Pagination
+              count={Math.ceil(projects.length / projectsPerPage)}
+              variant='outlined'
+              sx={{ bgcolor: '#fff', borderRadius: 2, text: '#fff' }}
+              classes={{ root: 'pagination' }}
+              page={page}
+              onChange={handlePaginationChange}
+            />
           </div>
-          <ThemeProvider theme={theme}>
-            <div className='flex items-center justify-center pt-4'>
-              <Pagination
-                count={Math.ceil(projects.length / projectsPerPage)}
-                variant='outlined'
-                sx={{ bgcolor: '#fff', borderRadius: 2, text: '#fff' }}
-                classes={{ root: 'pagination' }}
-                page={page}
-                onChange={handlePaginationChange}
-              />
-            </div>
-          </ThemeProvider>
-        </>
+        </ThemeProvider>
       )}
     </>
   );
