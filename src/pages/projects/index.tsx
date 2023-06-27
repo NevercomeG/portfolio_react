@@ -22,7 +22,12 @@ export default function page() {
             Showcasing My Frontend Development Projects.
           </h1>
         </div>
-        <ProjectGrid projects={projects} showAllProjects={true} />
+        <ProjectGrid
+          projects={projects}
+          showAllProjects={true}
+          hidebutton
+          hidepagination
+        />
       </section>
     </Layout>
   );

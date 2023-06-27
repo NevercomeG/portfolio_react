@@ -12,7 +12,7 @@ const StackBuilder = ({ stackData }: { stackData?: StackData[] }) => {
   }
 
   return (
-    <section className='flex justify-center items-center px-32'>
+    <section className='flex justify-center items-center '>
       {stackData.map((data) => (
         <div
           key={data.title}
@@ -27,7 +27,7 @@ const StackBuilder = ({ stackData }: { stackData?: StackData[] }) => {
               sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
             />
           </div>
-          <div className='flex justify-center items-center flex-col'>
+          <div className='flex justify-center items-center flex-col px-4'>
             <div className='flex w-full'>
               <h1 className='text-3.5xl lg:text-4xl'>{data?.title}</h1>
             </div>
