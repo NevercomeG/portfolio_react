@@ -35,15 +35,17 @@ const Hero = () => {
             <p>I specialize in the React Ecosystem</p>
             <p>as well as backend technologies like Node.js</p>
           </div>
-          <Link href='/home'>
-            <h3 className='text-2xl mb-20 md:mb-4'>
-              My Resume:{' '}
-              <span className='uppercase text-green hover:underline underline-offset-4'>
-                {' '}
-                See more
-              </span>
-            </h3>
-          </Link>
+
+          <div className='flex gap-2 text-2xl mb-20 md:mb-4'>
+            <h3>My Resume: </h3>
+            <Link legacyBehavior href='/Resume.pdf' passHref>
+              <a target='_blank' rel='noopener noreferrer'>
+                <span className=' text-green hover:underline underline-offset-4'>
+                  Here
+                </span>
+              </a>
+            </Link>
+          </div>
 
           <div className='flex space-x-8  pt-2'>
             <div className='year flex items-center'>
