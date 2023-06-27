@@ -33,7 +33,7 @@ export default function ProjectCard({
             />
           </figure>
 
-          <div className='flex flex-col items-start p-4'>
+          <article className='flex flex-col items-start p-4'>
             <div className='text-left font-bold '>
               <h1 className='text-lg md:text-xl '>{title}</h1>
             </div>
@@ -62,7 +62,7 @@ export default function ProjectCard({
             <div className='text-left py-2 hover:underline'>
               <p className='text-base'>See more →</p>
             </div>
-          </div>
+          </article>
         </Link>
       </li>
     </>

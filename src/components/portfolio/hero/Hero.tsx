@@ -58,10 +58,10 @@ const Hero = () => {
             <div className='year flex items-center'>
               <p className='mr-2 text-5xl lg:text-4xl'>
                 {' '}
-                <Icon icon='mdi:twitter' className='h-6 w-6' />
+                <Icon icon='mdi:linkedin' className='h-6 w-6' />
               </p>{' '}
-              <a href=''>
-                <p className='text-lg hover:underline'>Twitter</p>
+              <a href='https://www.linkedin.com/in/lsolanocuevas/'>
+                <p className='text-lg hover:underline'>Linkedin</p>
               </a>
             </div>
           </div>

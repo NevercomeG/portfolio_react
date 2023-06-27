@@ -16,7 +16,7 @@ const Footer = () => {
         </div>
         <div className='icons mb-8 flex space-x-10 text-3xl'>
           <a
-            href='https://www.linkedin.com/in/luis-solano-a20683208/'
+            href='https://www.linkedin.com/in/lsolanocuevas/'
             aria-label='Linkedin'
           >
             <IoLogoLinkedin
