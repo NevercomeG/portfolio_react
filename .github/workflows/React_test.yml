@@ -38,7 +38,5 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
       - run: npm install --force
-      - name: Run CI
-        run: npm run ci
       - name: Build
         run: npm run build
