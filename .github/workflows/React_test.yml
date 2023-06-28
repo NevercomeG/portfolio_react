@@ -23,7 +23,7 @@ jobs:
           node-version: "18.x"
   
       - name: Install Dependencies
-        run: pnpm install
+        run: pnpm install --no-frozen-lockfile
 
       - name: Build Website
         run: pnpm build
