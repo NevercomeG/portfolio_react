@@ -27,7 +27,6 @@ export default function ProjectCard({
               fill
               loading='lazy'
               className=' rounded-md  top-0 left-0 cursor-default px-4 pt-4 '
-              style={{ objectFit: 'cover' }}
               sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
               quality={50}
             />
@@ -40,15 +39,13 @@ export default function ProjectCard({
             <div className=' py-2 flex items-center gap-8 text-sm'>
               <div className='sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2'>
                 <div className='flex flex-row items-center justify-center gap-2'>
-                  {Technology.Stack.map((language, index) => (
+                  {Technology.Icons.map((icon, index) => (
                     <React.Fragment key={`icon-${index}`}>
-                      <Icon
-                        color='white'
-                        className=' h-6 w-6 '
-                        icon={`${Technology.Icons[index]}`}
-                      />
-                      <p>{index < Technology.Stack.length - 1 && ' | '}</p>
-                      <p className='hidden'>{language}</p>
+                      <Icon color='white' className=' h-6 w-6 ' icon={icon} />
+                      {Technology.Icons.length > 1 &&
+                      index !== Technology.Icons.length - 1 ? (
+                        <p> | </p>
+                      ) : null}
                     </React.Fragment>
                   ))}
                 </div>

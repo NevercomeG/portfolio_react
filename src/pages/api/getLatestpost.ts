@@ -21,7 +21,7 @@ type DevToArticle = {
 };
 
 export const getServerSideProps = async () => {
-  const res = await fetch('https://dev.to/api/articles?username=dbredvick&per_page=30')
+  const res = await fetch('https://dev.to/api/articles?username=raivikas&per_page=30')
   const data = await res.json()
   return {
     props: {
@@ -34,7 +34,7 @@ export const getServerSideProps = async () => {
 async function fetchDevToArticles(): Promise<DevToArticle[]> {
   try {
     const response = await axios.get(
-      "https://dev.to/api/articles?username=dbredvick&per_page=30"
+      "https://dev.to/api/articles?username=raivikas&per_page=30"
     );
 
     const articles: DevToArticle[] = response.data.map((article: DevToArticle) => ({

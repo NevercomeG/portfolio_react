@@ -3,19 +3,19 @@ import { Project } from "@/components/portfolio/types";
 export const projectsData: Project[] = [
   {
     id: "566e843e-09b1-11ee-be56-0242ac120002",
-    title: "E-commerce Site",
-    imageUrl: "/09.webp",
-    description: "lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+    title: "Escuela Red Pill",
+    imageUrl: "https://i.imgur.com/N78UxpV.png",
+    description: "Landing Page for a the youtuber Escuela Red Pill",
     Technology: {
       Stack: ["Next.js", "Typescript", "Firebase"],
       Icons: [
         "teenyicons:nextjs-outline",
         "simple-icons:typescript",
-        "simple-icons:firebase"
+        "teenyicons:nodejs-solid"
       ]
     },
     links: {
-      url: "https://e-commerce-site-1.web.app/",
+      url: "",
       github: "",
       youtube: ""
     },
@@ -24,186 +24,116 @@ export const projectsData: Project[] = [
     category: "React"
   },
   {
-    id: "5990134e-09b1-11ee-be56-0242ac120002",
-    title: "Todo App",
-    imageUrl: "/11.webp",
-    description: "A simple Todo App built with React, Typescript, and Chakra UI.",
+    id: "566e843e-09b1-11ee-be56-0242ac120002",
+    title: "Dribbble Clone",
+    imageUrl: "https://i.imgur.com/19jebJb.png",
+    description: "Dribbble Clone which is a social media for designers built",
     Technology: {
-      Stack: ["React", "Typescript", "Chakra UI"],
-      Icons: [
-        "simple-icons:react",
-        "simple-icons:typescript",
-        "simple-icons:chakraui"
-      ]
-    },
-    links: {
-      url: "https://todo-app-example.com/",
-      github: "",
-      youtube: ""
-    },
-    tags: ["React", "Redux", "Firebase"],
-    featured: true,
-    date: "2021-09-01",
-    category: "React"
-  },
-  {
-    id: "69d39492-09b1-11ee-be56-0242ac120002",
-    title: "Weather App",
-    imageUrl: "/27.webp",
-    description: "A Weather App built with React, Typescript, and OpenWeather API.",
-    Technology: {
-      Stack: ["React", "Typescript", "OpenWeather API"],
-      Icons: [
-        "simple-icons:react",
-        "simple-icons:redux",
-        "eos-icons:api-outlined"
-      ]
-    },
-    links: {
-      url: "https://weather-app-example.com/",
-      github: "",
-      youtube: ""
-    },
-    tags: ["React", "Redux", "Firebase"],
-    featured: true,
-    date: "2021-09-01",
-    category: "React",
-    image: "/assets/img/demo1.png"
-  },
-  {
-    id: "617019f6-09b1-11ee-be56-0242ac120002",
-    title: "Chat Application",
-    imageUrl: "/3.webp",
-    description: "A Chat Application built with React, Node.js, and Socket.io.",
-    Technology: {
-      Stack: ["React", "Node.js", "Socket.io"],
-      Icons: [
-        "simple-icons:react",
-        "simple-icons:redux",
-        "simple-icons:socketdotio"
-      ]
-    },
-    links: {
-      url: "https://chat-app-example.com/",
-      github: "",
-      youtube: ""
-    },
-    tags: ["React", "Redux", "Firebase"],
-    featured: true,
-    date: "2021-09-01",
-    category: "React",
-    image: "/assets/img/demo1.png"
-  },
-  {
-    id: "6ec5c0ce-09b1-11ee-be56-0242ac120002",
-    title: "Recipe App",
-    imageUrl: "/4.webp",
-    description: "A Recipe App built with React, Typescript, and Spoonacular API.",
-    Technology: {
-      Stack: ["React", "Typescript", "Spoonacular API"],
-      Icons: [
-        "simple-icons:react",
-        "simple-icons:redux",
-        "eos-icons:api-outlined"
-      ]
-    },
-    links: {
-      url: "https://recipe-app-example.com/",
-      github: "",
-      youtube: ""
-    },
-    tags: ["React", "Redux", "Firebase"],
-    featured: true,
-    date: "2021-09-01",
-    category: "React",
-    image: "/assets/img/demo1.png"
-  },
-  {
-    id: "749021ac-09b1-11ee-be56-0242ac120002",
-    title: "Blog Site",
-    imageUrl: "/23.webp",
-    description: "A Blog Site built with Next.js, Typescript, and Strapi CMS.",
-    Technology: {
-      Stack: ["Next.js", "Typescript", "Strapi CMS"],
+      Stack: ["Next.js", "Typescript", "Firebase"],
       Icons: [
         "teenyicons:nextjs-outline",
         "simple-icons:typescript",
-        "cib:strapi"
+        "mdi:api"
       ]
     },
     links: {
-      url: "https://blog-site-example.com/",
+      url: "",
       github: "",
       youtube: ""
     },
-    tags: ["Next.js", "Typescript", "Strapi CMS"],
     featured: true,
     date: "2021-09-01",
-    category: "Next.js"
+    category: "React"
   },
   {
-    id: "78a3af0c-09b1-11ee-be56-0242ac120002",
-    title: "Social Media App",
-    imageUrl: "/35.webp",
-    description: "A Social Media App built with React, Node.js, and MongoDB.",
+    id: "566e843e-09b1-11ee-be56-0242ac120002",
+    title: "Portfolio",
+    imageUrl: "https://i.imgur.com/DvqnHTb.png",
+    description: "Portfolio website built with Next.js, Typescript, and Nodejs.",
     Technology: {
-      Stack: ["React", "Node.js", "MongoDB"],
+      Stack: ["Next.js", "Typescript", "Tailwindcss"],
       Icons: [
-        "simple-icons:react",
-        "mdi:nodejs",
-        "teenyicons:mongodb-solid"
+        "teenyicons:nextjs-outline",
+        "simple-icons:typescript",
+        "simple-icons:tailwindcss"
       ]
     },
     links: {
-      url: "https://social-media-app-example.com/",
+      url: "",
       github: "",
       youtube: ""
     },
-    tags: ["React", "Redux", "Firebase"],
     featured: true,
     date: "2021-09-01",
     category: "React"
   },
   {
-    id: "7cc2f386-09b1-11ee-be56-0242ac120002",
-    title: "Job Portal",
-    imageUrl: "/38.webp",
-    description: "A Job Portal built with React, Node.js, and MongoDB.",
+    id: "566e843e-09b1-11ee-be56-0242ac120002",
+    title: "Breaking Bakes",
+    imageUrl: "  https://i.imgur.com/gr8ZSlL.png",
+    description: "An Ecommerce website built with React and Javascript.",
     Technology: {
-      Stack: ["React", "Node.js", "MongoDB"],
+      Stack: ["Next.js", "Typescript", "Firebase"],
       Icons: [
+        "devicon-plain:javascript",
         "simple-icons:react",
-        "mdi:nodejs",
-        "teenyicons:mongodb-solid"
+
+
       ]
     },
     links: {
-      url: "https://job-portal-example.com/",
-      github: "",
+      url: "",
+      github: "https://github.com/NevercomeGX/Alura-Encryptor",
       youtube: ""
     },
-    tags: ["React", "Redux", "Firebase"],
     featured: true,
     date: "2021-09-01",
     category: "React"
   },
+
   {
-    id: "7fc50fec-09b1-11ee-be56-0242ac120002",
-    title: "Event Booking App",
-    imageUrl: "/25.webp",
-    description: "An Event Booking App built with React, Typescript, and AWS Amplify.",
+    id: "566e843e-09b1-11ee-be56-0242ac120002",
+    title: "Ahorcado",
+    imageUrl: "https://i.imgur.com/LiLk5IQ.png",
+    description: " A game of hangman built with pure Javascript.",
     Technology: {
-      Stack: ["React", "Typescript", "AWS Amplify"],
-      Icons: ["simple-icons:react", "simple-icons:typescript", "mdi:aws"]
+      Stack: ["Next.js", "Typescript", "Firebase"],
+      Icons: [
+        "devicon-plain:javascript"
+
+      ]
     },
     links: {
-      url: "https://event-booking-app-example.com/",
+      url: "",
       github: "",
       youtube: ""
     },
-    tags: ["React", "Redux", "Firebase"],
     featured: true,
     date: "2021-09-01",
     category: "React"
-  }
+  },
+
+  {
+    id: "566e843e-09b1-11ee-be56-0242ac120002",
+    title: "Alura Encryptor",
+    imageUrl: "https://i.imgur.com/NCgryeG.png",
+    description: "Website that encrypts and decrypts messages.",
+    Technology: {
+      Stack: ["Next.js", "Typescript", "Firebase"],
+      Icons: [
+        "devicon-plain:javascript"
+
+      ]
+    },
+    links: {
+      url: "",
+      github: "https://github.com/NevercomeGX/Alura-Encryptor",
+      youtube: ""
+    },
+    featured: true,
+    date: "2021-09-01",
+    category: "React"
+  },
+
+
 ];

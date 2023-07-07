@@ -2,9 +2,9 @@ import Layout from '@/components/global/layout/Layout';
 import ProjectGrid from '@/components/portfolio/projects/ProjectGrid';
 import { Project } from '@/components/portfolio/types';
 
-import projectsData from '@/models/projects.json';
+import { projectsData } from '@/models/projectdata';
 
-const projects: Project[] = projectsData.projects;
+const projects: Project[] = projectsData;
 
 export default function page() {
   return (
