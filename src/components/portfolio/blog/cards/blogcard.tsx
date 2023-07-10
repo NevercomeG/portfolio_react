@@ -24,6 +24,7 @@ export default function BlogCard({
             src={social_image}
             alt={title}
             fill
+            loading='eager'
             className=' rounded-md  top-0 left-0 cursor-default px-4 pt-4 '
             style={{ objectFit: 'contain' }}
             sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'

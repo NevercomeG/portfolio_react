@@ -37,11 +37,17 @@ const Hero = () => {
           </div>
 
           <div className='flex gap-2 text-2xl mb-20 md:mb-4'>
-            <h3>My Resume: </h3>
-            <Link legacyBehavior href='/Resume.pdf' passHref>
+            <Link
+              legacyBehavior
+              aria-label='resume'
+              href='/Resume.pdf'
+              passHref
+            >
               <a target='_blank' rel='noopener noreferrer'>
+                My Resume:{' '}
                 <span className=' text-green hover:underline underline-offset-4'>
-                  Here
+                  {' '}
+                  Here{' '}
                 </span>
               </a>
             </Link>

@@ -42,7 +42,7 @@ export async function getStaticPaths() {
 export async function getStaticProps(
   ctx: GetStaticPropsContext<{
     slug: string;
-  }>
+  }>,
 ) {
   const slug = ctx.params?.slug || '';
 

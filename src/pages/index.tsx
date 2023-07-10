@@ -8,10 +8,10 @@ const DevtoList = dynamic(() => import('@/components/portfolio/blog/bloglist'));
 const Hero = dynamic(() => import('@/components/portfolio/hero/Hero'));
 const PopupWidget = dynamic(() => import('@/components/portfolio/popupWidget'));
 const Projects = dynamic(
-  () => import('@/components/portfolio/projects/Projects')
+  () => import('@/components/portfolio/projects/Projects'),
 );
 const StackBuilder = dynamic(
-  () => import('@/components/portfolio/stack/StackBuilder')
+  () => import('@/components/portfolio/stack/StackBuilder'),
 );
 
 import { BackEndData, DevOpsData, FrontEndData } from '@/models/StackData';
@@ -22,6 +22,7 @@ const Landing = () => {
       <PopupWidget />
       <Layout>
         <Seo />
+        src/pages/index.tsx
         <section id='top' className=''>
           <Hero />
           <section id='projects'>

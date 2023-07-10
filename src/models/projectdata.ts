@@ -2,10 +2,10 @@ import { Project } from "@/components/portfolio/types";
 
 export const projectsData: Project[] = [
   {
-    id: "566e843e-09b1-11ee-be56-0242ac120002",
+    id: "4a19c248-1ee2-11ee-be56-0242ac120002",
     title: "Escuela Red Pill",
-    imageUrl: "/Escuelaredpill.webp",
-    description: "Landing Page for a the youtuber Escuela Red Pill",
+    imageUrl: "/projects/Escuelaredpill.webp",
+    description: "Landing Page of Escuela Red Pill built with Next.js and Typescript",
     Technology: {
       Stack: ["Next.js", "Typescript", "Firebase"],
       Icons: [
@@ -24,9 +24,9 @@ export const projectsData: Project[] = [
     category: "React"
   },
   {
-    id: "566e843e-09b1-11ee-be56-0242ac120002",
+    id: "50ae3026-1ee2-11ee-be56-0242ac120002",
     title: "Dribbble Clone",
-    imageUrl: "/Dribbble.webp",
+    imageUrl: "/projects/Dribbble.webp",
     description: "Dribbble Clone which is a social media for designers built",
     Technology: {
       Stack: ["Next.js", "Typescript", "Firebase"],
@@ -46,9 +46,9 @@ export const projectsData: Project[] = [
     category: "React"
   },
   {
-    id: "566e843e-09b1-11ee-be56-0242ac120002",
+    id: "595e9a08-1ee2-11ee-be56-0242ac120002",
     title: "Portfolio",
-    imageUrl: "/Portfolio.webp",
+    imageUrl: "/projects/Portfolio.webp",
     description: "Portfolio website built with Next.js, Typescript, and Nodejs.",
     Technology: {
       Stack: ["Next.js", "Typescript", "Tailwindcss"],
@@ -68,9 +68,9 @@ export const projectsData: Project[] = [
     category: "React"
   },
   {
-    id: "566e843e-09b1-11ee-be56-0242ac120002",
+    id: "5e6fcb2a-1ee2-11ee-be56-0242ac120002",
     title: "Breaking Bakes",
-    imageUrl: "/Breaking.webp",
+    imageUrl: "/projects/Breaking.webp",
     description: "An Ecommerce website built with React and Javascript.",
     Technology: {
       Stack: ["Next.js", "Typescript", "Firebase"],
@@ -94,7 +94,7 @@ export const projectsData: Project[] = [
   {
     id: "566e843e-09b1-11ee-be56-0242ac120002",
     title: "Ahorcado",
-    imageUrl: "/Ahorcado.webp",
+    imageUrl: "/projects/Ahorcado.webp",
     description: " A game of hangman built with pure Javascript.",
     Technology: {
       Stack: ["Next.js", "Typescript", "Firebase"],
@@ -114,9 +114,9 @@ export const projectsData: Project[] = [
   },
 
   {
-    id: "566e843e-09b1-11ee-be56-0242ac120002",
+    id: "5e6fcb2a-1ee2-11ee-be56-0242ac120002",
     title: "Alura Encryptor",
-    imageUrl: "/Encryptor.webp",
+    imageUrl: "/projects/Encryptor.webp",
     description: "Website that encrypts and decrypts messages.",
     Technology: {
       Stack: ["Next.js", "Typescript", "Firebase"],

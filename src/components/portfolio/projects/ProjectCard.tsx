@@ -18,6 +18,7 @@ export default function ProjectCard({
         <Link
           href={`/projects/${title}/`}
           passHref
+          prefetch={false}
           className='flex w-[22rem] h-[23rem] flex-col items-center rounded-md border-[1px] border-[#818181] text-center shadow-md text-white font-sans'
         >
           <figure className='relative h-[23rem] w-[22rem] overflow-hidden rounded-lg'>
@@ -26,7 +27,7 @@ export default function ProjectCard({
               alt={title}
               fill
               loading='lazy'
-              className=' rounded-md  top-0 left-0 cursor-default px-4 pt-4 '
+              className=' rounded-md  top-0 left-0 px-4 pt-4 '
               sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
               quality={50}
             />
