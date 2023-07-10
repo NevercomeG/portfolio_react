@@ -22,7 +22,6 @@ const Landing = () => {
       <PopupWidget />
       <Layout>
         <Seo />
-        src/pages/index.tsx
         <section id='top' className=''>
           <Hero />
           <section id='projects'>
