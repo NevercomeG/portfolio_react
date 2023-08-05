@@ -2,9 +2,10 @@ module.exports = {
   apps: [
     {
       name: 'portfolio',
-      script: 'yarn',
+      script: 'pnpm',
       args: 'start',
       watch: true,
+      port: 4005,
     },
   ],
 };

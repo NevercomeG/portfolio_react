@@ -9,7 +9,9 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: self-hosted
+    runs-on: 
+      group: Ubuntu-Runner
+      labels: nevercomex
     steps:
       - name: Checkout Main Branch
         uses: actions/checkout@v3
@@ -28,5 +30,5 @@ jobs:
       - name: Build Website
         run: pnpm build
 
-      - name: restart pm2
-        run: pm2 restart portfolio
+      - name: restart pm2 or start pm2
+        run: pm2 restart ecosystem.config.js || pm2 start ecosystem.config.js
