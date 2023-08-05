@@ -23,6 +23,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "18.x"
+
+      - name: Install pm2
+          
+        run: npm install pm2 -g
+      
+      - name: Install pnpm
+        run: npm install -g pnpm
   
       - name: Install Dependencies
         run: pnpm install --no-frozen-lockfile
