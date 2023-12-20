@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import { AiOutlineGithub } from 'react-icons/ai';
 import { IoLogoLinkedin } from 'react-icons/io';
@@ -12,7 +13,18 @@ const Footer = () => {
       </div>
       <div className='flex flex-col items-center py-8  text-white'>
         <div className='my-4 flex h-12 w-36 cursor-pointer items-center justify-center border hover:border-green'>
-          <h1 className='text-2xl'>Hire Me</h1>
+        <Link
+              legacyBehavior
+              aria-label='resume'
+              href='/Resume.pdf'
+              passHref
+            >
+              <a className="text-2xl" target='_blank' rel='noopener noreferrer'>
+              Hire Me
+
+              </a>
+            </Link>
+   
         </div>
         <div className='icons mb-8 flex space-x-10 text-3xl'>
           <a
