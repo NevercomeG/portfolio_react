@@ -23,7 +23,7 @@ const Nevercomex = ({ classNames, divhidden }: NevercomexProps) => {
             />
           </span>
 
-          <p className='border-l pl-4 font-mono '>Powered by NX ©</p>
+          <p className='border-l pl-4 font-mono '>Powered by LS ©</p>
         </Link>
       </div>
     </div>
