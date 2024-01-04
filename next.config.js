@@ -5,7 +5,7 @@
 // });
 
 /** @type {import('next').NextConfig} */
-
+const withMDX = require('@next/mdx')()
 
 const nextConfig = {
 
@@ -22,7 +22,8 @@ const nextConfig = {
   // So, the source code is "basePath-ready".
   // You can remove `basePath` if you don't need it.
   reactStrictMode: true,
+  pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
 }
  
 
-module.exports = nextConfig;
+module.exports = withMDX(nextConfig)

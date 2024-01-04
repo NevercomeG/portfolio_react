@@ -35,6 +35,7 @@
       "@/*": ["./src/*"],
       "@/public/*": ["./src/public/*"],
       "@/components/*": ["./src/components/*"],
+      "@/containers/*": ["./src/containers/*"],
       "@/styles/*": ["./src/styles/*"],
       "@/utils/*": ["./src/utils/*"],
       "@/services/*": ["./src/services/*"],

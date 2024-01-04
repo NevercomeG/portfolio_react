@@ -3,6 +3,8 @@
 import dynamic from 'next/dynamic';
 import { useCallback, useEffect, useState } from 'react';
 
+import Button from '@/components/Buttons';
+
 const Bloggrid = dynamic(
   () => import('@/components/Cards/DevblogCards/bloggrid'),
 );
@@ -33,11 +35,8 @@ function DevtoList() {
       <p className='pt-32 text-center pb-8 text-5xl text-white font-bold'>
         <span className='text-green'> Dev.to</span> Blogs
       </p>
-      <Bloggrid
-        articles={articles}
-        showAllArticles={false}
-        hidebutton={false}
-      />
+      <Bloggrid articles={articles} showAllArticles={false} />
+      <Button text='See all articles' url='#' hidebutton={false} />
     </section>
   );
 }

@@ -20,7 +20,7 @@ export default function Error({
         <h2 className='md:text-xl text-primaryColor font-bold'>
           Something went wrong ⚠️
         </h2>
-        <span className='md:text-xl text-black'>{error.message}</span>
+        <span className='md:text-xl text-white'>{error.message}</span>
       </div>
     </section>
   );
