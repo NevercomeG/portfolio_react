@@ -1,10 +1,5 @@
 import { Metadata } from 'next';
 
-import '@/styles/globals.css';
-
-import FooterSection from '@/components/Footer';
-import NavBarSection from '@/components/Navs';
-
 export const metadata: Metadata = {
   title: 'NevercomeX 💻',
   metadataBase: new URL('https://ljjs.com'),
@@ -31,18 +26,5 @@ export const metadata: Metadata = {
    * If you wish to use a normal image, just specify the path below
    */
 };
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang='en'>
-      <body>
-        <NavBarSection />
-        {children}
-        <FooterSection />
-      </body>
-    </html>
-  );
-}
+
+export default metadata;

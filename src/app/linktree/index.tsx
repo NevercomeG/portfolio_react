@@ -5,9 +5,9 @@ const Typewriter = dynamic(() => import('typewriter-effect'));
 const LinkCard = dynamic(() => import('@/components/Linktree/LinkCard'));
 const Maincard = dynamic(() => import('@/components/Linktree/Maincard'));
 const Social = dynamic(() => import('@/components/Linktree/Social'));
-const Seo = dynamic(() => import('@/components/global/Seo'));
+
 const Nevercomex = dynamic(
-  () => import('@/components/global/nevercomex/copyright')
+  () => import('@/components/global/nevercomex/copyright'),
 );
 
 import data from '@/models/data.json';
@@ -26,7 +26,6 @@ export default function Linktree({
 }) {
   return (
     <>
-      <Seo templateTitle='Linktree' />
       <body className='box-border block h-full w-full '>
         <div
           className={`${className} mx-auto flex h-full w-full flex-col items-center justify-center px-4 pt-12 text-center  `}

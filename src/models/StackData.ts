@@ -1,4 +1,4 @@
-import { StackData } from "@/components/portfolio/stack/Types"
+import { StackData } from "@/types/StacksTypes"
 
 export const FrontEndData: StackData[] =[{
   title: 'Front End',

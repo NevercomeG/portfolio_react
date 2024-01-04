@@ -1,18 +1,15 @@
 import { access, readFile } from 'fs/promises';
-import { MDXComponents } from 'mdx/types';
 import { notFound } from 'next/navigation';
 import { compileMDX } from 'next-mdx-remote/rsc';
 import path from 'path';
 
-// import Seo from '@/components/global/Seo';
-// import Layout from '@/containers/portfolio-page/Layout';
-import P from '@/containers/portfolio-page/mdx//P';
 import BlockQuote from '@/containers/portfolio-page/mdx/blockquote';
 import H1 from '@/containers/portfolio-page/mdx/H1';
 import H2 from '@/containers/portfolio-page/mdx/H2';
 import HeroImage from '@/containers/portfolio-page/mdx/HeroImage';
-// Import your custom component here
-// import Seo from '@/components/global/Seo';
+import P from '@/containers/portfolio-page/mdx/P';
+
+import Layout from './layout';
 
 const POSTS_FOLDER = path.join(process.cwd(), '_posts');
 
@@ -40,56 +37,21 @@ export default async function PostPage({
     notFound();
   }
 
-  const { content, frontmatter } = await compileMDX<{ title: string }>({
+  const { content } = await compileMDX<{ title: string }>({
     source: markdown,
+    components: {
+      h1: H1,
+      h2: H2,
+      p: P,
+      HeroImage,
+      blockquote: BlockQuote,
+    },
     options: { parseFrontmatter: true },
   });
 
-  // do something with frontmatter, like set metadata or whatever
-
   return (
     <>
-      {/* Use your custom component here */}
-      {content}
+      <Layout>{content}</Layout>
     </>
   );
 }
-
-export function useMDXComponents(components: MDXComponents): MDXComponents {
-  return {
-    // Allows customizing built-in components, e.g. to add styling.
-
-    h1: H1,
-    h2: H2,
-    p: P,
-    HeroImage,
-    blockquote: BlockQuote,
-
-    ...components,
-  };
-}
-// }
-
-// export default function PostPage({
-//   source,
-// }: InferGetStaticPropsType<typeof getStaticProps>) {
-//   return (
-//     <div>
-//       <Seo templateTitle={source.frontmatter.title as string} />
-
-//       <Layout>
-//         <MDXRemote
-//           {...source}
-//           // specifying the custom MDX components
-//           components={{
-//             h1: H1,
-//             h2: H2,
-//             p: P,
-//             HeroImage,
-//             blockquote: BlockQuote,
-//           }}
-//         />
-//       </Layout>
-//     </div>
-//   );
-// }
