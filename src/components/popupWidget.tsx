@@ -262,13 +262,13 @@ const PopupWidget = () => {
                         id='result'
                       >
                         <a
-                          href='https://nevercomex.com'
+                          href='https://ljjs.com'
                           className='text-gray-600'
                           target='_blank'
                           rel='noopener noreferrer'
-                          aria-label='NevercomeX'
+                          aria-label='ljjs'
                         >
-                          NevercomeX
+                          ljjs
                         </a>
                       </p>
                     </form>

@@ -6,7 +6,7 @@ import FooterSection from '@/components/Footer';
 import NavBarSection from '@/components/Navs';
 
 export const metadata: Metadata = {
-  title: 'NevercomeX 💻',
+  title: 'Luis Solano 💻',
   metadataBase: new URL('https://ljjs.com'),
   alternates: {
     canonical: '/',

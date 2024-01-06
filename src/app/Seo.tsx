@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'NevercomeX 💻',
+  title: 'Luis Solano 💻',
   metadataBase: new URL('https://ljjs.com'),
   alternates: {
     canonical: '/',

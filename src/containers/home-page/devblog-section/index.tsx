@@ -13,7 +13,7 @@ import { getallpost } from '@/lib/endpoints';
 
 import { DevToArticle } from '@/types/ProyectTypes';
 
-function DevtoList() {
+export function DevtoList() {
   const [articles, setArticles] = useState<DevToArticle[]>([]);
 
   const fetchData = useCallback(async () => {
@@ -36,7 +36,7 @@ function DevtoList() {
         <span className='text-green'> Dev.to</span> Blogs
       </p>
       <Bloggrid articles={articles} showAllArticles={false} />
-      <Button text='See all articles' url='#' hidebutton={false} />
+      <Button text='See all articles' url='/blogs/' hidebutton={false} />
     </section>
   );
 }

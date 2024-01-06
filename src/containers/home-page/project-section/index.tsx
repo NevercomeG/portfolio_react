@@ -4,6 +4,7 @@ import Button from '@/components/Buttons';
 
 import { projectsData } from '@/models/projectdata';
 
+
 const ProjectGrid = dynamic(
   () => import('@/components/Cards/ProjectCards/ProjectGrid'),
 );
@@ -24,7 +25,7 @@ function ProjectGridWrapper() {
         showAllProjects={false}
         hidepagination={true}
       />
-      <Button text='More projects' url='#' />
+      <Button text='More projects' url='/projects/' />
     </section>
   );
 }

@@ -63,7 +63,7 @@ const Login: NextPage = () => {
       .catch((error) => {
         setIsSuccess(false);
         setMessage(
-          `Client Error. Please check the console.log for more info ${error}`
+          `Client Error. Please check the console.log for more info ${error}`,
         );
       });
   };
@@ -233,14 +233,14 @@ const Login: NextPage = () => {
                 </a>
 
                 <a
-                  href='https://nevercomex.com'
+                  href='https://ljjs.com'
                   className=' text-gray-100'
                   target='_blank'
                   rel='noopener noreferrer'
-                  aria-label='NevercomeX'
+                  aria-label='ljjs'
                 >
                   <p className='text-center text-xs' id='result'>
-                    NevercomeX
+                    ljjs
                   </p>
                 </a>
               </form>
