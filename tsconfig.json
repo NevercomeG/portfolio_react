@@ -35,6 +35,7 @@
       "@/*": ["./src/*"],
       "@/public/*": ["./src/public/*"],
       "@/components/*": ["./src/components/*"],
+      "@/containers/*": ["./src/containers/*"],
       "@/styles/*": ["./src/styles/*"],
       "@/utils/*": ["./src/utils/*"],
       "@/services/*": ["./src/services/*"],
@@ -52,11 +53,5 @@
     ]
   },
   "exclude": ["./out/**/*", "./node_modules/**/*", "cypress/**/*.ts"],
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts",
-    "src/models/projectsData.mts"
-  ]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"]
 }

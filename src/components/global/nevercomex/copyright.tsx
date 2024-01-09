@@ -11,7 +11,7 @@ const Nevercomex = ({ classNames, divhidden }: NevercomexProps) => {
     <div hidden={divhidden} className={`${classNames}`}>
       <div className='hover:bg-red-800 flex flex-row items-center justify-center gap-2 rounded-md bg-black px-4 py-1 font-bold text-white   hover:text-white hover:ease-in-out'>
         <Link
-          href='https://nevercomex.com'
+          href='https://ljjs.com'
           className='flex items-center justify-center gap-3'
         >
           <span className=' w-8  '>
@@ -23,7 +23,7 @@ const Nevercomex = ({ classNames, divhidden }: NevercomexProps) => {
             />
           </span>
 
-          <p className='border-l pl-4 font-mono '>Powered by NX ©</p>
+          <p className='border-l pl-4 font-mono '>Powered by LS ©</p>
         </Link>
       </div>
     </div>
