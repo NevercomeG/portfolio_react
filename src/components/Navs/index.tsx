@@ -3,18 +3,16 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { BiChevronLeft, BiChevronRight } from 'react-icons/bi';
 
-import ProgressBar from '@/components/ProgressBar';
-
 export default function NavBarSection() {
   const [navbar, setNavbar] = useState(false);
 
   return (
     <>
       <nav className='sticky top-0 z-50 w-full shadow backdrop-blur backdrop-brightness-50 font-sans font-bold'>
-        <ProgressBar />
+        <section className='sticky w-full animate-pulse h-1 bg-gradient-to-r from-indigo-500 from-10% via-sky-300 via-60% to-emerald-800 to-90%'></section>
         <div className='mx-auto justify-between px-4 md:flex md:items-center md:px-8 lg:max-w-7xl'>
           <div>
-            <div className='flex items-center justify-between  py-3 md:block md:py-5'>
+            <div className='flex items-center justify-between py-3 md:block md:py-5'>
               <Link href='/'>
                 <div className='name m-0 cursor-pointer p-0 text-4xl '>
                   <span className=' text-white  duration-200 ease-in'>

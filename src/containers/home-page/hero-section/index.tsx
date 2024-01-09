@@ -12,10 +12,9 @@ const HeroSection = () => {
       <section className='h-[90vh] w-full flex md:lg:space-x-12  items-center justify-center'>
         <article className='relative hidden flex-col justify-start items-start text-white lg:inline-flex'>
           <div className='leading-[3.6rem] md:text-4xl lg:text-6xl font-sans font-bold'>
-            <p>Hey!</p>
-            <p>I'm Luis👋</p>
+            <p>💻</p>
           </div>
-          <div className='work inline-block rounded- p-1 sm:mb-3 sm:mt-4 md:mt-4 '>
+          <div className='inline-block sm:mb-3 sm:mt-4 md:mt-4 '>
             <Typewriter
               options={{
                 strings: [
