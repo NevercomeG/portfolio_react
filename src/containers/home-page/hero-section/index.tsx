@@ -81,14 +81,13 @@ const HeroSection = () => {
               alt='pfp'
               fill
               priority={true}
-              sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
               className='bg-black-50 rounded-full border-solid shadow-slate-500 shadow-2xl backdrop-blur-sm backdrop-brightness-75'
             />
           </figure>
           <div className='pt-4 lg:pt-0 lg:px-4 px-0'>
-            <h1 className=' text-5xl text-center font-bold '>
-              LUIS
-              <span className='text-green'> SOLANO</span>
+            <h1 className=' text-6xl text-center font-bold '>
+              Luis
+              <span className='text-green'> Javier</span>
             </h1>
           </div>
 

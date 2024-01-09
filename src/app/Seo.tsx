@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Luis Solano 💻',
+  title: 'Luis Javier 💻',
   metadataBase: new URL('https://ljjs.com'),
   alternates: {
     canonical: '/',
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    siteName: 'Portfolio Luis Solano',
+    siteName: 'Portfolio Luis Javier',
     url: 'https://ljjs.com',
     type: 'website',
   },

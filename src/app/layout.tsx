@@ -6,17 +6,17 @@ import FooterSection from '@/components/Footer';
 import NavBarSection from '@/components/Navs';
 
 export const metadata: Metadata = {
-  title: 'Luis Solano 💻',
+  title: 'Luis Javier 💻',
   metadataBase: new URL('https://ljjs.com'),
   alternates: {
     canonical: '/',
     languages: {
       'en-US': '/en-US',
-      'de-DE': '/de-DE',
+      'es-ES': '/es-ES',
     },
   },
   openGraph: {
-    siteName: 'Portfolio Luis Solano',
+    siteName: 'Portfolio Luis Javier',
     url: 'https://ljjs.com',
     type: 'website',
   },

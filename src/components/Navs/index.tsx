@@ -3,22 +3,24 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { BiChevronLeft, BiChevronRight } from 'react-icons/bi';
 
+import ProgressBar from '@/components/ProgressBar';
+
 export default function NavBarSection() {
   const [navbar, setNavbar] = useState(false);
 
   return (
     <>
-      <nav className='sticky top-0 z-50 w-full shadow backdrop-blur backdrop-brightness-50'>
-        <section className='sticky w-full h-2 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-40% to-emerald-500 to-90%'></section>
+      <nav className='sticky top-0 z-50 w-full shadow backdrop-blur backdrop-brightness-50 font-sans font-bold'>
+        <ProgressBar />
         <div className='mx-auto justify-between px-4 md:flex md:items-center md:px-8 lg:max-w-7xl'>
           <div>
             <div className='flex items-center justify-between  py-3 md:block md:py-5'>
               <Link href='/'>
-                <div className='name m-0 cursor-pointer p-0 text-3xl font-semibold'>
-                  <span className='font-Dm_Sans text-green  duration-200 ease-in'>
-                    LUIS{' '}
+                <div className='name m-0 cursor-pointer p-0 text-4xl '>
+                  <span className=' text-white  duration-200 ease-in'>
+                    L<span className='text-green'>J</span>
                   </span>
-                  <span>SOLANO</span>
+                  <span className='text-yellow-300'>JS</span>
                 </div>
               </Link>
               <div className='flex flex-row-reverse space-x-5 md:hidden'>
@@ -66,17 +68,17 @@ export default function NavBarSection() {
                 navbar ? 'block' : 'hidden'
               }`}
             >
-              <div className='items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0'>
+              <div className='items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 text-lg fond-bold'>
                 <Link href='/projects' className='flex items-center'>
                   <BiChevronLeft className='inline opacity-0 duration-300 ease-in hover:text-green hover:opacity-100 md:text-2xl md:text-green md:opacity-100 md:duration-300 md:ease-in' />
-                  <span className='opacity-90 duration-200 ease-in hover:font-medium hover:text-green'>
+                  <span className='opacity-90 duration-200 ease-in  hover:text-green'>
                     Projects
                   </span>
                   <BiChevronRight className='inline opacity-0 duration-300 ease-in hover:text-green hover:opacity-100 md:text-2xl md:text-green md:opacity-100 md:duration-300 md:ease-in' />
                 </Link>
                 <Link href='/blogs' className='flex items-center'>
                   <BiChevronLeft className='inline opacity-0 duration-300 ease-in hover:text-green hover:opacity-100 md:text-2xl md:text-green md:opacity-100 md:duration-300 md:ease-in' />
-                  <span className='opacity-90 duration-200 ease-in hover:font-medium hover:text-green'>
+                  <span className='opacity-90 duration-200 ease-in  hover:text-green'>
                     Blogs
                   </span>
                   <BiChevronRight className='inline opacity-0 duration-300 ease-in hover:text-green hover:opacity-100 md:text-2xl md:text-green md:opacity-100 md:duration-300 md:ease-in' />
@@ -84,7 +86,7 @@ export default function NavBarSection() {
 
                 <Link href='#' className='flex items-center'>
                   <BiChevronLeft className='inline opacity-0 duration-300 ease-in hover:text-green hover:opacity-100 md:text-2xl md:text-green md:opacity-100 md:duration-300 md:ease-in' />
-                  <span className='opacity-90 duration-200 ease-in hover:font-medium hover:text-green'>
+                  <span className='opacity-90 duration-200 ease-in hover:text-green'>
                     About
                   </span>
                   <BiChevronRight className='inline opacity-0 duration-300 ease-in hover:text-green hover:opacity-100 md:text-2xl md:text-green md:opacity-100 md:duration-300 md:ease-in' />
