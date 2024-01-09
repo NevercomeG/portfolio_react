@@ -9,15 +9,15 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({ text, url, hidebutton }) => {
   return (
-    <div className='my-4 flex h-12 w-36 cursor-pointer items-center justify-center border hover:border-green text-white'>
+    <>
       {!hidebutton && (
-        <Link legacyBehavior aria-label='resume' href={url} passHref>
-          <a className='text-2xl' target='_blank' rel='noopener noreferrer'>
+        <Link aria-label={text} href={url} passHref className='text-2xl'>
+          <div className='my-4 flex h-12 w-36 cursor-pointer items-center justify-center border hover:border-green text-white'>
             {text}
-          </a>
+          </div>
         </Link>
       )}
-    </div>
+    </>
   );
 };
 

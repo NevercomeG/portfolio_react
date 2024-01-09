@@ -1,30 +1,8 @@
-'use client';
-
-import { useCallback, useEffect, useState } from 'react';
-
-import { getallpost } from '@/lib/endpoints';
-
 import Bloggrid from '@/components/Cards/DevblogCards/bloggrid';
 
-import { DevToArticle } from '@/types/ProyectTypes';
-
-export default function page() {
-  const [articles, setArticles] = useState<DevToArticle[]>([]);
-
-  const fetchData = useCallback(async () => {
-    try {
-      const response = await fetch(getallpost);
-      const data = await response.json();
-      setArticles(data);
-    } catch (error) {
-      throw new Error('Failed to fetch data');
-    }
-  }, []);
-
-  useEffect(() => {
-    fetchData();
-  }, [fetchData]);
-
+export default async function page() {
+  const res = await fetch('https://dev.to/api/articles?username=nevercomex');
+  const articles = await res.json();
   return (
     <>
       {/* <Layout> */}
