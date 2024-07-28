@@ -7,7 +7,7 @@ const Bloggrid = dynamic(
 );
 
 export async function DevtoList() {
-  const res = await fetch('https://dev.to/api/articles?username=nevercomex');
+  const res = await fetch('https://dev.to/api/articles?username=marciofrayze');
   const articles = await res.json();
 
   return (

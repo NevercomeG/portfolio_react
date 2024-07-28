@@ -1,7 +1,7 @@
 import Bloggrid from '@/components/Cards/DevblogCards/bloggrid';
 
 export default async function page() {
-  const res = await fetch('https://dev.to/api/articles?username=nevercomex');
+  const res = await fetch('https://dev.to/api/articles?username=marciofrayze');
   const articles = await res.json();
   return (
     <section className='flex justify-center flex-col items-center py-12 max-w-[68rem] ml-auto mr-auto w-[91%]'>

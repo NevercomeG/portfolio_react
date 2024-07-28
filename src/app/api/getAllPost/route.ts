@@ -22,7 +22,7 @@ type DevToArticle = {
 export async function GET (){
   try {
     const response = await axios.get(
-      "https://dev.to/api/articles?username=nevercomex&per_page=30"
+      "https://dev.to/api/articles?username=marciofrayze&per_page=30"
     );
 
     const articles: DevToArticle[] = response.data.map((article: DevToArticle) => ({
