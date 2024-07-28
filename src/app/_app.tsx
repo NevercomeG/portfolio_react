@@ -1,4 +1,5 @@
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { AppProps } from 'next/app';
 
 import '@/styles/globals.css';
@@ -18,6 +19,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
       gtag('config', 'G-XC1JR9LET6');`}
       </Script> */}
       <Analytics />
+      <SpeedInsights />
 
       <Component {...pageProps} />
     </>
