@@ -13,7 +13,11 @@ export default function page() {
           <span>!</span>
         </div>
         <div className='description'>
-          <span>Te amo muchisimo 💖😊</span>
+          <span className='text-sky-200'>
+            Te amo <br />
+            muchisimo <br />
+            💖😊
+          </span>
         </div>
         <div className='button'>
           <div className='botones'>
