@@ -17,11 +17,15 @@ export default function Mamor() {
 
   return (
     <div className='bodyT'>
-      <h1 className='mamor'>Cristina ❤️</h1>
-      <h1 className='titulo'>
-        Aqui estan tus flores amarillas mamor. <br></br>Te amo muchisimo con
-        todo mi corazon.
+      <h1 className='mamor'>Mamor❤️</h1>
+      <br />
+      <h1 className='titulo text-sky-300'>
+        Aqui estan tus flores amarillas mamor. <br />
+        <span className='text-sky-400'>
+          Te amo muchisimo con todo mi corazon.
+        </span>
       </h1>
+
       <div className='night'></div>
       <div className='flowers'>
         <div className='flower flower--1'>

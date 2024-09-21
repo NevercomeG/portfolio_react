@@ -20,16 +20,6 @@
   perspective: 1000px;
 }
 
-.mamor {
-  margin-bottom: 900px;
-  color: white;
-  position: absolute;
-  font-weight: bold;
-  letter-spacing: 10px;
-  opacity: 0;
-  animation: fadeIn 3s ease-in-out forwards;
-  text-align: center;
-}
 
 #lyrics {
   font-size: 28px;
@@ -41,6 +31,31 @@
   font-weight: bold;
   letter-spacing: 4px;
 }
+
+.titulo {
+  margin-bottom: 750px;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  color: yellow;
+  position: absolute;
+  font-weight: bold;
+  letter-spacing: 8px;
+  opacity: 0;
+  animation: fadeIn 3s ease-in-out forwards;
+  text-align: center;
+}
+
+
+.mamor {
+  margin-bottom: 900px;
+  color: white;
+  position: absolute;
+  font-weight: bold;
+  letter-spacing: 8px;
+  opacity: 0;
+  animation: fadeIn 3s ease-in-out forwards;
+  text-align: center;
+}
+
 @media only screen and (max-width: 600px) {
   /* Estilos específicos para dispositivos con un ancho máximo de 600px */
   #lyrics {
@@ -49,18 +64,18 @@
       letter-spacing: 3px;
   }
 
+  .titulo {
+    margin-bottom: 550px;
+
+  }
+  .mamor {
+    margin-bottom: 800px;
+
+  }
+
 }
-.titulo {
-  margin-bottom: 750px;
-  font-family: "Arial Narrow", Arial, sans-serif;
-  color: yellow;
-  position: absolute;
-  font-weight: bold;
-  letter-spacing: 10px;
-  opacity: 0;
-  animation: fadeIn 3s ease-in-out forwards;
-  text-align: center;
-}
+
+
 @keyframes fadeIn {
   from {
     opacity: 0;
