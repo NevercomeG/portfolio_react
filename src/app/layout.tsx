@@ -1,10 +1,6 @@
 import { Metadata } from 'next';
 
 import '@/styles/globals.css';
-
-import FooterSection from '@/components/Footer';
-import NavBarSection from '@/components/Navs';
-
 export const metadata: Metadata = {
   title: 'Luis Javier 💻',
   metadataBase: new URL('https://ljjs.com'),
@@ -38,11 +34,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body>
-        <NavBarSection />
-        {children}
-        <FooterSection />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
