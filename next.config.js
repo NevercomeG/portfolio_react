@@ -13,7 +13,7 @@ const nextConfig = {
     dirs: ['.'],
   },
   images: {
-    domains: ['images.unsplash.com', 'img.icons8.com', 'rickandmortyapi.com',"res.cloudinary.com","dev.to","media.dev.to","cdn.hashnode.com","source.unsplash.com","i.imgur.com"],
+    domains: ['images.unsplash.com','i.ytimg.com', 'img.icons8.com', 'rickandmortyapi.com',"res.cloudinary.com","dev.to","media.dev.to","cdn.hashnode.com","source.unsplash.com","i.imgur.com"],
   },
   poweredByHeader: false,
   trailingSlash: true,

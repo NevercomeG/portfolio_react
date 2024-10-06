@@ -1,10 +1,8 @@
 'use client';
 
-// ProjectCard.tsx
 import Image from 'next/image';
 import Link from 'next/link';
-
-import { DevToArticle } from '@/types/ProyectTypes';
+import { Video } from '@/models/videosData'; // Importa el tipo de video
 
 export default function BlogCard({
   id,
@@ -12,8 +10,8 @@ export default function BlogCard({
   description,
   url,
   published_at,
-  social_image,
-}: DevToArticle) {
+  thumbnail,
+}: Video) {
   return (
     <li>
       <Link
@@ -21,13 +19,13 @@ export default function BlogCard({
         key={id}
         className='flex w-[22rem] h-[23rem] flex-col items-center rounded-md border-[1px] border-[#818181] text-center shadow-md text-white font-sans '
       >
-        <figure className='relative h-[23rem] w-[22rem]  overflow-hidden rounded-lg '>
+        <figure className='relative h-[23rem] w-[22rem] overflow-hidden rounded-lg '>
           <Image
-            src={social_image}
+            src={thumbnail}
             alt={title}
             fill
             loading='eager'
-            className=' rounded-md  top-0 left-0 cursor-default px-4 pt-4 '
+            className='rounded-md top-0 left-0 cursor-default px-4 pt-4 '
             style={{ objectFit: 'contain' }}
             sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
           />

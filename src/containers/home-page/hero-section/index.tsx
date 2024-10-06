@@ -18,9 +18,8 @@ const HeroSection = () => {
             <Typewriter
               options={{
                 strings: [
-                  'Full Stack Developer',
-                  'Software Developer',
-                  'Web Developer',
+                  'Full Stack Web Developer',
+                  'Video Editor',
                   'Chemical Engineer',
                 ],
                 autoStart: true,
@@ -29,10 +28,6 @@ const HeroSection = () => {
                 deleteSpeed: 15,
               }}
             />
-          </div>
-          <div className='mb-4 text-2xl opacity-60'>
-            <p>I specialize in the React Ecosystem</p>
-            <p>as well as backend technologies like Node.js</p>
           </div>
 
           <div className='flex gap-2 text-2xl mb-20 md:mb-4'>
@@ -67,8 +62,17 @@ const HeroSection = () => {
                 {' '}
                 <Icon icon='mdi:linkedin' className='h-6 w-6' />
               </p>{' '}
-              <a href='https://www.linkedin.com/in/lsolanocuevas/'>
+              <a href='https://www.linkedin.com/in/luissolanoc/'>
                 <p className='text-lg hover:underline'>Linkedin</p>
+              </a>
+            </div>
+            <div className='year flex items-center'>
+              <p className='mr-2 text-5xl lg:text-4xl'>
+                {' '}
+                <Icon icon='mdi:instagram' className='h-6 w-6' />
+              </p>{' '}
+              <a href='https://www.instagram.com/nevercomex/'>
+                <p className='text-lg hover:underline'>Instagram</p>
               </a>
             </div>
           </div>

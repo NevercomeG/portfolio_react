@@ -56,8 +56,8 @@ export const FrontEndData: StackData[] =[{
     },
   ],
   detailedSkills:  [
-    '➖ HTML, CSS, JavaScript, TypeScript, etc.',
-    '➖ React, Next.js, Redux, etc.',
+    '➖ HTML, CSS, JavaScript, TypeScript.',
+    '➖ React, Next.js.',
     '➖ Tailwind CSS, Material UI, etc.',
     '➖ Responsive Web Design.',
     ],
@@ -83,33 +83,21 @@ export const BackEndData: StackData[] =[{
       position: 'Upper',
     },
     {
-      iconsrc: 'logos:python',
-      classname: 'h-12 w-12',
-      color: 'black',
-      position: 'Upper',
-    },
-    {
-      iconsrc: 'logos:django',
-      classname: 'h-12 w-12',
-      color: 'black',
-      position: 'Upper',
-    },
-    {
       iconsrc: 'simple-icons:trpc',
       classname: 'h-12 w-12',
       color: 'black',
-      position: 'Lower',
+      position: 'Upper',
     },
     {
       iconsrc: 'vscode-icons:file-type-light-prisma',
       classname: 'h-12 w-12',
       color: 'black',
-      position: 'Lower',
+      position: 'Upper',
     },
 
   ],
   detailedSkills:  [
-    '➖ Node.js, Express, Django, Prisma, Python.',
+    '➖ Node.js, Express, Prisma.',
     '➖ REST API, TRPC, etc.',
     '➖ MongoDB, PostgreSQL, etc.',
     ],
@@ -161,7 +149,6 @@ export const DevOpsData: StackData[] =[{
   ],
   detailedSkills:  [
     '➖ AWS, GCP, Azure, Digital Ocean, Vercel',
-    '➖ Docker, Kubernetes, Nginx',
     '➖ CI/CD, Github Actions',
     '➖ Linux & Windows.',
     ],
