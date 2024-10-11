@@ -74,7 +74,7 @@ export default function NavBarSection() {
                   </span>
                   <BiChevronRight className='inline opacity-0 duration-300 ease-in hover:text-green hover:opacity-100 md:text-2xl md:text-green md:opacity-100 md:duration-300 md:ease-in' />
                 </Link>
-                <Link href='/blogs' className='flex items-center'>
+                {/* <Link href='/blogs' className='flex items-center'>
                   <BiChevronLeft className='inline opacity-0 duration-300 ease-in hover:text-green hover:opacity-100 md:text-2xl md:text-green md:opacity-100 md:duration-300 md:ease-in' />
                   <span className='opacity-90 duration-200 ease-in  hover:text-green'>
                     Blogs
@@ -88,7 +88,7 @@ export default function NavBarSection() {
                     About
                   </span>
                   <BiChevronRight className='inline opacity-0 duration-300 ease-in hover:text-green hover:opacity-100 md:text-2xl md:text-green md:opacity-100 md:duration-300 md:ease-in' />
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
