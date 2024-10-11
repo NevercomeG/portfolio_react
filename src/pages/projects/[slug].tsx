@@ -11,7 +11,7 @@ export default function PostPage() {
   const router = useRouter();
   const { slug } = router.query;
 
-  const [content, setContent] = useState<string | null>(null);
+  const [, setContent] = useState<string | null>(null);
   const [source, setSource] = useState<any | null>(null);
   const [error, setError] = useState<boolean>(false);
 
