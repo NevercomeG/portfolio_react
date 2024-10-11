@@ -3,32 +3,31 @@ import { useRouter } from 'next/router';
 import { MDXRemote } from 'next-mdx-remote';
 import { serialize } from 'next-mdx-remote/serialize';
 import MDXComponents from '@/components/MDXComponents';
-// import Loading from '@/components/Loading'; // Un componente para mostrar mientras carga
-
-const POSTS_FOLDER = '/_posts'; // Localización de los archivos MDX en public/
 
 export default function PostPage() {
   const router = useRouter();
   const { slug } = router.query;
 
-  const [, setContent] = useState<string | null>(null);
   const [source, setSource] = useState<any | null>(null);
   const [error, setError] = useState<boolean>(false);
 
   useEffect(() => {
     if (!slug) return;
 
-    // Fetch the MDX file dynamically from the public folder
+    // Función para obtener el archivo .mdx desde GitHub raw
     const fetchPost = async () => {
       try {
-        const response = await fetch(`${POSTS_FOLDER}/${slug}.mdx`);
+        // Cambia esta URL para apuntar a tu repositorio de GitHub
+
+        const GITHUB_RAW_URL = `https://raw.githubusercontent.com/NevercomeX/projects/refs/heads/main/Escuela-Red-Pill.mdx`;
+
+        const response = await fetch(GITHUB_RAW_URL);
         if (!response.ok) throw new Error('Post not found');
 
         const markdown = await response.text();
-        const mdxSource = await serialize(markdown);
+        const mdxSource = await serialize(markdown); // Serializa el markdown para renderizarlo con MDXRemote
 
         setSource(mdxSource);
-        setContent(markdown);
       } catch (err) {
         setError(true);
       }
@@ -42,12 +41,12 @@ export default function PostPage() {
   }
 
   if (!source) {
-    // return <Loading />; // Mostrar mientras se carga
     return <>Loading...</>;
   }
 
   return (
     <div>
+      {/* Renderiza el contenido serializado del MDX */}
       <MDXRemote {...source} components={MDXComponents} />
     </div>
   );
