@@ -19,7 +19,7 @@ export default function PostPage() {
       try {
         // Cambia esta URL para apuntar a tu repositorio de GitHub
 
-        const GITHUB_RAW_URL = `https://raw.githubusercontent.com/NevercomeX/projects/refs/heads/main/Escuela-Red-Pill.mdx`;
+        const GITHUB_RAW_URL = `https://raw.githubusercontent.com/NevercomeX/projectsmdx/refs/heads/main/escuela-red-pill.mdx`;
 
         const response = await fetch(GITHUB_RAW_URL);
         if (!response.ok) throw new Error('Post not found');
