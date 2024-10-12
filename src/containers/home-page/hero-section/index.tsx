@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import Typewriter from 'typewriter-effect';
+import ArrowDown from '@/components/arrowdown';
 
 const HeroSection = () => {
   return (
@@ -77,6 +78,7 @@ const HeroSection = () => {
             </div>
           </div>
         </article>
+
         <div className='items-center justify-center flex flex-col lg:flex-row px-6'>
           <figure className='relative h-40 w-40 '>
             <Image
@@ -92,18 +94,14 @@ const HeroSection = () => {
               Luis
               <span className='text-green'> Javier</span>
             </h1>
-          </div>
-
+          </div>{' '}
           <div className='flex justify-center flex-col text-center text-gray-300 pt-2 lg:hidden'>
             <div className='work inline-block rounded-xl p-1'>
               <Typewriter
                 options={{
                   strings: [
-                    'Full Stack Developer',
-                    'DevOps Engineer',
-                    'Cloud Engineer',
-                    'Software Engineer',
-                    'Web Developer',
+                    'Full Stack Web Developer',
+                    'Video Editor',
                     'Chemical Engineer',
                   ],
                   autoStart: true,
@@ -115,9 +113,46 @@ const HeroSection = () => {
             <p className='text-md font-mono  '>
               Always learning new technologies.
             </p>
-            <p>💻</p>
-          </div>
 
+            <div className='flex justify-center gap-2 text-2xl my-6 md:mb-4'>
+              <Link
+                legacyBehavior
+                aria-label='resume'
+                href='/Resume.pdf'
+                passHref
+              >
+                <span className=' text-green  hover:underline underline-offset-4'>
+                  <a target='_blank' rel='noopener noreferrer'>
+                    RESUME
+                  </a>
+                </span>
+              </Link>
+            </div>
+            <div className='flex space-x-8 justify-center pt-2'>
+              <div className='year flex items-center'>
+                <p className='mr-2 text-5xl lg:text-4xl'>
+                  {' '}
+                  <Icon icon='mdi:github' className='h-12 w-12' />
+                </p>
+                <a href='https://github.com/NevercomeX'></a>
+              </div>
+              <div className='year flex items-center'>
+                <p className='mr-2 text-5xl lg:text-4xl'>
+                  {' '}
+                  <Icon icon='mdi:linkedin' className='h-12 w-12' />
+                </p>{' '}
+                <a href='https://www.linkedin.com/in/luissolanoc/'></a>
+              </div>
+              <div className='year flex items-center'>
+                <p className='mr-2 text-5xl lg:text-4xl'>
+                  {' '}
+                  <Icon icon='mdi:instagram' className='h-12 w-12' />
+                </p>{' '}
+                <a href='https://www.instagram.com/nevercomex/'></a>
+              </div>
+            </div>
+            <ArrowDown />
+          </div>
           <div
             className='pointer-events-none absolute inset-x-0 bottom-0 top-auto w-full overflow-hidden'
             style={{ height: '70px' }}

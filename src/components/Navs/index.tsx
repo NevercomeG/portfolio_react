@@ -70,11 +70,11 @@ export default function NavBarSection() {
                 <Link href='/projects' className='flex items-center'>
                   <BiChevronLeft className='inline opacity-0 duration-300 ease-in hover:text-green hover:opacity-100 md:text-2xl md:text-green md:opacity-100 md:duration-300 md:ease-in' />
                   <span className='opacity-90 duration-200 ease-in  hover:text-green'>
-                    Projects
+                    Web developer
                   </span>
                   <BiChevronRight className='inline opacity-0 duration-300 ease-in hover:text-green hover:opacity-100 md:text-2xl md:text-green md:opacity-100 md:duration-300 md:ease-in' />
                 </Link>
-                <Link href='/blogs' className='flex items-center'>
+                <Link href='/' className='flex items-center'>
                   <BiChevronLeft className='inline opacity-0 duration-300 ease-in hover:text-green hover:opacity-100 md:text-2xl md:text-green md:opacity-100 md:duration-300 md:ease-in' />
                   <span className='opacity-90 duration-200 ease-in  hover:text-green'>
                     Video Editor
@@ -82,10 +82,10 @@ export default function NavBarSection() {
                   <BiChevronRight className='inline opacity-0 duration-300 ease-in hover:text-green hover:opacity-100 md:text-2xl md:text-green md:opacity-100 md:duration-300 md:ease-in' />
                 </Link>
 
-                <Link href='/about' className='flex items-center'>
+                <Link href='/' className='flex items-center'>
                   <BiChevronLeft className='inline opacity-0 duration-300 ease-in hover:text-green hover:opacity-100 md:text-2xl md:text-green md:opacity-100 md:duration-300 md:ease-in' />
                   <span className='opacity-90 duration-200 ease-in hover:text-green'>
-                    About
+                    Thumbnails
                   </span>
                   <BiChevronRight className='inline opacity-0 duration-300 ease-in hover:text-green hover:opacity-100 md:text-2xl md:text-green md:opacity-100 md:duration-300 md:ease-in' />
                 </Link>
