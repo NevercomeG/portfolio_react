@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { MDXRemote } from 'next-mdx-remote';
 import { serialize } from 'next-mdx-remote/serialize';
-import matter from 'gray-matter';
 import MDXComponents from '@/components/MDXComponents';
 import NavBarSection from '@/components/Navs';
 import FooterSection from '@/components/Footer';
