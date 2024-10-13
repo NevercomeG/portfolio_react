@@ -8,9 +8,7 @@ const LinkCard = dynamic(() => import('@/components/Linktree/LinkCard'));
 const Maincard = dynamic(() => import('@/components/Linktree/Maincard'));
 const Social = dynamic(() => import('@/components/Linktree/Social'));
 
-const Nevercomex = dynamic(
-  () => import('@/components/global/nevercomex/copyright'),
-);
+const Nevercomex = dynamic(() => import('@/components/copyright'));
 
 import data from '@/models/data.json';
 

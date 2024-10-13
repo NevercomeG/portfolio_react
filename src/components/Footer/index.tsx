@@ -4,7 +4,7 @@ import React from 'react';
 import { AiOutlineGithub } from 'react-icons/ai';
 import { IoLogoInstagram, IoLogoLinkedin } from 'react-icons/io';
 
-import Nevercomex from '@/components/global/nevercomex/copyright';
+import Nevercomex from '@/components/copyright';
 
 const FooterSection = () => {
   return (
