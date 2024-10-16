@@ -1,8 +1,9 @@
 import FooterSection from '@/components/Footer';
 import NavBarSection from '@/components/Navs';
 import HeroSection from '@/components/Hero';
-import DevblogSection from '@/components/Thumbsnail-Section';
 import ProjectsSection from '@/components/Projects-Sections';
+import ThumbnailsSection from '@/components/Thumbsnail-Section';
+import VideoEditingGrid from '@/components/VideoEditing-Section';
 import StackSection from '@/components/Stacks-Sections';
 
 export default function Home() {
@@ -11,7 +12,8 @@ export default function Home() {
       <NavBarSection />
       <HeroSection />
       <ProjectsSection />
-      <DevblogSection />
+      <ThumbnailsSection />
+      <VideoEditingGrid />
       <StackSection />
       <FooterSection />
     </>

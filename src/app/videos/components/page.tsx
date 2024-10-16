@@ -1,10 +1,10 @@
-import ThumbnailsGrid from '@/components/Cards/ThumbnailsCards/ThumbnailsGrid';
-import { youtubeThumbsData } from '@/models/thumbsnail'; // Datos de thumbnails para YouTube
-import { thumbnail } from '@/types/ThumbnailsTypes'; // Cambiar el tipo según tus necesidades
+import VideoEditingGrid from '@/components/Cards/VideoEditingCards/VideoEditingGrid';
+import { VideoData } from '@/models/videosData'; // Datos de thumbnails para YouTube
+import { VideoType } from '@/types/VideoEditingTypes'; // Cambiar el tipo según tus necesidades
 
-const youtubeThumbs: thumbnail[] = youtubeThumbsData;
+const videosEdition: VideoType[] = VideoData;
 
-export default function YouTubeThumbsPage() {
+export default function VideosEditionPage() {
   return (
     <section className='flex justify-center flex-col items-center py-12 max-w-[68rem] ml-auto mr-auto w-[91%]'>
       <div className='w-full'>
@@ -19,9 +19,11 @@ export default function YouTubeThumbsPage() {
           Thumbnails que he diseñado para mis videos de YouTube.
         </h2>
       </div>
-      <ThumbnailsGrid
-        thumbnails={youtubeThumbs}
-        showAllThumbnails={true} // Muestra todos los thumbnails
+      <VideoEditingGrid
+        Videos={videosEdition}
+        showAllVideos={true}
+        hidebutton
+        hidepagination // Muestra todos los thumbnails
       />
     </section>
   );

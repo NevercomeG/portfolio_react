@@ -1,22 +1,24 @@
 import dynamic from 'next/dynamic';
-import Button from '@/components/Buttons';
-import { videos } from '@/models/videosData'; // Importa los videos
+import { youtubeThumbsData } from '@/models/thumbsnail'; // Importa los videos
 
-const Bloggrid = dynamic(
-  () => import('@/components/Cards/DevblogCards/bloggrid'),
+const ThumbnailsGrid = dynamic(
+  () => import('@/components/Cards/ThumbnailsCards/ThumbnailsGrid'),
 );
 
-export function VideoList() {
+export function ThumbnailsSection() {
   return (
     <section className='flex flex-col items-center justify-center'>
       <p className='pt-32 text-center pb-8 text-5xl text-white font-bold'>
-        <span className='text-green'> Video</span> Editing
+        <span className='text-green'> Thumbnail</span> Editing
       </p>
-      {/* Pasa los videos como prop */}
-      <Bloggrid articles={videos} showAllArticles={false} hidepagination />
-      <Button text='See all videos' url='/videos/' hidebutton={true} />
+      <div className='mx-4 md:lg:mx-12'>
+        <ThumbnailsGrid
+          thumbnails={youtubeThumbsData}
+          showAllThumbnails={false}
+        />
+      </div>
     </section>
   );
 }
 
-export default VideoList;
+export default ThumbnailsSection;

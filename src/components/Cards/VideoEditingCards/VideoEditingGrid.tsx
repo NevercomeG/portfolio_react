@@ -5,29 +5,21 @@ import { ThemeProvider } from '@mui/material/styles';
 import dynamic from 'next/dynamic';
 import React, { useMemo, useState } from 'react';
 
-const BlogCard = dynamic(() => import('./blogcard')); // Se puede renombrar si es necesario
+const VideoEditingCard = dynamic(() => import('./VideoEditingCard')); // Se puede renombrar si es necesario
 
 import { theme } from './Theme';
-import { Video } from '@/models/videosData'; // Usa el tipo `Video` en lugar de artículos
+import { VideoData } from '@/models/videosData'; // Usa el tipo `Video` en lugar de artículos
 
-interface VideoGridProps {
-  articles: Video[];
-  showAllArticles: boolean;
-  hidepagination?: boolean;
-}
+import { Videos } from '@/types/VideoEditingTypes';
 
-function ProjectGrid({
-  articles,
-  showAllArticles,
-  hidepagination,
-}: VideoGridProps) {
+function VideoEditingGrid({ showAllVideos, hidepagination }: Videos) {
   const [page, setPage] = useState(1);
-  const articlesPerPage = showAllArticles ? articles.length : 3;
+  const articlesPerPage = showAllVideos ? VideoData.length : 3;
   const showPagination = !hidepagination;
 
   const displayedProjects = useMemo(
-    () => articles.slice((page - 1) * articlesPerPage, page * articlesPerPage),
-    [page, articles, articlesPerPage],
+    () => VideoData.slice((page - 1) * articlesPerPage, page * articlesPerPage),
+    [page, VideoData, articlesPerPage],
   );
 
   function handlePaginationChange(
@@ -42,7 +34,7 @@ function ProjectGrid({
     <>
       <ul className='grid grid-rows-1 md:grid-cols-1 lg:grid-cols-3 gap-4'>
         {displayedProjects.map((video) => (
-          <BlogCard key={video.id} {...video} /> // Pasar la data de video
+          <VideoEditingCard key={video.id} {...video} /> // Pasar la data de video
         ))}
       </ul>
 
@@ -63,4 +55,4 @@ function ProjectGrid({
   );
 }
 
-export default React.memo(ProjectGrid);
+export default React.memo(VideoEditingGrid);

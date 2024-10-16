@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { Video } from '@/models/videosData'; // Importa el tipo de video
+import { VideoType } from '@/types/VideoEditingTypes'; // Importa el tipo de video
 
 export default function BlogCard({
   id,
@@ -11,7 +11,7 @@ export default function BlogCard({
   url,
   published_at,
   thumbnail,
-}: Video) {
+}: VideoType) {
   return (
     <li>
       <Link

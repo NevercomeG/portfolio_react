@@ -1,13 +1,6 @@
-export interface Video {
-  id: number;
-  title: string;
-  description: string;
-  url: string;
-  published_at: string;
-  thumbnail: string;
-}
+import { VideoType } from "@/types/VideoEditingTypes";
 
-export const videos: Video[] = [
+export const VideoData: VideoType[] = [
   {
     id: 1,
     title: "😱 LA MAYOR ACTUALIZACION DE ARK SURVIVAL ASCENDED",
@@ -32,5 +25,5 @@ export const videos: Video[] = [
     published_at: "2024-08-30",
     thumbnail: "https://i.ytimg.com/vi/xV6eMODcPz0/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDHiQwlB1dGtaa6vDwrgmatAgnWUA",
   },
-  // Añade más videos según sea necesario
+
 ];

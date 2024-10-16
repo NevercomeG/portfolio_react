@@ -1,4 +1,4 @@
-import YouTubeThumbsPage from '@/app/thumbnails/components/page';
+import VideosEditionPage from '@/app/videos/components/page';
 import FooterSection from '@/components/Footer';
 import NavBarSection from '@/components/Navs';
 
@@ -6,7 +6,7 @@ export default function page() {
   return (
     <>
       <NavBarSection />
-      <YouTubeThumbsPage />
+      <VideosEditionPage />
       <FooterSection />
     </>
   );
