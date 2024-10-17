@@ -1,5 +1,6 @@
 import dynamic from 'next/dynamic';
 import { VideoData } from '@/models/videosData'; // Importa los videos
+import Button from '@/components/Buttons';
 
 const VideoEditing = dynamic(
   () => import('@/components/Cards/VideoEditingCards/VideoEditingGrid'),
@@ -13,6 +14,7 @@ export function ThumbnailsSection() {
       </p>
 
       <VideoEditing Videos={VideoData} showAllVideos={false} hidepagination />
+      <Button text='More videos' url='/videos/' />
     </section>
   );
 }

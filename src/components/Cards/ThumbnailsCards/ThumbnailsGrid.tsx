@@ -19,7 +19,7 @@ function ThumbnailsGrid({
     : thumbnails.slice(0, 3);
 
   return (
-    <div className='grid grid-rows-1 md:grid-cols-1 lg:grid-cols-3 gap-9 lg:mx-32'>
+    <div className='grid grid-rows-1 md:grid-cols-1 lg:grid-cols-3 gap-9 '>
       {displayedThumbnails.map((thumbnail) => (
         <ul
           key={thumbnail.id}

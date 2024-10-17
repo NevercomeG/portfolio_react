@@ -1,4 +1,5 @@
 import dynamic from 'next/dynamic';
+import Button from '@/components/Buttons';
 import { youtubeThumbsData } from '@/models/thumbsnail'; // Importa los videos
 
 const ThumbnailsGrid = dynamic(
@@ -17,6 +18,7 @@ export function ThumbnailsSection() {
           showAllThumbnails={false}
         />
       </div>
+      <Button text='More thumbnails' url='/thumbnails/' />
     </section>
   );
 }
