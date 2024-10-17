@@ -60,6 +60,5 @@
     "tailwindcss-animated": "^1.1.2",
     "typewriter-effect": "^2.21.0",
     "web-vitals": "^4.2.2"
-  },
-  "author": "Ixartz (https://github.com/ixartz)"
+  }
 }

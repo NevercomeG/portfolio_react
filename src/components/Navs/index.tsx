@@ -1,10 +1,26 @@
 'use client';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { BiChevronLeft, BiChevronRight } from 'react-icons/bi';
 
 export default function NavBarSection() {
   const [navbar, setNavbar] = useState(false);
+  const [text, setText] = useState<'JS' | 'TS'>('JS'); // Alternar entre 'JS' y 'TS'
+  const [fade, setFade] = useState(true); // Controlar el desvanecimiento
+
+  // Alternar entre 'JS' y 'TS' cada cierto tiempo
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFade(false); // Activar el desvanecimiento
+
+      setTimeout(() => {
+        setText((prev) => (prev === 'JS' ? 'TS' : 'JS')); // Cambiar el texto
+        setFade(true); // Reactivar el fade-in
+      }, 300); // Retraso de 300ms para la animación
+    }, 4000); // Cambiar cada 4 segundos
+
+    return () => clearInterval(interval); // Limpiar el intervalo cuando se desmonte el componente
+  }, []);
 
   return (
     <>
@@ -14,11 +30,19 @@ export default function NavBarSection() {
           <div>
             <div className='flex items-center justify-between py-3 md:block md:py-5'>
               <Link href='/'>
-                <div className='name m-0 cursor-pointer p-0 text-4xl '>
-                  <span className=' text-white  duration-200 ease-in'>
+                <div className='name m-0 cursor-pointer p-0 text-4xl'>
+                  {/* El 'LJ' permanece sin cambios */}
+                  <span className='text-white duration-200 ease-in'>
                     L<span className='text-green'>J</span>
                   </span>
-                  <span className='text-yellow-300'>JS</span>
+                  {/* Cambiar entre 'JS' (amarillo) y 'TS' (azul) con desvanecimiento */}
+                  <span
+                    className={`duration-300 ease-in ${fade ? 'opacity-100' : 'opacity-0'} ${
+                      text === 'JS' ? 'text-yellow-300' : 'text-sky-500'
+                    }`}
+                  >
+                    {text}
+                  </span>
                 </div>
               </Link>
               <div className='flex flex-row-reverse space-x-5 md:hidden'>
