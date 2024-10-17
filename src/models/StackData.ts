@@ -94,11 +94,19 @@ export const BackEndData: StackData[] =[{
       color: 'black',
       position: 'Upper',
     },
+    {
+      iconsrc: 'vscode-icons:file-type-light-prisma',
+      classname: 'h-12 w-12',
+      color: 'black',
+      position: 'Lower',
+    },
+
 
   ],
   detailedSkills:  [
     '➖ Node.js, Express, Prisma.',
     '➖ REST API, TRPC, etc.',
+    '➖ Websockets.',
     '➖ MongoDB, PostgreSQL, etc.',
     ],
   }
@@ -151,6 +159,7 @@ export const DevOpsData: StackData[] =[{
     '➖ AWS, GCP, Azure, Digital Ocean, Vercel',
     '➖ CI/CD, Github Actions',
     '➖ Linux & Windows.',
+    '➖ More...',
     ],
   }
 ]

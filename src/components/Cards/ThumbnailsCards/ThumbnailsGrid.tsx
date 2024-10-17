@@ -19,16 +19,16 @@ function ThumbnailsGrid({
     : thumbnails.slice(0, 3);
 
   return (
-    <ul className='grid grid-rows-1 md:grid-cols-1 lg:grid-cols-3 gap-4'>
+    <div className='grid grid-rows-1 md:grid-cols-1 lg:grid-cols-3 gap-9 lg:mx-32'>
       {displayedThumbnails.map((thumbnail) => (
-        <li
+        <ul
           key={thumbnail.id}
           className='transform transition duration-300 hover:scale-105' // Efecto de hover
         >
           <ProjectCard {...thumbnail} />
-        </li>
+        </ul>
       ))}
-    </ul>
+    </div>
   );
 }
 

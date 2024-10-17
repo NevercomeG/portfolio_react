@@ -16,7 +16,7 @@ export default function YouTubeThumbsPage() {
       </div>
       <div className='w-full pb-4'>
         <h2 className='text-left text-2xl text-slate-100 '>
-          Thumbnails que he diseñado para mis videos de YouTube.
+          Thumbnails I have designed for youtube video
         </h2>
       </div>
       <ThumbnailsGrid

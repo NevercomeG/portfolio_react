@@ -12,7 +12,6 @@ const Nevercomex = dynamic(() => import('@/components/copyright'));
 
 import data from '@/models/data.json';
 
-// import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 export default function Linktree({
   className,
 }: {

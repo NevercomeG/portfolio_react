@@ -10,14 +10,12 @@ export default function VideosEditionPage() {
       <div className='w-full'>
         <h1>
           <span className='text-4xl text-transparent bg-clip-text bg-gradient-to-r from-green to-white'>
-            YouTube Thumbnails
+            Video Edited
           </span>
         </h1>
       </div>
       <div className='w-full pb-4'>
-        <h2 className='text-left text-2xl text-slate-100 '>
-          Thumbnails que he diseñado para mis videos de YouTube.
-        </h2>
+        <h2 className='text-left text-2xl text-slate-100 '></h2>
       </div>
       <VideoEditingGrid
         Videos={videosEdition}

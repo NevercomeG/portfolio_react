@@ -5,7 +5,6 @@ export const youtubeThumbsData = [
   },
   {
     id: 2,
-
     imageUrl: "/thumbsnails/2.png",
   },
   {

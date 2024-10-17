@@ -11,13 +11,15 @@ const StackSection: React.FC = () => {
     <section>
       <h1
         id='stack'
-        className='pt-32  text-center text-5xl text-white font-bold'
+        className='py-32  text-center text-5xl text-white font-bold'
       >
         My <span className='text-green'>Stack</span>
       </h1>
-      <StackBuilder stackData={FrontEndData} />
-      <StackBuilder stackData={BackEndData} />
-      <StackBuilder stackData={DevOpsData} />
+      <div className='grid grid-rows-1 lg:grid-cols-3'>
+        <StackBuilder stackData={FrontEndData} />
+        <StackBuilder stackData={DevOpsData} />
+        <StackBuilder stackData={BackEndData} />
+      </div>
     </section>
   );
 };

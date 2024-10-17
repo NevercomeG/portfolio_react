@@ -38,7 +38,10 @@ const FooterSection = () => {
               {' '}
               <IoLogoInstagram className='h-6 w-6' />
             </p>{' '}
-            <a href='https://www.instagram.com/nevercomex/'>
+            <a
+              aria-label='home page'
+              href='https://www.instagram.com/nevercomex/'
+            >
               <p className='text-lg hover:underline'></p>
             </a>
           </div>
