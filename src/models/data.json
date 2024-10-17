@@ -1,63 +1,91 @@
 {
   "name": "Luis Cuevas",
-  "avatar": "/assets/img/8bitpix.png",
+  "avatar": "/assets/img/pfp.webp",
   "maincard": [
     {
-      "title": "Portfolio",
-      "href": "/home",
-      "image": "/assets/img/logo.png",
-      "message": "Vence tu timidez | Mejora tus relaciones | Aprende a ser un lider"
+      "title": "Web Developer",
+      "href": "/",
+      "image": "",
+      "message": "Building high-quality websites and applications"
     }
   ],
   "links": [
     {
-      "title": "Web desings",
-      "href": "/consultas",
+      "title": "Video Editor",
+      "href": "/videos",
       "image": "",
-      "message": "Habilidades Sociales | Inteligencia Emocional | Relaciones de Pareja | Psicoterapia"
+      "message": "Professional video editing for YouTube and social media"
+    },
+    {
+      "title": "Thumbnail Creator",
+      "href": "/thumbnails",
+      "image": "",
+      "message": "Custom thumbnails that boost engagement for videos"
     }
   ],
   "socials": [
     {
       "title": "Github",
-      "href": "https://www.youtube.com/@EscuelaRedPill",
+      "href": "https://github.com/luiscuevas",
       "image": "https://img.icons8.com/material-outlined/96/000000/github.png"
     },
     {
       "title": "Linkedin",
       "href": "https://www.linkedin.com/in/luissolanoc/",
       "image": "https://img.icons8.com/office/96/null/linkedin.png"
+    },
+    {
+      "title": "Instagram",
+      "href": "https://www.instagram.com/yourusername",
+      "image": "https://img.icons8.com/?size=100&id=32323&format=png&color=000000"
+    },
+    {
+      "title": "Facebook",
+      "href": "https://www.facebook.com/yourusername",
+      "image": "https://img.icons8.com/?size=100&id=13912&format=png&color=000000"
+    },
+    {
+      "title": "Tiktok",
+      "href": "https://www.tiktok.com/@yourusername",
+      "image": "https://img.icons8.com/?size=100&id=118638&format=png&color=000000"
+    },
+    {
+      "title": "Youtube",
+      "href": "https://www.youtube.com/@yourchannel",
+      "image": "https://img.icons8.com/?size=100&id=37325&format=png&color=FFFFFF"
     }
   ],
-  "Navbar": [
+  "navbar": [
     {
       "title": "Home",
       "href": "/home"
     },
     {
-      "title": "Consultas",
-      "href": "/consultas"
-    },
-    {
-      "title": "Consulting",
+      "title": "Consultations",
       "href": "/consulting"
     },
     {
-      "title": "Articulos",
-      "href": "/articulos"
+      "title": "Video Editing",
+      "href": "/video-editing"
     },
     {
-      "title": "Contacto",
-      "href": "/contacto"
+      "title": "Thumbnails",
+      "href": "/thumbnails"
+    },
+    {
+      "title": "Articles",
+      "href": "/articles"
+    },
+    {
+      "title": "Contact",
+      "href": "/contact"
     },
     {
       "title": "About",
       "href": "/about"
     }
   ],
-  "footer2": [
-    {
-      "message": ""
-    }
-  ]
+  "footer": {
+    "message": "© 2024 Luis Cuevas. All rights reserved."
+  }
 }

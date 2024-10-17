@@ -1,14 +1,14 @@
 const ArrowDown = () => {
   return (
-    <div className='flex justify-center pt-24'>
-      <div className='animate-bounce'>
+    <div className='flex justify-center items-center pt-24'>
+      <div className='animate-bounce ml-[-2.5rem]'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           className='h-10 w-10 text-yellow-300'
           fill='none'
           viewBox='0 0 24 24'
           stroke='currentColor'
-          strokeWidth={2}
+          strokeWidth={3}
         >
           <path
             strokeLinecap='round'
