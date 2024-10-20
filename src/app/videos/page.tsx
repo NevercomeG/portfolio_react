@@ -1,7 +1,7 @@
 import VideosEditionPage from '@/app/videos/components/page';
 import FooterSection from '@/components/Footer';
 import NavBarSection from '@/components/Navs';
-import MainVideo from '@/components/Cards/VideoEditingCards/MainVideo';
+// import MainVideo from '@/components/Cards/VideoEditingCards/MainVideo';
 import PricingPage from './components/Pricing/PricingPage';
 import PaymentCarousel from '@/app/videos/components/Payment/PaymentCarousel';
 import Questions from './components/Questions/Questions';
