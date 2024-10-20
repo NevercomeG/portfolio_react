@@ -6,8 +6,8 @@ import { title } from 'process';
 
 export default function ThumbnailsCard({ imageUrl }: thumbnail) {
   return (
-    <li className='' key={title}>
-      <figure className='relative overflow-hidden rounded-lg'>
+    <li className='max-w-sm' key={title}>
+      <figure className='w-full'>
         <Image
           src={imageUrl} // Usa el URL del thumbnail
           alt={title}

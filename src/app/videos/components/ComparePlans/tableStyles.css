@@ -1,0 +1,60 @@
+/* styles/tableStyles.css */
+
+/* Contenedor principal de la tabla con fondo oscuro */
+.compare-plans-container {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  background-color: #111; /* Fondo oscuro */
+  color: #f9f9f9; /* Color de texto claro */
+}
+
+/* Estilos básicos de la tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #222; /* Un tono ligeramente más claro que el fondo */
+}
+
+/* Estilos para los encabezados de columna */
+th {
+  background-color: #333; /* Un gris más claro que el fondo */
+  text-align: center;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  border: 1px solid #444; /* Bordes oscuros */
+  color: #fff; /* Texto blanco */
+}
+
+/* Estilos para las celdas de la tabla */
+td {
+  text-align: center;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid #444; /* Bordes oscuros */
+  color: #f0f0f0; /* Texto gris claro */
+}
+
+/* Estilo especial para la primera columna (características) */
+td:first-child {
+  font-weight: 600;
+  text-align: left;
+  background-color: #333;
+  color: #fff; /* Texto más brillante */
+}
+
+/* Estilos para alternar el color de las filas */
+tr:nth-child(even) {
+  background-color: #2a2a2a; /* Gris ligeramente más claro para filas alternas */
+}
+
+/* Adaptabilidad para dispositivos móviles */
+@media (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}

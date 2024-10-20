@@ -1,0 +1,9 @@
+/* styles/globals.css o el archivo CSS que prefieras */
+.payment-methods-container {
+  max-width: 100%;
+  padding: 20px;
+}
+
+.payment-methods-container .flex {
+  flex-wrap: wrap; /* Esto asegura que los íconos se ajusten si el espacio es pequeño */
+}
