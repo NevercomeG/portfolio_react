@@ -131,34 +131,33 @@ const HeroSection = () => {
               </div>
               <div className='flex space-x-8 justify-center pt-2'>
                 <div className='year flex items-center'>
-                  <p className='mr-2 text-5xl lg:text-4xl'>
-                    {' '}
-                    <Icon icon='mdi:github' className='h-12 w-12' />
-                  </p>
-                  <a
-                    aria-label='github'
-                    href='https://github.com/NevercomeX'
-                  ></a>
+                  <a aria-label='github' href='https://github.com/NevercomeX'>
+                    <p className='mr-2 text-5xl lg:text-4xl'>
+                      {' '}
+                      <Icon icon='mdi:github' className='h-12 w-12' />
+                    </p>
+                  </a>
                 </div>
                 <div className='year flex items-center'>
-                  <p className='mr-2 text-5xl lg:text-4xl'>
-                    {' '}
-                    <Icon icon='mdi:linkedin' className='h-12 w-12' />
-                  </p>{' '}
                   <a
                     aria-label='linktree'
                     href='https://www.linkedin.com/in/luissolanoc/'
-                  ></a>
+                  >
+                    <p className='mr-2 text-5xl lg:text-4xl'>
+                      {' '}
+                      <Icon icon='mdi:linkedin' className='h-12 w-12' />
+                    </p>{' '}
+                  </a>
                 </div>
                 <div className='year flex items-center'>
-                  <p className='mr-2 text-5xl lg:text-4xl'>
-                    {' '}
-                    <Icon icon='mdi:instagram' className='h-12 w-12' />
-                  </p>{' '}
                   <a
                     aria-label='instagram'
                     href='https://www.instagram.com/nevercomex/'
-                  ></a>
+                  >
+                    <p className='mr-2 text-5xl lg:text-4xl'>
+                      <Icon icon='mdi:instagram' className='h-12 w-12' />
+                    </p>
+                  </a>
                 </div>
               </div>
             </div>

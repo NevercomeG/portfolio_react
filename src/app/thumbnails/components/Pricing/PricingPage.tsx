@@ -18,8 +18,8 @@ export default function Pricing() {
       <div className='flex flex-col items-center justify-center gap-4 lg:flex-row'>
         <PriceCard
           planName='Básico'
-          price='5-10'
-          originalPrice='20-25'
+          price='3-5'
+          originalPrice='15-25'
           description='Miniatura con diseño más personalizado para videos de YouTube con enfoque en atracción visual y detalles.'
           duration='<1 - 3 horas'
           features={[
@@ -35,8 +35,8 @@ export default function Pricing() {
 
         <PriceCard
           planName='Intermedio'
-          price='15-25'
-          originalPrice='40-50'
+          price='10-15'
+          originalPrice='25-45'
           description='Miniatura con diseño más personalizado para videos de YouTube con enfoque en atracción visual y detalles.'
           duration='<1 - 3 horas'
           features={[
@@ -52,8 +52,8 @@ export default function Pricing() {
 
         <PriceCard
           planName='Avanzado'
-          price='30-50'
-          originalPrice='45-100'
+          price='20-30'
+          originalPrice='45-70'
           description='Miniatura premium y completamente personalizada para videos que necesitan un impacto visual potente y profesional.'
           duration='<1 - 3 horas'
           features={[

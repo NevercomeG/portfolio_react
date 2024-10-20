@@ -17,7 +17,7 @@ export default function page() {
         <section className='mb-12'>
           <h1 className='text-4xl font-bold mb-4 text-center'>Video Edition</h1>
           <div className='flex justify-center items-center '>
-            <MainVideo />
+            {/* <MainVideo /> */}
           </div>
         </section>
       </main>

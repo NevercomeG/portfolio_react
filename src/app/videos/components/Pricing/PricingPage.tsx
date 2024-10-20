@@ -17,7 +17,7 @@ export default function Pricing() {
       <div className='flex flex-col items-center justify-center gap-4 lg:flex-row'>
         <PriceCard
           planName='Básico'
-          price='15-30'
+          price='10-20'
           originalPrice='30-50'
           description='Ideal para videos cortos de 10 a 15 minutos con edición básica. Cortes basicos, transiciones simple, musica simple.'
           duration='1 - 20 minutos'
@@ -34,7 +34,7 @@ export default function Pricing() {
 
         <PriceCard
           planName='Intermedio'
-          price='45-60'
+          price='25-30'
           originalPrice='80-125'
           description='Perfecto para videos de 25 a 30 minutos con funciones avanzadas. Transiciones complejas, Simple motion graphics '
           duration='25 - 30 minutos'
@@ -51,8 +51,8 @@ export default function Pricing() {
 
         <PriceCard
           planName='Avanzado'
-          price='100'
-          originalPrice='200'
+          price='50'
+          originalPrice='100'
           description='Ideal para videos largos o de alta calidad, La edición más premium que viene con todo lo que puedas necesitar.'
           duration='30+ minutos'
           features={[
