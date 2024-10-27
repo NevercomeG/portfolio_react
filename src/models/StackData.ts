@@ -37,7 +37,7 @@ export const FrontEndData: StackData[] =[{
       position: 'Lower',
     },
     {
-      iconsrc: 'devicon:nextjs-wordmark',
+      iconsrc: 'devicon:nextjs',
       classname: 'h-12 w-12',
       color: 'black',
       position: 'Lower',
@@ -95,12 +95,17 @@ export const BackEndData: StackData[] =[{
       position: 'Upper',
     },
     {
-      iconsrc: 'vscode-icons:file-type-light-prisma',
+      iconsrc: 'logos:mongodb-icon',
       classname: 'h-12 w-12',
       color: 'black',
       position: 'Lower',
     },
-
+    {
+      iconsrc: 'logos:mysql-icon',
+      classname: 'h-12 w-12',
+      color: 'black',
+      position: 'Lower',
+    },
 
   ],
   detailedSkills:  [
@@ -131,7 +136,7 @@ export const DevOpsData: StackData[] =[{
       position: 'Upper',
     },
     {
-      iconsrc: 'logos:kubernetes',
+      iconsrc: 'logos:vercel-icon',
       classname: 'h-12 w-12',
       color: 'black',
       position: 'Upper',

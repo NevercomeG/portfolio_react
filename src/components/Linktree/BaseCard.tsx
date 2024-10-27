@@ -40,7 +40,7 @@ export default function BaseCard({
           </li>
         )}
         <div className='flex w-full grow flex-col items-center justify-center p-2'>
-          <h1 className={`text-lg font-semibold ${textColor}`}>{title}</h1>
+          <h1 className={`text-3xl font-semibold ${textColor}`}>{title}</h1>
           {message && <p className={`text-sm ${textColor}`}>{message}</p>}
         </div>
       </Link>

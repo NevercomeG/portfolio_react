@@ -83,7 +83,7 @@ const HeroSection = () => {
           <div className='items-center justify-center flex flex-col lg:flex-row px-6'>
             <figure className='relative h-40 w-40 '>
               <Image
-                src='/assets/img/pfp.webp'
+                src='/favicon/android-chrome-512x512.png'
                 alt='pfp'
                 fill
                 priority={true}
