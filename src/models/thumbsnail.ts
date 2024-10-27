@@ -23,6 +23,18 @@ export const youtubeThumbsData = [
     id: 3,
     imageUrl: "/thumbsnails/3.png",
   },
+  {
+    id: 7,
+    imageUrl: "/thumbsnails/7.png",
+  },
+  {
+    id: 8,
+    imageUrl: "/thumbsnails/8.png",
+  },
+  {
+    id: 9,
+    imageUrl: "/thumbsnails/9.png",
+  },
 
 
   // Agrega más thumbnails aquí
