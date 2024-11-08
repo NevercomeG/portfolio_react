@@ -50,7 +50,7 @@ export default function Linktree() {
         <Maincard key={link.href} {...link} />
       ))}
 
-      <h2 className='mt-8 text-xl font-bold text-white'>
+      <h2 className='my-6 text-xl font-bold text-white'>
         MORE! <br /> 👇
       </h2>
 

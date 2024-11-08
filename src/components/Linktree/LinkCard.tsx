@@ -17,8 +17,8 @@ export default function LinkCard({
       title={title}
       image={image}
       message={message}
-      bgColor='bg-gray-400'
-      textColor='text-gray-700'
+      bgColor='bg-sky-300'
+      textColor='text-black'
     />
   );
 }

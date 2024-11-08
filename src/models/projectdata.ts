@@ -114,7 +114,7 @@ export const projectsData: Project[] = [
   },
 
   {
-    id: "5e6fcb2a-1ee2-11ee-be56-0242ac120002",
+    id: "5e6fcb2a-1ee2-11ee-be56-0242ac120022",
     title: "Alura Encryptor",
     imageUrl: "/projects/Encryptor.webp",
     description: "Website that encrypts and decrypts messages.",

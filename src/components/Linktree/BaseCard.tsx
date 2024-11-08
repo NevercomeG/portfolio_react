@@ -15,8 +15,8 @@ export default function BaseCard({
   title,
   image,
   message,
-  bgColor = 'bg-gray-100', // Color por defecto si no se pasa uno
-  textColor = 'text-gray-700', // Color de texto por defecto
+  bgColor = 'bg-gray', // Color por defecto si no se pasa uno
+  textColor = 'text-gray', // Color de texto por defecto
 }: BaseCardProps) {
   return (
     <ul

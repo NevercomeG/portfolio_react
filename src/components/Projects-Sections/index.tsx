@@ -4,7 +4,6 @@ import Button from '@/components/Buttons';
 
 import { projectsData } from '@/models/projectdata';
 
-
 const ProjectGrid = dynamic(
   () => import('@/components/Cards/ProjectCards/ProjectGrid'),
 );
