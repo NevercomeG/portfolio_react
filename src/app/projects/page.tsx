@@ -1,17 +1,15 @@
 import ProjectComponentpage from '@/app/projects/components/page';
-import FooterSection from '@/components/Footer';
 import HeroSection from '@/components/Hero';
-import NavBarSection from '@/components/Navs';
+import SectionNavigation from '@/components/Navs/sectionNavigation';
 import StackSection from '@/components/Stacks-Sections';
 
 export default function page() {
   return (
     <>
-      <NavBarSection />
+      <SectionNavigation />
       <HeroSection />
       <ProjectComponentpage />
       <StackSection />
-      <FooterSection />
     </>
   );
 }

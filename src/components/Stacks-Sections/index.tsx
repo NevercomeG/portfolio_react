@@ -9,13 +9,10 @@ const StackBuilder = dynamic(() => import('./StackBuilder'));
 const StackSection: React.FC = () => {
   return (
     <section>
-      <h1
-        id='stack'
-        className='py-32  text-center text-5xl text-white font-bold'
-      >
-        My <span className='text-green'>Stack</span>
+      <h1 className='pt-24 text-center text-5xl text-white font-bold'>
+        MY STACK
       </h1>
-      <div className='grid grid-rows-1 lg:grid-cols-3'>
+      <div className='flex justify-center items-center flex-col lg:md:flex-row'>
         <StackBuilder stackData={FrontEndData} />
         <StackBuilder stackData={DevOpsData} />
         <StackBuilder stackData={BackEndData} />

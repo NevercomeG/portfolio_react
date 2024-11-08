@@ -161,7 +161,7 @@ export const DevOpsData: StackData[] =[{
     },
   ],
   detailedSkills:  [
-    '➖ AWS, GCP, Azure, Digital Ocean, Vercel',
+    '➖ AWS, GCP, Digital Ocean, Vercel',
     '➖ CI/CD, Github Actions',
     '➖ Linux & Windows.',
     '➖ More...',

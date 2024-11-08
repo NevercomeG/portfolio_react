@@ -13,31 +13,27 @@ const StackBuilder = ({ stackData }: { stackData?: StackData[] }) => {
   }
 
   return (
-    <section className='flex justify-center items-center '>
+    <>
       {stackData.map((data) => (
-        <div
-          key={data.title}
-          className='flex justify-center items-center w-2/3 flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-4'
-        >
-          <div className=' flex justify-center items-center'></div>
-          <div className='flex justify-center items-center flex-col px-4'>
-            <div className='flex w-full'>
-              <h1 className='text-3.5xl lg:text-4xl'>{data?.title}</h1>
-            </div>
-            <div className='space-y-2 py-2'>
-              <IconGrid data={data?.icons} />
-              <div>
-                <ul className='space-y-3 font-mono text-white'>
-                  {data?.detailedSkills.map((skill, index) => (
-                    <li key={index}>{skill}</li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+        <section key={data.title} className='px-2 lg:px-6 py-12 '>
+          <div className='flex w-full '>
+            <h1 className='text-center text-white font-bold text-3.5xl'>
+              {data?.title}
+            </h1>
           </div>
-        </div>
+          <div className='space-y-2 py-2'>
+            <IconGrid data={data?.icons} />
+          </div>
+          <div>
+            <ul className='space-y-3 font-mono text-white'>
+              {data?.detailedSkills.map((skill, index) => (
+                <li key={index}>{skill}</li>
+              ))}
+            </ul>
+          </div>
+        </section>
       ))}
-    </section>
+    </>
   );
 };
 

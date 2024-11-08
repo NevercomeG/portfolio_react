@@ -45,7 +45,10 @@ function ProjectGrid({
 
   return (
     <>
-      <ul className='grid grid-rows-1 md:grid-cols-1 lg:grid-cols-3 gap-4'>
+      <h1 className='py-12 text-center text-5xl text-white font-bold'>
+        <span className=''>PROJECTS</span>
+      </h1>
+      <ul className='grid grid-rows-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
         {displayedProjects.map((project) => (
           <ProjectCard key={project.id} {...project} />
         ))}
@@ -65,6 +68,7 @@ function ProjectGrid({
           </div>
         </ThemeProvider>
       )}
+      <div id='#projects'></div>
     </>
   );
 }
