@@ -3,7 +3,7 @@ import { VideoData } from '@/models/videosData'; // Importa los videos
 import Button from '@/components/Buttons';
 
 const VideoEditing = dynamic(
-  () => import('@/components/Cards/VideoEditingCards/VideoEditingGrid'),
+  () => import('@/components/VideoEditingComponents/VideoEditingGrid'),
 );
 
 export function ThumbnailsSection() {

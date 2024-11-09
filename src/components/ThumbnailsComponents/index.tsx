@@ -3,7 +3,7 @@ import Button from '@/components/Buttons';
 import { youtubeThumbsData } from '@/models/thumbsnail'; // Importa los videos
 
 const ThumbnailsGrid = dynamic(
-  () => import('@/components/Cards/ThumbnailsCards/ThumbnailsGrid'),
+  () => import('@/components/ThumbnailsComponents/ThumbnailsGrid'),
 );
 
 export function ThumbnailsSection() {

@@ -1,4 +1,4 @@
-import VideoEditingGrid from '@/components/Cards/VideoEditingCards/VideoEditingGrid';
+import VideoEditingGrid from '@/components/VideoEditingComponents/VideoEditingGrid';
 import { VideoData } from '@/models/videosData'; // Datos de thumbnails para YouTube
 import { VideoType } from '@/types/VideoEditingTypes'; // Cambiar el tipo según tus necesidades
 

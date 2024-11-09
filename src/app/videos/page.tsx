@@ -1,17 +1,13 @@
-import VideosEditionPage from '@/app/videos/components/page';
-import FooterSection from '@/components/Footer';
-import NavBarSection from '@/components/Navs';
+import VideosEditionPage from '@/components/VideoEditingComponents/components/page';
 // import MainVideo from '@/components/Cards/VideoEditingCards/MainVideo';
-import PricingPage from './components/Pricing/PricingPage';
-import PaymentCarousel from '@/app/videos/components/Payment/PaymentCarousel';
-import Questions from './components/Questions/Questions';
-import SecurityAndGuarantees from '@/app/videos/components/Security/SecurityAndGuarantees';
+import PricingPage from '../../components/VideoEditingComponents/components/Pricing/PricingPage';
+import PaymentCarousel from '@/components/VideoEditingComponents/components/Payment/PaymentCarousel';
+import Questions from '../../components/VideoEditingComponents/components/Questions/Questions';
+import SecurityAndGuarantees from '@/components/VideoEditingComponents/components/Security/SecurityAndGuarantees';
 
 export default function page() {
   return (
     <>
-      <NavBarSection />
-
       <main className='container mx-auto p-8'>
         {/* Sección de Video Principal */}
         <section className='mb-12'>
@@ -28,7 +24,6 @@ export default function page() {
       <PaymentCarousel />
       <SecurityAndGuarantees />
       <Questions />
-      <FooterSection />
     </>
   );
 }

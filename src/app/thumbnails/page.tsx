@@ -1,16 +1,13 @@
-import YouTubeThumbsPage from '@/app/thumbnails/components/page';
-import PaymentCarousel from '@/app/thumbnails/components/Payment/PaymentCarousel';
-import PricingPage from '@/app/thumbnails/components/Pricing/PricingPage';
-import Questions from '@/app/thumbnails/components/Questions/Questions';
-import SecurityAndGuarantees from '@/app/thumbnails/components/Security/SecurityAndGuarantees';
-import FooterSection from '@/components/Footer';
-import NavBarSection from '@/components/Navs';
-import ThumbnailSection from './components/ThumbnailSection';
+import YouTubeThumbsPage from '@/components/ThumbnailsComponents/components/page';
+import PaymentCarousel from '@/components/ThumbnailsComponents/components/Payment/PaymentCarousel';
+import PricingPage from '@/components/ThumbnailsComponents/components/Pricing/PricingPage';
+import Questions from '@/components/ThumbnailsComponents/components/Questions/Questions';
+import SecurityAndGuarantees from '@/components/ThumbnailsComponents/components/Security/SecurityAndGuarantees';
+import ThumbnailSection from '../../components/ThumbnailsComponents/components/ThumbnailSection';
 
 export default function page() {
   return (
     <>
-      <NavBarSection />
       <ThumbnailSection />
       <YouTubeThumbsPage />
       <PricingPage />
@@ -18,7 +15,6 @@ export default function page() {
       <PaymentCarousel />
       <SecurityAndGuarantees />
       <Questions />
-      <FooterSection />
     </>
   );
 }

@@ -1,0 +1,14 @@
+/* animations.css */
+
+.project-card {
+  /* Initial state for all cards */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Class to apply the fade-in animation */
+.project-card--visible {
+  opacity: 1;
+  transform: translateY(0);
+}

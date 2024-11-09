@@ -1,4 +1,4 @@
-import ThumbnailsGrid from '@/components/Cards/ThumbnailsCards/ThumbnailsGrid';
+import ThumbnailsGrid from '@/components/ThumbnailsComponents/ThumbnailsGrid';
 import { youtubeThumbsData } from '@/models/thumbsnail'; // Datos de thumbnails para YouTube
 import { thumbnail } from '@/types/ThumbnailsTypes'; // Cambiar el tipo según tus necesidades
 

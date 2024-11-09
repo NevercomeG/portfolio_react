@@ -1,12 +1,12 @@
-import ProjectComponentpage from '@/app/projects/components/page';
+import ProjectComponentpage from '@/components/ProjectsComponents';
 import HeroSection from '@/components/Hero';
-import SectionNavigation from '@/components/Navs/sectionNavigation';
-import StackSection from '@/components/Stacks-Sections';
+import ScrollToTop from '@/components/Navs/ScrollToTop';
+import StackSection from '@/components/ProjectsComponents/Stacks-Sections';
 
 export default function page() {
   return (
     <>
-      <SectionNavigation />
+      <ScrollToTop />
       <HeroSection />
       <ProjectComponentpage />
       <StackSection />
