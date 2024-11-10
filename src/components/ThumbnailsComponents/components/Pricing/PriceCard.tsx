@@ -26,7 +26,6 @@ export default function PriceCard({
   description,
   duration, // Nueva propiedad
   features,
-  toolsUsed,
   isPopular = false,
 
   contact = false,
@@ -63,7 +62,7 @@ export default function PriceCard({
       {/* Duración del video */}
       <div className='text-sm text-gray-600 mb-4'>
         <p>
-          <strong>Duración del video:</strong> {duration}
+          <strong>Tiempo de entrega:</strong> {duration}
         </p>
       </div>
 
@@ -83,14 +82,14 @@ export default function PriceCard({
       </ul>
 
       {/* Sección de herramientas usadas */}
-      <div className='text-sm text-gray-600 mb-4'>
+      {/* <div className='text-sm text-gray-600 mb-4'>
         <h5 className='text-lg font-bold mb-2'>Herramientas Usadas</h5>
         <ul className='flex flex-row'>
           {toolsUsed.map((tool, index) => (
             <li key={index}>{tool}</li>
           ))}
         </ul>
-      </div>
+      </div> */}
 
       {/* Métodos de Pago */}
       {/* {!contact && (

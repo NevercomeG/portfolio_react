@@ -9,9 +9,6 @@
   justify-content: space-between;
 }
 
-.price-card .price-area {
-  flex-grow: 1;
-}
 
 .price-card h4 {
   text-align: center;

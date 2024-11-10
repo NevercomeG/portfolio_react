@@ -19,52 +19,52 @@ export default function Pricing() {
         <PriceCard
           planName='Básico'
           price='3-5'
-          originalPrice='15-25'
-          description='Miniatura con diseño más personalizado para videos de YouTube con enfoque en atracción visual y detalles.'
-          duration='<1 - 3 horas'
+          originalPrice='10-15'
+          description='Miniatura simple con elementos básicos y atractivos, ideal para videos introductorios o de bajo presupuesto.'
+          duration='<10 - 15 minutos'
           features={[
-            'Diseño personalizado y atractivo',
-            'Tipografía adaptada al tema del video',
-            'Imágenes editadas o creadas',
-            'Colores vibrantes y branding básico',
-            'Optimización avanzada para YouTube',
+            'Diseño simple y atractivo',
+            'Tipografía estándar adecuada al tema',
+            'Imágenes libres de derechos o simples ediciones',
+            'Colores vibrantes sin branding adicional',
+            'Optimización básica para YouTube',
           ]}
-          toolsUsed={['Adobe Photoshop,', 'Canva']}
+          toolsUsed={['Canva']}
           paymentMethods={paymentMethods}
         />
 
         <PriceCard
           planName='Intermedio'
-          price='10-15'
-          originalPrice='25-45'
-          description='Miniatura con diseño más personalizado para videos de YouTube con enfoque en atracción visual y detalles.'
-          duration='<1 - 3 horas'
+          price='7-10'
+          originalPrice='15-25'
+          description='Miniatura personalizada y atractiva, perfecta para contenido más elaborado que requiere impacto visual.'
+          duration='<20 - 30 minutos'
           features={[
-            'Diseño personalizado y atractivo',
-            'Tipografía adaptada al tema del video',
+            'Diseño personalizado con enfoque en branding',
+            'Tipografía creativa y adaptada al tema',
             'Imágenes editadas o creadas',
-            'Colores vibrantes y branding básico',
+            'Colores y elementos visuales con branding básico',
             'Optimización avanzada para YouTube',
           ]}
-          toolsUsed={['Adobe Photoshop,', 'Canva']}
+          toolsUsed={['Adobe Photoshop', 'Canva']}
           paymentMethods={paymentMethods}
         />
 
         <PriceCard
           planName='Avanzado'
-          price='20-30'
-          originalPrice='45-70'
-          description='Miniatura premium y completamente personalizada para videos que necesitan un impacto visual potente y profesional.'
-          duration='<1 - 3 horas'
+          price='15-20'
+          originalPrice='35-50'
+          description='Miniatura premium, completamente personalizada para crear un impacto visual poderoso y profesional.'
+          duration='<30 - 60 minutos'
           features={[
             'Diseño avanzado y profesional',
-            'Tipografía personalizada y creativa',
-            'Imágenes y gráficos creados desde cero',
-            'Integración con branding completo',
-            'Animaciones simples para miniaturas (si aplica)',
+            'Tipografía completamente personalizada',
+            'Imágenes y gráficos únicos creados desde cero',
+            'Integración completa con el branding del canal',
+            'Animaciones simples para miniaturas dinámicas (si aplica)',
             'Optimización máxima para YouTube y SEO',
           ]}
-          toolsUsed={['Adobe Premiere']}
+          toolsUsed={['Adobe Photoshop', 'Adobe Premiere']}
           paymentMethods={paymentMethods}
         />
       </div>
