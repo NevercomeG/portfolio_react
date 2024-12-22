@@ -15,7 +15,7 @@ export const projectsData: Project[] = [
       ]
     },
     links: {
-      url: "",
+      url: "https://escuelaredpill.com/",
       github: "",
       youtube: ""
     },
@@ -25,9 +25,9 @@ export const projectsData: Project[] = [
   },
   {
     id: "50ae3026-1ee2-11ee-be56-0242ac120002",
-    title: "Dribbble Clone",
-    imageUrl: "/projects/Dribbble.webp",
-    description: "Dribbble Clone which is a social media for designers built",
+    title: "Casino Dashboard",
+    imageUrl: "https://i.imgur.com/G1H6twQ.jpeg",
+    description: "Casino Dashboard template Clone which is a social media for designers built",
     Technology: {
       Stack: ["Next.js", "Typescript", "Firebase"],
       Icons: [
@@ -37,7 +37,7 @@ export const projectsData: Project[] = [
       ]
     },
     links: {
-      url: "",
+      url: "https://casino-dashboard-ten.vercel.app/",
       github: "",
       youtube: ""
     },

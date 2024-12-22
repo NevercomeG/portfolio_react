@@ -20,10 +20,6 @@ export const youtubeThumbsData = [
     imageUrl: "/thumbsnails/4.png",
   },
   {
-    id: 3,
-    imageUrl: "/thumbsnails/3.png",
-  },
-  {
     id: 7,
     imageUrl: "/thumbsnails/7.png",
   },
@@ -34,6 +30,43 @@ export const youtubeThumbsData = [
   {
     id: 9,
     imageUrl: "/thumbsnails/9.png",
+  },
+  {
+    id: 10,
+    imageUrl: "/thumbsnails/10.png",
+  },
+  {
+    id: 11,
+    imageUrl: "/thumbsnails/11.png",
+  },
+  {
+    id: 12,
+    imageUrl: "/thumbsnails/12.png",
+  },
+  {
+    id: 13,
+    imageUrl: "/thumbsnails/13.png",
+  },
+  {
+    id: 14,
+    imageUrl: "/thumbsnails/14.png",
+  },
+
+  {
+    id: 15,
+    imageUrl: "/thumbsnails/15.png",
+  },
+  {
+    id: 16,
+    imageUrl: "/thumbsnails/16.png",
+  },
+  {
+    id: 17,
+    imageUrl: "/thumbsnails/17.png",
+  },
+  {
+    id: 18,
+    imageUrl: "/thumbsnails/18.png",
   },
 
 

@@ -15,7 +15,7 @@ export default function ThumbnailsCard({ imageUrl }: thumbnail) {
           height={720} // Define la altura base
           loading='lazy'
           className='rounded-md object-cover' // Asegura que la imagen mantenga su proporción y se adapte al contenedor
-          quality={100} // Mantén la calidad alta
+          quality={75} // Mantén la calidad alta
           placeholder='blur' // Añade el placeholder
           blurDataURL='/thumbsnails/blur.jpg' // Si tienes una imagen de baja resolución
         />

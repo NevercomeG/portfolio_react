@@ -3,27 +3,27 @@ import { VideoType } from "@/types/VideoEditingTypes";
 export const VideoData: VideoType[] = [
   {
     id: 1,
-    title: "😱 LA MAYOR ACTUALIZACION DE ARK SURVIVAL ASCENDED",
-    description: "En este nuevo episodio de Aguilas Squad, cubrimos las últimas actualizaciones de ARK Survival Ascended de esta semana...",
-    url: "https://www.youtube.com/watch?v=Cney2Gw3Yic",
-    published_at: "2024-09-27",
-    thumbnail: "https://i.ytimg.com/vi/Cney2Gw3Yic/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLByfQIneXfjN6PkwoIBGVKYo4xkgw",
-  },
-  {
-    id: 2,
     title: "SOBREVIVIENDO SIN DINOS EN ARK SURVIVAL ASCENDED ABERRATION",
-    description: "¡Bienvenidos a Aguilas Squad! En este épico episodio, comenzamos la hazaña de sobrevivir sin dinos en ARK Ascend...",
-    url: "https://www.youtube.com/watch?v=-07EF11zk8k&t",
+    description: "¡Bienvenidos a Aguilas Squad! En este episodio, sobrevivimos sin dinosaurios en ARK Survival Ascended Aberration...",
+    url: "https://youtu.be/2XczIIw8wMo",
     published_at: "2024-09-17",
     thumbnail: "https://i.ytimg.com/vi/-07EF11zk8k/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBd42uwEiDI_Dh0kcqTLNBXXZIVvg",
   },
   {
+    id: 2,
+    title: "POSIBLE DEMANDA A ESTUDIOS WILDCARD POR ARK SURVIVAL ASCENDED",
+    description: "¡Bienvenidos a Aguilas Squad! En este episodio, hablamos sobre la posible demanda a Estudios Wildcard por ARK Ascended...",
+    url: "https://youtu.be/peBhx5MipSo",
+    published_at: "12/19/2024",
+    thumbnail: "",
+  },
+  {
     id: 3,
-    title: "NOS ENFRENTAMOS AL MONO EN ALFA Y SOBREVIVIMOS EN ARK SVARTELFHEIM",
-    description: "¡Bienvenidos a Aguilas Squad! En este épico episodio, continuamos la hazaña de sobrevivir 100 días en ARK Ascended Hardcore...",
-    url: "https://www.youtube.com/watch?v=xV6eMODcPz0",
-    published_at: "2024-08-30",
-    thumbnail: "https://i.ytimg.com/vi/xV6eMODcPz0/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDHiQwlB1dGtaa6vDwrgmatAgnWUA",
+    title: "Ark Survival Ascended en Steam!",
+    description: "¡Bienvenidos a Aguilas Squad! En este episodio, hablamos sobre ARK Survival Ascended en Steam...",
+    url: "https://www.youtube.com/watch?v=cbkD5MoXke0",
+    published_at: "12/19/2024",
+    thumbnail: "",
   },
 
 ];
